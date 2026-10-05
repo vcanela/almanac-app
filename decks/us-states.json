@@ -1,0 +1,310 @@
+{
+  "id": "us-states",
+  "title": "US state capitals",
+  "subtitle": "All 50 states",
+  "promptLabel": "Capital of",
+  "context": "United States",
+  "about": "The capital of each of the 50 US states, grouped by Census region and division so neighbours are learned together. Washington, D.C. is a federal district, not a state, so it is not included.",
+  "cards": [
+    {
+      "id": "us-me",
+      "prompt": "Maine",
+      "answer": "Augusta",
+      "note": "Its earlier Native American name, Cushnoc, meant head of the tide; Fort Western, built on the Kennebec River in 1754, still stands."
+    },
+    {
+      "id": "us-nh",
+      "prompt": "New Hampshire",
+      "answer": "Concord",
+      "note": "Named in 1765 to mark the new concord, or harmony, that ended a bitter boundary dispute between the towns of Rumford and Bow."
+    },
+    {
+      "id": "us-vt",
+      "prompt": "Vermont",
+      "answer": "Montpelier",
+      "note": "Named after the French city of Montpellier; it is the least populous state capital in the United States."
+    },
+    {
+      "id": "us-ma",
+      "prompt": "Massachusetts",
+      "answer": "Boston",
+      "note": "Settled by Puritans in 1630 and named after Boston in Lincolnshire, England, the hometown of colonist Isaac Johnson."
+    },
+    {
+      "id": "us-ri",
+      "prompt": "Rhode Island",
+      "answer": "Providence",
+      "note": "Founded in 1636 by Roger Williams, banished from Massachusetts, who named it for God's merciful Providence in giving him a haven."
+    },
+    {
+      "id": "us-ct",
+      "prompt": "Connecticut",
+      "answer": "Hartford",
+      "note": "Named after Hertford in England and long nicknamed the Insurance Capital of the World; Mark Twain wrote his most famous works there."
+    },
+    {
+      "id": "us-ny",
+      "prompt": "New York",
+      "answer": "Albany",
+      "note": "Grew from the Dutch fur trading post of Fort Orange; renamed by the English in 1664 after James, Duke of York and Albany."
+    },
+    {
+      "id": "us-nj",
+      "prompt": "New Jersey",
+      "answer": "Trenton",
+      "note": "Washington crossed the icy Delaware on Christmas night 1776 to defeat Hessian troops here; a bridge proclaims Trenton Makes, The World Takes."
+    },
+    {
+      "id": "us-pa",
+      "prompt": "Pennsylvania",
+      "answer": "Harrisburg",
+      "note": "Named after John Harris Sr., an English trader who settled beside the Susquehanna River in 1719; his son laid out the town in 1785."
+    },
+    {
+      "id": "us-oh",
+      "prompt": "Ohio",
+      "answer": "Columbus",
+      "note": "Founded in 1812 as a purpose-built capital on the high banks of the Scioto River, opposite Franklinton, and named after Christopher Columbus."
+    },
+    {
+      "id": "us-mi",
+      "prompt": "Michigan",
+      "answer": "Lansing",
+      "note": "A settlement of fewer than 20 people when chosen in 1847 to move the capital away from Detroit, uncomfortably close to British Canada."
+    },
+    {
+      "id": "us-in",
+      "prompt": "Indiana",
+      "answer": "Indianapolis",
+      "note": "A planned capital laid out in 1821; its name joins Indiana with polis, the Greek word for city."
+    },
+    {
+      "id": "us-il",
+      "prompt": "Illinois",
+      "answer": "Springfield",
+      "note": "Abraham Lincoln lived and worked here as a lawyer and politician for 24 years before the presidency; his tomb is in the city."
+    },
+    {
+      "id": "us-wi",
+      "prompt": "Wisconsin",
+      "answer": "Madison",
+      "note": "Built on an isthmus between Lake Mendota and Lake Monona, and named after James Madison, the fourth US president."
+    },
+    {
+      "id": "us-mn",
+      "prompt": "Minnesota",
+      "answer": "Saint Paul",
+      "note": "Early settlers called it Pig's Eye after Pierre Parrant's tavern; a missionary priest had them adopt the name of his chapel to St. Paul."
+    },
+    {
+      "id": "us-ia",
+      "prompt": "Iowa",
+      "answer": "Des Moines",
+      "note": "Named after the Des Moines River; the French name literally means of the monks, though its true origin is debated."
+    },
+    {
+      "id": "us-mo",
+      "prompt": "Missouri",
+      "answer": "Jefferson City",
+      "note": "Chosen as capital in 1821 and named after Thomas Jefferson; it sits on the southern bank of the Missouri River."
+    },
+    {
+      "id": "us-ks",
+      "prompt": "Kansas",
+      "answer": "Topeka",
+      "note": "Its name comes from a Kansa-Osage phrase often translated as a good place to dig potatoes; Brown v. Board of Education began here."
+    },
+    {
+      "id": "us-ne",
+      "prompt": "Nebraska",
+      "answer": "Lincoln",
+      "note": "Founded as the village of Lancaster; renamed after the assassinated Abraham Lincoln when it was chosen as the capital in 1867."
+    },
+    {
+      "id": "us-sd",
+      "prompt": "South Dakota",
+      "answer": "Pierre",
+      "note": "Pronounced peer; it faces Fort Pierre across the Missouri River, an old trading post named after fur trader Pierre Chouteau Jr."
+    },
+    {
+      "id": "us-nd",
+      "prompt": "North Dakota",
+      "answer": "Bismarck",
+      "note": "The Northern Pacific Railway named it after German chancellor Otto von Bismarck in 1873, hoping to attract German settlers and investment."
+    },
+    {
+      "id": "us-de",
+      "prompt": "Delaware",
+      "answer": "Dover",
+      "note": "In a Dover tavern on 7 December 1787, delegates voted unanimously to make Delaware the first state to ratify the Constitution."
+    },
+    {
+      "id": "us-md",
+      "prompt": "Maryland",
+      "answer": "Annapolis",
+      "note": "Congress met in its State House in 1783 and 1784, briefly making it the US capital; the Treaty of Paris was ratified there."
+    },
+    {
+      "id": "us-va",
+      "prompt": "Virginia",
+      "answer": "Richmond",
+      "note": "Patrick Henry gave his Give me liberty or give me death speech at St. John's Church in 1775; later the Confederate capital."
+    },
+    {
+      "id": "us-wv",
+      "prompt": "West Virginia",
+      "answer": "Charleston",
+      "note": "Sits where the Elk River meets the Kanawha; probably named after Charles Clendenin, and Daniel Boone was among its first trustees."
+    },
+    {
+      "id": "us-nc",
+      "prompt": "North Carolina",
+      "answer": "Raleigh",
+      "note": "Named after Sir Walter Raleigh, sponsor of the lost colony of Roanoke; known as the City of Oaks for its oak-lined streets."
+    },
+    {
+      "id": "us-sc",
+      "prompt": "South Carolina",
+      "answer": "Columbia",
+      "note": "Laid out in 1786 as one of the first planned US cities; much of it burned in February 1865 after Sherman's army captured it."
+    },
+    {
+      "id": "us-ga",
+      "prompt": "Georgia",
+      "answer": "Atlanta",
+      "note": "Began as the end point of a railway line, first known simply as Terminus; largely burned during Sherman's March to the Sea in 1864."
+    },
+    {
+      "id": "us-fl",
+      "prompt": "Florida",
+      "answer": "Tallahassee",
+      "note": "Chosen as a halfway point between Pensacola and St. Augustine, where the legislature had alternated; its Muskogean name means old fields."
+    },
+    {
+      "id": "us-ky",
+      "prompt": "Kentucky",
+      "answer": "Frankfort",
+      "note": "Named after Frank's Ford, a Kentucky River crossing where pioneer Stephen Frank was killed in a skirmish in 1780."
+    },
+    {
+      "id": "us-tn",
+      "prompt": "Tennessee",
+      "answer": "Nashville",
+      "note": "Founded in 1779 as Fort Nashborough and named after Revolutionary War general Francis Nash; Music City is home to the Grand Ole Opry."
+    },
+    {
+      "id": "us-al",
+      "prompt": "Alabama",
+      "answer": "Montgomery",
+      "note": "The first capital of the Confederacy in 1861; Rosa Parks's arrest here in 1955 sparked the Montgomery bus boycott."
+    },
+    {
+      "id": "us-ms",
+      "prompt": "Mississippi",
+      "answer": "Jackson",
+      "note": "Named after Andrew Jackson; Union troops burned it so thoroughly in 1863 that it became known as Chimneyville."
+    },
+    {
+      "id": "us-ar",
+      "prompt": "Arkansas",
+      "answer": "Little Rock",
+      "note": "Named after a small stone outcrop on the Arkansas River, a landmark for travellers noted by French explorer Bénard de la Harpe in 1722."
+    },
+    {
+      "id": "us-la",
+      "prompt": "Louisiana",
+      "answer": "Baton Rouge",
+      "note": "French for red stick, after a red-painted pole that French explorers found marking the boundary between two Native American peoples' lands."
+    },
+    {
+      "id": "us-tx",
+      "prompt": "Texas",
+      "answer": "Austin",
+      "note": "Briefly incorporated as Waterloo in 1839, then renamed after Stephen F. Austin, remembered as the Father of Texas."
+    },
+    {
+      "id": "us-ok",
+      "prompt": "Oklahoma",
+      "answer": "Oklahoma City",
+      "note": "Settled almost overnight in the Land Run of 22 April 1889; it took over from Guthrie as the state capital in 1910."
+    },
+    {
+      "id": "us-mt",
+      "prompt": "Montana",
+      "answer": "Helena",
+      "note": "Grew from a mining camp after four prospectors struck gold at Last Chance Gulch in 1864."
+    },
+    {
+      "id": "us-id",
+      "prompt": "Idaho",
+      "answer": "Boise",
+      "note": "French trappers called its tree-lined river la rivière boisée, the wooded river, a landmark in the surrounding high desert."
+    },
+    {
+      "id": "us-wy",
+      "prompt": "Wyoming",
+      "answer": "Cheyenne",
+      "note": "Platted by the Union Pacific Railroad in 1867 and named after the Cheyenne people; it hosts the Cheyenne Frontier Days rodeo."
+    },
+    {
+      "id": "us-co",
+      "prompt": "Colorado",
+      "answer": "Denver",
+      "note": "The Mile High City: a benchmark on the State Capitol steps sits exactly one mile above sea level. Named after Governor James W. Denver."
+    },
+    {
+      "id": "us-nm",
+      "prompt": "New Mexico",
+      "answer": "Santa Fe",
+      "note": "Founded by the Spanish in 1610, it is the oldest and the highest state capital in the US; its name means holy faith."
+    },
+    {
+      "id": "us-az",
+      "prompt": "Arizona",
+      "answer": "Phoenix",
+      "note": "Settler Darrell Duppa chose the name for a city born from the ruins of a former civilization, the canals of the Hohokam people."
+    },
+    {
+      "id": "us-ut",
+      "prompt": "Utah",
+      "answer": "Salt Lake City",
+      "note": "Founded by Brigham Young and Latter-day Saint pioneers in 1847 as Great Salt Lake City; the Great was dropped in 1868."
+    },
+    {
+      "id": "us-nv",
+      "prompt": "Nevada",
+      "answer": "Carson City",
+      "note": "Named via the Carson River after scout Kit Carson; it boomed with the nearby Comstock Lode and had its own branch of the US Mint."
+    },
+    {
+      "id": "us-ca",
+      "prompt": "California",
+      "answer": "Sacramento",
+      "note": "Grew around Sutter's Fort during the Gold Rush and was the western end of both the Pony Express and the first transcontinental railroad."
+    },
+    {
+      "id": "us-or",
+      "prompt": "Oregon",
+      "answer": "Salem",
+      "note": "Its name is an anglicised form of the Hebrew shalom, meaning peace; it grew from a Methodist mission in the Willamette Valley."
+    },
+    {
+      "id": "us-wa",
+      "prompt": "Washington",
+      "answer": "Olympia",
+      "note": "Named in 1850 for its view of the Olympic Mountains; it sits at the southern end of Puget Sound."
+    },
+    {
+      "id": "us-ak",
+      "prompt": "Alaska",
+      "answer": "Juneau",
+      "note": "Named after gold prospector Joe Juneau; no roads connect it to the rest of Alaska or North America, so visitors arrive by air or sea."
+    },
+    {
+      "id": "us-hi",
+      "prompt": "Hawaii",
+      "answer": "Honolulu",
+      "note": "Its name means sheltered harbour; Iolani Palace, home of the Hawaiian monarchs, is the only royal palace on US soil."
+    }
+  ]
+}

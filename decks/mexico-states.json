@@ -1,0 +1,196 @@
+{
+  "id": "mexico-states",
+  "title": "Mexican state capitals",
+  "subtitle": "All 31 states",
+  "promptLabel": "Capital of",
+  "context": "Mexico",
+  "about": "The capital of each of Mexico's 31 states, ordered from the north-west to the Yucatán peninsula. Mexico City is a federal entity in its own right, not a state, so it is not included.",
+  "cards": [
+    {
+      "id": "mx-bcn",
+      "prompt": "Baja California",
+      "answer": "Mexicali",
+      "note": "Its name blends México and California, just as its twin across the border, Calexico, blends California and Mexico."
+    },
+    {
+      "id": "mx-bcs",
+      "prompt": "Baja California Sur",
+      "answer": "La Paz",
+      "note": "Spanish for peace; Hernán Cortés landed on its bay in 1535 and tried, unsuccessfully, to found a colony there."
+    },
+    {
+      "id": "mx-son",
+      "prompt": "Sonora",
+      "answer": "Hermosillo",
+      "note": "Formerly the Villa del Pitic; renamed in 1828 after José María González de Hermosillo, an insurgent general in the independence war."
+    },
+    {
+      "id": "mx-chh",
+      "prompt": "Chihuahua",
+      "answer": "Chihuahua",
+      "note": "Miguel Hidalgo, father of Mexican independence, was imprisoned and executed here in 1811; Pancho Villa's former home is now a museum."
+    },
+    {
+      "id": "mx-sin",
+      "prompt": "Sinaloa",
+      "answer": "Culiacán",
+      "note": "Founded by the Spanish in 1531 as the Villa de San Miguel; its official name, Culiacán Rosales, honours General Antonio Rosales."
+    },
+    {
+      "id": "mx-nay",
+      "prompt": "Nayarit",
+      "answer": "Tepic",
+      "note": "Founded by conquistador Nuño de Guzmán in 1531; birthplace of the poet and diplomat Amado Nervo."
+    },
+    {
+      "id": "mx-dur",
+      "prompt": "Durango",
+      "answer": "Durango",
+      "note": "Named by Francisco de Ibarra after his Basque hometown in Spain; officially Victoria de Durango, and the backdrop to many Hollywood westerns."
+    },
+    {
+      "id": "mx-coa",
+      "prompt": "Coahuila",
+      "answer": "Saltillo",
+      "note": "Founded in 1577, it lends its name to Saltillo tile and is famous for its brightly striped woven sarapes."
+    },
+    {
+      "id": "mx-nle",
+      "prompt": "Nuevo León",
+      "answer": "Monterrey",
+      "note": "Founded in 1596 and named after the Count of Monterrey, viceroy of New Spain; the saddle-shaped Cerro de la Silla dominates its skyline."
+    },
+    {
+      "id": "mx-tam",
+      "prompt": "Tamaulipas",
+      "answer": "Ciudad Victoria",
+      "note": "Founded in 1750 as the Villa de Santa María de Aguayo; renamed in 1825 after Guadalupe Victoria, Mexico's first president."
+    },
+    {
+      "id": "mx-slp",
+      "prompt": "San Luis Potosí",
+      "answer": "San Luis Potosí",
+      "note": "Named after Saint Louis, King of France, and the rich silver mines of Potosí in Bolivia, echoing the mines that prompted its founding."
+    },
+    {
+      "id": "mx-zac",
+      "prompt": "Zacatecas",
+      "answer": "Zacatecas",
+      "note": "A silver mining city founded in 1548, with a UNESCO-listed centre; Pancho Villa's forces captured it in the Battle of Zacatecas in 1914."
+    },
+    {
+      "id": "mx-agu",
+      "prompt": "Aguascalientes",
+      "answer": "Aguascalientes",
+      "note": "Its name means hot waters, after the local thermal springs; it hosts the vast Feria Nacional de San Marcos every spring."
+    },
+    {
+      "id": "mx-jal",
+      "prompt": "Jalisco",
+      "answer": "Guadalajara",
+      "note": "Named after Guadalajara in Spain, birthplace of conquistador Nuño de Guzmán; the city is strongly associated with mariachi and tequila."
+    },
+    {
+      "id": "mx-col",
+      "prompt": "Colima",
+      "answer": "Colima",
+      "note": "Founded by the Spanish in 1523 and moved to its present site in 1527; it lies near the active Volcán de Colima."
+    },
+    {
+      "id": "mx-mic",
+      "prompt": "Michoacán",
+      "answer": "Morelia",
+      "note": "Called Valladolid until 1828, when it was renamed after José María Morelos, the independence hero born there; its centre is UNESCO listed."
+    },
+    {
+      "id": "mx-gua",
+      "prompt": "Guanajuato",
+      "answer": "Guanajuato",
+      "note": "The first battle of the independence war was fought at its Alhóndiga de Granaditas granary in 1810; birthplace of muralist Diego Rivera."
+    },
+    {
+      "id": "mx-que",
+      "prompt": "Querétaro",
+      "answer": "Querétaro",
+      "note": "Emperor Maximilian was executed on its Cerro de las Campanas in 1867, and Mexico's 1917 Constitution was drafted here. Officially Santiago de Querétaro."
+    },
+    {
+      "id": "mx-hid",
+      "prompt": "Hidalgo",
+      "answer": "Pachuca",
+      "note": "Cornish miners brought football and pastes, a local pasty, to this mining town; strong winds earn it the nickname La Bella Airosa."
+    },
+    {
+      "id": "mx-tla",
+      "prompt": "Tlaxcala",
+      "answer": "Tlaxcala",
+      "note": "Its name probably means place of maize bread in Nahuatl; the Tlaxcalans allied with Hernán Cortés against the Aztecs."
+    },
+    {
+      "id": "mx-pue",
+      "prompt": "Puebla",
+      "answer": "Puebla",
+      "note": "Mexican forces defeated the French army here on 5 May 1862, the origin of Cinco de Mayo; also the home of mole poblano."
+    },
+    {
+      "id": "mx-mex",
+      "prompt": "State of Mexico",
+      "answer": "Toluca",
+      "note": "Long famed for its chorizo sausage; it sits beneath the Nevado de Toluca, a volcano whose crater holds two lakes reachable by car."
+    },
+    {
+      "id": "mx-mor",
+      "prompt": "Morelos",
+      "answer": "Cuernavaca",
+      "note": "Its name is a Spanish rendering of the Nahuatl Cuauhnāhuac, near the trees; Humboldt nicknamed it the City of Eternal Spring."
+    },
+    {
+      "id": "mx-gro",
+      "prompt": "Guerrero",
+      "answer": "Chilpancingo",
+      "note": "Morelos convened the Congress of Chilpancingo here in 1813, which declared independence from Spain; the name means place of wasps in Nahuatl."
+    },
+    {
+      "id": "mx-oax",
+      "prompt": "Oaxaca",
+      "answer": "Oaxaca",
+      "note": "Officially Oaxaca de Juárez after Benito Juárez, a native of the state; its centre and nearby Monte Albán form a joint UNESCO site."
+    },
+    {
+      "id": "mx-ver",
+      "prompt": "Veracruz",
+      "answer": "Xalapa",
+      "note": "The jalapeño pepper is named after the city, also spelled Jalapa; its university earns it the nickname Athens of Veracruz."
+    },
+    {
+      "id": "mx-tab",
+      "prompt": "Tabasco",
+      "answer": "Villahermosa",
+      "note": "Its name means beautiful town; the Parque-Museo La Venta holds a celebrated collection of Olmec artefacts, including colossal stone heads."
+    },
+    {
+      "id": "mx-chp",
+      "prompt": "Chiapas",
+      "answer": "Tuxtla Gutiérrez",
+      "note": "Tuxtla comes from Nahuatl for place of rabbits; Gutiérrez honours Joaquín Miguel Gutiérrez, a governor who promoted Chiapas joining Mexico."
+    },
+    {
+      "id": "mx-cam",
+      "prompt": "Campeche",
+      "answer": "Campeche",
+      "note": "Officially San Francisco de Campeche; its walls and bastions, built between 1686 and 1704 to repel pirates, are UNESCO listed."
+    },
+    {
+      "id": "mx-yuc",
+      "prompt": "Yucatán",
+      "answer": "Mérida",
+      "note": "Built in 1542 on the Maya city of Ti'ho, reusing its carved stones; nicknamed the White City for its white limestone facades."
+    },
+    {
+      "id": "mx-roo",
+      "prompt": "Quintana Roo",
+      "answer": "Chetumal",
+      "note": "Founded in 1898 as Payo Obispo on Chetumal Bay, near the mouth of the Río Hondo on the border with Belize; renamed in 1936."
+    }
+  ]
+}

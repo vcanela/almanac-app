@@ -1,0 +1,726 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Almanac</title>
+<meta name="description" content="A calm recall trainer for capitals and general knowledge.">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="icon" href="icons/icon-192.png" type="image/png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Almanac">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="theme-color" content="#f5f1e8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#14171b" media="(prefers-color-scheme: dark)">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #f5f1e8;
+    --card: #fbf8f1;
+    --ink: #1d232b;
+    --muted: #6d675b;
+    --rule: #e0d8c7;
+    --accent: #a8432c;
+    --knew: #3e6b4b;
+    --shaky: #9a6d14;
+    --knob: #ffffff;
+    --serif: "IBM Plex Serif", Georgia, serif;
+    --sans: "IBM Plex Sans", -apple-system, system-ui, sans-serif;
+    color-scheme: light dark;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #14171b;
+      --card: #1c2025;
+      --ink: #ebe5d9;
+      --muted: #9b9486;
+      --rule: #2d3239;
+      --accent: #e07a5f;
+      --knew: #7fb08c;
+      --shaky: #d9a945;
+      --knob: #ebe5d9;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font: 16px/1.5 var(--sans);
+    -webkit-font-smoothing: antialiased;
+  }
+  button {
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+  }
+  button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  #app {
+    max-width: 34rem;
+    margin: 0 auto;
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    padding:
+      calc(env(safe-area-inset-top) + 16px)
+      max(16px, env(safe-area-inset-right))
+      calc(env(safe-area-inset-bottom) + 20px)
+      max(16px, env(safe-area-inset-left));
+  }
+  .loading { margin: auto; color: var(--muted); font: italic 1rem var(--serif); text-align: center; }
+
+  .label {
+    font: 600 0.72rem/1.4 var(--sans);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0 0 10px;
+  }
+  .btn {
+    display: block;
+    width: 100%;
+    border: 0;
+    border-radius: 10px;
+    padding: 14px;
+    font-weight: 600;
+    background: var(--ink);
+    color: var(--paper);
+  }
+  .btn.quiet { background: transparent; border: 1px solid var(--rule); color: var(--ink); }
+  .stack { display: grid; gap: 10px; margin-top: 28px; }
+  .back {
+    align-self: flex-start;
+    background: none;
+    border: 0;
+    padding: 6px 0;
+    margin-bottom: 14px;
+    color: var(--muted);
+  }
+  .pagetitle { font: 500 1.9rem/1.15 var(--serif); margin: 0 0 6px; }
+  .lede { color: var(--muted); margin: 0 0 24px; }
+
+  /* Home */
+  .masthead {
+    text-align: center;
+    padding: 10px 0 16px;
+    border-bottom: 3px double var(--rule);
+    margin-bottom: 24px;
+  }
+  .masthead h1 {
+    font: 500 2.1rem/1 var(--serif);
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    margin: 0 0 0 0.16em;
+  }
+  .masthead .date { font: italic 0.95rem var(--serif); color: var(--muted); margin-top: 8px; }
+
+  .today {
+    background: var(--card);
+    border: 1px solid var(--rule);
+    border-radius: 14px;
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+  .today h2 { font: 500 1.3rem var(--serif); margin: 0 0 2px; }
+  .today p { margin: 0 0 16px; color: var(--muted); }
+  .today p:last-child { margin-bottom: 0; }
+
+  .deck {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 14px 0;
+    border-top: 1px solid var(--rule);
+  }
+  .deck:last-of-type { border-bottom: 1px solid var(--rule); }
+  .deck .open { flex: 1; min-width: 0; text-align: left; background: none; border: 0; padding: 0; }
+  .deck .title { font: 500 1.08rem var(--serif); }
+  .deck .meta { font-size: 0.85rem; color: var(--muted); }
+  .bar {
+    display: flex;
+    height: 5px;
+    border-radius: 3px;
+    overflow: hidden;
+    background: var(--rule);
+    margin: 8px 0 6px;
+  }
+  .bar .s { background: var(--ink); }
+  .bar .l { background: var(--accent); opacity: 0.75; }
+
+  .switch {
+    flex: none;
+    position: relative;
+    width: 46px;
+    height: 28px;
+    border-radius: 14px;
+    border: 0;
+    padding: 0;
+    background: var(--rule);
+    transition: background 0.2s;
+  }
+  .switch::after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: var(--knob);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    transition: transform 0.2s;
+  }
+  .switch[aria-checked="true"] { background: var(--knew); }
+  .switch[aria-checked="true"]::after { transform: translateX(18px); }
+
+  .foot { margin-top: auto; padding-top: 32px; text-align: center; }
+  .link { background: none; border: 0; color: var(--muted); padding: 8px 12px; text-decoration: underline; text-underline-offset: 3px; }
+
+  /* Round */
+  .round { flex: 1; display: flex; flex-direction: column; }
+  .topbar { display: flex; align-items: center; gap: 12px; }
+  .close { background: none; border: 0; font-size: 1.7rem; line-height: 1; padding: 4px 10px; margin-left: -10px; color: var(--muted); }
+  .track { flex: 1; height: 3px; background: var(--rule); border-radius: 2px; overflow: hidden; }
+  .track i { display: block; height: 100%; background: var(--ink); transition: width 0.3s; }
+  .count { font-size: 0.8rem; color: var(--muted); font-variant-numeric: tabular-nums; min-width: 3.5em; text-align: right; }
+
+  .face {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 12vh 4px 24px;
+  }
+  .face[data-action] { cursor: pointer; }
+  .face .prompt { font: 500 clamp(2rem, 9vw, 2.8rem)/1.15 var(--serif); margin-top: 4px; overflow-wrap: anywhere; }
+  .face .context { color: var(--muted); font-size: 0.9rem; margin-top: 8px; }
+  .face .again { color: var(--accent); font-size: 0.8rem; font-weight: 600; margin-top: 6px; }
+  .face .answer {
+    font: 400 clamp(1.8rem, 8vw, 2.4rem)/1.2 var(--serif);
+    color: var(--accent);
+    margin-top: 28px;
+    padding-top: 26px;
+    border-top: 1px solid var(--rule);
+    overflow-wrap: anywhere;
+    animation: rise 0.25s ease-out;
+  }
+  .face .note {
+    font: italic 1rem/1.55 var(--serif);
+    color: var(--muted);
+    margin: 16px auto 0;
+    max-width: 26rem;
+    animation: rise 0.35s ease-out;
+  }
+  @keyframes rise { from { opacity: 0; transform: translateY(6px); } }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+
+  .actions { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+  .actions .btn { grid-column: 1 / -1; }
+  .grade {
+    border: 1px solid var(--rule);
+    background: var(--card);
+    border-radius: 12px;
+    padding: 16px 6px;
+    font-weight: 600;
+  }
+  .grade.missed { color: var(--accent); }
+  .grade.shaky { color: var(--shaky); }
+  .grade.knew { color: var(--knew); }
+
+  /* Summary */
+  .tally { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 20px 0 30px; }
+  .tally div { background: var(--card); border: 1px solid var(--rule); border-radius: 12px; padding: 14px 8px; text-align: center; }
+  .tally b { display: block; font: 500 1.8rem/1.1 var(--serif); font-variant-numeric: tabular-nums; }
+  .tally span { font-size: 0.82rem; color: var(--muted); }
+
+  /* Entries (browse and summary) */
+  .entry {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    column-gap: 12px;
+    padding: 13px 0;
+    border-top: 1px solid var(--rule);
+  }
+  .entry .p { font: 500 1.05rem var(--serif); }
+  .entry .a { color: var(--accent); font: 400 1.05rem var(--serif); }
+  .entry .n { grid-column: 1 / -1; font: italic 0.92rem/1.5 var(--serif); color: var(--muted); margin-top: 4px; }
+  .dot { grid-column: 2; grid-row: 1 / 3; align-self: center; width: 9px; height: 9px; border-radius: 50%; background: transparent; border: 1.5px solid var(--rule); }
+  .dot.learning { background: var(--accent); border-color: var(--accent); opacity: 0.75; }
+  .dot.settled { background: var(--ink); border-color: var(--ink); }
+  .group { margin: 26px 0 0; }
+  .legend { display: flex; gap: 16px; flex-wrap: wrap; font-size: 0.82rem; color: var(--muted); margin-bottom: 8px; }
+  .legend span { display: inline-flex; align-items: center; gap: 6px; }
+  .legend .dot { display: inline-block; }
+
+  /* Settings */
+  .setting { padding: 16px 0; border-top: 1px solid var(--rule); }
+  .setting h3 { font: 500 1.05rem var(--serif); margin: 0; }
+  .setting p { margin: 2px 0 0; font-size: 0.88rem; color: var(--muted); }
+  .setting.row { display: flex; align-items: center; gap: 14px; }
+  .setting.row > div { flex: 1; }
+  .seg { display: flex; border: 1px solid var(--rule); border-radius: 10px; overflow: hidden; margin-top: 10px; }
+  .seg button { flex: 1; border: 0; background: none; padding: 10px 0; font-variant-numeric: tabular-nums; }
+  .seg button + button { border-left: 1px solid var(--rule); }
+  .seg button[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
+  .about { font: 1rem/1.6 var(--serif); color: var(--muted); }
+  .about p { margin: 0 0 12px; }
+</style>
+</head>
+<body>
+<main id="app"><p class="loading">Opening the almanac…</p></main>
+
+<script>
+'use strict';
+
+/* ---------- Scheduling constants (see CLAUDE.md) ---------- */
+const STORE_KEY = 'almanac.v1';
+const INTERVALS = [0, 1, 3, 7, 16, 35, 75, 150]; // days until next sighting, by box
+const SETTLED_BOX = 4;     // 16+ days counts as settled
+const FIRST_KNEW_BOX = 3;  // knew it on first sighting: already known
+const REQUEUE_GAP = 4;     // a missed card returns this many cards later
+
+let decks = [];
+const cardIndex = new Map(); // card id -> { card, deck }
+let store = loadStore();
+let view = { name: 'home' };
+let round = null;
+const $app = document.getElementById('app');
+
+/* ---------- Storage ---------- */
+function defaultStore() {
+  return { v: 1, cards: {}, settings: { size: 15, fresh: 5, notes: true, off: {} } };
+}
+function normalise(s) {
+  const d = defaultStore();
+  if (!s || typeof s !== 'object') return d;
+  return {
+    v: 1,
+    cards: s.cards && typeof s.cards === 'object' ? s.cards : {},
+    settings: { ...d.settings, ...(s.settings || {}), off: { ...(s.settings && s.settings.off) } },
+  };
+}
+function loadStore() {
+  try { return normalise(JSON.parse(localStorage.getItem(STORE_KEY))); }
+  catch { return defaultStore(); }
+}
+function saveStore() {
+  try { localStorage.setItem(STORE_KEY, JSON.stringify(store)); } catch { /* storage unavailable */ }
+}
+
+/* ---------- Helpers ---------- */
+function esc(s) {
+  return String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+}
+function shuffle(a) {
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+function pct(n, total) { return total ? (100 * n / total).toFixed(2) : 0; }
+// Local calendar day number, so "tomorrow" means after midnight here.
+function today() {
+  const now = new Date();
+  return Math.floor((now.getTime() - now.getTimezoneOffset() * 60000) / 86400000);
+}
+function status(id) {
+  const s = store.cards[id];
+  if (!s) return 'unseen';
+  return s.b >= SETTLED_BOX ? 'settled' : 'learning';
+}
+function activeDecks() { return decks.filter(d => !store.settings.off[d.id]); }
+function deckStats(deck) {
+  const st = { settled: 0, learning: 0, total: deck.cards.length };
+  for (const c of deck.cards) {
+    const k = status(c.id);
+    if (k !== 'unseen') st[k]++;
+  }
+  return st;
+}
+
+/* ---------- Scheduling ---------- */
+function grade(id, g) {
+  const t = today();
+  const s = store.cards[id];
+  let b;
+  if (g === 'knew') b = s ? Math.min(s.b + 1, INTERVALS.length - 1) : FIRST_KNEW_BOX;
+  else if (g === 'shaky') b = s ? Math.max(1, s.b - 1) : 1;
+  else b = 1;
+  store.cards[id] = { b, d: t + INTERVALS[b], n: (s ? s.n : 0) + 1, l: t };
+  saveStore();
+}
+
+// Which cards the next round would hold: due cards first (most overdue first),
+// then new cards, taken in turn from each active deck in that deck's own order.
+function plan() {
+  const t = today();
+  const { size, fresh } = store.settings;
+  const due = [];
+  const unseen = [];
+  for (const d of activeDecks()) {
+    const u = [];
+    for (const c of d.cards) {
+      const s = store.cards[c.id];
+      if (!s) u.push(c.id);
+      else if (s.d <= t) due.push(c.id);
+    }
+    unseen.push(u);
+  }
+  shuffle(due).sort((a, b) => store.cards[a].d - store.cards[b].d);
+  const picked = due.slice(0, size);
+
+  const room = Math.min(fresh, size - picked.length);
+  const newOnes = [];
+  for (let i = 0; newOnes.length < room; i++) {
+    let more = false;
+    for (const u of unseen) {
+      if (i < u.length) {
+        more = true;
+        if (newOnes.length < room) newOnes.push(u[i]);
+      }
+    }
+    if (!more) break;
+  }
+  return { due: picked, fresh: newOnes };
+}
+
+function nextDueText() {
+  const t = today();
+  let next = Infinity;
+  for (const d of activeDecks()) {
+    for (const c of d.cards) {
+      const s = store.cards[c.id];
+      if (s && s.d > t && s.d < next) next = s.d;
+    }
+  }
+  if (next === Infinity) return '';
+  const days = next - t;
+  if (days === 1) return 'The next card comes back tomorrow.';
+  if (days < 7) {
+    const when = new Date(Date.now() + days * 86400000).toLocaleDateString('en-NZ', { weekday: 'long' });
+    return `The next card comes back on ${when}.`;
+  }
+  return `The next card comes back in ${days} days.`;
+}
+
+/* ---------- Views ---------- */
+function go(name, params = {}) {
+  view = { name, ...params };
+  render();
+  window.scrollTo(0, 0);
+}
+
+function render() {
+  const views = { home: renderHome, round: renderRound, summary: renderSummary, browse: renderBrowse, settings: renderSettings };
+  $app.innerHTML = (views[view.name] || renderHome)();
+}
+
+function renderHome() {
+  const date = new Date().toLocaleDateString('en-NZ', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+  const p = plan();
+  let todayHtml;
+  if (!activeDecks().length) {
+    todayHtml = `<h2>No decks in the mix</h2><p>Switch on a deck below to start a round.</p>`;
+  } else if (p.due.length + p.fresh.length) {
+    const parts = [];
+    if (p.due.length) parts.push(`${p.due.length} to revisit`);
+    if (p.fresh.length) parts.push(`${p.fresh.length} new`);
+    todayHtml = `<h2>Today’s round</h2><p>${parts.join(' · ')}</p>
+      <button class="btn" data-action="start">Begin</button>`;
+  } else {
+    todayHtml = `<h2>All caught up</h2><p>Nothing is due. ${nextDueText()}</p>`;
+  }
+
+  const rows = decks.map(d => {
+    const st = deckStats(d);
+    const on = !store.settings.off[d.id];
+    return `<div class="deck">
+      <button class="open" data-action="browse" data-deck="${esc(d.id)}">
+        <div class="title">${esc(d.title)}</div>
+        <div class="bar" aria-hidden="true">
+          <span class="s" style="width:${pct(st.settled, st.total)}%"></span>
+          <span class="l" style="width:${pct(st.learning, st.total)}%"></span>
+        </div>
+        <div class="meta">${st.settled} of ${st.total} settled${st.learning ? ` · ${st.learning} learning` : ''}</div>
+      </button>
+      <button class="switch" role="switch" aria-checked="${on}" aria-label="Include ${esc(d.title)} in rounds"
+        data-action="toggle" data-deck="${esc(d.id)}"></button>
+    </div>`;
+  }).join('');
+
+  return `<header class="masthead"><h1>Almanac</h1><div class="date">${esc(date)}</div></header>
+    <section class="today">${todayHtml}</section>
+    <p class="label">Decks</p>
+    ${rows}
+    <div class="foot"><button class="link" data-action="settings">Settings</button></div>`;
+}
+
+function startRound() {
+  const p = plan();
+  const queue = shuffle([...p.due, ...p.fresh]).map(id => ({ id, tries: 0 }));
+  if (!queue.length) return;
+  round = { queue, i: 0, revealed: false, tally: { missed: 0, shaky: 0, knew: 0 }, missed: [] };
+  go('round');
+}
+
+function renderRound() {
+  const entry = round.queue[round.i];
+  const { card, deck } = cardIndex.get(entry.id);
+  const context = card.subregion || deck.context || deck.title;
+  const note = store.settings.notes && card.note ? `<div class="note">${esc(card.note)}</div>` : '';
+  const actions = round.revealed
+    ? `<button class="grade missed" data-action="grade" data-grade="missed">Missed</button>
+       <button class="grade shaky" data-action="grade" data-grade="shaky">Shaky</button>
+       <button class="grade knew" data-action="grade" data-grade="knew">Knew it</button>`
+    : `<button class="btn" data-action="reveal">Show answer</button>`;
+
+  return `<div class="round">
+    <div class="topbar">
+      <button class="close" data-action="home" aria-label="End round">×</button>
+      <div class="track"><i style="width:${pct(round.i, round.queue.length)}%"></i></div>
+      <span class="count">${round.i + 1} / ${round.queue.length}</span>
+    </div>
+    <div class="face"${round.revealed ? '' : ' data-action="reveal"'}>
+      <div class="label">${esc(deck.promptLabel || '')}</div>
+      <div class="prompt">${esc(card.prompt)}</div>
+      <div class="context">${esc(context)}</div>
+      ${entry.tries ? '<div class="again">Second look</div>' : ''}
+      ${round.revealed ? `<div class="answer">${esc(card.answer)}</div>${note}` : ''}
+    </div>
+    <div class="actions">${actions}</div>
+  </div>`;
+}
+
+function onGrade(g) {
+  const entry = round.queue[round.i];
+  // Only the first sighting in a round changes the schedule; repeats are practice.
+  if (!entry.tries) {
+    grade(entry.id, g);
+    round.tally[g]++;
+    if (g === 'missed') round.missed.push(entry.id);
+  }
+  if (g === 'missed' && entry.tries < 2) {
+    const at = Math.min(round.i + 1 + REQUEUE_GAP, round.queue.length);
+    round.queue.splice(at, 0, { id: entry.id, tries: entry.tries + 1 });
+  }
+  round.i++;
+  round.revealed = false;
+  if (round.i >= round.queue.length) go('summary');
+  else render();
+}
+
+function entryHtml(card) {
+  return `<div class="entry">
+    <div class="p">${esc(card.prompt)}</div>
+    <span class="dot ${status(card.id)}" aria-label="${status(card.id)}"></span>
+    <div class="a">${esc(card.answer)}</div>
+    ${card.note ? `<div class="n">${esc(card.note)}</div>` : ''}
+  </div>`;
+}
+
+function renderSummary() {
+  const t = round.tally;
+  const p = plan();
+  const more = p.due.length + p.fresh.length;
+  const missed = round.missed.map(id => entryHtml(cardIndex.get(id).card)).join('');
+  return `<h2 class="pagetitle">Round complete</h2>
+    <div class="tally">
+      <div><b>${t.knew}</b><span>knew it</span></div>
+      <div><b>${t.shaky}</b><span>shaky</span></div>
+      <div><b>${t.missed}</b><span>missed</span></div>
+    </div>
+    ${missed ? `<p class="label">Worth another look</p>${missed}` : ''}
+    <div class="stack">
+      ${more ? '<button class="btn" data-action="start">Another round</button>' : ''}
+      <button class="btn quiet" data-action="home">Back to the almanac</button>
+    </div>`;
+}
+
+function renderBrowse() {
+  const deck = decks.find(d => d.id === view.deck);
+  if (!deck) return renderHome();
+  const st = deckStats(deck);
+  let html = '';
+  let group = null;
+  for (const c of deck.cards) {
+    if (c.subregion && c.subregion !== group) {
+      group = c.subregion;
+      html += `<p class="label group">${esc(group)}</p>`;
+    }
+    html += entryHtml(c);
+  }
+  return `<button class="back" data-action="home">‹ Almanac</button>
+    <h2 class="pagetitle">${esc(deck.title)}</h2>
+    <p class="lede">${esc(deck.about || deck.subtitle || '')}</p>
+    <div class="legend">
+      <span><i class="dot settled"></i>${st.settled} settled</span>
+      <span><i class="dot learning"></i>${st.learning} learning</span>
+      <span><i class="dot"></i>${st.total - st.settled - st.learning} not yet seen</span>
+    </div>
+    ${html}
+    <div class="stack"><button class="btn quiet" data-action="home">Back to the almanac</button></div>`;
+}
+
+function segmented(key, options) {
+  return `<div class="seg">${options.map(v =>
+    `<button data-action="set" data-key="${key}" data-value="${v}" aria-pressed="${store.settings[key] === v}">${v}</button>`
+  ).join('')}</div>`;
+}
+
+function renderSettings() {
+  return `<button class="back" data-action="home">‹ Almanac</button>
+    <h2 class="pagetitle">Settings</h2>
+    <p class="lede">Progress lives on this device only.</p>
+    <div class="setting">
+      <h3>Cards per round</h3>
+      <p>The most a round will hold, however much is due.</p>
+      ${segmented('size', [10, 15, 20, 30])}
+    </div>
+    <div class="setting">
+      <h3>New cards per round</h3>
+      <p>Only used when there is room left after the cards due.</p>
+      ${segmented('fresh', [3, 5, 8, 12])}
+    </div>
+    <div class="setting row">
+      <div><h3>Curiosity notes</h3><p>Show the short note under each answer.</p></div>
+      <button class="switch" role="switch" aria-checked="${store.settings.notes}" aria-label="Curiosity notes" data-action="notes"></button>
+    </div>
+    <div class="setting">
+      <h3>Back up progress</h3>
+      <p>The home screen app keeps its own storage, separate from Safari. Export a copy now and then.</p>
+      <div class="stack" style="margin-top:12px">
+        <button class="btn quiet" data-action="export">Export progress</button>
+        <button class="btn quiet" data-action="import">Import progress</button>
+        <input type="file" id="import-file" accept="application/json,.json" hidden>
+      </div>
+    </div>
+    <div class="setting">
+      <h3>How it works</h3>
+      <div class="about">
+        <p>Each card returns just before you would forget it. Cards you know drift out to weeks, then months; shaky ones come back sooner.</p>
+        <p>A card counts as settled once it is spaced 16 days or more apart. Missing a few days costs nothing: whatever is due simply waits, and each round stays small.</p>
+      </div>
+    </div>
+    <div class="setting">
+      <button class="btn quiet" data-action="reset" style="color:var(--accent)">Reset all progress</button>
+    </div>`;
+}
+
+/* ---------- Backup ---------- */
+async function exportProgress() {
+  const name = `almanac-progress-${new Date().toLocaleDateString('en-CA')}.json`;
+  const file = new File([JSON.stringify(store)], name, { type: 'application/json' });
+  if (navigator.canShare && navigator.canShare({ files: [file] })) {
+    try { await navigator.share({ files: [file], title: 'Almanac progress' }); return; }
+    catch (err) { if (err.name === 'AbortError') return; }
+  }
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(file);
+  a.download = name;
+  document.body.append(a);
+  a.click();
+  a.remove();
+  setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+}
+
+async function importProgress(file) {
+  let data;
+  try {
+    data = JSON.parse(await file.text());
+    if (!data || typeof data.cards !== 'object') throw new Error('not Almanac progress');
+  } catch {
+    alert('That file could not be read as Almanac progress.');
+    return;
+  }
+  if (!confirm('Replace the progress on this device with the imported file?')) return;
+  store = normalise(data);
+  saveStore();
+  go('home');
+}
+
+/* ---------- Events ---------- */
+$app.addEventListener('click', ev => {
+  const el = ev.target.closest('[data-action]');
+  if (!el) return;
+  const id = el.dataset.deck;
+  switch (el.dataset.action) {
+    case 'start': startRound(); break;
+    case 'reveal': round.revealed = true; render(); break;
+    case 'grade': onGrade(el.dataset.grade); break;
+    case 'home': round = null; go('home'); break;
+    case 'browse': go('browse', { deck: id }); break;
+    case 'settings': go('settings'); break;
+    case 'toggle':
+      if (store.settings.off[id]) delete store.settings.off[id];
+      else store.settings.off[id] = true;
+      saveStore(); render(); break;
+    case 'set': store.settings[el.dataset.key] = Number(el.dataset.value); saveStore(); render(); break;
+    case 'notes': store.settings.notes = !store.settings.notes; saveStore(); render(); break;
+    case 'export': exportProgress(); break;
+    case 'import': document.getElementById('import-file').click(); break;
+    case 'reset':
+      if (confirm('Forget everything you have learned in Almanac on this device? This cannot be undone.')) {
+        store.cards = {}; saveStore(); go('home');
+      }
+      break;
+  }
+});
+
+$app.addEventListener('change', ev => {
+  if (ev.target.id === 'import-file' && ev.target.files[0]) importProgress(ev.target.files[0]);
+});
+
+// Keyboard, for desktop: space or enter reveals, 1 2 3 grade.
+document.addEventListener('keydown', ev => {
+  if (view.name !== 'round' || !round || ev.metaKey || ev.ctrlKey) return;
+  if (!round.revealed && (ev.key === ' ' || ev.key === 'Enter')) {
+    ev.preventDefault();
+    round.revealed = true;
+    render();
+  } else if (round.revealed && ['1', '2', '3'].includes(ev.key)) {
+    onGrade(['missed', 'shaky', 'knew'][ev.key - 1]);
+  }
+});
+
+// The app may sit open overnight; refresh the home view when it comes back.
+document.addEventListener('visibilitychange', () => {
+  if (!document.hidden && view.name === 'home') render();
+});
+
+/* ---------- Start ---------- */
+async function init() {
+  try {
+    const ids = await (await fetch('decks/index.json')).json();
+    const loaded = await Promise.all(ids.map(id =>
+      fetch(`decks/${id}.json`).then(r => (r.ok ? r.json() : null)).catch(() => null)
+    ));
+    decks = loaded.filter(Boolean);
+  } catch {
+    decks = [];
+  }
+  for (const d of decks) for (const c of d.cards) cardIndex.set(c.id, { card: c, deck: d });
+  if (!decks.length) {
+    $app.innerHTML = '<p class="loading">The decks could not be loaded. Check the connection and open Almanac again.</p>';
+    return;
+  }
+  render();
+}
+
+if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.hostname === 'localhost')) {
+  navigator.serviceWorker.register('sw.js');
+}
+init();
+</script>
+</body>
+</html>

@@ -1,0 +1,1375 @@
+{
+  "id": "world-capitals",
+  "title": "World capitals",
+  "subtitle": "All 195 countries",
+  "promptLabel": "Capital of",
+  "context": "World",
+  "about": "The 193 UN member states plus the two observer states, Vatican City and Palestine. Cards are grouped by UN region so neighbours are learned together.",
+  "cards": [
+    {
+      "id": "w-fr",
+      "prompt": "France",
+      "answer": "Paris",
+      "note": "Named after the Parisii, an Iron Age Gallic tribe; the Romans called their town on the Seine Lutetia.",
+      "subregion": "Western Europe"
+    },
+    {
+      "id": "w-mc",
+      "prompt": "Monaco",
+      "answer": "Monaco",
+      "note": "A city-state: the country is a single municipality. The old town, Monaco-Ville, sits on the Rock, seized by the Grimaldis in 1297 disguised as monks.",
+      "subregion": "Western Europe"
+    },
+    {
+      "id": "w-be",
+      "prompt": "Belgium",
+      "answer": "Brussels",
+      "note": "The name most likely comes from Old Dutch Bruocsella, 'settlement in the marsh'. It also hosts many of the European Union's principal institutions.",
+      "subregion": "Western Europe"
+    },
+    {
+      "id": "w-nl",
+      "prompt": "Netherlands",
+      "answer": "Amsterdam",
+      "note": "Literally 'dam in the Amstel'. It is the constitutional capital, but government, parliament and the supreme court have sat in The Hague since 1588.",
+      "subregion": "Western Europe"
+    },
+    {
+      "id": "w-lu",
+      "prompt": "Luxembourg",
+      "answer": "Luxembourg City",
+      "note": "Grew from Lucilinburhuc, 'small castle', acquired by Count Siegfried in 963; its mighty fortress earned it the nickname 'Gibraltar of the North'.",
+      "subregion": "Western Europe"
+    },
+    {
+      "id": "w-de",
+      "prompt": "Germany",
+      "answer": "Berlin",
+      "note": "Split by the Berlin Wall from 1961 while Bonn served West Germany; after reunification in 1990, parliament voted to return to Berlin.",
+      "subregion": "Western Europe"
+    },
+    {
+      "id": "w-ch",
+      "prompt": "Switzerland",
+      "answer": "Bern",
+      "note": "Officially the 'federal city', not the capital. Legend says founder Berthold V of Zähringen named it after the first animal he hunted: a bear.",
+      "subregion": "Western Europe"
+    },
+    {
+      "id": "w-li",
+      "prompt": "Liechtenstein",
+      "answer": "Vaduz",
+      "note": "A small town on the Rhine overlooked by Vaduz Castle, home of the reigning prince; neighbouring Schaan is actually larger.",
+      "subregion": "Western Europe"
+    },
+    {
+      "id": "w-at",
+      "prompt": "Austria",
+      "answer": "Vienna",
+      "note": "Began as the Roman camp Vindobona on the Danube, and later served for centuries as the seat of the Habsburg emperors.",
+      "subregion": "Western Europe"
+    },
+    {
+      "id": "w-gb",
+      "prompt": "United Kingdom",
+      "answer": "London",
+      "note": "Founded by the Romans as Londinium on the Thames; its ancient core, the City of London, still keeps its medieval boundaries.",
+      "subregion": "Northern Europe"
+    },
+    {
+      "id": "w-ie",
+      "prompt": "Ireland",
+      "answer": "Dublin",
+      "note": "From Irish Dubh Linn, 'black pool', a dark tidal pool where the River Poddle met the Liffey, behind today's Dublin Castle.",
+      "subregion": "Northern Europe"
+    },
+    {
+      "id": "w-is",
+      "prompt": "Iceland",
+      "answer": "Reykjavík",
+      "note": "Old Norse for 'smoky bay', said to be named for steam rising from hot springs; it is the northernmost capital of a sovereign state.",
+      "subregion": "Northern Europe"
+    },
+    {
+      "id": "w-dk",
+      "prompt": "Denmark",
+      "answer": "Copenhagen",
+      "note": "Its Danish name, København, means 'merchants' harbour'. Bishop Absalon built a fortress on Slotsholmen in 1167, where Christiansborg Palace now stands.",
+      "subregion": "Northern Europe"
+    },
+    {
+      "id": "w-no",
+      "prompt": "Norway",
+      "answer": "Oslo",
+      "note": "Rebuilt after a fire in 1624 and named Christiania after King Christian IV; the city took back the old name Oslo in 1925.",
+      "subregion": "Northern Europe"
+    },
+    {
+      "id": "w-se",
+      "prompt": "Sweden",
+      "answer": "Stockholm",
+      "note": "Spread across fourteen islands where Lake Mälaren flows into the Baltic Sea; Gamla Stan, the old town, keeps its medieval street plan.",
+      "subregion": "Northern Europe"
+    },
+    {
+      "id": "w-fi",
+      "prompt": "Finland",
+      "answer": "Helsinki",
+      "note": "Founded by Gustav I of Sweden in 1550 to rival Tallinn; Russia's Alexander I made it the capital in 1812, replacing Turku.",
+      "subregion": "Northern Europe"
+    },
+    {
+      "id": "w-ee",
+      "prompt": "Estonia",
+      "answer": "Tallinn",
+      "note": "Long known as Reval, the name is usually traced to Taani-linna, 'Danish castle'. Its medieval Hanseatic old town is a UNESCO World Heritage Site.",
+      "subregion": "Northern Europe"
+    },
+    {
+      "id": "w-lv",
+      "prompt": "Latvia",
+      "answer": "Riga",
+      "note": "Founded in 1201 by the crusading Bishop Albert and later a Hanseatic city; its historic centre is famed for Art Nouveau architecture.",
+      "subregion": "Northern Europe"
+    },
+    {
+      "id": "w-lt",
+      "prompt": "Lithuania",
+      "answer": "Vilnius",
+      "note": "Legend says Grand Duke Gediminas dreamed of an iron wolf howling on a hill, a sign to build his capital there.",
+      "subregion": "Northern Europe"
+    },
+    {
+      "id": "w-pt",
+      "prompt": "Portugal",
+      "answer": "Lisbon",
+      "note": "Largely destroyed by the earthquake of 1 November 1755 and rebuilt; the old Alfama district, whose name comes from Arabic, survived.",
+      "subregion": "Southern Europe"
+    },
+    {
+      "id": "w-es",
+      "prompt": "Spain",
+      "answer": "Madrid",
+      "note": "Began as a fortress built by the Umayyad emir Muhammad I; Philip II settled his royal court there permanently in 1561.",
+      "subregion": "Southern Europe"
+    },
+    {
+      "id": "w-ad",
+      "prompt": "Andorra",
+      "answer": "Andorra la Vella",
+      "note": "Set high in the eastern Pyrenees between France and Spain at 1,023 metres; it is the highest capital city in Europe.",
+      "subregion": "Southern Europe"
+    },
+    {
+      "id": "w-it",
+      "prompt": "Italy",
+      "answer": "Rome",
+      "note": "The 'Eternal City', founded according to legend in 753 BC; it surrounds Vatican City, a whole country inside a city.",
+      "subregion": "Southern Europe"
+    },
+    {
+      "id": "w-va",
+      "prompt": "Vatican City",
+      "answer": "Vatican City",
+      "note": "A city-state ruled by the pope, entirely enclosed by Rome; it was created by the Lateran Treaty with Italy in 1929.",
+      "subregion": "Southern Europe"
+    },
+    {
+      "id": "w-sm",
+      "prompt": "San Marino",
+      "answer": "San Marino",
+      "note": "Officially the City of San Marino, perched on the slopes of Monte Titano; tradition says Saint Marinus founded it in 301.",
+      "subregion": "Southern Europe"
+    },
+    {
+      "id": "w-mt",
+      "prompt": "Malta",
+      "answer": "Valletta",
+      "note": "Built by the Knights Hospitaller after the Great Siege of 1565 and named after their victorious Grand Master, Jean de Valette.",
+      "subregion": "Southern Europe"
+    },
+    {
+      "id": "w-si",
+      "prompt": "Slovenia",
+      "answer": "Ljubljana",
+      "note": "Its emblem is the Ljubljana Dragon, which sits atop the castle tower on the city's coat of arms and guards the Dragon Bridge.",
+      "subregion": "Southern Europe"
+    },
+    {
+      "id": "w-hr",
+      "prompt": "Croatia",
+      "answer": "Zagreb",
+      "note": "Grew from two rival hilltop towns: Kaptol, home of the clergy and cathedral, and Gradec, home of merchants; they were united in 1851.",
+      "subregion": "Southern Europe"
+    },
+    {
+      "id": "w-ba",
+      "prompt": "Bosnia and Herzegovina",
+      "answer": "Sarajevo",
+      "note": "Named from the Turkish saray, 'palace'. Archduke Franz Ferdinand was assassinated there in 1914, and it hosted the 1984 Winter Olympics.",
+      "subregion": "Southern Europe"
+    },
+    {
+      "id": "w-rs",
+      "prompt": "Serbia",
+      "answer": "Belgrade",
+      "note": "Its name means 'White City'. It stands on the ridge where the Sava flows into the Danube.",
+      "subregion": "Southern Europe"
+    },
+    {
+      "id": "w-me",
+      "prompt": "Montenegro",
+      "answer": "Podgorica",
+      "note": "The name means 'under the hill', after the small hill Gorica. It was called Titograd from 1946 until 1992.",
+      "subregion": "Southern Europe"
+    },
+    {
+      "id": "w-al",
+      "prompt": "Albania",
+      "answer": "Tirana",
+      "note": "Founded in 1614 by the Ottoman nobleman Sulejman Pasha around a mosque and bazaar; it was named Albania's capital in 1920.",
+      "subregion": "Southern Europe"
+    },
+    {
+      "id": "w-mk",
+      "prompt": "North Macedonia",
+      "answer": "Skopje",
+      "note": "An earthquake in 1963 destroyed about 80 percent of the city, which was then rebuilt with help from around the world.",
+      "subregion": "Southern Europe"
+    },
+    {
+      "id": "w-gr",
+      "prompt": "Greece",
+      "answer": "Athens",
+      "note": "Myth says Athena won the city by giving it the first olive tree, beating Poseidon; scholars think the goddess was named after the city.",
+      "subregion": "Southern Europe"
+    },
+    {
+      "id": "w-bg",
+      "prompt": "Bulgaria",
+      "answer": "Sofia",
+      "note": "Known in antiquity as Serdica; its modern name comes from the Saint Sofia Church, from the Greek sophia, 'wisdom'.",
+      "subregion": "Eastern Europe"
+    },
+    {
+      "id": "w-ro",
+      "prompt": "Romania",
+      "answer": "Bucharest",
+      "note": "Tradition credits its founding to a man named Bucur, variously a prince, shepherd or fisherman; the Romanian word bucurie means 'joy'.",
+      "subregion": "Eastern Europe"
+    },
+    {
+      "id": "w-md",
+      "prompt": "Moldova",
+      "answer": "Chișinău",
+      "note": "The name may come from archaic Romanian chișla nouă, 'new spring', because the town grew up around a small spring.",
+      "subregion": "Eastern Europe"
+    },
+    {
+      "id": "w-ua",
+      "prompt": "Ukraine",
+      "answer": "Kyiv",
+      "note": "Straddles the Dnieper; the city's name is traditionally said to come from Kyi, one of its four legendary founders.",
+      "subregion": "Eastern Europe"
+    },
+    {
+      "id": "w-hu",
+      "prompt": "Hungary",
+      "answer": "Budapest",
+      "note": "Created in 1873 by uniting Buda and Óbuda on the west bank of the Danube with Pest on the east bank.",
+      "subregion": "Eastern Europe"
+    },
+    {
+      "id": "w-sk",
+      "prompt": "Slovakia",
+      "answer": "Bratislava",
+      "note": "Formerly Pressburg, coronation city of Hungarian kings; it is the only national capital that borders two other sovereign states, Austria and Hungary.",
+      "subregion": "Eastern Europe"
+    },
+    {
+      "id": "w-cz",
+      "prompt": "Czech Republic",
+      "answer": "Prague",
+      "note": "Nicknamed the 'City of a Hundred Spires' after a count by the mathematician Bernard Bolzano; Charles Bridge crosses the Vltava below Prague Castle.",
+      "subregion": "Eastern Europe"
+    },
+    {
+      "id": "w-pl",
+      "prompt": "Poland",
+      "answer": "Warsaw",
+      "note": "Sigismund III moved the royal court there from Kraków in 1596. About 85 percent of the city was destroyed in World War II, then rebuilt.",
+      "subregion": "Eastern Europe"
+    },
+    {
+      "id": "w-by",
+      "prompt": "Belarus",
+      "answer": "Minsk",
+      "note": "First mentioned in 1067 in connection with the Battle on the River Nemiga; it stands on the Svislach river.",
+      "subregion": "Eastern Europe"
+    },
+    {
+      "id": "w-ru",
+      "prompt": "Russia",
+      "answer": "Moscow",
+      "note": "First documented in 1147. Peter the Great moved the capital to Saint Petersburg in 1712; it returned to Moscow in 1918.",
+      "subregion": "Eastern Europe"
+    },
+    {
+      "id": "w-ca",
+      "prompt": "Canada",
+      "answer": "Ottawa",
+      "note": "Chosen by Queen Victoria in 1857 as a compromise between rival cities; the name comes from the Ottawa River, from Algonquin adawe, 'to trade'.",
+      "subregion": "Northern America"
+    },
+    {
+      "id": "w-us",
+      "prompt": "United States",
+      "answer": "Washington, D.C.",
+      "note": "Named after George Washington; the district was created on the Potomac by the Residence Act of 1790, and Congress moved there from Philadelphia in 1800.",
+      "subregion": "Northern America"
+    },
+    {
+      "id": "w-mx",
+      "prompt": "Mexico",
+      "answer": "Mexico City",
+      "note": "Built on the ruins of Tenochtitlan, the Mexica city founded around 1325 on islands in Lake Texcoco; it is still slowly sinking.",
+      "subregion": "Central America"
+    },
+    {
+      "id": "w-bz",
+      "prompt": "Belize",
+      "answer": "Belmopan",
+      "note": "Purpose-built inland after Hurricane Hattie devastated Belize City in 1961; the name joins the Belize and Mopan rivers.",
+      "subregion": "Central America"
+    },
+    {
+      "id": "w-gt",
+      "prompt": "Guatemala",
+      "answer": "Guatemala City",
+      "note": "Founded after the 1773 Santa Marta earthquakes ruined the old capital, now called Antigua Guatemala; its formal name means 'New Guatemala'.",
+      "subregion": "Central America"
+    },
+    {
+      "id": "w-sv",
+      "prompt": "El Salvador",
+      "answer": "San Salvador",
+      "note": "'Holy Saviour', named by Spanish conquistadors in 1525; it sits in a valley ringed by volcanoes and is prone to earthquakes.",
+      "subregion": "Central America"
+    },
+    {
+      "id": "w-hn",
+      "prompt": "Honduras",
+      "answer": "Tegucigalpa",
+      "note": "Became the capital in 1880, replacing Comayagua; the constitution makes it and its twin city Comayagüela a single Central District.",
+      "subregion": "Central America"
+    },
+    {
+      "id": "w-ni",
+      "prompt": "Nicaragua",
+      "answer": "Managua",
+      "note": "Lies on the shore of Lake Managua; the name may come from Nahuatl for 'adjacent to the water'. Earthquakes in 1931 and 1972 devastated it.",
+      "subregion": "Central America"
+    },
+    {
+      "id": "w-cr",
+      "prompt": "Costa Rica",
+      "answer": "San José",
+      "note": "Named after Saint Joseph, the parish patron; it became the capital in 1823, taking over from the colonial capital Cartago.",
+      "subregion": "Central America"
+    },
+    {
+      "id": "w-pa",
+      "prompt": "Panama",
+      "answer": "Panama City",
+      "note": "Founded in 1519 by Pedro Arias Dávila; after the privateer Henry Morgan burned it in 1671, it was rebuilt on a new site.",
+      "subregion": "Central America"
+    },
+    {
+      "id": "w-co",
+      "prompt": "Colombia",
+      "answer": "Bogotá",
+      "note": "Founded in 1538 by Gonzalo Jiménez de Quesada on the Andean plateau of the Muisca; the name comes from the Muisca settlement Bacatá.",
+      "subregion": "South America"
+    },
+    {
+      "id": "w-ec",
+      "prompt": "Ecuador",
+      "answer": "Quito",
+      "note": "The capital city closest to the Equator; in 1978 its historic centre and Kraków's became UNESCO's first World Heritage cultural sites.",
+      "subregion": "South America"
+    },
+    {
+      "id": "w-pe",
+      "prompt": "Peru",
+      "answer": "Lima",
+      "note": "Founded by Francisco Pizarro in 1535 as the City of Kings, after the Epiphany; the name Lima comes from Limaq, a famous Quechua oracle.",
+      "subregion": "South America"
+    },
+    {
+      "id": "w-cl",
+      "prompt": "Chile",
+      "answer": "Santiago",
+      "note": "Founded by the conquistador Pedro de Valdivia in 1541 on the Mapocho River, with the snowy Andes rising behind it.",
+      "subregion": "South America"
+    },
+    {
+      "id": "w-bo",
+      "prompt": "Bolivia",
+      "answer": "Sucre · La Paz",
+      "note": "Sucre is the constitutional capital and seat of the judiciary, named after independence leader Antonio José de Sucre; La Paz is the seat of government.",
+      "subregion": "South America"
+    },
+    {
+      "id": "w-py",
+      "prompt": "Paraguay",
+      "answer": "Asunción",
+      "note": "A fort founded on 15 August 1537, the feast of the Assumption; expeditions from it founded other cities, earning the nickname 'Mother of Cities'.",
+      "subregion": "South America"
+    },
+    {
+      "id": "w-ar",
+      "prompt": "Argentina",
+      "answer": "Buenos Aires",
+      "note": "'Fair winds': Pedro de Mendoza named it Holy Mary of the Fair Winds, after a Virgin that Spanish sailors invoked for safe voyages.",
+      "subregion": "South America"
+    },
+    {
+      "id": "w-uy",
+      "prompt": "Uruguay",
+      "answer": "Montevideo",
+      "note": "A Spanish fortified town of the 1720s on the Río de la Plata; it hosted every match of the first World Cup in 1930.",
+      "subregion": "South America"
+    },
+    {
+      "id": "w-br",
+      "prompt": "Brazil",
+      "answer": "Brasília",
+      "note": "Planned city inaugurated in 1960 to replace Rio de Janeiro; Lúcio Costa laid it out like an aeroplane, with buildings by Oscar Niemeyer.",
+      "subregion": "South America"
+    },
+    {
+      "id": "w-sr",
+      "prompt": "Suriname",
+      "answer": "Paramaribo",
+      "note": "Named after the Paramaribo people of the Suriname River's mouth; its wooden Dutch colonial inner city is a UNESCO World Heritage Site.",
+      "subregion": "South America"
+    },
+    {
+      "id": "w-gy",
+      "prompt": "Guyana",
+      "answer": "Georgetown",
+      "note": "Renamed in 1812 in honour of King George III; it lies below high tide level, protected by a seawall and drained by Dutch-style canals.",
+      "subregion": "South America"
+    },
+    {
+      "id": "w-ve",
+      "prompt": "Venezuela",
+      "answer": "Caracas",
+      "note": "Founded in 1567 by Diego de Losada as Santiago de León de Caracas; the steep Ávila range separates its valley from the Caribbean.",
+      "subregion": "South America"
+    },
+    {
+      "id": "w-tt",
+      "prompt": "Trinidad and Tobago",
+      "answer": "Port of Spain",
+      "note": "Founded by the Spanish as Puerto de España on the Gulf of Paria; it replaced inland San José de Oruña as capital in 1757.",
+      "subregion": "Caribbean"
+    },
+    {
+      "id": "w-gd",
+      "prompt": "Grenada",
+      "answer": "St. George's",
+      "note": "Wrapped around a horseshoe-shaped harbour, with the hillside of an old volcanic crater rising behind the town.",
+      "subregion": "Caribbean"
+    },
+    {
+      "id": "w-vc",
+      "prompt": "Saint Vincent and the Grenadines",
+      "answer": "Kingstown",
+      "note": "Its botanical garden, begun in 1765, is one of the oldest in the Western Hemisphere; Captain Bligh of the Bounty brought breadfruit there.",
+      "subregion": "Caribbean"
+    },
+    {
+      "id": "w-bb",
+      "prompt": "Barbados",
+      "answer": "Bridgetown",
+      "note": "English settlers found a bridge built by Indigenous people and called the area Indian Bridge; Historic Bridgetown and its Garrison is a UNESCO site.",
+      "subregion": "Caribbean"
+    },
+    {
+      "id": "w-lc",
+      "prompt": "Saint Lucia",
+      "answer": "Castries",
+      "note": "Named after the Marquis de Castries, a French naval minister; it has been rebuilt many times after great fires, most notably in 1948.",
+      "subregion": "Caribbean"
+    },
+    {
+      "id": "w-dm",
+      "prompt": "Dominica",
+      "answer": "Roseau",
+      "note": "French settlers named it after the river reeds, roseaux, that grew thickly along the banks of the Roseau River.",
+      "subregion": "Caribbean"
+    },
+    {
+      "id": "w-ag",
+      "prompt": "Antigua and Barbuda",
+      "answer": "St. John's",
+      "note": "Laid out on St. John's Harbour after a French invasion in 1666; it was the seat of government of the British Leeward Islands until 1959.",
+      "subregion": "Caribbean"
+    },
+    {
+      "id": "w-kn",
+      "prompt": "Saint Kitts and Nevis",
+      "answer": "Basseterre",
+      "note": "French for 'low land'; one of the oldest towns in the Eastern Caribbean, its central roundabout, the Circus, was modelled on Piccadilly Circus.",
+      "subregion": "Caribbean"
+    },
+    {
+      "id": "w-do",
+      "prompt": "Dominican Republic",
+      "answer": "Santo Domingo",
+      "note": "Founded in the 1490s by Bartholomew Columbus, it is the oldest continuously inhabited European settlement in the Americas.",
+      "subregion": "Caribbean"
+    },
+    {
+      "id": "w-ht",
+      "prompt": "Haiti",
+      "answer": "Port-au-Prince",
+      "note": "'Prince's Port': one theory says it was named after Le Prince, a French ship that arrived in 1706. A massive earthquake struck it in 2010.",
+      "subregion": "Caribbean"
+    },
+    {
+      "id": "w-jm",
+      "prompt": "Jamaica",
+      "answer": "Kingston",
+      "note": "Founded in 1692 to house survivors of the earthquake that destroyed the pirate haven of Port Royal across the harbour.",
+      "subregion": "Caribbean"
+    },
+    {
+      "id": "w-cu",
+      "prompt": "Cuba",
+      "answer": "Havana",
+      "note": "Founded by the Spanish in 1519, its strategic harbour made it Cuba's capital by 1552; Old Havana is a UNESCO World Heritage Site.",
+      "subregion": "Caribbean"
+    },
+    {
+      "id": "w-bs",
+      "prompt": "The Bahamas",
+      "answer": "Nassau",
+      "note": "Named in honour of William III of England, Prince of Orange-Nassau; on New Providence island, it was once a notorious pirate stronghold.",
+      "subregion": "Caribbean"
+    },
+    {
+      "id": "w-au",
+      "prompt": "Australia",
+      "answer": "Canberra",
+      "note": "A planned capital created as a compromise between rivals Sydney and Melbourne, designed by American architects Walter Burley Griffin and Marion Mahony Griffin.",
+      "subregion": "Australia and New Zealand"
+    },
+    {
+      "id": "w-nz",
+      "prompt": "New Zealand",
+      "answer": "Wellington",
+      "note": "Named after the Duke of Wellington, victor of Waterloo; capital since 1865, it is the southernmost capital of a sovereign state.",
+      "subregion": "Australia and New Zealand"
+    },
+    {
+      "id": "w-pg",
+      "prompt": "Papua New Guinea",
+      "answer": "Port Moresby",
+      "note": "Captain John Moresby charted the harbour in 1873 and named it after his father, Admiral Fairfax Moresby; Motu and Koitabu people lived there long before.",
+      "subregion": "Melanesia"
+    },
+    {
+      "id": "w-sb",
+      "prompt": "Solomon Islands",
+      "answer": "Honiara",
+      "note": "On Guadalcanal, near Henderson Field, fought over in 1942; the infrastructure the Americans built persuaded Britain to move the capital there in 1952.",
+      "subregion": "Melanesia"
+    },
+    {
+      "id": "w-vu",
+      "prompt": "Vanuatu",
+      "answer": "Port Vila",
+      "note": "On the island of Efate; the name Vila comes from Efil, the local South Efate name for the area, and it was a wartime airbase.",
+      "subregion": "Melanesia"
+    },
+    {
+      "id": "w-fj",
+      "prompt": "Fiji",
+      "answer": "Suva",
+      "note": "Became the capital in 1877, replacing Levuka, which was squeezed between a steep mountain and the sea with no room to grow.",
+      "subregion": "Melanesia"
+    },
+    {
+      "id": "w-pw",
+      "prompt": "Palau",
+      "answer": "Ngerulmud",
+      "note": "A purpose-built seat of government on Babeldaob that replaced Koror in 2006; the name means 'place of fermented angelfish', once offered to the gods.",
+      "subregion": "Micronesia"
+    },
+    {
+      "id": "w-fm",
+      "prompt": "Micronesia",
+      "answer": "Palikir",
+      "note": "A purpose-built capital on the volcanic island of Pohnpei, declared in 1989; it replaced the nearby coastal town of Kolonia.",
+      "subregion": "Micronesia"
+    },
+    {
+      "id": "w-mh",
+      "prompt": "Marshall Islands",
+      "answer": "Majuro",
+      "note": "Both a coral atoll of over 60 islands and the capital; its main centre is Delap-Uliga-Djarrit, three islets joined together.",
+      "subregion": "Micronesia"
+    },
+    {
+      "id": "w-nr",
+      "prompt": "Nauru",
+      "answer": "Yaren (de facto)",
+      "note": "Nauru has no official capital and no cities; government offices and parliament sit in Yaren District, once called Makwa after an underground lake.",
+      "subregion": "Micronesia"
+    },
+    {
+      "id": "w-ki",
+      "prompt": "Kiribati",
+      "answer": "South Tarawa",
+      "note": "A string of islets on Tarawa atoll joined by causeways; Betio, at its western end, saw the bloody Battle of Tarawa in 1943.",
+      "subregion": "Micronesia"
+    },
+    {
+      "id": "w-tv",
+      "prompt": "Tuvalu",
+      "answer": "Funafuti",
+      "note": "An atoll of many islets around a lagoon; Americans built its airfield during World War II, and the main islet Fongafale holds the government centre.",
+      "subregion": "Polynesia"
+    },
+    {
+      "id": "w-ws",
+      "prompt": "Samoa",
+      "answer": "Apia",
+      "note": "Robert Louis Stevenson spent his last years here and is buried on Mount Vaea; in 1889 a typhoon wrecked rival warships in its harbour.",
+      "subregion": "Polynesia"
+    },
+    {
+      "id": "w-to",
+      "prompt": "Tonga",
+      "answer": "Nukuʻalofa",
+      "note": "On the north coast of Tongatapu, home to the Royal Palace and parliament; the name is commonly translated as 'abode of love'.",
+      "subregion": "Polynesia"
+    },
+    {
+      "id": "w-ma",
+      "prompt": "Morocco",
+      "answer": "Rabat",
+      "note": "Its name comes from ribat, a fortified base; the Almohads founded it in the 12th century as a naval stronghold.",
+      "subregion": "Northern Africa"
+    },
+    {
+      "id": "w-dz",
+      "prompt": "Algeria",
+      "answer": "Algiers",
+      "note": "From Arabic al-Jazāʾir, 'the islands', after islets off its harbour; the whole country, Algeria, was later named after the city.",
+      "subregion": "Northern Africa"
+    },
+    {
+      "id": "w-tn",
+      "prompt": "Tunisia",
+      "answer": "Tunis",
+      "note": "Its old medina is a UNESCO World Heritage Site, and the site of ancient Carthage now lies among its seaside suburbs.",
+      "subregion": "Northern Africa"
+    },
+    {
+      "id": "w-ly",
+      "prompt": "Libya",
+      "answer": "Tripoli",
+      "note": "From Greek Tripolis, 'three cities': Oea, Sabratha and Leptis Magna. Only Oea survived antiquity, growing into today's Tripoli.",
+      "subregion": "Northern Africa"
+    },
+    {
+      "id": "w-eg",
+      "prompt": "Egypt",
+      "answer": "Cairo",
+      "note": "From al-Qāhira, 'the Vanquisher', founded by the Fatimids in 969. Since 2024 the government has sat in the New Capital, east of Cairo.",
+      "subregion": "Northern Africa"
+    },
+    {
+      "id": "w-sd",
+      "prompt": "Sudan",
+      "answer": "Khartoum",
+      "note": "Stands where the White Nile and Blue Nile meet; the name may come from Arabic khurṭūm, 'trunk', for the narrow strip between them.",
+      "subregion": "Northern Africa"
+    },
+    {
+      "id": "w-cv",
+      "prompt": "Cape Verde",
+      "answer": "Praia",
+      "note": "Portuguese for 'beach'. On the south coast of Santiago island, it became the capital in 1770, superseding Cidade Velha.",
+      "subregion": "Western Africa"
+    },
+    {
+      "id": "w-mr",
+      "prompt": "Mauritania",
+      "answer": "Nouakchott",
+      "note": "A small fishing town until 1958, it was built as the capital for independence in 1960; its name may mean 'place of the winds'.",
+      "subregion": "Western Africa"
+    },
+    {
+      "id": "w-sn",
+      "prompt": "Senegal",
+      "answer": "Dakar",
+      "note": "Sits on the Cap-Vert peninsula, the westernmost point of mainland Africa, and replaced Saint-Louis as capital of French West Africa in 1902.",
+      "subregion": "Western Africa"
+    },
+    {
+      "id": "w-gm",
+      "prompt": "The Gambia",
+      "answer": "Banjul",
+      "note": "Built on St Mary's Island, where the Gambia River meets the Atlantic, it was called Bathurst until 1973.",
+      "subregion": "Western Africa"
+    },
+    {
+      "id": "w-gw",
+      "prompt": "Guinea-Bissau",
+      "answer": "Bissau",
+      "note": "Founded in 1687 as a Portuguese trading post on the Geba River estuary; it replaced Bolama as the colonial capital in 1941.",
+      "subregion": "Western Africa"
+    },
+    {
+      "id": "w-gn",
+      "prompt": "Guinea",
+      "answer": "Conakry",
+      "note": "Began on little Tombo Island, one of the Îles de Los, then spread along the Kaloum Peninsula reaching into the Atlantic.",
+      "subregion": "Western Africa"
+    },
+    {
+      "id": "w-sl",
+      "prompt": "Sierra Leone",
+      "answer": "Freetown",
+      "note": "Founded in 1792 by over a thousand formerly enslaved African Americans arriving from Nova Scotia; their first service was held under a great Cotton Tree.",
+      "subregion": "Western Africa"
+    },
+    {
+      "id": "w-lr",
+      "prompt": "Liberia",
+      "answer": "Monrovia",
+      "note": "Named after US President James Monroe; with Washington, D.C., it is one of only two capitals named after an American president.",
+      "subregion": "Western Africa"
+    },
+    {
+      "id": "w-ci",
+      "prompt": "Ivory Coast",
+      "answer": "Yamoussoukro",
+      "note": "President Houphouët-Boigny's birthplace, made capital in 1983; Abidjan, the former capital, remains the official economic capital and largest city.",
+      "subregion": "Western Africa"
+    },
+    {
+      "id": "w-ml",
+      "prompt": "Mali",
+      "answer": "Bamako",
+      "note": "Its name means 'crocodile river' in Bambara; the city lies on the Niger River near rapids dividing the upper and middle Niger.",
+      "subregion": "Western Africa"
+    },
+    {
+      "id": "w-bf",
+      "prompt": "Burkina Faso",
+      "answer": "Ouagadougou",
+      "note": "Long the seat of the Mossi rulers, the Moro Naba; today it hosts FESPACO, Africa's largest film and television festival.",
+      "subregion": "Western Africa"
+    },
+    {
+      "id": "w-gh",
+      "prompt": "Ghana",
+      "answer": "Accra",
+      "note": "From the Akan word nkran, 'ants', after the anthills around it; it replaced Cape Coast as capital of the Gold Coast in 1877.",
+      "subregion": "Western Africa"
+    },
+    {
+      "id": "w-tg",
+      "prompt": "Togo",
+      "answer": "Lomé",
+      "note": "From Ewe Alomé, 'in the alo trees'. It sits on the Gulf of Guinea against the Ghana border, and became German Togoland's capital in 1897.",
+      "subregion": "Western Africa"
+    },
+    {
+      "id": "w-bj",
+      "prompt": "Benin",
+      "answer": "Porto-Novo",
+      "note": "Portuguese for 'new port'. It is the official capital, where the legislature sits, while nearby Cotonou is the seat of government.",
+      "subregion": "Western Africa"
+    },
+    {
+      "id": "w-ne",
+      "prompt": "Niger",
+      "answer": "Niamey",
+      "note": "On the Niger River; it became capital of the French colony in 1926, replacing Zinder, which lay too close to the Nigerian border.",
+      "subregion": "Western Africa"
+    },
+    {
+      "id": "w-ng",
+      "prompt": "Nigeria",
+      "answer": "Abuja",
+      "note": "A planned city chosen for its central, neutral location; it replaced Lagos as capital in 1991 and sits beside the Aso Rock monolith.",
+      "subregion": "Western Africa"
+    },
+    {
+      "id": "w-td",
+      "prompt": "Chad",
+      "answer": "N'Djamena",
+      "note": "Founded by the French as Fort-Lamy, after officer Amédée-François Lamy; renamed in the 1970s, from Arabic meaning 'place of rest'.",
+      "subregion": "Middle Africa"
+    },
+    {
+      "id": "w-cf",
+      "prompt": "Central African Republic",
+      "answer": "Bangui",
+      "note": "Founded in 1889 as a French outpost on the Ubangi River, whose name refers to the rapids there that ended navigation north from Brazzaville.",
+      "subregion": "Middle Africa"
+    },
+    {
+      "id": "w-cm",
+      "prompt": "Cameroon",
+      "answer": "Yaoundé",
+      "note": "Founded by German explorers in 1887 as a trading post for rubber and ivory; it is the capital, though the port of Douala is larger.",
+      "subregion": "Middle Africa"
+    },
+    {
+      "id": "w-gq",
+      "prompt": "Equatorial Guinea",
+      "answer": "Ciudad de la Paz",
+      "note": "Spanish for 'City of Peace': a planned city on the mainland, formerly Oyala; a January 2026 decree moved the capital here from Malabo on Bioko.",
+      "subregion": "Middle Africa"
+    },
+    {
+      "id": "w-st",
+      "prompt": "São Tomé and Príncipe",
+      "answer": "São Tomé",
+      "note": "Portuguese for 'Saint Thomas'. Its Fort São Sebastião, built in 1566, now houses the national museum.",
+      "subregion": "Middle Africa"
+    },
+    {
+      "id": "w-ga",
+      "prompt": "Gabon",
+      "answer": "Libreville",
+      "note": "French for 'free town': founded in 1849 for people freed from the captured slave ship L'Elizia, on the Gabon Estuary just north of the equator.",
+      "subregion": "Middle Africa"
+    },
+    {
+      "id": "w-cg",
+      "prompt": "Republic of the Congo",
+      "answer": "Brazzaville",
+      "note": "Named after explorer Pierre Savorgnan de Brazza; it faces Kinshasa across the Congo River and served as Free France's capital early in World War II.",
+      "subregion": "Middle Africa"
+    },
+    {
+      "id": "w-cd",
+      "prompt": "DR Congo",
+      "answer": "Kinshasa",
+      "note": "Named Léopoldville by Stanley after Belgium's Leopold II; renamed in 1966, after the village of Nshasa, under Mobutu's Zairianisation campaign.",
+      "subregion": "Middle Africa"
+    },
+    {
+      "id": "w-ao",
+      "prompt": "Angola",
+      "answer": "Luanda",
+      "note": "Founded in 1576 by the Portuguese explorer Paulo Dias de Novais as São Paulo da Assunção de Loanda, among Africa's oldest colonial cities.",
+      "subregion": "Middle Africa"
+    },
+    {
+      "id": "w-er",
+      "prompt": "Eritrea",
+      "answer": "Asmara",
+      "note": "Nicknamed Piccola Roma, 'Little Rome', under Italian rule; its Italian modernist architecture became a UNESCO World Heritage Site in 2017.",
+      "subregion": "Eastern Africa"
+    },
+    {
+      "id": "w-dj",
+      "prompt": "Djibouti",
+      "answer": "Djibouti City",
+      "note": "Founded by the French in 1888 on the Gulf of Tadjoura; it grew as the sea terminus of the railway to Addis Ababa.",
+      "subregion": "Eastern Africa"
+    },
+    {
+      "id": "w-et",
+      "prompt": "Ethiopia",
+      "answer": "Addis Ababa",
+      "note": "Amharic for 'new flower'. Founded by Menelik II in 1886 around hot mineral springs, it is the highest capital in Africa.",
+      "subregion": "Eastern Africa"
+    },
+    {
+      "id": "w-so",
+      "prompt": "Somalia",
+      "answer": "Mogadishu",
+      "note": "Known locally as Xamar; a wealthy medieval sultanate based here controlled the Indian Ocean gold trade for centuries.",
+      "subregion": "Eastern Africa"
+    },
+    {
+      "id": "w-ss",
+      "prompt": "South Sudan",
+      "answer": "Juba",
+      "note": "On the White Nile; it became capital at independence in 2011, and a planned move to Ramciel has been announced but not yet carried out.",
+      "subregion": "Eastern Africa"
+    },
+    {
+      "id": "w-ug",
+      "prompt": "Uganda",
+      "answer": "Kampala",
+      "note": "From 'hill of the impala': the hill was a royal hunting ground of the Kabaka of Buganda before the British built a fort on it.",
+      "subregion": "Eastern Africa"
+    },
+    {
+      "id": "w-ke",
+      "prompt": "Kenya",
+      "answer": "Nairobi",
+      "note": "From the Maasai Enkare Nyirobi, 'place of cool waters'; unusually, a national park lies within the city's boundaries.",
+      "subregion": "Eastern Africa"
+    },
+    {
+      "id": "w-rw",
+      "prompt": "Rwanda",
+      "answer": "Kigali",
+      "note": "Named after Mount Kigali, from a word meaning 'broad'; founded in 1907 as a German outpost, it became capital at independence in 1962.",
+      "subregion": "Eastern Africa"
+    },
+    {
+      "id": "w-bi",
+      "prompt": "Burundi",
+      "answer": "Gitega",
+      "note": "The former royal capital became the political capital again in 2019; Bujumbura, on Lake Tanganyika, remains the economic capital.",
+      "subregion": "Eastern Africa"
+    },
+    {
+      "id": "w-tz",
+      "prompt": "Tanzania",
+      "answer": "Dodoma",
+      "note": "Its name means 'it has sunk' in Gogo. Chosen in 1974 for its central location, it officially replaced Dar es Salaam in 1996.",
+      "subregion": "Eastern Africa"
+    },
+    {
+      "id": "w-mw",
+      "prompt": "Malawi",
+      "answer": "Lilongwe",
+      "note": "Named after the Lilongwe River; it replaced Zomba as capital in 1975, a move meant to spur growth in central and northern Malawi.",
+      "subregion": "Eastern Africa"
+    },
+    {
+      "id": "w-zm",
+      "prompt": "Zambia",
+      "answer": "Lusaka",
+      "note": "Began as a railway water stop named after the Lenje chief Lusaaka; it became capital of Northern Rhodesia in 1935, replacing Livingstone.",
+      "subregion": "Eastern Africa"
+    },
+    {
+      "id": "w-zw",
+      "prompt": "Zimbabwe",
+      "answer": "Harare",
+      "note": "Founded in 1890 as Fort Salisbury, after the British prime minister Lord Salisbury; renamed Harare in 1982, two years after independence.",
+      "subregion": "Eastern Africa"
+    },
+    {
+      "id": "w-mz",
+      "prompt": "Mozambique",
+      "answer": "Maputo",
+      "note": "Called Lourenço Marques until 1976, after the Portuguese navigator who explored the bay in 1544.",
+      "subregion": "Eastern Africa"
+    },
+    {
+      "id": "w-km",
+      "prompt": "Comoros",
+      "answer": "Moroni",
+      "note": "Its name means 'at the river' in Shingazidja; it lies on Ngazidja, the largest of the three main islands.",
+      "subregion": "Eastern Africa"
+    },
+    {
+      "id": "w-mg",
+      "prompt": "Madagascar",
+      "answer": "Antananarivo",
+      "note": "Means 'City of the Thousand', honouring the thousand soldiers King Andrianjaka used to capture and guard its hilltop site.",
+      "subregion": "Eastern Africa"
+    },
+    {
+      "id": "w-sc",
+      "prompt": "Seychelles",
+      "answer": "Victoria",
+      "note": "Founded by French settlers as L'Établissement on Mahé; the British renamed it in 1841 after Queen Victoria.",
+      "subregion": "Eastern Africa"
+    },
+    {
+      "id": "w-mu",
+      "prompt": "Mauritius",
+      "answer": "Port Louis",
+      "note": "Named in honour of King Louis XV; under French rule from 1736 it became a key stop for ships sailing round the Cape.",
+      "subregion": "Eastern Africa"
+    },
+    {
+      "id": "w-na",
+      "prompt": "Namibia",
+      "answer": "Windhoek",
+      "note": "Usually read as Afrikaans for 'windy corner', though it may instead honour the Winterhoek Mountains in South Africa.",
+      "subregion": "Southern Africa"
+    },
+    {
+      "id": "w-bw",
+      "prompt": "Botswana",
+      "answer": "Gaborone",
+      "note": "Named after Chief Gaborone of the Tlokwa and built from 1964; the colonial capital, Mafeking, actually lay outside the territory.",
+      "subregion": "Southern Africa"
+    },
+    {
+      "id": "w-za",
+      "prompt": "South Africa",
+      "answer": "Pretoria · Cape Town · Bloemfontein",
+      "note": "Pretoria is the executive capital, Cape Town the legislative and Bloemfontein the judicial: a compromise struck at Union in 1910.",
+      "subregion": "Southern Africa"
+    },
+    {
+      "id": "w-ls",
+      "prompt": "Lesotho",
+      "answer": "Maseru",
+      "note": "Sesotho for 'red sandstones'; founded as a British police camp in 1869 on the Caledon River, right on the South African border.",
+      "subregion": "Southern Africa"
+    },
+    {
+      "id": "w-sz",
+      "prompt": "Eswatini",
+      "answer": "Mbabane · Lobamba",
+      "note": "Mbabane, named after Chief Mbabane Kunene, is the executive capital; nearby Lobamba is the royal and legislative capital, home of the Reed Dance.",
+      "subregion": "Southern Africa"
+    },
+    {
+      "id": "w-tr",
+      "prompt": "Turkey",
+      "answer": "Ankara",
+      "note": "Ancient Ankyra, Greek for 'anchor'. As Angora it lent its name to Angora goats, rabbits and cats; it became capital in 1923.",
+      "subregion": "Western Asia"
+    },
+    {
+      "id": "w-cy",
+      "prompt": "Cyprus",
+      "answer": "Nicosia",
+      "note": "Divided by the Green Line since 1974, it is Lefkosia in Greek and Lefkoşa in Turkish; its Venetian walls form a star with eleven bastions.",
+      "subregion": "Western Asia"
+    },
+    {
+      "id": "w-ge",
+      "prompt": "Georgia",
+      "answer": "Tbilisi",
+      "note": "From tbili, 'warm', after its sulphur springs; legend says King Vakhtang founded it after his falcon and its pheasant prey fell into a hot spring.",
+      "subregion": "Western Asia"
+    },
+    {
+      "id": "w-am",
+      "prompt": "Armenia",
+      "answer": "Yerevan",
+      "note": "Traces its origin to the Urartian fortress of Erebuni, founded in 782 BC; Mount Ararat dominates its skyline.",
+      "subregion": "Western Asia"
+    },
+    {
+      "id": "w-az",
+      "prompt": "Azerbaijan",
+      "answer": "Baku",
+      "note": "On the Caspian shore of the Absheron Peninsula, 28 metres below sea level, making it the lowest-lying national capital in the world.",
+      "subregion": "Western Asia"
+    },
+    {
+      "id": "w-sy",
+      "prompt": "Syria",
+      "answer": "Damascus",
+      "note": "One of the world's oldest continuously inhabited cities; it was capital of the Umayyad Caliphate, which built its Great Mosque in the 700s.",
+      "subregion": "Western Asia"
+    },
+    {
+      "id": "w-lb",
+      "prompt": "Lebanon",
+      "answer": "Beirut",
+      "note": "From the Phoenician word for 'wells'. Roman Berytus had a renowned law school where the jurists Papinian and Ulpian taught.",
+      "subregion": "Western Asia"
+    },
+    {
+      "id": "w-il",
+      "prompt": "Israel",
+      "answer": "Jerusalem",
+      "note": "Israel's proclaimed capital and seat of government, but its status is internationally disputed; most countries keep their embassies in Tel Aviv.",
+      "subregion": "Western Asia"
+    },
+    {
+      "id": "w-ps",
+      "prompt": "Palestine",
+      "answer": "Jerusalem (claimed) · Ramallah (administrative)",
+      "note": "Palestine claims East Jerusalem as its capital; Ramallah, whose name means 'height of God', is the de facto administrative seat.",
+      "subregion": "Western Asia"
+    },
+    {
+      "id": "w-jo",
+      "prompt": "Jordan",
+      "answer": "Amman",
+      "note": "Once Rabbath Ammon, capital of the Ammonites; Ptolemy II renamed it Philadelphia. It was originally built on seven hills.",
+      "subregion": "Western Asia"
+    },
+    {
+      "id": "w-iq",
+      "prompt": "Iraq",
+      "answer": "Baghdad",
+      "note": "Founded in 762 by Caliph al-Mansur as a Round City on the Tigris, officially named Madinat al-Salam, the 'City of Peace'.",
+      "subregion": "Western Asia"
+    },
+    {
+      "id": "w-kw",
+      "prompt": "Kuwait",
+      "answer": "Kuwait City",
+      "note": "Kuwait is a diminutive of Arabic kut, a fortress built near water; the city lies on Kuwait Bay, marked by the Kuwait Towers.",
+      "subregion": "Western Asia"
+    },
+    {
+      "id": "w-sa",
+      "prompt": "Saudi Arabia",
+      "answer": "Riyadh",
+      "note": "Means 'gardens', recalling earlier oasis towns. Ibn Saud's capture of its Masmak fortress in 1902 is a celebrated moment in Saudi history.",
+      "subregion": "Western Asia"
+    },
+    {
+      "id": "w-bh",
+      "prompt": "Bahrain",
+      "answer": "Manama",
+      "note": "Possibly from Arabic for 'place of rest' or 'place of dreams'; the town is first named in a manuscript dating from 1345.",
+      "subregion": "Western Asia"
+    },
+    {
+      "id": "w-qa",
+      "prompt": "Qatar",
+      "answer": "Doha",
+      "note": "From Arabic dohat, 'roundness', for the rounded bays of its coast; it was declared the capital at independence in 1971.",
+      "subregion": "Western Asia"
+    },
+    {
+      "id": "w-ae",
+      "prompt": "United Arab Emirates",
+      "answer": "Abu Dhabi",
+      "note": "Arabic for 'father of the gazelle'. It stands on a T-shaped island; its oldest building, the Qasr al-Hosn fort, dates from 1761.",
+      "subregion": "Western Asia"
+    },
+    {
+      "id": "w-om",
+      "prompt": "Oman",
+      "answer": "Muscat",
+      "note": "Backed by the Hajar Mountains; its Al Jalali and Al Mirani forts are the most prominent buildings left by the Portuguese.",
+      "subregion": "Western Asia"
+    },
+    {
+      "id": "w-ye",
+      "prompt": "Yemen",
+      "answer": "Sanaa",
+      "note": "Possibly 'well-fortified' in Sabaic. Held by the Houthis since 2014, so in 2015 the recognised government declared Aden a temporary capital.",
+      "subregion": "Western Asia"
+    },
+    {
+      "id": "w-kz",
+      "prompt": "Kazakhstan",
+      "answer": "Astana",
+      "note": "Simply means 'capital' in Kazakh; it replaced Almaty in 1997 and was briefly called Nur-Sultan from 2019 to 2022.",
+      "subregion": "Central Asia"
+    },
+    {
+      "id": "w-kg",
+      "prompt": "Kyrgyzstan",
+      "answer": "Bishkek",
+      "note": "Called Frunze from 1926 to 1991, after the Bolshevik Mikhail Frunze; Bishkek supposedly names a paddle used to churn kumis, fermented milk.",
+      "subregion": "Central Asia"
+    },
+    {
+      "id": "w-tj",
+      "prompt": "Tajikistan",
+      "answer": "Dushanbe",
+      "note": "Means 'Monday' in Tajik Persian, after its weekly Monday bazaar; it was named Stalinabad from 1929 to 1961.",
+      "subregion": "Central Asia"
+    },
+    {
+      "id": "w-uz",
+      "prompt": "Uzbekistan",
+      "answer": "Tashkent",
+      "note": "Means 'stone city', from Turkic tash and Persian kent; it was rebuilt as a model Soviet city after the 1966 earthquake.",
+      "subregion": "Central Asia"
+    },
+    {
+      "id": "w-tm",
+      "prompt": "Turkmenistan",
+      "answer": "Ashgabat",
+      "note": "Often glossed as 'city of love'. Rebuilt after the 1948 earthquake, it holds a Guinness record for its density of white marble buildings.",
+      "subregion": "Central Asia"
+    },
+    {
+      "id": "w-ir",
+      "prompt": "Iran",
+      "answer": "Tehran",
+      "note": "Its name is often read as 'bottom of the mountain', fitting its site below the Alborz range; it became capital in 1786 under the Qajars.",
+      "subregion": "Southern Asia"
+    },
+    {
+      "id": "w-af",
+      "prompt": "Afghanistan",
+      "answer": "Kabul",
+      "note": "Lies in a narrow Hindu Kush valley on the Kabul River, about 1,790 metres up; the Mughal emperor Babur chose to be buried here.",
+      "subregion": "Southern Asia"
+    },
+    {
+      "id": "w-pk",
+      "prompt": "Pakistan",
+      "answer": "Islamabad",
+      "note": "Means 'City of Islam'. A planned city of the 1960s at the foot of the Margalla Hills, it replaced Karachi as the capital.",
+      "subregion": "Southern Asia"
+    },
+    {
+      "id": "w-in",
+      "prompt": "India",
+      "answer": "New Delhi",
+      "note": "Announced at the 1911 Delhi Durbar to replace Calcutta as capital, it was planned by Edwin Lutyens and Herbert Baker and inaugurated in 1931.",
+      "subregion": "Southern Asia"
+    },
+    {
+      "id": "w-np",
+      "prompt": "Nepal",
+      "answer": "Kathmandu",
+      "note": "Named after the Kasthamandap, a Sanskrit 'wooden pavilion' said to use no iron nails; its medieval name was Kantipur.",
+      "subregion": "Southern Asia"
+    },
+    {
+      "id": "w-bt",
+      "prompt": "Bhutan",
+      "answer": "Thimphu",
+      "note": "Took over from the ancient capital Punakha in the 1950s; its Tashichho Dzong, 'fortress of the glorious religion', houses the king's throne room.",
+      "subregion": "Southern Asia"
+    },
+    {
+      "id": "w-bd",
+      "prompt": "Bangladesh",
+      "answer": "Dhaka",
+      "note": "Named Jahangirnagar, after the Mughal emperor, when it became the capital of Mughal Bengal in 1610; nicknamed the City of Mosques.",
+      "subregion": "Southern Asia"
+    },
+    {
+      "id": "w-lk",
+      "prompt": "Sri Lanka",
+      "answer": "Sri Jayawardenepura Kotte",
+      "note": "'Resplendent city of growing victory', capital of the medieval Kotte kingdom, has housed Parliament since 1982; neighbouring Colombo is the commercial capital.",
+      "subregion": "Southern Asia"
+    },
+    {
+      "id": "w-mv",
+      "prompt": "Maldives",
+      "answer": "Malé",
+      "note": "An island city of under two square kilometres on the edge of North Malé Atoll, linked to Hulhulé by the Sinamalé Bridge since 2018.",
+      "subregion": "Southern Asia"
+    },
+    {
+      "id": "w-cn",
+      "prompt": "China",
+      "answer": "Beijing",
+      "note": "Means 'northern capital'; China's political centre for most of the past eight centuries, it was renamed Beiping while Nanjing was capital.",
+      "subregion": "Eastern Asia"
+    },
+    {
+      "id": "w-mn",
+      "prompt": "Mongolia",
+      "answer": "Ulaanbaatar",
+      "note": "Means 'Red Hero', adopted in 1924. It began in 1639 as a mobile yurt monastery that moved dozens of times before settling in 1778.",
+      "subregion": "Eastern Asia"
+    },
+    {
+      "id": "w-kp",
+      "prompt": "North Korea",
+      "answer": "Pyongyang",
+      "note": "Means 'flat land'. On the Taedong River, it was poetically called Ryugyong, the 'Capital of Willows'.",
+      "subregion": "Eastern Asia"
+    },
+    {
+      "id": "w-kr",
+      "prompt": "South Korea",
+      "answer": "Seoul",
+      "note": "Seoul is simply a native Korean word for 'capital'; founded as Hanyang for the Joseon dynasty in 1394, it straddles the Han River.",
+      "subregion": "Eastern Asia"
+    },
+    {
+      "id": "w-jp",
+      "prompt": "Japan",
+      "answer": "Tokyo",
+      "note": "Means 'eastern capital'. Formerly Edo, 'estuary', it was renamed in 1868 when Emperor Meiji moved the capital from Kyoto.",
+      "subregion": "Eastern Asia"
+    },
+    {
+      "id": "w-mm",
+      "prompt": "Myanmar",
+      "answer": "Naypyidaw",
+      "note": "Burmese for 'abode of the king'; it replaced Yangon as capital in 2005, and its 20-lane boulevard is largely empty.",
+      "subregion": "South-eastern Asia"
+    },
+    {
+      "id": "w-th",
+      "prompt": "Thailand",
+      "answer": "Bangkok",
+      "note": "Thais call it Krung Thep, 'City of Angels'; its full ceremonial name holds the Guinness record as the world's longest place name.",
+      "subregion": "South-eastern Asia"
+    },
+    {
+      "id": "w-la",
+      "prompt": "Laos",
+      "answer": "Vientiane",
+      "note": "Means 'walled city of sandalwood'. On the Mekong close to the Thai border, it became Lan Xang's capital under King Setthathirath in 1563.",
+      "subregion": "South-eastern Asia"
+    },
+    {
+      "id": "w-kh",
+      "prompt": "Cambodia",
+      "answer": "Phnom Penh",
+      "note": "Means 'Penh's hill', after Lady Penh, who built a hilltop shrine, now Wat Phnom; it sits where the Tonlé Sap meets the Mekong.",
+      "subregion": "South-eastern Asia"
+    },
+    {
+      "id": "w-vn",
+      "prompt": "Vietnam",
+      "answer": "Hanoi",
+      "note": "Means 'inside the rivers', named in 1831; founded in 1010 as Thăng Long, 'ascending dragon', after a dragon seen rising over the Red River.",
+      "subregion": "South-eastern Asia"
+    },
+    {
+      "id": "w-my",
+      "prompt": "Malaysia",
+      "answer": "Kuala Lumpur",
+      "note": "Malay for 'muddy confluence', where the Gombak and Klang rivers meet; the executive and judiciary have moved to Putrajaya.",
+      "subregion": "South-eastern Asia"
+    },
+    {
+      "id": "w-sg",
+      "prompt": "Singapore",
+      "answer": "Singapore",
+      "note": "A city-state; its name comes from Sanskrit Siṃhapura, 'lion city', and Stamford Raffles set up a British trading post there in 1819.",
+      "subregion": "South-eastern Asia"
+    },
+    {
+      "id": "w-bn",
+      "prompt": "Brunei",
+      "answer": "Bandar Seri Begawan",
+      "note": "Formerly Brunei Town, renamed in 1970 after Sultan Omar Ali Saifuddien III, the 'Seri Begawan'; Kampong Ayer is its vast stilt village.",
+      "subregion": "South-eastern Asia"
+    },
+    {
+      "id": "w-id",
+      "prompt": "Indonesia",
+      "answer": "Jakarta",
+      "note": "Batavia under the Dutch. Sinking land and congestion prompted a planned move of the capital to Nusantara on Borneo, now targeted for 2028.",
+      "subregion": "South-eastern Asia"
+    },
+    {
+      "id": "w-tl",
+      "prompt": "East Timor",
+      "answer": "Dili",
+      "note": "On Timor's north coast, it became the Portuguese colonial capital in 1769, replacing Lifau; a 27-metre Cristo Rei statue stands on a nearby headland.",
+      "subregion": "South-eastern Asia"
+    },
+    {
+      "id": "w-ph",
+      "prompt": "Philippines",
+      "answer": "Manila",
+      "note": "From Maynilà, 'where nilad grows', a mangrove shrub; the Spanish built its walled city, Intramuros, from 1571.",
+      "subregion": "South-eastern Asia"
+    }
+  ]
+}
