@@ -774,9 +774,16 @@ document.addEventListener('keydown', ev => {
   }
 });
 
-// The app may sit open overnight; refresh the home view when it comes back.
+// iOS suspends a home screen app rather than closing it, so a reopened app can
+// be days old. After a long pause, reload to pick up any update (never mid-round);
+// after a short one, just refresh the home view in case the day has changed.
+const RELOAD_AFTER = 60 * 60 * 1000; // one hour
+let hiddenAt = 0;
 document.addEventListener('visibilitychange', () => {
-  if (!document.hidden && view.name === 'home') render();
+  if (document.hidden) { hiddenAt = Date.now(); return; }
+  if (view.name === 'round') return;
+  if (hiddenAt && Date.now() - hiddenAt > RELOAD_AFTER) location.reload();
+  else if (view.name === 'home') render();
 });
 
 /* ---------- Start ---------- */

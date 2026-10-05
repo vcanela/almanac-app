@@ -12,7 +12,8 @@ A personal recall trainer for geography and general knowledge, used by Victor on
 No build step, no dependencies. A handful of static files rather than one, because offline use on iPhone needs a manifest, icons and a service worker.
 
 - `index.html`: the whole app (HTML, CSS, JS inline).
-- `sw.js`: service worker. Stale-while-revalidate for same-origin files and Google Fonts, so the app works offline. Updates appear on the second launch after a deploy. Bump `CACHE` only to force a clean cache.
+- `sw.js`: service worker. Network first for the app's own files (4 s timeout, then the stored copy), with `cache: 'no-cache'` to bypass GitHub Pages' 10-minute `max-age`; cache first for Google Fonts. Updates appear on the next launch. Bump `CACHE` only to force a clean cache.
+- iOS suspends home screen apps rather than closing them, so `index.html` reloads itself when brought back after more than an hour (never mid-round).
 - `manifest.webmanifest`, `icons/`: home screen install. Icons are drawn by `tools/make-icons.py` (Pillow).
 - `decks/index.json`: list of deck ids to load. Adding a deck means adding a file and its id here; no app code changes.
 - `decks/<id>.json`: one deck.
