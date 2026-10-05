@@ -203,6 +203,11 @@
   }
   .face[data-action] { cursor: pointer; }
   .face .prompt { font: 500 clamp(2rem, 9vw, 2.8rem)/1.15 var(--serif); margin-top: 4px; overflow-wrap: anywhere; }
+  /* Long prompts and answers (clues, phrases) step down so they read as sentences. */
+  .face .prompt.long { font-size: 1.65rem; line-height: 1.3; }
+  .face .prompt.longer { font-size: 1.35rem; line-height: 1.4; }
+  .face .answer.long { font-size: 1.55rem; line-height: 1.3; }
+  .face .answer.longer { font-size: 1.3rem; line-height: 1.4; }
   .face .context { color: var(--muted); font-size: 0.9rem; margin-top: 8px; }
   .face .again { color: var(--accent); font-size: 0.8rem; font-weight: 600; margin-top: 6px; }
   .face .answer {
@@ -298,15 +303,16 @@ const $app = document.getElementById('app');
 
 /* ---------- Storage ---------- */
 function defaultStore() {
-  return { v: 1, cards: {}, settings: { size: 15, fresh: 5, notes: true, off: {} } };
+  return { v: 1, cards: {}, settings: { size: 15, fresh: 5, notes: true, off: {}, revOff: {} } };
 }
 function normalise(s) {
   const d = defaultStore();
   if (!s || typeof s !== 'object') return d;
+  const set = s.settings || {};
   return {
     v: 1,
     cards: s.cards && typeof s.cards === 'object' ? s.cards : {},
-    settings: { ...d.settings, ...(s.settings || {}), off: { ...(s.settings && s.settings.off) } },
+    settings: { ...d.settings, ...set, off: { ...set.off }, revOff: { ...set.revOff } },
   };
 }
 function loadStore() {
@@ -340,11 +346,33 @@ function status(id) {
   return s.b >= SETTLED_BOX ? 'settled' : 'learning';
 }
 function activeDecks() { return decks.filter(d => !store.settings.off[d.id]); }
+
+/* ---------- Reverse direction ---------- */
+// A reversed card is its own card, with id = forward id + REV and its own schedule.
+const REV = '~r';
+const REVERSE_UNLOCK_BOX = 2; // a reversed card appears once the forward one has been known
+function baseId(id) { return id.endsWith(REV) ? id.slice(0, -REV.length) : id; }
+function plain(s) { return String(s).normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase(); }
+// Pointless when one side gives the other away: Durango, Monaco, Kuwait City, Indianapolis.
+function canReverse(deck, card) {
+  if (!deck.reversible || card.noReverse) return false;
+  const p = plain(card.prompt), a = plain(card.answer);
+  return !a.includes(p) && !p.includes(a);
+}
+function reverseOn(deck) { return deck.reversible && !store.settings.revOff[deck.id]; }
+function reverseCards(deck) { return reverseOn(deck) ? deck.cards.filter(c => canReverse(deck, c)) : []; }
+
 function deckStats(deck) {
-  const st = { settled: 0, learning: 0, total: deck.cards.length };
+  const st = { settled: 0, learning: 0, total: deck.cards.length, rsettled: 0, rseen: 0, rtotal: 0 };
   for (const c of deck.cards) {
     const k = status(c.id);
     if (k !== 'unseen') st[k]++;
+  }
+  for (const c of reverseCards(deck)) {
+    const k = status(c.id + REV);
+    st.rtotal++;
+    if (k !== 'unseen') st.rseen++;
+    if (k === 'settled') st.rsettled++;
   }
   return st;
 }
@@ -362,32 +390,53 @@ function grade(id, g) {
 }
 
 // Which cards the next round would hold: due cards first (most overdue first),
-// then new cards, taken in turn from each active deck in that deck's own order.
+// then new cards, taken in turn from each source (every active deck's forward
+// cards, and its unlocked reversed cards) in that deck's own order.
+// The two directions of one item never share a round, so neither gives the other away.
 function plan() {
   const t = today();
   const { size, fresh } = store.settings;
   const due = [];
-  const unseen = [];
+  const sources = [];
   for (const d of activeDecks()) {
-    const u = [];
+    const fwd = [];
+    const rev = [];
     for (const c of d.cards) {
       const s = store.cards[c.id];
-      if (!s) u.push(c.id);
+      if (!s) fwd.push(c.id);
       else if (s.d <= t) due.push(c.id);
     }
-    unseen.push(u);
+    for (const c of reverseCards(d)) {
+      const s = store.cards[c.id];
+      const r = store.cards[c.id + REV];
+      if (r) { if (r.d <= t) due.push(c.id + REV); }
+      else if (s && s.b >= REVERSE_UNLOCK_BOX) rev.push(c.id + REV);
+    }
+    sources.push(fwd, rev);
   }
+
+  const used = new Set();
+  const take = (id, into) => {
+    if (used.has(baseId(id))) return;
+    used.add(baseId(id));
+    into.push(id);
+  };
+
   shuffle(due).sort((a, b) => store.cards[a].d - store.cards[b].d);
-  const picked = due.slice(0, size);
+  const picked = [];
+  for (const id of due) {
+    if (picked.length >= size) break;
+    take(id, picked);
+  }
 
   const room = Math.min(fresh, size - picked.length);
   const newOnes = [];
   for (let i = 0; newOnes.length < room; i++) {
     let more = false;
-    for (const u of unseen) {
-      if (i < u.length) {
+    for (const src of sources) {
+      if (i < src.length) {
         more = true;
-        if (newOnes.length < room) newOnes.push(u[i]);
+        if (newOnes.length < room) take(src[i], newOnes);
       }
     }
     if (!more) break;
@@ -399,8 +448,9 @@ function nextDueText() {
   const t = today();
   let next = Infinity;
   for (const d of activeDecks()) {
-    for (const c of d.cards) {
-      const s = store.cards[c.id];
+    const ids = [...d.cards.map(c => c.id), ...reverseCards(d).map(c => c.id + REV)];
+    for (const id of ids) {
+      const s = store.cards[id];
       if (s && s.d > t && s.d < next) next = s.d;
     }
   }
@@ -453,6 +503,7 @@ function renderHome() {
           <span class="l" style="width:${pct(st.learning, st.total)}%"></span>
         </div>
         <div class="meta">${st.settled} of ${st.total} settled${st.learning ? ` · ${st.learning} learning` : ''}</div>
+        ${st.rseen ? `<div class="meta">Reverse: ${st.rsettled} of ${st.rtotal} settled</div>` : ''}
       </button>
       <button class="switch" role="switch" aria-checked="${on}" aria-label="Include ${esc(d.title)} in rounds"
         data-action="toggle" data-deck="${esc(d.id)}"></button>
@@ -474,10 +525,26 @@ function startRound() {
   go('round');
 }
 
+// What a card shows, in whichever direction this id asks for.
+function sides(id) {
+  const { card, deck } = cardIndex.get(id);
+  const rev = id.endsWith(REV);
+  return {
+    card,
+    label: rev ? (card.reverseLabel || deck.reverseLabel || '') : (card.label || deck.promptLabel || ''),
+    prompt: rev ? card.answer : card.prompt,
+    answer: rev ? card.prompt : card.answer,
+    context: card.context || card.subregion || deck.context || deck.title,
+  };
+}
+
+function lengthClass(text, long, longer) {
+  return text.length > longer ? 'longer' : text.length > long ? 'long' : '';
+}
+
 function renderRound() {
   const entry = round.queue[round.i];
-  const { card, deck } = cardIndex.get(entry.id);
-  const context = card.subregion || deck.context || deck.title;
+  const { card, label, prompt, answer, context } = sides(entry.id);
   const note = store.settings.notes && card.note ? `<div class="note">${esc(card.note)}</div>` : '';
   const actions = round.revealed
     ? `<button class="grade missed" data-action="grade" data-grade="missed">Missed</button>
@@ -492,11 +559,11 @@ function renderRound() {
       <span class="count">${round.i + 1} / ${round.queue.length}</span>
     </div>
     <div class="face"${round.revealed ? '' : ' data-action="reveal"'}>
-      <div class="label">${esc(deck.promptLabel || '')}</div>
-      <div class="prompt">${esc(card.prompt)}</div>
+      <div class="label">${esc(label)}</div>
+      <div class="prompt ${lengthClass(prompt, 28, 60)}">${esc(prompt)}</div>
       <div class="context">${esc(context)}</div>
       ${entry.tries ? '<div class="again">Second look</div>' : ''}
-      ${round.revealed ? `<div class="answer">${esc(card.answer)}</div>${note}` : ''}
+      ${round.revealed ? `<div class="answer ${lengthClass(answer, 24, 45)}">${esc(answer)}</div>${note}` : ''}
     </div>
     <div class="actions">${actions}</div>
   </div>`;
@@ -520,11 +587,12 @@ function onGrade(g) {
   else render();
 }
 
-function entryHtml(card) {
+function entryHtml(id) {
+  const { card, prompt, answer } = sides(id);
   return `<div class="entry">
-    <div class="p">${esc(card.prompt)}</div>
-    <span class="dot ${status(card.id)}" aria-label="${status(card.id)}"></span>
-    <div class="a">${esc(card.answer)}</div>
+    <div class="p">${esc(prompt)}</div>
+    <span class="dot ${status(id)}" aria-label="${status(id)}"></span>
+    <div class="a">${esc(answer)}</div>
     ${card.note ? `<div class="n">${esc(card.note)}</div>` : ''}
   </div>`;
 }
@@ -533,7 +601,7 @@ function renderSummary() {
   const t = round.tally;
   const p = plan();
   const more = p.due.length + p.fresh.length;
-  const missed = round.missed.map(id => entryHtml(cardIndex.get(id).card)).join('');
+  const missed = round.missed.map(entryHtml).join('');
   return `<h2 class="pagetitle">Round complete</h2>
     <div class="tally">
       <div><b>${t.knew}</b><span>knew it</span></div>
@@ -554,15 +622,24 @@ function renderBrowse() {
   let html = '';
   let group = null;
   for (const c of deck.cards) {
-    if (c.subregion && c.subregion !== group) {
-      group = c.subregion;
+    const g = c.group || c.subregion;
+    if (g && g !== group) {
+      group = g;
       html += `<p class="label group">${esc(group)}</p>`;
     }
-    html += entryHtml(c);
+    html += entryHtml(c.id);
   }
+  const example = deck.reversible && deck.cards.find(c => canReverse(deck, c));
+  const reverse = example ? `<div class="setting row">
+      <div><h3>Also ask in reverse</h3>
+        <p>${esc(example.answer)} → ${esc(example.prompt)}. Each reversed card appears once you have known the forward one${st.rseen ? `; ${st.rsettled} of ${st.rtotal} settled so far` : ''}.</p></div>
+      <button class="switch" role="switch" aria-checked="${reverseOn(deck)}" aria-label="Also ask in reverse"
+        data-action="reverse" data-deck="${esc(deck.id)}"></button>
+    </div>` : '';
   return `<button class="back" data-action="home">‹ Almanac</button>
     <h2 class="pagetitle">${esc(deck.title)}</h2>
     <p class="lede">${esc(deck.about || deck.subtitle || '')}</p>
+    ${reverse}
     <div class="legend">
       <span><i class="dot settled"></i>${st.settled} settled</span>
       <span><i class="dot learning"></i>${st.learning} learning</span>
@@ -665,6 +742,10 @@ $app.addEventListener('click', ev => {
       if (store.settings.off[id]) delete store.settings.off[id];
       else store.settings.off[id] = true;
       saveStore(); render(); break;
+    case 'reverse':
+      if (store.settings.revOff[id]) delete store.settings.revOff[id];
+      else store.settings.revOff[id] = true;
+      saveStore(); render(); break;
     case 'set': store.settings[el.dataset.key] = Number(el.dataset.value); saveStore(); render(); break;
     case 'notes': store.settings.notes = !store.settings.notes; saveStore(); render(); break;
     case 'export': exportProgress(); break;
@@ -709,7 +790,12 @@ async function init() {
   } catch {
     decks = [];
   }
-  for (const d of decks) for (const c of d.cards) cardIndex.set(c.id, { card: c, deck: d });
+  for (const d of decks) {
+    for (const c of d.cards) {
+      cardIndex.set(c.id, { card: c, deck: d });
+      if (canReverse(d, c)) cardIndex.set(c.id + REV, { card: c, deck: d });
+    }
+  }
   if (!decks.length) {
     $app.innerHTML = '<p class="loading">The decks could not be loaded. Check the connection and open Almanac again.</p>';
     return;

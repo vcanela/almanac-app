@@ -5,6 +5,8 @@
   "promptLabel": "Capital of",
   "context": "United States",
   "about": "The capital of each of the 50 US states, grouped by Census region and division so neighbours are learned together. Washington, D.C. is a federal district, not a state, so it is not included.",
+  "reversible": true,
+  "reverseLabel": "Capital of which state",
   "cards": [
     {
       "id": "us-me",

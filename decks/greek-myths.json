@@ -1,0 +1,1013 @@
+{
+  "id": "greek-myths",
+  "title": "Greek myths",
+  "subtitle": "Gods, heroes, monsters and the Odyssey",
+  "promptLabel": "Who is",
+  "reversible": true,
+  "reverseLabel": "Who is",
+  "about": "The gods, heroes, monsters and stories of Greek myth, from the Olympians to the Odyssey. Myths come in many versions; each card follows the one Wikipedia presents as standard. The twelfth Olympian seat is given to Hestia or Dionysus in different lists, so both are here. The labours of Heracles follow Apollodorus; Diodorus Siculus swaps the third and fourth, fifth and sixth, and eleventh and twelfth.",
+  "cards": [
+    {
+      "id": "gm-zeus",
+      "prompt": "King of the gods, god of sky and thunder",
+      "answer": "Zeus",
+      "context": "Olympian",
+      "group": "Olympians and older gods",
+      "note": "Youngest child of Cronus and Rhea; the Cyclopes, whom he set free, gave him his thunderbolt for the war against the Titans."
+    },
+    {
+      "id": "gm-hera",
+      "prompt": "Queen of the gods, goddess of marriage",
+      "answer": "Hera",
+      "context": "Olympian",
+      "group": "Olympians and older gods",
+      "note": "The peacock was one of her sacred birds; Ovid says she set the hundred eyes of her slain watchman Argus in its tail."
+    },
+    {
+      "id": "gm-poseidon",
+      "prompt": "God of the sea, earthquakes and horses",
+      "answer": "Poseidon",
+      "context": "Olympian",
+      "group": "Olympians and older gods",
+      "note": "He lost the contest to be patron of Athens when the city preferred Athena's gift of an olive tree to his salt spring."
+    },
+    {
+      "id": "gm-hades",
+      "prompt": "God of the underworld and the dead",
+      "answer": "Hades",
+      "context": "Son of Cronus",
+      "group": "Olympians and older gods",
+      "note": "In the Iliad he and his brothers Zeus and Poseidon drew lots for realms: Zeus won the sky, Poseidon the sea, Hades the underworld."
+    },
+    {
+      "id": "gm-demeter",
+      "prompt": "Goddess of agriculture and the harvest",
+      "answer": "Demeter",
+      "context": "Olympian",
+      "group": "Olympians and older gods",
+      "note": "Her daughter Persephone ate pomegranate seeds in the underworld, so must spend part of each year there, while Demeter lets nothing grow."
+    },
+    {
+      "id": "gm-hestia",
+      "prompt": "Goddess of the hearth and home",
+      "answer": "Hestia",
+      "context": "Olympian",
+      "group": "Olympians and older gods",
+      "note": "Firstborn of Cronus and Rhea, she received the first offering at every household sacrifice; new colonies carried flame from her public hearth."
+    },
+    {
+      "id": "gm-athena",
+      "prompt": "Goddess of wisdom, crafts and strategy in war",
+      "answer": "Athena",
+      "context": "Olympian",
+      "group": "Olympians and older gods",
+      "note": "Born fully armed from the head of Zeus, who had swallowed her pregnant mother Metis; the Parthenon in Athens was her temple."
+    },
+    {
+      "id": "gm-apollo",
+      "prompt": "God of music, prophecy and healing",
+      "answer": "Apollo",
+      "context": "Olympian",
+      "group": "Olympians and older gods",
+      "note": "His oracle at Delphi spoke through the Pythia; NASA's Apollo programme was named for the image of him driving his chariot across the Sun."
+    },
+    {
+      "id": "gm-artemis",
+      "prompt": "Goddess of the hunt and wild animals",
+      "answer": "Artemis",
+      "context": "Olympian",
+      "group": "Olympians and older gods",
+      "note": "Twin of Apollo; she turned the hunter Actaeon, who had seen her bathing, into a stag that his own hounds tore apart."
+    },
+    {
+      "id": "gm-ares",
+      "prompt": "God of war",
+      "answer": "Ares",
+      "context": "Olympian",
+      "group": "Olympians and older gods",
+      "note": "In the Iliad Zeus calls him most hateful of the gods; Mars's moons Phobos and Deimos are named after his sons, Fear and Terror."
+    },
+    {
+      "id": "gm-aphrodite",
+      "prompt": "Goddess of love and beauty",
+      "answer": "Aphrodite",
+      "context": "Olympian",
+      "group": "Olympians and older gods",
+      "note": "Hesiod says she was born from sea foam, aphros, around the severed genitals of Uranus; Homer makes her a daughter of Zeus and Dione."
+    },
+    {
+      "id": "gm-hephaestus",
+      "prompt": "God of the forge and fire",
+      "answer": "Hephaestus",
+      "context": "Olympian",
+      "group": "Olympians and older gods",
+      "note": "The lame smith of the gods; he caught his wife Aphrodite with Ares in an invisible, unbreakable net and exposed them to the gods."
+    },
+    {
+      "id": "gm-hermes",
+      "prompt": "Messenger of the gods",
+      "answer": "Hermes",
+      "context": "Olympian",
+      "group": "Olympians and older gods",
+      "note": "On the day he was born, says the Homeric Hymn, he stole Apollo's cattle and made the first lyre from a tortoise shell."
+    },
+    {
+      "id": "gm-dionysus",
+      "prompt": "God of wine, revelry and theatre",
+      "answer": "Dionysus",
+      "context": "Olympian",
+      "group": "Olympians and older gods",
+      "note": "Zeus sewed the unborn god into his own thigh after Semele died seeing Zeus in full glory; Athens staged tragedies at his festival."
+    },
+    {
+      "id": "gm-cronus",
+      "prompt": "Titan who swallowed his children",
+      "answer": "Cronus",
+      "context": "Titan",
+      "group": "Olympians and older gods",
+      "note": "He had overthrown his father Uranus with an adamantine sickle; a prophecy warned that one of his own children would overthrow him in turn."
+    },
+    {
+      "id": "gm-rhea",
+      "prompt": "Titan mother who saved Zeus from Cronus",
+      "answer": "Rhea",
+      "context": "Titan",
+      "group": "Olympians and older gods",
+      "note": "She gave Cronus a stone wrapped in swaddling clothes to swallow instead of the baby; Zeus later set the stone up at Delphi."
+    },
+    {
+      "id": "gm-gaia",
+      "prompt": "Primordial goddess of the Earth",
+      "answer": "Gaia",
+      "context": "Primordial deity",
+      "group": "Olympians and older gods",
+      "note": "James Lovelock named his Gaia hypothesis, of Earth as a self-regulating system, after her at the suggestion of his neighbour William Golding."
+    },
+    {
+      "id": "gm-uranus",
+      "prompt": "Primordial god of the sky",
+      "answer": "Uranus",
+      "context": "Primordial deity",
+      "group": "Olympians and older gods",
+      "note": "Castrated by his son Cronus; Uranus is the only one of the eight planets whose English name comes from a figure of Greek mythology."
+    },
+    {
+      "id": "gm-prometheus",
+      "prompt": "Titan who stole fire for humankind",
+      "answer": "Prometheus",
+      "context": "Titan",
+      "group": "Olympians and older gods",
+      "note": "Zeus chained him to a rock where an eagle ate his liver, which grew back each night; Mary Shelley subtitled Frankenstein The Modern Prometheus."
+    },
+    {
+      "id": "gm-atlas",
+      "prompt": "Titan condemned to hold up the sky",
+      "answer": "Atlas",
+      "context": "Titan",
+      "group": "Olympians and older gods",
+      "note": "Mercator called his 1595 book of maps an atlas in his honour, and the Atlantic Ocean takes its name from the Sea of Atlas."
+    },
+    {
+      "id": "gm-pan",
+      "prompt": "Goat-legged god of shepherds and the wild",
+      "answer": "Pan",
+      "context": "Rustic god",
+      "group": "Olympians and older gods",
+      "note": "His angry shout when woken from afternoon naps struck sudden fear into lonely places; the word panic comes from his name."
+    },
+    {
+      "id": "gm-rom-jupiter",
+      "label": "Roman name for",
+      "reverseLabel": "Greek name for",
+      "prompt": "Zeus",
+      "answer": "Jupiter",
+      "context": "Roman counterpart",
+      "group": "Roman counterparts",
+      "note": "By Jove is an oath in his name; jovial first described people born under the planet Jupiter, thought to be jolly and buoyant."
+    },
+    {
+      "id": "gm-rom-juno",
+      "label": "Roman name for",
+      "reverseLabel": "Greek name for",
+      "prompt": "Hera",
+      "answer": "Juno",
+      "context": "Roman counterpart",
+      "group": "Roman counterparts",
+      "note": "The month of June is named after her; NASA's Juno probe orbits Jupiter, because she could see through the veil of clouds he hid behind."
+    },
+    {
+      "id": "gm-rom-neptune",
+      "label": "Roman name for",
+      "reverseLabel": "Greek name for",
+      "prompt": "Poseidon",
+      "answer": "Neptune",
+      "context": "Roman counterpart",
+      "group": "Roman counterparts",
+      "note": "The planet Neptune, discovered in 1846 from mathematical predictions, takes his name; its astronomical symbol represents his trident."
+    },
+    {
+      "id": "gm-rom-pluto",
+      "label": "Roman name for",
+      "reverseLabel": "Greek name for",
+      "prompt": "Hades",
+      "answer": "Pluto",
+      "context": "Roman counterpart",
+      "group": "Roman counterparts",
+      "note": "Pluto is a Latin form of Plouton, a Greek title of Hades; the dwarf planet's name was suggested by eleven-year-old Venetia Burney of Oxford."
+    },
+    {
+      "id": "gm-rom-ceres",
+      "label": "Roman name for",
+      "reverseLabel": "Greek name for",
+      "prompt": "Demeter",
+      "answer": "Ceres",
+      "context": "Roman counterpart",
+      "group": "Roman counterparts",
+      "note": "The word cereal comes from her link with grain; Ceres is also the only confirmed dwarf planet in the asteroid belt."
+    },
+    {
+      "id": "gm-rom-vesta",
+      "label": "Roman name for",
+      "reverseLabel": "Greek name for",
+      "prompt": "Hestia",
+      "answer": "Vesta",
+      "context": "Roman counterpart",
+      "group": "Roman counterparts",
+      "note": "Her priestesses, the Vestal Virgins, tended her sacred fire in the Roman Forum; 4 Vesta is the brightest asteroid visible from Earth."
+    },
+    {
+      "id": "gm-rom-minerva",
+      "label": "Roman name for",
+      "reverseLabel": "Greek name for",
+      "prompt": "Athena",
+      "answer": "Minerva",
+      "context": "Roman counterpart",
+      "group": "Roman counterparts",
+      "note": "Her owl became a symbol of wisdom; Hegel wrote that the owl of Minerva spreads its wings only with the falling of the dusk."
+    },
+    {
+      "id": "gm-rom-diana",
+      "label": "Roman name for",
+      "reverseLabel": "Greek name for",
+      "prompt": "Artemis",
+      "answer": "Diana",
+      "context": "Roman counterpart",
+      "group": "Roman counterparts",
+      "note": "At her grove by Lake Nemi, a slave became her priest by killing his predecessor, a rite at the heart of Frazer's The Golden Bough."
+    },
+    {
+      "id": "gm-rom-mars",
+      "label": "Roman name for",
+      "reverseLabel": "Greek name for",
+      "prompt": "Ares",
+      "answer": "Mars",
+      "context": "Roman counterpart",
+      "group": "Roman counterparts",
+      "note": "March, the first month of the earliest Roman calendar, was named after him; his day survives in French mardi, Tuesday."
+    },
+    {
+      "id": "gm-rom-venus",
+      "label": "Roman name for",
+      "reverseLabel": "Greek name for",
+      "prompt": "Aphrodite",
+      "answer": "Venus",
+      "context": "Roman counterpart",
+      "group": "Roman counterparts",
+      "note": "Friday is a loan translation of the Latin dies Veneris, the day of Venus, via a Germanic goddess; French keeps vendredi."
+    },
+    {
+      "id": "gm-rom-vulcan",
+      "label": "Roman name for",
+      "reverseLabel": "Greek name for",
+      "prompt": "Hephaestus",
+      "answer": "Vulcan",
+      "context": "Roman counterpart",
+      "group": "Roman counterparts",
+      "note": "The word volcano comes from his name by way of Vulcano, a volcanic island among the Aeolian Islands off Sicily."
+    },
+    {
+      "id": "gm-rom-mercury",
+      "label": "Roman name for",
+      "reverseLabel": "Greek name for",
+      "prompt": "Hermes",
+      "answer": "Mercury",
+      "context": "Roman counterpart",
+      "group": "Roman counterparts",
+      "note": "Romans gave the swift messenger's name to the planet that moves fastest across the sky; French mercredi, Wednesday, is his day."
+    },
+    {
+      "id": "gm-rom-bacchus",
+      "label": "Roman name for",
+      "reverseLabel": "Greek name for",
+      "prompt": "Dionysus",
+      "answer": "Bacchus",
+      "context": "Roman counterpart",
+      "group": "Roman counterparts",
+      "note": "Also merged with the Italian god Liber; in 186 BC the alarmed Roman Senate restricted his Bacchanalia rites under threat of death."
+    },
+    {
+      "id": "gm-rom-saturn",
+      "label": "Roman name for",
+      "reverseLabel": "Greek name for",
+      "prompt": "Cronus",
+      "answer": "Saturn",
+      "context": "Roman counterpart",
+      "group": "Roman counterparts",
+      "note": "Saturday is named after him; at his December festival, the Saturnalia, Romans gave gifts and masters served their slaves at table."
+    },
+    {
+      "id": "gm-perseus",
+      "label": "Who",
+      "reverseLabel": "Famous for",
+      "prompt": "Beheaded the Gorgon Medusa",
+      "answer": "Perseus",
+      "context": "Hero",
+      "group": "Heroes and their deeds",
+      "note": "He looked only at her reflection in Athena's polished shield, then carried the head away in a special bag, the kibisis."
+    },
+    {
+      "id": "gm-theseus",
+      "label": "Who",
+      "reverseLabel": "Famous for",
+      "prompt": "Killed the Minotaur in the Labyrinth",
+      "answer": "Theseus",
+      "context": "Hero",
+      "group": "Heroes and their deeds",
+      "note": "Ariadne's ball of thread led him out; sailing home he forgot to raise a white sail, and his father Aegeus threw himself into the Aegean."
+    },
+    {
+      "id": "gm-heracles",
+      "label": "Who",
+      "reverseLabel": "Famous for",
+      "prompt": "Performed twelve labours for King Eurystheus",
+      "answer": "Heracles",
+      "context": "Hero",
+      "group": "Heroes and their deeds",
+      "note": "Driven mad by Hera, he killed his wife and children; seeking atonement at Delphi, he was told to serve his cousin Eurystheus."
+    },
+    {
+      "id": "gm-jason",
+      "label": "Who",
+      "reverseLabel": "Famous for",
+      "prompt": "Led the Argonauts to win the Golden Fleece",
+      "answer": "Jason",
+      "context": "Hero",
+      "group": "Heroes and their deeds",
+      "note": "The sorceress Medea, daughter of King Aeëtes of Colchis, helped him win it; his later betrayal of her is the subject of Euripides's Medea."
+    },
+    {
+      "id": "gm-bellerophon",
+      "label": "Who",
+      "reverseLabel": "Famous for",
+      "prompt": "Rode Pegasus to slay the Chimera",
+      "answer": "Bellerophon",
+      "context": "Hero",
+      "group": "Heroes and their deeds",
+      "note": "Proud of his victory, he tried to fly Pegasus up to Olympus; Zeus sent a gadfly to sting the horse, and Bellerophon fell to earth."
+    },
+    {
+      "id": "gm-orpheus",
+      "label": "Who",
+      "reverseLabel": "Famous for",
+      "prompt": "Went to the underworld to bring back Eurydice",
+      "answer": "Orpheus",
+      "context": "Hero",
+      "group": "Heroes and their deeds",
+      "note": "His music moved Hades and Persephone to free her if he did not look back; reaching the upper world, he turned to look at her."
+    },
+    {
+      "id": "gm-atalanta",
+      "label": "Who",
+      "reverseLabel": "Famous for",
+      "prompt": "Lost a footrace by stopping for golden apples",
+      "answer": "Atalanta",
+      "context": "Hero",
+      "group": "Heroes and their deeds",
+      "note": "Suitors who lost the race to her were killed; Hippomenes won by dropping three golden apples, a gift from Aphrodite, for her to pick up."
+    },
+    {
+      "id": "gm-oedipus",
+      "label": "Who",
+      "reverseLabel": "Famous for",
+      "prompt": "Unknowingly killed his father and married his mother",
+      "answer": "Oedipus",
+      "context": "Hero",
+      "group": "Heroes and their deeds",
+      "note": "He won the throne of Thebes by answering the Sphinx's riddle; on learning the truth, he blinded himself with pins from Jocasta's dress."
+    },
+    {
+      "id": "gm-daedalus",
+      "label": "Who",
+      "reverseLabel": "Famous for",
+      "prompt": "Master craftsman who built the Labyrinth for Minos",
+      "answer": "Daedalus",
+      "context": "Mortal",
+      "group": "Heroes and their deeds",
+      "note": "He also made wings of feathers and wax so that he and his son Icarus could escape from Crete."
+    },
+    {
+      "id": "gm-icarus",
+      "label": "Who",
+      "reverseLabel": "Famous for",
+      "prompt": "Flew too close to the sun on wings of wax",
+      "answer": "Icarus",
+      "context": "Mortal",
+      "group": "Heroes and their deeds",
+      "note": "The wax melted and he fell into the sea near Samos; the island of Icaria and the Icarian Sea are said to bear his name."
+    },
+    {
+      "id": "gm-pandora",
+      "label": "Who",
+      "reverseLabel": "Famous for",
+      "prompt": "Opened the jar that released evils into the world",
+      "answer": "Pandora",
+      "context": "Mortal",
+      "group": "Heroes and their deeds",
+      "note": "Only Hope remained inside; the jar became a box through Erasmus, who in 1508 rendered the Greek pithos as pyxis, a box."
+    },
+    {
+      "id": "gm-sisyphus",
+      "label": "Who",
+      "reverseLabel": "Famous for",
+      "prompt": "Condemned to roll a boulder uphill forever",
+      "answer": "Sisyphus",
+      "context": "Mortal",
+      "group": "Heroes and their deeds",
+      "note": "Punished for cheating death twice; once he even chained up Thanatos, Death himself, so that for a time nobody died."
+    },
+    {
+      "id": "gm-tantalus",
+      "label": "Who",
+      "reverseLabel": "Famous for",
+      "prompt": "Stood in water that receded whenever he tried to drink",
+      "answer": "Tantalus",
+      "context": "Mortal",
+      "group": "Heroes and their deeds",
+      "note": "Fruit above him stayed just out of reach; tantalise comes from his punishment, in one version for serving his son Pelops to the gods."
+    },
+    {
+      "id": "gm-midas",
+      "label": "Who",
+      "reverseLabel": "Famous for",
+      "prompt": "Wished that everything he touched would turn to gold",
+      "answer": "Midas",
+      "context": "Mortal",
+      "group": "Heroes and their deeds",
+      "note": "Starving, he begged Dionysus for release and was told to wash in the river Pactolus, whose sands then turned to gold."
+    },
+    {
+      "id": "gm-narcissus",
+      "label": "Who",
+      "reverseLabel": "Famous for",
+      "prompt": "Fell in love with his own reflection",
+      "answer": "Narcissus",
+      "context": "Mortal",
+      "group": "Heroes and their deeds",
+      "note": "He pined beside the pool until he died, and a narcissus flower grew there; Ovid added the nymph Echo, whom he spurned."
+    },
+    {
+      "id": "gm-pegasus",
+      "label": "Which creature",
+      "reverseLabel": "What is",
+      "prompt": "Winged horse sprung from Medusa's neck",
+      "answer": "Pegasus",
+      "context": "Creature",
+      "group": "Creatures",
+      "note": "Where his hoof struck Mount Helicon, the spring Hippocrene, meaning horse's fountain, gushed out; it was sacred to the Muses."
+    },
+    {
+      "id": "gm-medusa",
+      "label": "Which creature",
+      "reverseLabel": "What is",
+      "prompt": "Snake-haired Gorgon whose gaze turned people to stone",
+      "answer": "Medusa",
+      "context": "Creature",
+      "group": "Creatures",
+      "note": "The only mortal of the three Gorgon sisters; Perseus gave her severed head to Athena, who set it on her shield, the aegis."
+    },
+    {
+      "id": "gm-minotaur",
+      "label": "Which creature",
+      "reverseLabel": "What is",
+      "prompt": "Bull-headed man kept in the Labyrinth",
+      "answer": "The Minotaur",
+      "context": "Creature",
+      "group": "Creatures",
+      "note": "Son of Queen Pasiphaë and the Cretan Bull; every nine years Athens sent seven young men and seven young women to be its victims."
+    },
+    {
+      "id": "gm-cerberus",
+      "label": "Which creature",
+      "reverseLabel": "What is",
+      "prompt": "Multi-headed hound guarding the underworld",
+      "answer": "Cerberus",
+      "context": "Creature",
+      "group": "Creatures",
+      "note": "Usually three-headed, but Hesiod gave him fifty heads and Pindar a hundred; his brother Orthrus was a two-headed dog."
+    },
+    {
+      "id": "gm-chimera",
+      "label": "Which creature",
+      "reverseLabel": "What is",
+      "prompt": "Fire-breathing lion with a goat's head and serpent tail",
+      "answer": "The Chimera",
+      "context": "Creature",
+      "group": "Creatures",
+      "note": "Its name means she-goat; slain by Bellerophon, it now lends its name to any creature built from parts of different animals."
+    },
+    {
+      "id": "gm-cyclops",
+      "label": "Which creature",
+      "reverseLabel": "What is",
+      "prompt": "One-eyed giant",
+      "answer": "Cyclops",
+      "context": "Creature",
+      "group": "Creatures",
+      "note": "The name means round-eye; besides Homer's cave-dwelling shepherds, Greeks credited Cyclopes with building the massive walls of Mycenae and Tiryns."
+    },
+    {
+      "id": "gm-sphinx",
+      "label": "Which creature",
+      "reverseLabel": "What is",
+      "prompt": "Winged lion with a woman's head who posed a riddle",
+      "answer": "The Sphinx",
+      "context": "Creature",
+      "group": "Creatures",
+      "note": "At Thebes she strangled and devoured all who failed her riddle; Egyptian sphinxes, by contrast, were usually male and benevolent."
+    },
+    {
+      "id": "gm-harpies",
+      "label": "Which creature",
+      "reverseLabel": "What is",
+      "prompt": "Winged snatchers who stole blind King Phineus's food",
+      "answer": "Harpies",
+      "context": "Creature",
+      "group": "Creatures",
+      "note": "Their name means snatchers; the Argonauts Zetes and Calais, winged sons of the North Wind Boreas, chased them away from Phineus."
+    },
+    {
+      "id": "gm-centaur",
+      "label": "Which creature",
+      "reverseLabel": "What is",
+      "prompt": "Half man, half horse",
+      "answer": "Centaur",
+      "context": "Creature",
+      "group": "Creatures",
+      "note": "The wise centaur Chiron tutored Achilles; when he gave up his immortality, Zeus set him among the stars as the constellation Centaurus."
+    },
+    {
+      "id": "gm-typhon",
+      "label": "Which creature",
+      "reverseLabel": "What is",
+      "prompt": "Monstrous giant who challenged Zeus for the cosmos",
+      "answer": "Typhon",
+      "context": "Creature",
+      "group": "Creatures",
+      "note": "With Echidna he fathered Cerberus, the Hydra and the Chimera; his name may have influenced the Persian word behind typhoon."
+    },
+    {
+      "id": "gm-satyr",
+      "label": "Which creature",
+      "reverseLabel": "What is",
+      "prompt": "Horse-tailed nature spirit, companion of Dionysus",
+      "answer": "Satyr",
+      "context": "Creature",
+      "group": "Creatures",
+      "note": "Goat legs came only later, by confusion with Pan; at Athens a comic satyr play followed each group of three tragedies."
+    },
+    {
+      "id": "gm-phoenix",
+      "label": "Which creature",
+      "reverseLabel": "What is",
+      "prompt": "Sacred bird reborn after its death",
+      "answer": "The phoenix",
+      "context": "Creature",
+      "group": "Creatures",
+      "note": "Herodotus heard at Heliopolis in Egypt that it came only once every five hundred years, though he admitted he never saw one."
+    },
+    {
+      "id": "gm-calliope",
+      "label": "Muse of",
+      "reverseLabel": "Muse",
+      "prompt": "Epic poetry",
+      "answer": "Calliope",
+      "context": "Muse",
+      "group": "The Muses",
+      "note": "Her name means beautiful-voiced; Hesiod and Ovid called her chief of all the Muses, and she was the mother of Orpheus."
+    },
+    {
+      "id": "gm-clio",
+      "label": "Muse of",
+      "reverseLabel": "Muse",
+      "prompt": "History",
+      "answer": "Clio",
+      "context": "Muse",
+      "group": "The Muses",
+      "note": "Herodotus's Histories were later divided into nine books named after the Muses; the first book is called Clio."
+    },
+    {
+      "id": "gm-melpomene",
+      "label": "Muse of",
+      "reverseLabel": "Muse",
+      "prompt": "Tragedy",
+      "answer": "Melpomene",
+      "context": "Muse",
+      "group": "The Muses",
+      "note": "Usually shown holding a tragic mask; in some accounts she and the river god Achelous were the parents of the Sirens."
+    },
+    {
+      "id": "gm-thalia",
+      "label": "Muse of",
+      "reverseLabel": "Muse",
+      "prompt": "Comedy",
+      "answer": "Thalia",
+      "context": "Muse",
+      "group": "The Muses",
+      "note": "Her name means flourishing; she carries a comic mask and an ivy wreath, the counterpart of her tragic sister Melpomene."
+    },
+    {
+      "id": "gm-urania",
+      "label": "Muse of",
+      "reverseLabel": "Muse",
+      "prompt": "Astronomy",
+      "answer": "Urania",
+      "context": "Muse",
+      "group": "The Muses",
+      "note": "Her name means heavenly, from the same root as Uranus, the sky; she carries a celestial globe and a pair of compasses."
+    },
+    {
+      "id": "gm-terpsichore",
+      "label": "Muse of",
+      "reverseLabel": "Muse",
+      "prompt": "Dance",
+      "answer": "Terpsichore",
+      "context": "Muse",
+      "group": "The Muses",
+      "note": "The English adjective terpsichorean, meaning of or relating to dance, comes from her name; she is often shown with a lyre."
+    },
+    {
+      "id": "gm-erato",
+      "label": "Muse of",
+      "reverseLabel": "Muse",
+      "prompt": "Love poetry",
+      "answer": "Erato",
+      "context": "Muse",
+      "group": "The Muses",
+      "note": "Her name may mean lovely or desired, from the same root as Eros; Apollonius of Rhodes invokes her in his Argonautica."
+    },
+    {
+      "id": "gm-euterpe",
+      "label": "Muse of",
+      "reverseLabel": "Muse",
+      "prompt": "Music and song",
+      "answer": "Euterpe",
+      "context": "Muse",
+      "group": "The Muses",
+      "note": "Ancient poets called her the giver of delight; she is usually shown with the aulos, a Greek double pipe."
+    },
+    {
+      "id": "gm-polyhymnia",
+      "label": "Muse of",
+      "reverseLabel": "Muse",
+      "prompt": "Sacred hymns",
+      "answer": "Polyhymnia",
+      "context": "Muse",
+      "group": "The Muses",
+      "note": "Her name means the one of many hymns; artists often show her pensive and veiled, with a finger raised to her lips."
+    },
+    {
+      "id": "gm-lab-nemean",
+      "label": "Labour of Heracles",
+      "reverseLabel": "Which labour of Heracles",
+      "prompt": "First",
+      "answer": "Slay the Nemean lion",
+      "context": "Labour of Heracles",
+      "group": "Labours of Heracles",
+      "note": "Its golden hide was impervious to weapons, so he strangled it, then skinned it with its own claws and wore the pelt."
+    },
+    {
+      "id": "gm-lab-hydra",
+      "label": "Labour of Heracles",
+      "reverseLabel": "Which labour of Heracles",
+      "prompt": "Second",
+      "answer": "Slay the Lernaean Hydra",
+      "context": "Labour of Heracles",
+      "group": "Labours of Heracles",
+      "note": "For every head he cut off two grew back, so his nephew Iolaus burned the stumps; Eurystheus discounted the labour because of the help."
+    },
+    {
+      "id": "gm-lab-hind",
+      "label": "Labour of Heracles",
+      "reverseLabel": "Which labour of Heracles",
+      "prompt": "Third",
+      "answer": "Capture the Ceryneian hind",
+      "context": "Labour of Heracles",
+      "group": "Labours of Heracles",
+      "note": "Sacred to Artemis, the hind had golden antlers and bronze hooves; Heracles chased it for a full year before catching it."
+    },
+    {
+      "id": "gm-lab-boar",
+      "label": "Labour of Heracles",
+      "reverseLabel": "Which labour of Heracles",
+      "prompt": "Fourth",
+      "answer": "Capture the Erymanthian boar",
+      "context": "Labour of Heracles",
+      "group": "Labours of Heracles",
+      "note": "He drove the boar into deep snow to trap it; Eurystheus was so frightened that he hid in a half-buried storage jar."
+    },
+    {
+      "id": "gm-lab-augean",
+      "label": "Labour of Heracles",
+      "reverseLabel": "Which labour of Heracles",
+      "prompt": "Fifth",
+      "answer": "Clean the Augean stables",
+      "context": "Labour of Heracles",
+      "group": "Labours of Heracles",
+      "note": "He rerouted the rivers Alpheus and Peneus to wash out the filth; Eurystheus refused to count it because Heracles had accepted payment."
+    },
+    {
+      "id": "gm-lab-stymphalian",
+      "label": "Labour of Heracles",
+      "reverseLabel": "Which labour of Heracles",
+      "prompt": "Sixth",
+      "answer": "Slay the Stymphalian birds",
+      "context": "Labour of Heracles",
+      "group": "Labours of Heracles",
+      "note": "Athena gave him a rattle made by Hephaestus; its noise drove the birds into the air, where he shot many with his arrows."
+    },
+    {
+      "id": "gm-lab-cretan",
+      "label": "Labour of Heracles",
+      "reverseLabel": "Which labour of Heracles",
+      "prompt": "Seventh",
+      "answer": "Capture the Cretan bull",
+      "context": "Labour of Heracles",
+      "group": "Labours of Heracles",
+      "note": "After showing the bull to Eurystheus he let it go; it wandered to Marathon and became known as the Marathonian Bull."
+    },
+    {
+      "id": "gm-lab-mares",
+      "label": "Labour of Heracles",
+      "reverseLabel": "Which labour of Heracles",
+      "prompt": "Eighth",
+      "answer": "Steal the mares of Diomedes",
+      "context": "Labour of Heracles",
+      "group": "Labours of Heracles",
+      "note": "The mares ate human flesh; in one version Heracles fed their master Diomedes to them, which calmed them enough to be led away."
+    },
+    {
+      "id": "gm-lab-belt",
+      "label": "Labour of Heracles",
+      "reverseLabel": "Which labour of Heracles",
+      "prompt": "Ninth",
+      "answer": "Obtain the belt of Hippolyta",
+      "context": "Labour of Heracles",
+      "group": "Labours of Heracles",
+      "note": "The belt was a gift to the Amazon queen from her father Ares; Hera, in disguise, turned the Amazons against Heracles."
+    },
+    {
+      "id": "gm-lab-geryon",
+      "label": "Labour of Heracles",
+      "reverseLabel": "Which labour of Heracles",
+      "prompt": "Tenth",
+      "answer": "Obtain the cattle of Geryon",
+      "context": "Labour of Heracles",
+      "group": "Labours of Heracles",
+      "note": "Geryon was a three-bodied giant on the island of Erytheia in the far west; Heracles killed him with an arrow tipped in Hydra venom."
+    },
+    {
+      "id": "gm-lab-apples",
+      "label": "Labour of Heracles",
+      "reverseLabel": "Which labour of Heracles",
+      "prompt": "Eleventh",
+      "answer": "Steal the apples of the Hesperides",
+      "context": "Labour of Heracles",
+      "group": "Labours of Heracles",
+      "note": "He offered to hold up the heavens while Atlas fetched three golden apples, then tricked Atlas into taking the sky back."
+    },
+    {
+      "id": "gm-lab-cerberus",
+      "label": "Labour of Heracles",
+      "reverseLabel": "Which labour of Heracles",
+      "prompt": "Twelfth",
+      "answer": "Capture Cerberus",
+      "context": "Labour of Heracles",
+      "group": "Labours of Heracles",
+      "note": "Hades allowed him to take the hound only if he subdued it without weapons; Heracles overpowered it with his bare hands."
+    },
+    {
+      "id": "gm-judgement-of-paris",
+      "label": "What was",
+      "reverseLabel": "What was",
+      "prompt": "Beauty contest between Hera, Athena and Aphrodite",
+      "answer": "The judgement of Paris",
+      "context": "Trojan War",
+      "group": "The Trojan War",
+      "note": "Eris, goddess of discord, threw in a golden apple inscribed to the fairest; Paris chose Aphrodite, who had promised him Helen."
+    },
+    {
+      "id": "gm-helen",
+      "prompt": "Queen of Sparta whose flight with Paris began the war",
+      "answer": "Helen",
+      "context": "Trojan War",
+      "group": "The Trojan War",
+      "note": "In Marlowe's Doctor Faustus hers is the face that launched a thousand ships and burnt the topless towers of Ilium."
+    },
+    {
+      "id": "gm-paris",
+      "prompt": "Trojan prince who carried off Helen",
+      "answer": "Paris",
+      "context": "Trojan War",
+      "group": "The Trojan War",
+      "note": "Left to die as a baby on Mount Ida, he survived when a she-bear suckled him; his arrow later killed Achilles."
+    },
+    {
+      "id": "gm-menelaus",
+      "prompt": "King of Sparta, Helen's husband",
+      "answer": "Menelaus",
+      "context": "Trojan War",
+      "group": "The Trojan War",
+      "note": "Brother of Agamemnon; in the Odyssey he is home in Sparta with Helen when Telemachus visits seeking news of Odysseus."
+    },
+    {
+      "id": "gm-agamemnon",
+      "prompt": "King of Mycenae who led the Greek army",
+      "answer": "Agamemnon",
+      "context": "Trojan War",
+      "group": "The Trojan War",
+      "note": "He sacrificed his daughter Iphigenia so the fleet could sail, and on his return was murdered by his wife Clytemnestra or her lover Aegisthus."
+    },
+    {
+      "id": "gm-achilles",
+      "prompt": "Greatest Greek warrior at Troy",
+      "answer": "Achilles",
+      "context": "Trojan War",
+      "group": "The Trojan War",
+      "note": "The tale that Thetis dipped him in the Styx, leaving only his heel vulnerable, first appears in Statius, long after Homer."
+    },
+    {
+      "id": "gm-hector",
+      "prompt": "Greatest Trojan warrior, killed by Achilles",
+      "answer": "Hector",
+      "context": "Trojan War",
+      "group": "The Trojan War",
+      "note": "Achilles tied the body by the heels to his chariot and dragged it around Troy while Hector's wife Andromache watched from the walls."
+    },
+    {
+      "id": "gm-odysseus",
+      "prompt": "Greek hero who devised the wooden horse",
+      "answer": "Odysseus",
+      "context": "Trojan War",
+      "group": "The Trojan War",
+      "note": "He feigned madness to avoid the war, ploughing with an ox and a donkey, until Palamedes laid baby Telemachus in front of the plough."
+    },
+    {
+      "id": "gm-wooden-horse",
+      "label": "What was",
+      "reverseLabel": "What was",
+      "prompt": "Greek trick that finally took Troy",
+      "answer": "The wooden horse",
+      "context": "Trojan War",
+      "group": "The Trojan War",
+      "note": "Absent from the Iliad, it is told at length in Virgil's Aeneid, where the priest Laocoön fears Greeks even bearing gifts."
+    },
+    {
+      "id": "gm-cassandra",
+      "prompt": "Trojan prophetess fated never to be believed",
+      "answer": "Cassandra",
+      "context": "Trojan War",
+      "group": "The Trojan War",
+      "note": "Apollo gave her prophecy, then cursed her for refusing him; a Cassandra now means someone whose accurate warnings go unheeded."
+    },
+    {
+      "id": "gm-patroclus",
+      "prompt": "Achilles's friend, killed fighting in his armour",
+      "answer": "Patroclus",
+      "context": "Trojan War",
+      "group": "The Trojan War",
+      "note": "Hector killed him and stripped off the armour; grief for Patroclus drove Achilles back into battle to take revenge."
+    },
+    {
+      "id": "gm-priam",
+      "prompt": "King of Troy who begged Achilles for Hector's body",
+      "answer": "Priam",
+      "context": "Trojan War",
+      "group": "The Trojan War",
+      "note": "In the Iliad he tells Achilles he has done what no one has before: put his lips to the hands of his son's killer."
+    },
+    {
+      "id": "gm-ithaca",
+      "label": "What is",
+      "reverseLabel": "What is",
+      "prompt": "Odysseus's island kingdom",
+      "answer": "Ithaca",
+      "context": "Odyssey",
+      "group": "The Odyssey",
+      "note": "Modern Ithaca in the Ionian Sea is traditionally accepted as Homer's island, though where Homer's Ithaca really lay is still debated."
+    },
+    {
+      "id": "gm-penelope",
+      "prompt": "Odysseus's faithful wife",
+      "answer": "Penelope",
+      "context": "Odyssey",
+      "group": "The Odyssey",
+      "note": "She told the suitors she would choose once she finished weaving a shroud for Laertes, then for three years unpicked her work each night."
+    },
+    {
+      "id": "gm-telemachus",
+      "prompt": "Son of Odysseus who went seeking news of him",
+      "answer": "Telemachus",
+      "context": "Odyssey",
+      "group": "The Odyssey",
+      "note": "Athena guided him disguised as the old adviser Mentor, whose name, popularised by Fénelon's 1699 novel, became the English word mentor."
+    },
+    {
+      "id": "gm-lotus-eaters",
+      "label": "Who were",
+      "reverseLabel": "Who were",
+      "prompt": "People whose fruit made sailors forget home",
+      "answer": "The Lotus-eaters",
+      "context": "Odyssey",
+      "group": "The Odyssey",
+      "note": "Odysseus dragged his weeping crewmen back to the ships and tied them under the benches; Tennyson retold the episode in The Lotos-Eaters."
+    },
+    {
+      "id": "gm-polyphemus",
+      "prompt": "Cyclops blinded by Odysseus",
+      "answer": "Polyphemus",
+      "context": "Odyssey",
+      "group": "The Odyssey",
+      "note": "Odysseus said his name was Nobody, so when Polyphemus cried that Nobody had hurt him, the other Cyclopes thought it was divine affliction."
+    },
+    {
+      "id": "gm-aeolus",
+      "prompt": "Keeper of the winds who gave Odysseus a bag of them",
+      "answer": "Aeolus",
+      "context": "Odyssey",
+      "group": "The Odyssey",
+      "note": "Within sight of Ithaca the crew opened the bag, thinking it held treasure, and were blown back; the Aeolian harp is named after him."
+    },
+    {
+      "id": "gm-circe",
+      "prompt": "Sorceress who turned Odysseus's men into pigs",
+      "answer": "Circe",
+      "context": "Odyssey",
+      "group": "The Odyssey",
+      "note": "Hermes gave Odysseus the herb moly to protect him from her magic; he then stayed a year on her island, Aeaea."
+    },
+    {
+      "id": "gm-sirens",
+      "label": "Who were",
+      "reverseLabel": "Who were",
+      "prompt": "Singers whose song lured sailors to their deaths",
+      "answer": "The Sirens",
+      "context": "Odyssey",
+      "group": "The Odyssey",
+      "note": "Odysseus had his crew plug their ears with beeswax and tie him to the mast; the alarm siren, which could sound underwater, takes their name."
+    },
+    {
+      "id": "gm-scylla-charybdis",
+      "label": "What were",
+      "reverseLabel": "What were",
+      "prompt": "Six-headed monster and whirlpool on either side of a strait",
+      "answer": "Scylla and Charybdis",
+      "context": "Odyssey",
+      "group": "The Odyssey",
+      "note": "Later writers placed them in the Strait of Messina; between Scylla and Charybdis means choosing between two equally dangerous options."
+    },
+    {
+      "id": "gm-calypso",
+      "prompt": "Nymph who kept Odysseus on her island for seven years",
+      "answer": "Calypso",
+      "context": "Odyssey",
+      "group": "The Odyssey",
+      "note": "She offered him immortality if he stayed; her name means she who conceals, from the Greek kalyptō, to cover or hide."
+    },
+    {
+      "id": "gm-argos",
+      "prompt": "Odysseus's dog, who knew him after twenty years",
+      "answer": "Argos",
+      "context": "Odyssey",
+      "group": "The Odyssey",
+      "note": "Neglected and lying on a heap of manure, the old dog wagged his tail at his disguised master, then died."
+    },
+    {
+      "id": "gm-eurycleia",
+      "prompt": "Old nurse who knew Odysseus by his scar",
+      "answer": "Eurycleia",
+      "context": "Odyssey",
+      "group": "The Odyssey",
+      "note": "Bathing the disguised beggar, she recognised a scar above his knee from a boar hunt made while visiting his grandfather Autolycus."
+    },
+    {
+      "id": "gm-contest-of-the-bow",
+      "label": "What was",
+      "reverseLabel": "What was",
+      "prompt": "Penelope's test for the suitors",
+      "answer": "String Odysseus's bow, shoot through twelve axes",
+      "context": "Odyssey",
+      "group": "The Odyssey",
+      "note": "None of the suitors could even string the great bow; the disguised Odysseus did, and then turned his arrows on them."
+    }
+  ]
+}

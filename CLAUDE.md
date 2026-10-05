@@ -24,16 +24,20 @@ No build step, no dependencies. A handful of static files rather than one, becau
   "title": "US state capitals",
   "subtitle": "All 50 states",
   "promptLabel": "Capital of",
+  "reversible": true,
+  "reverseLabel": "Capital of which state",
   "context": "United States",
   "about": "Shown on the deck's browse page.",
   "cards": [
-    { "id": "us-ca", "prompt": "California", "answer": "Sacramento", "note": "...", "subregion": "optional" }
+    { "id": "us-ca", "prompt": "California", "answer": "Sacramento", "note": "..." }
   ]
 }
 ```
-- Card `id`s must be stable forever: progress is keyed by them. World cards use `w-` + ISO alpha-2, US `us-` + USPS code, Mexico `mx-` + ISO 3166-2:MX code.
+Optional card fields: `label` and `reverseLabel` (override the deck's), `context` (the small line under the prompt), `group` (browse page heading), `noReverse`. World cards use the older `subregion`, which serves as both context and group.
+
+- Card `id`s must be stable forever: progress is keyed by them. Prefixes: `w-` world (ISO alpha-2), `us-` (USPS), `mx-` (ISO 3166-2:MX), `el-` elements (symbol), `gm-` Greek myths, `ds-` discoveries, `wo-` name origins.
 - Card order in the file is the order new cards are introduced, so neighbours are grouped.
-- The small line under the prompt is `card.subregion`, else `deck.context`, else the deck title. It disambiguates (Georgia the country vs the state).
+- The small line under the prompt is `card.context`, else `card.subregion`, else `deck.context`, else the deck title. It disambiguates (Georgia the country vs the state).
 - Notes: one durable, verified fact, 12 to 25 words, no stale statistics, no em or en dashes.
 - Facts are checked against English Wikipedia before they go in.
 
@@ -44,8 +48,15 @@ No build step, no dependencies. A handful of static files rather than one, becau
 - A round is capped (default 15): due cards first, most overdue first, then up to 5 new cards round-robin across active decks. Backlog never shows as a number. "Another round" is always available if anything is due or unseen.
 - Days are local calendar days.
 
+## Reverse direction
+- In a `reversible` deck each card also has a reversed twin, id `<id>~r`, with its own schedule: the answer becomes the prompt under `reverseLabel`.
+- A reversed card unlocks once its forward card reaches box 2 (known at least once).
+- No reversed card when one side contains the other (Durango, Monaco, Indianapolis), or when `noReverse` is set.
+- The two directions of one item never share a round.
+- Per-deck switch on the browse page, stored in `settings.revOff`. Home shows a "Reverse: N of M settled" line once any reversed card has been seen.
+
 ## Storage
-- `localStorage` key `almanac.v1`: `{ v, cards: { id: { b, d, n, l } }, settings: { size, fresh, notes, off } }`. `b` box, `d` due day, `n` times graded, `l` last day. `off` lists decks excluded from rounds.
+- `localStorage` key `almanac.v1`: `{ v, cards: { id: { b, d, n, l } }, settings: { size, fresh, notes, off, revOff } }`. `b` box, `d` due day, `n` times graded, `l` last day. `off` lists decks excluded from rounds; `revOff` decks with reverse switched off.
 - An iOS home screen app has storage separate from Safari, hence Settings has export and import.
 
 ## Local testing

@@ -5,6 +5,8 @@
   "promptLabel": "Capital of",
   "context": "World",
   "about": "The 193 UN member states plus the two observer states, Vatican City and Palestine. Cards are grouped by UN region so neighbours are learned together.",
+  "reversible": true,
+  "reverseLabel": "Capital of which country",
   "cards": [
     {
       "id": "w-fr",

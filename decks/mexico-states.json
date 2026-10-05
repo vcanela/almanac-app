@@ -5,6 +5,8 @@
   "promptLabel": "Capital of",
   "context": "Mexico",
   "about": "The capital of each of Mexico's 31 states, ordered from the north-west to the Yucatán peninsula. Mexico City is a federal entity in its own right, not a state, so it is not included.",
+  "reversible": true,
+  "reverseLabel": "Capital of which state",
   "cards": [
     {
       "id": "mx-bcn",

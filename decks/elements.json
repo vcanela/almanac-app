@@ -1,0 +1,955 @@
+{
+  "id": "elements",
+  "title": "Elements",
+  "subtitle": "All 118, by atomic number",
+  "promptLabel": "Element number",
+  "reversible": true,
+  "reverseLabel": "Atomic number of",
+  "about": "The 118 chemical elements by atomic number, each with its category, period and one verified fact, usually the story behind its name.",
+  "cards": [
+    {
+      "id": "el-h",
+      "prompt": "1",
+      "answer": "Hydrogen (H)",
+      "context": "Nonmetal",
+      "group": "Period 1",
+      "note": "Henry Cavendish recognised it as a distinct substance in 1766; its name means 'water-former', because burning it produces water."
+    },
+    {
+      "id": "el-he",
+      "prompt": "2",
+      "answer": "Helium (He)",
+      "context": "Noble gas",
+      "group": "Period 1",
+      "note": "First detected in 1868 as an unexplained yellow line in the Sun's spectrum during an eclipse; Ramsay found it on Earth in 1895."
+    },
+    {
+      "id": "el-li",
+      "prompt": "3",
+      "answer": "Lithium (Li)",
+      "context": "Alkali metal",
+      "group": "Period 2",
+      "note": "From Greek lithos, stone: Arfwedson found it in 1817 in the mineral petalite, whereas potassium had first come from plant ashes."
+    },
+    {
+      "id": "el-be",
+      "prompt": "4",
+      "answer": "Beryllium (Be)",
+      "context": "Alkaline earth metal",
+      "group": "Period 2",
+      "note": "Named after the mineral beryl; the sweet taste of its compounds gave it the rival name glucinium, used until IUPAC settled matters in 1949."
+    },
+    {
+      "id": "el-b",
+      "prompt": "5",
+      "answer": "Boron (B)",
+      "context": "Metalloid",
+      "group": "Period 2",
+      "note": "Named from borax, a word traced to Arabic buraq; Humphry Davy, and separately Gay-Lussac and Thénard, isolated it in 1808."
+    },
+    {
+      "id": "el-c",
+      "prompt": "6",
+      "answer": "Carbon (C)",
+      "context": "Nonmetal",
+      "group": "Period 2",
+      "note": "From Latin carbo, charcoal. Its football-shaped C60 molecule, buckminsterfullerene, honours Buckminster Fuller, whose geodesic domes share its structure."
+    },
+    {
+      "id": "el-n",
+      "prompt": "7",
+      "answer": "Nitrogen (N)",
+      "context": "Nonmetal",
+      "group": "Period 2",
+      "note": "Daniel Rutherford isolated it in 1772 as 'noxious air'; Lavoisier called it azote, 'no life', because animals suffocated in it."
+    },
+    {
+      "id": "el-o",
+      "prompt": "8",
+      "answer": "Oxygen (O)",
+      "context": "Nonmetal",
+      "group": "Period 2",
+      "note": "Lavoisier named it 'acid-former', mistakenly believing all acids contain it; Scheele and Priestley had each isolated it independently in the 1770s."
+    },
+    {
+      "id": "el-f",
+      "prompt": "9",
+      "answer": "Fluorine (F)",
+      "context": "Halogen",
+      "group": "Period 2",
+      "note": "Several nineteenth century 'fluorine martyrs' were injured or killed trying to isolate it, before Henri Moissan succeeded by electrolysis in 1886."
+    },
+    {
+      "id": "el-ne",
+      "prompt": "10",
+      "answer": "Neon (Ne)",
+      "context": "Noble gas",
+      "group": "Period 2",
+      "note": "Ramsay and Travers found it in 1898 in evaporating liquid air; Ramsay's son suggested novum, 'new', rendered in Greek as neon."
+    },
+    {
+      "id": "el-na",
+      "prompt": "11",
+      "answer": "Sodium (Na)",
+      "context": "Alkali metal",
+      "group": "Period 3",
+      "note": "Humphry Davy isolated it in 1807 by electrolysing caustic soda; the symbol Na comes from the Neo-Latin natrium."
+    },
+    {
+      "id": "el-mg",
+      "prompt": "12",
+      "answer": "Magnesium (Mg)",
+      "context": "Alkaline earth metal",
+      "group": "Period 3",
+      "note": "Named after Magnesia, probably the district in Thessaly though possibly Magnesia ad Sipylum; magnetite and manganese share the same origin."
+    },
+    {
+      "id": "el-al",
+      "prompt": "13",
+      "answer": "Aluminium (Al)",
+      "context": "Post-transition metal",
+      "group": "Period 3",
+      "note": "Humphry Davy proposed alumium in 1808, then aluminum in 1812; aluminium became the international standard, while North America kept aluminum."
+    },
+    {
+      "id": "el-si",
+      "prompt": "14",
+      "answer": "Silicon (Si)",
+      "context": "Metalloid",
+      "group": "Period 3",
+      "note": "Davy proposed silicium from Latin silex, flint; in 1817 Thomas Thomson changed the ending to -on, judging it a nonmetal like carbon."
+    },
+    {
+      "id": "el-p",
+      "prompt": "15",
+      "answer": "Phosphorus (P)",
+      "context": "Nonmetal",
+      "group": "Period 3",
+      "note": "Hennig Brand discovered it in 1669 by boiling down urine in search of the philosopher's stone; the name means 'light-bearer'."
+    },
+    {
+      "id": "el-s",
+      "prompt": "16",
+      "answer": "Sulfur (S)",
+      "context": "Nonmetal",
+      "group": "Period 3",
+      "note": "Known since antiquity as brimstone, 'burning stone'; IUPAC adopted the spelling sulfur in 1990, and British institutions soon followed."
+    },
+    {
+      "id": "el-cl",
+      "prompt": "17",
+      "answer": "Chlorine (Cl)",
+      "context": "Halogen",
+      "group": "Period 3",
+      "note": "Scheele described it in 1774 but thought it an oxide; in 1810 Davy proved it an element, naming it from Greek chloros, pale green."
+    },
+    {
+      "id": "el-ar",
+      "prompt": "18",
+      "answer": "Argon (Ar)",
+      "context": "Noble gas",
+      "group": "Period 3",
+      "note": "Rayleigh and Ramsay found it in 1894 after noticing that nitrogen from air was denser than nitrogen from chemicals; argos means lazy."
+    },
+    {
+      "id": "el-k",
+      "prompt": "19",
+      "answer": "Potassium (K)",
+      "context": "Alkali metal",
+      "group": "Period 4",
+      "note": "Davy isolated it in 1807 from molten potash using a voltaic pile, the first metal isolated by electrolysis; K comes from Latin kalium."
+    },
+    {
+      "id": "el-ca",
+      "prompt": "20",
+      "answer": "Calcium (Ca)",
+      "context": "Alkaline earth metal",
+      "group": "Period 4",
+      "note": "From Latin calx, lime, made by heating limestone; Humphry Davy isolated the metal in 1808 by electrolysing its oxide."
+    },
+    {
+      "id": "el-sc",
+      "prompt": "21",
+      "answer": "Scandium (Sc)",
+      "context": "Transition metal",
+      "group": "Period 4",
+      "note": "Nilson found it in 1879 in Scandinavian minerals and named it after Scandinavia; Cleve then recognised it as Mendeleev's predicted eka-boron."
+    },
+    {
+      "id": "el-ti",
+      "prompt": "22",
+      "answer": "Titanium (Ti)",
+      "context": "Transition metal",
+      "group": "Period 4",
+      "note": "William Gregor found it in 1791 in black sand from a Cornish stream; Klaproth later named it after the Titans of Greek mythology."
+    },
+    {
+      "id": "el-v",
+      "prompt": "23",
+      "answer": "Vanadium (V)",
+      "context": "Transition metal",
+      "group": "Period 4",
+      "note": "Del Río found it in 1801 but was persuaded it was chromium; Sefström rediscovered it in 1830, naming it after the Norse goddess Vanadís."
+    },
+    {
+      "id": "el-cr",
+      "prompt": "24",
+      "answer": "Chromium (Cr)",
+      "context": "Transition metal",
+      "group": "Period 4",
+      "note": "From Greek chroma, colour, for its vivid compounds; Vauquelin isolated it in 1797 and detected it in rubies and emeralds."
+    },
+    {
+      "id": "el-mn",
+      "prompt": "25",
+      "answer": "Manganese (Mn)",
+      "context": "Transition metal",
+      "group": "Period 4",
+      "note": "Its name, like magnesium's, traces back to the Greek region of Magnesia; Johan Gottlieb Gahn is usually credited with first isolating it, in 1774."
+    },
+    {
+      "id": "el-fe",
+      "prompt": "26",
+      "answer": "Iron (Fe)",
+      "context": "Transition metal",
+      "group": "Period 4",
+      "note": "Fusion in massive stars effectively ends near iron, whose nuclei are among the most tightly bound; the symbol Fe comes from Latin ferrum."
+    },
+    {
+      "id": "el-co",
+      "prompt": "27",
+      "answer": "Cobalt (Co)",
+      "context": "Transition metal",
+      "group": "Period 4",
+      "note": "From German Kobold, goblin: miners blamed the spirits for ores that yielded no known metal and gave off poisonous fumes when smelted."
+    },
+    {
+      "id": "el-ni",
+      "prompt": "28",
+      "answer": "Nickel (Ni)",
+      "context": "Transition metal",
+      "group": "Period 4",
+      "note": "Miners called a copper-coloured ore Kupfernickel, blaming the sprite Nickel when it yielded no copper; Cronstedt extracted the new metal in 1751."
+    },
+    {
+      "id": "el-cu",
+      "prompt": "29",
+      "answer": "Copper (Cu)",
+      "context": "Transition metal",
+      "group": "Period 4",
+      "note": "From Latin aes Cyprium, 'metal of Cyprus', where much Roman copper was mined; this became cuprum, hence the symbol Cu."
+    },
+    {
+      "id": "el-zn",
+      "prompt": "30",
+      "answer": "Zinc (Zn)",
+      "context": "Transition metal",
+      "group": "Period 4",
+      "note": "Probably named by Paracelsus after German Zinke, prong or tooth; Andreas Marggraf is credited with isolating the pure metal in 1746."
+    },
+    {
+      "id": "el-ga",
+      "prompt": "31",
+      "answer": "Gallium (Ga)",
+      "context": "Post-transition metal",
+      "group": "Period 4",
+      "note": "Lecoq de Boisbaudran named it after Gaul, his native France; critics claimed a hidden pun, since gallus means rooster, le coq, which he denied."
+    },
+    {
+      "id": "el-ge",
+      "prompt": "32",
+      "answer": "Germanium (Ge)",
+      "context": "Metalloid",
+      "group": "Period 4",
+      "note": "Mendeleev predicted it as eka-silicon, down to its density; Clemens Winkler found it in 1886 and named it after Germany, his homeland."
+    },
+    {
+      "id": "el-as",
+      "prompt": "33",
+      "answer": "Arsenic (As)",
+      "context": "Metalloid",
+      "group": "Period 4",
+      "note": "Called 'the inheritance powder' for its use in poisoning relatives, since its symptoms were vague; the Marsh test of the 1830s made detection reliable."
+    },
+    {
+      "id": "el-se",
+      "prompt": "34",
+      "answer": "Selenium (Se)",
+      "context": "Nonmetal",
+      "group": "Period 4",
+      "note": "Berzelius discovered it in 1817 and named it after the Moon, Greek selene, because it resembled tellurium, already named after the Earth."
+    },
+    {
+      "id": "el-br",
+      "prompt": "35",
+      "answer": "Bromine (Br)",
+      "context": "Halogen",
+      "group": "Period 4",
+      "note": "From Greek bromos, stench, for its pungent smell; it is one of only two elements liquid at standard conditions, alongside mercury."
+    },
+    {
+      "id": "el-kr",
+      "prompt": "36",
+      "answer": "Krypton (Kr)",
+      "context": "Noble gas",
+      "group": "Period 4",
+      "note": "From Greek kryptos, hidden; from 1960 to 1983 the metre was officially defined by the wavelength of a krypton-86 spectral line."
+    },
+    {
+      "id": "el-rb",
+      "prompt": "37",
+      "answer": "Rubidium (Rb)",
+      "context": "Alkali metal",
+      "group": "Period 5",
+      "note": "Bunsen and Kirchhoff discovered it in 1861 with the new technique of flame spectroscopy, naming it from Latin rubidus, deep red, after its spectral lines."
+    },
+    {
+      "id": "el-sr",
+      "prompt": "38",
+      "answer": "Strontium (Sr)",
+      "context": "Alkaline earth metal",
+      "group": "Period 5",
+      "note": "Named after Strontian, a Scottish village near which its mineral was found in 1790; it was recognised as new by its crimson flame."
+    },
+    {
+      "id": "el-y",
+      "prompt": "39",
+      "answer": "Yttrium (Y)",
+      "context": "Transition metal",
+      "group": "Period 5",
+      "note": "Named after Ytterby, a Swedish village whose quarry produced the mineral that also gave names to terbium, erbium and ytterbium."
+    },
+    {
+      "id": "el-zr",
+      "prompt": "40",
+      "answer": "Zirconium (Zr)",
+      "context": "Transition metal",
+      "group": "Period 5",
+      "note": "Named from the mineral zircon, related to Persian zargun, gold-like; its alloys clad nuclear fuel rods because they absorb few neutrons."
+    },
+    {
+      "id": "el-nb",
+      "prompt": "41",
+      "answer": "Niobium (Nb)",
+      "context": "Transition metal",
+      "group": "Period 5",
+      "note": "Named after Niobe, daughter of Tantalus, because it so closely resembles tantalum; Hatchett had first called it columbium in 1801."
+    },
+    {
+      "id": "el-mo",
+      "prompt": "42",
+      "answer": "Molybdenum (Mo)",
+      "context": "Transition metal",
+      "group": "Period 5",
+      "note": "From Greek molybdos, lead, because its ores were confused with lead ores and with graphite; Scheele showed it was a new element in 1778."
+    },
+    {
+      "id": "el-tc",
+      "prompt": "43",
+      "answer": "Technetium (Tc)",
+      "context": "Transition metal",
+      "group": "Period 5",
+      "note": "Greek technetos, artificial: the first predominantly artificial element, found in 1937 by Perrier and Segrè in molybdenum foil from Lawrence's cyclotron."
+    },
+    {
+      "id": "el-ru",
+      "prompt": "44",
+      "answer": "Ruthenium (Ru)",
+      "context": "Transition metal",
+      "group": "Period 5",
+      "note": "Karl Claus discovered it at Kazan University in 1844 and named it from Ruthenia, a Latin name for Russia, in honour of his homeland."
+    },
+    {
+      "id": "el-rh",
+      "prompt": "45",
+      "answer": "Rhodium (Rh)",
+      "context": "Transition metal",
+      "group": "Period 5",
+      "note": "William Hyde Wollaston discovered it in 1803, soon after palladium, naming it from Greek rhodon, rose, after the colour of one of its salts."
+    },
+    {
+      "id": "el-pd",
+      "prompt": "46",
+      "answer": "Palladium (Pd)",
+      "context": "Transition metal",
+      "group": "Period 5",
+      "note": "Wollaston discovered it in 1802 and named it after the newly found asteroid Pallas, itself named after an epithet of the goddess Athena."
+    },
+    {
+      "id": "el-ag",
+      "prompt": "47",
+      "answer": "Silver (Ag)",
+      "context": "Transition metal",
+      "group": "Period 5",
+      "note": "The symbol Ag comes from Latin argentum, and Argentina takes its name from the metal; silver conducts electricity and heat better than any other metal."
+    },
+    {
+      "id": "el-cd",
+      "prompt": "48",
+      "answer": "Cadmium (Cd)",
+      "context": "Transition metal",
+      "group": "Period 5",
+      "note": "Stromeyer found it in 1817 in impure zinc compounds sold by pharmacies; the name comes from cadmia, calamine, linked to the mythical Cadmus."
+    },
+    {
+      "id": "el-in",
+      "prompt": "49",
+      "answer": "Indium (In)",
+      "context": "Post-transition metal",
+      "group": "Period 5",
+      "note": "Reich and Richter discovered it spectroscopically in 1863, naming it after its indigo line; indium tin oxide makes flat-panel displays transparent yet conductive."
+    },
+    {
+      "id": "el-sn",
+      "prompt": "50",
+      "answer": "Tin (Sn)",
+      "context": "Post-transition metal",
+      "group": "Period 5",
+      "note": "The symbol Sn comes from Latin stannum. Bending a bar of tin produces a crackling sound, the 'tin cry', caused by crystal twinning."
+    },
+    {
+      "id": "el-sb",
+      "prompt": "51",
+      "answer": "Antimony (Sb)",
+      "context": "Metalloid",
+      "group": "Period 5",
+      "note": "The symbol Sb comes from Latin stibium; powdered antimony compounds, often known by the Arabic name kohl, have been used as cosmetics since antiquity."
+    },
+    {
+      "id": "el-te",
+      "prompt": "52",
+      "answer": "Tellurium (Te)",
+      "context": "Metalloid",
+      "group": "Period 5",
+      "note": "Müller von Reichenstein found it in Transylvanian gold ore in 1782; Klaproth named it in 1798 after Latin tellus, the Earth."
+    },
+    {
+      "id": "el-i",
+      "prompt": "53",
+      "answer": "Iodine (I)",
+      "context": "Halogen",
+      "group": "Period 5",
+      "note": "Bernard Courtois discovered it in 1811 in seaweed ash used to make saltpetre for gunpowder; Gay-Lussac named it from Greek for violet."
+    },
+    {
+      "id": "el-xe",
+      "prompt": "54",
+      "answer": "Xenon (Xe)",
+      "context": "Noble gas",
+      "group": "Period 5",
+      "note": "From Greek xenos, stranger; in 1962 Neil Bartlett made the first noble gas compound with it, overturning the belief that these gases were inert."
+    },
+    {
+      "id": "el-cs",
+      "prompt": "55",
+      "answer": "Caesium (Cs)",
+      "context": "Alkali metal",
+      "group": "Period 6",
+      "note": "Bunsen and Kirchhoff found it in 1860 by its blue spectral lines; since 1967 the SI second has been defined by a caesium-133 hyperfine transition."
+    },
+    {
+      "id": "el-ba",
+      "prompt": "56",
+      "answer": "Barium (Ba)",
+      "context": "Alkaline earth metal",
+      "group": "Period 6",
+      "note": "From Greek barys, heavy, after its dense mineral baryte; barium sulfate has been used since 1908 to make the digestive tract visible on X-rays."
+    },
+    {
+      "id": "el-la",
+      "prompt": "57",
+      "answer": "Lanthanum (La)",
+      "context": "Lanthanide",
+      "group": "Period 6",
+      "note": "From Greek lanthanein, to lie hidden: Mosander found it in 1839 concealed as an impurity in cerium nitrate. It gives the lanthanides their name."
+    },
+    {
+      "id": "el-ce",
+      "prompt": "58",
+      "answer": "Cerium (Ce)",
+      "context": "Lanthanide",
+      "group": "Period 6",
+      "note": "Named by Berzelius after Ceres, discovered two years earlier and then considered a planet; cerium metal provides the sparks in ferrocerium lighter flints."
+    },
+    {
+      "id": "el-pr",
+      "prompt": "59",
+      "answer": "Praseodymium (Pr)",
+      "context": "Lanthanide",
+      "group": "Period 6",
+      "note": "Greek for 'green twin': in 1885 Auer von Welsbach split didymium, long thought an element, into praseodymium and neodymium."
+    },
+    {
+      "id": "el-nd",
+      "prompt": "60",
+      "answer": "Neodymium (Nd)",
+      "context": "Lanthanide",
+      "group": "Period 6",
+      "note": "Greek for 'new twin', separated from didymium in 1885; neodymium iron boron magnets pack strong fields into headphones, hard drives and electric motors."
+    },
+    {
+      "id": "el-pm",
+      "prompt": "61",
+      "answer": "Promethium (Pm)",
+      "context": "Lanthanide",
+      "group": "Period 6",
+      "note": "Named after Prometheus, who stole fire from the gods; Grace Mary Coryell, wife of one of its 1945 Oak Ridge discoverers, suggested it."
+    },
+    {
+      "id": "el-sm",
+      "prompt": "62",
+      "answer": "Samarium (Sm)",
+      "context": "Lanthanide",
+      "group": "Period 6",
+      "note": "Named after the mineral samarskite, so the Russian mine official Samarsky-Bykhovets became the first person, albeit indirectly, to have an element named after him."
+    },
+    {
+      "id": "el-eu",
+      "prompt": "63",
+      "answer": "Europium (Eu)",
+      "context": "Lanthanide",
+      "group": "Period 6",
+      "note": "Demarçay isolated it in 1901 and named it after Europe; red-glowing security features on euro banknotes show europium's characteristic emission."
+    },
+    {
+      "id": "el-gd",
+      "prompt": "64",
+      "answer": "Gadolinium (Gd)",
+      "context": "Lanthanide",
+      "group": "Period 6",
+      "note": "Named, via the mineral gadolinite, after Finnish chemist Johan Gadolin, who discovered yttrium's oxide; its paramagnetism makes gadolinium compounds useful MRI contrast agents."
+    },
+    {
+      "id": "el-tb",
+      "prompt": "65",
+      "answer": "Terbium (Tb)",
+      "context": "Lanthanide",
+      "group": "Period 6",
+      "note": "Another Ytterby element; through nineteenth century confusion, the names terbium and erbium were switched, and they have stayed switched ever since."
+    },
+    {
+      "id": "el-dy",
+      "prompt": "66",
+      "answer": "Dysprosium (Dy)",
+      "context": "Lanthanide",
+      "group": "Period 6",
+      "note": "From Greek dysprositos, hard to get: in 1886 Lecoq de Boisbaudran needed more than thirty attempts to separate it from holmium oxide."
+    },
+    {
+      "id": "el-ho",
+      "prompt": "67",
+      "answer": "Holmium (Ho)",
+      "context": "Lanthanide",
+      "group": "Period 6",
+      "note": "Named from Holmia, Latin for Stockholm; having the highest magnetic saturation of any element, holmium forms pole pieces of the strongest static magnets."
+    },
+    {
+      "id": "el-er",
+      "prompt": "68",
+      "answer": "Erbium (Er)",
+      "context": "Lanthanide",
+      "group": "Period 6",
+      "note": "Mosander found it in 1843 in yttria from Ytterby; erbium-doped optical fibres amplify the 1550 nanometre light carrying long-distance telecommunications."
+    },
+    {
+      "id": "el-tm",
+      "prompt": "69",
+      "answer": "Thulium (Tm)",
+      "context": "Lanthanide",
+      "group": "Period 6",
+      "note": "Cleve named it in 1879 after Thule, an ancient name for a far northern land; its original symbol, Tu, was later changed to Tm."
+    },
+    {
+      "id": "el-yb",
+      "prompt": "70",
+      "answer": "Ytterbium (Yb)",
+      "context": "Lanthanide",
+      "group": "Period 6",
+      "note": "The fourth element named after Ytterby; in 2013 a pair of ytterbium atomic clocks at NIST set a record for stability."
+    },
+    {
+      "id": "el-lu",
+      "prompt": "71",
+      "answer": "Lutetium (Lu)",
+      "context": "Lanthanide",
+      "group": "Period 6",
+      "note": "Urbain named it in 1907 after Lutetia, the Latin name for Paris; Auer von Welsbach's rival name, cassiopeium, survived in Germany until the 1950s."
+    },
+    {
+      "id": "el-hf",
+      "prompt": "72",
+      "answer": "Hafnium (Hf)",
+      "context": "Transition metal",
+      "group": "Period 6",
+      "note": "Coster and Hevesy found it in Copenhagen, Latin Hafnia, in 1923, searching zirconium ores because Bohr's atomic theory suggested a resemblance to zirconium."
+    },
+    {
+      "id": "el-ta",
+      "prompt": "73",
+      "answer": "Tantalum (Ta)",
+      "context": "Transition metal",
+      "group": "Period 6",
+      "note": "Ekeberg named it in 1802 after Tantalus, who could never drink the water around him, because the metal's oxide could not absorb acid when immersed."
+    },
+    {
+      "id": "el-w",
+      "prompt": "74",
+      "answer": "Tungsten (W)",
+      "context": "Transition metal",
+      "group": "Period 6",
+      "note": "Swedish tung sten means heavy stone; the symbol W comes from wolfram, still used in many languages. No element has a higher melting point."
+    },
+    {
+      "id": "el-re",
+      "prompt": "75",
+      "answer": "Rhenium (Re)",
+      "context": "Transition metal",
+      "group": "Period 6",
+      "note": "Named after the Rhine by Noddack, Tacke and Berg in 1925; Masataka Ogawa had probably found it in 1908, but misidentified it as element 43."
+    },
+    {
+      "id": "el-os",
+      "prompt": "76",
+      "answer": "Osmium (Os)",
+      "context": "Transition metal",
+      "group": "Period 6",
+      "note": "Smithson Tennant named it in 1803 from Greek osme, smell, after its pungent volatile oxide; osmium is the densest stable element."
+    },
+    {
+      "id": "el-ir",
+      "prompt": "77",
+      "answer": "Iridium (Ir)",
+      "context": "Transition metal",
+      "group": "Period 6",
+      "note": "Named after Iris, goddess of the rainbow, for its colourful compounds; an iridium-rich clay layer inspired the theory that an impact killed the dinosaurs."
+    },
+    {
+      "id": "el-pt",
+      "prompt": "78",
+      "answer": "Platinum (Pt)",
+      "context": "Transition metal",
+      "group": "Period 6",
+      "note": "From Spanish platina, little silver; from 1889 to 1960 the metre was defined by the length of a platinum-iridium bar."
+    },
+    {
+      "id": "el-au",
+      "prompt": "79",
+      "answer": "Gold (Au)",
+      "context": "Transition metal",
+      "group": "Period 6",
+      "note": "The symbol Au comes from Latin aurum; gold's yellow colour is thought to arise from relativistic effects on its electrons, a classic textbook example."
+    },
+    {
+      "id": "el-hg",
+      "prompt": "80",
+      "answer": "Mercury (Hg)",
+      "context": "Transition metal",
+      "group": "Period 6",
+      "note": "The symbol Hg comes from Greek hydrargyros, water-silver; in 1911 Kamerlingh Onnes discovered superconductivity in mercury cooled to about 4 kelvin."
+    },
+    {
+      "id": "el-tl",
+      "prompt": "81",
+      "answer": "Thallium (Tl)",
+      "context": "Post-transition metal",
+      "group": "Period 6",
+      "note": "William Crookes discovered it by flame spectroscopy in 1861, naming it from Greek thallos, green shoot, after its bright green spectral line."
+    },
+    {
+      "id": "el-pb",
+      "prompt": "82",
+      "answer": "Lead (Pb)",
+      "context": "Post-transition metal",
+      "group": "Period 6",
+      "note": "The symbol Pb comes from Latin plumbum; lead is the stable element with the highest atomic number, and three isotopes end major decay chains."
+    },
+    {
+      "id": "el-bi",
+      "prompt": "83",
+      "answer": "Bismuth (Bi)",
+      "context": "Post-transition metal",
+      "group": "Period 6",
+      "note": "Long thought stable, bismuth-209 was found in 2003 to undergo alpha decay, with a half-life about a billion times the age of the universe."
+    },
+    {
+      "id": "el-po",
+      "prompt": "84",
+      "answer": "Polonium (Po)",
+      "context": "Post-transition metal",
+      "group": "Period 6",
+      "note": "Marie and Pierre Curie discovered it in 1898 and named it after Poland, then partitioned, hoping to publicise its lack of independence."
+    },
+    {
+      "id": "el-at",
+      "prompt": "85",
+      "answer": "Astatine (At)",
+      "context": "Halogen",
+      "group": "Period 6",
+      "note": "From Greek astatos, unstable: Corson, MacKenzie and Segrè first made it at Berkeley in 1940, and all its isotopes are short-lived."
+    },
+    {
+      "id": "el-rn",
+      "prompt": "86",
+      "answer": "Radon (Rn)",
+      "context": "Noble gas",
+      "group": "Period 6",
+      "note": "Rutherford and Owens discovered it at McGill in 1899 as an 'emanation'; Ramsay and Whytlaw-Gray later proposed niton, from Latin nitens, shining."
+    },
+    {
+      "id": "el-fr",
+      "prompt": "87",
+      "answer": "Francium (Fr)",
+      "context": "Alkali metal",
+      "group": "Period 7",
+      "note": "Marguerite Perey discovered it in 1939, the last element first found in nature rather than synthesised; it was the second named after France."
+    },
+    {
+      "id": "el-ra",
+      "prompt": "88",
+      "answer": "Radium (Ra)",
+      "context": "Alkaline earth metal",
+      "group": "Period 7",
+      "note": "The Curies announced it in December 1898, naming it from Latin radius, ray; Marie Curie and Debierne first isolated the metal in 1910."
+    },
+    {
+      "id": "el-ac",
+      "prompt": "89",
+      "answer": "Actinium (Ac)",
+      "context": "Actinide",
+      "group": "Period 7",
+      "note": "From Greek aktis, ray; Debierne named it in 1899, though the element itself was probably first truly obtained by Giesel in 1902."
+    },
+    {
+      "id": "el-th",
+      "prompt": "90",
+      "answer": "Thorium (Th)",
+      "context": "Actinide",
+      "group": "Period 7",
+      "note": "Berzelius named a supposed element after Thor in 1815, but it proved to be yttrium phosphate; he reused the name for real thorium in 1828."
+    },
+    {
+      "id": "el-pa",
+      "prompt": "91",
+      "answer": "Protactinium (Pa)",
+      "context": "Actinide",
+      "group": "Period 7",
+      "note": "Fajans and Göhring first called it brevium in 1913; Meitner and Hahn renamed it protactinium, 'before actinium', the element it decays into."
+    },
+    {
+      "id": "el-u",
+      "prompt": "92",
+      "answer": "Uranium (U)",
+      "context": "Actinide",
+      "group": "Period 7",
+      "note": "Klaproth discovered it in 1789 and named it after the newly discovered planet Uranus; Becquerel discovered radioactivity in 1896 using uranium."
+    },
+    {
+      "id": "el-np",
+      "prompt": "93",
+      "answer": "Neptunium (Np)",
+      "context": "Actinide",
+      "group": "Period 7",
+      "note": "McMillan and Abelson made it at Berkeley in 1940, the first transuranic element; Neptune is the next planet beyond Uranus, as neptunium follows uranium."
+    },
+    {
+      "id": "el-pu",
+      "prompt": "94",
+      "answer": "Plutonium (Pu)",
+      "context": "Actinide",
+      "group": "Period 7",
+      "note": "Named after Pluto, continuing the planetary sequence; Seaborg chose the symbol Pu as a joke, after 'P U', an exclamation at a bad smell."
+    },
+    {
+      "id": "el-am",
+      "prompt": "95",
+      "answer": "Americium (Am)",
+      "context": "Actinide",
+      "group": "Period 7",
+      "note": "Named after the Americas by analogy with europium, the lanthanide directly above it; americium powers the ionisation chamber in many household smoke detectors."
+    },
+    {
+      "id": "el-cm",
+      "prompt": "96",
+      "answer": "Curium (Cm)",
+      "context": "Actinide",
+      "group": "Period 7",
+      "note": "Named after Marie and Pierre Curie, following the example of gadolinium above it, named after Johan Gadolin; first made at Berkeley in 1944."
+    },
+    {
+      "id": "el-bk",
+      "prompt": "97",
+      "answer": "Berkelium (Bk)",
+      "context": "Actinide",
+      "group": "Period 7",
+      "note": "Named after Berkeley, California, where Seaborg, Ghiorso, Thompson and Street first made it in December 1949 using the 60-inch cyclotron."
+    },
+    {
+      "id": "el-cf",
+      "prompt": "98",
+      "answer": "Californium (Cf)",
+      "context": "Actinide",
+      "group": "Period 7",
+      "note": "First made at Berkeley in 1950 and named after the university and state of California; its neutron-emitting isotopes help start up nuclear reactors."
+    },
+    {
+      "id": "el-es",
+      "prompt": "99",
+      "answer": "Einsteinium (Es)",
+      "context": "Actinide",
+      "group": "Period 7",
+      "note": "Named after Albert Einstein; first identified in fallout from Ivy Mike, the first hydrogen bomb test in 1952, and kept secret until 1955."
+    },
+    {
+      "id": "el-fm",
+      "prompt": "100",
+      "answer": "Fermium (Fm)",
+      "context": "Actinide",
+      "group": "Period 7",
+      "note": "Named after Enrico Fermi; it is the heaviest element that can be made by bombarding lighter elements with neutrons, the route to macroscopic quantities."
+    },
+    {
+      "id": "el-md",
+      "prompt": "101",
+      "answer": "Mendelevium (Md)",
+      "context": "Actinide",
+      "group": "Period 7",
+      "note": "Named after Mendeleev, creator of the periodic table; during the Cold War, Seaborg needed US government permission to honour a Russian."
+    },
+    {
+      "id": "el-no",
+      "prompt": "102",
+      "answer": "Nobelium (No)",
+      "context": "Actinide",
+      "group": "Period 7",
+      "note": "Named after Alfred Nobel following a 1957 Swedish claim, soon retracted; in 1992 IUPAC credited a Soviet team but kept the familiar name."
+    },
+    {
+      "id": "el-lr",
+      "prompt": "103",
+      "answer": "Lawrencium (Lr)",
+      "context": "Actinide",
+      "group": "Period 7",
+      "note": "Named after Ernest Lawrence, inventor of the cyclotron; the Berkeley discoverers proposed the symbol Lw, but IUPAC changed it to Lr."
+    },
+    {
+      "id": "el-rf",
+      "prompt": "104",
+      "answer": "Rutherfordium (Rf)",
+      "context": "Transition metal",
+      "group": "Period 7",
+      "note": "Named after New Zealand physicist Ernest Rutherford, father of nuclear physics; Soviet scientists claiming priority had called it kurchatovium instead."
+    },
+    {
+      "id": "el-db",
+      "prompt": "105",
+      "answer": "Dubnium (Db)",
+      "context": "Transition metal",
+      "group": "Period 7",
+      "note": "Named after Dubna, home of Russia's Joint Institute for Nuclear Research; Berkeley had proposed hahnium, a dispute settled only in the 1990s."
+    },
+    {
+      "id": "el-sg",
+      "prompt": "106",
+      "answer": "Seaborgium (Sg)",
+      "context": "Transition metal",
+      "group": "Period 7",
+      "note": "Named after American chemist Glenn Seaborg; it is one of only two elements named after a person still living at the time of naming."
+    },
+    {
+      "id": "el-bh",
+      "prompt": "107",
+      "answer": "Bohrium (Bh)",
+      "context": "Transition metal",
+      "group": "Period 7",
+      "note": "Named after Niels Bohr; the Darmstadt discoverers of 1981 proposed nielsbohrium, which IUPAC shortened to bohrium."
+    },
+    {
+      "id": "el-hs",
+      "prompt": "108",
+      "answer": "Hassium (Hs)",
+      "context": "Transition metal",
+      "group": "Period 7",
+      "note": "Named after the German state of Hesse, Latin Hassia, home of the GSI laboratory in Darmstadt, which first made it in 1984."
+    },
+    {
+      "id": "el-mt",
+      "prompt": "109",
+      "answer": "Meitnerium (Mt)",
+      "context": "Transition metal",
+      "group": "Period 7",
+      "note": "Named after Lise Meitner, a discoverer of nuclear fission; it is the only element named solely after a real, non-mythological woman."
+    },
+    {
+      "id": "el-ds",
+      "prompt": "110",
+      "answer": "Darmstadtium (Ds)",
+      "context": "Transition metal",
+      "group": "Period 7",
+      "note": "Named after Darmstadt, the German city whose GSI laboratory, which also made elements 107 to 112, first created it on 9 November 1994."
+    },
+    {
+      "id": "el-rg",
+      "prompt": "111",
+      "answer": "Roentgenium (Rg)",
+      "context": "Transition metal",
+      "group": "Period 7",
+      "note": "Named after Wilhelm Röntgen, discoverer of X-rays; the Darmstadt team made it in December 1994, detecting just three nuclei."
+    },
+    {
+      "id": "el-cn",
+      "prompt": "112",
+      "answer": "Copernicium (Cn)",
+      "context": "Transition metal",
+      "group": "Period 7",
+      "note": "Named after Copernicus on his 537th birthday in 2010; experiments suggest it is so volatile it may be a gas or liquid at room temperature."
+    },
+    {
+      "id": "el-nh",
+      "prompt": "113",
+      "answer": "Nihonium (Nh)",
+      "context": "Post-transition metal",
+      "group": "Period 7",
+      "note": "Named after Nihon, Japan, where Kosuke Morita's team at Riken made it; it was the first element named by Asian physicists."
+    },
+    {
+      "id": "el-fl",
+      "prompt": "114",
+      "answer": "Flerovium (Fl)",
+      "context": "Post-transition metal",
+      "group": "Period 7",
+      "note": "Named after Dubna's Flerov Laboratory and physicist Georgy Flyorov; the Cyrillic ё is transliterated as e, hence flerovium rather than flyorovium."
+    },
+    {
+      "id": "el-mc",
+      "prompt": "115",
+      "answer": "Moscovium (Mc)",
+      "context": "Post-transition metal",
+      "group": "Period 7",
+      "note": "Named after the Moscow region, home of Dubna's Joint Institute for Nuclear Research, where a Russian and American team first made it in 2003."
+    },
+    {
+      "id": "el-lv",
+      "prompt": "116",
+      "answer": "Livermorium (Lv)",
+      "context": "Post-transition metal",
+      "group": "Period 7",
+      "note": "Named after Lawrence Livermore National Laboratory, Dubna's partner; the first livermorium atom, a single one, was detected at Dubna in July 2000."
+    },
+    {
+      "id": "el-ts",
+      "prompt": "117",
+      "answer": "Tennessine (Ts)",
+      "context": "Halogen",
+      "group": "Period 7",
+      "note": "Named after Tennessee, where Oak Ridge produced the berkelium target; 2016 naming rules gave it the halogen ending -ine rather than -ium."
+    },
+    {
+      "id": "el-og",
+      "prompt": "118",
+      "answer": "Oganesson (Og)",
+      "context": "Noble gas",
+      "group": "Period 7",
+      "note": "Named after Yuri Oganessian; though placed with the noble gases, relativistic effects are predicted to make it a reactive solid at room temperature."
+    }
+  ]
+}

@@ -1,0 +1,762 @@
+{
+  "id": "discoveries",
+  "title": "Discoveries",
+  "subtitle": "Who found it first",
+  "promptLabel": "Who",
+  "reversible": false,
+  "about": "Landmark discoveries from Aristarchus to gravitational waves, weighted towards physics. Each card names who did it, and the notes flag credit that was shared, disputed or overlooked.",
+  "cards": [
+    {
+      "id": "ds-heliocentrism",
+      "prompt": "Proposed the first known model with the Sun, not the Earth, at the centre of the universe",
+      "answer": "Aristarchus of Samos",
+      "context": "Astronomy · c. 270 BC",
+      "group": "Antiquity",
+      "note": "His treatise is lost; we know of his Sun-centred model mainly through a passage in Archimedes' The Sand Reckoner."
+    },
+    {
+      "id": "ds-buoyancy",
+      "prompt": "Stated that an immersed body is buoyed up by a force equal to the weight of fluid displaced",
+      "answer": "Archimedes",
+      "context": "Physics · c. 246 BC",
+      "group": "Antiquity",
+      "note": "The Eureka bath story comes from Vitruvius, writing two centuries later, and in it the water measures volume, not buoyancy."
+    },
+    {
+      "id": "ds-earth-circumference",
+      "prompt": "Estimated the Earth's circumference from noon shadows at Syene and Alexandria",
+      "answer": "Eratosthenes",
+      "context": "Earth science · c. 240 BC",
+      "group": "Antiquity",
+      "note": "Admirers nicknamed him Pentathlos, an all-rounder; critics called him Beta, because he supposedly came second in every field."
+    },
+    {
+      "id": "ds-precession",
+      "prompt": "Discovered the precession of the equinoxes by comparing his star positions with older records",
+      "answer": "Hipparchus",
+      "context": "Astronomy · c. 130 BC",
+      "group": "Antiquity",
+      "note": "He compiled the first known comprehensive star catalogue in the West, yet only one of his fourteen or more books survives."
+    },
+    {
+      "id": "ds-intromission",
+      "prompt": "Argued from experiment that vision happens when light enters the eye, in his Book of Optics",
+      "answer": "Ibn al-Haytham (Alhazen)",
+      "context": "Physics · c. 1021",
+      "group": "11th century",
+      "note": "Legend says he feigned madness to escape the caliph al-Hakim and wrote the book while kept under house arrest in Cairo."
+    },
+    {
+      "id": "ds-de-revolutionibus",
+      "prompt": "Published a detailed Sun-centred model of the planets in De revolutionibus",
+      "answer": "Nicolaus Copernicus",
+      "context": "Astronomy · 1543",
+      "group": "16th century",
+      "note": "An unsigned preface, added without authorisation by the preacher Andreas Osiander, presented the theory as a mere calculating device."
+    },
+    {
+      "id": "ds-fabrica",
+      "prompt": "Corrected Galen's anatomy in De humani corporis fabrica, drawing on human dissection",
+      "answer": "Andreas Vesalius",
+      "context": "Medicine · 1543",
+      "group": "16th century",
+      "note": "He showed Galen had relied on animals: humans lack the rete mirabile, a network of blood vessels found in sheep."
+    },
+    {
+      "id": "ds-earth-magnet",
+      "prompt": "Argued in De Magnete that the Earth itself is a giant magnet",
+      "answer": "William Gilbert",
+      "context": "Physics · 1600",
+      "group": "17th century",
+      "note": "He coined the Latin electricus, meaning like amber, from which the English word electricity was later derived."
+    },
+    {
+      "id": "ds-elliptical-orbits",
+      "prompt": "Showed that Mars moves in an ellipse, with the Sun at one focus",
+      "answer": "Johannes Kepler",
+      "context": "Astronomy · 1609",
+      "group": "17th century",
+      "note": "An eight arcminute misfit between Tycho Brahe's data and his best circular model, he wrote, would lead to the reform of astronomy."
+    },
+    {
+      "id": "ds-jupiter-moons",
+      "prompt": "Discovered four moons orbiting Jupiter with his telescope",
+      "answer": "Galileo Galilei",
+      "context": "Astronomy · 1610",
+      "group": "17th century",
+      "note": "Simon Marius saw them independently at nearly the same time, and it is his names, Io, Europa, Ganymede and Callisto, that stuck."
+    },
+    {
+      "id": "ds-circulation",
+      "prompt": "Demonstrated that the heart pumps blood around the body in a continuous circulation",
+      "answer": "William Harvey",
+      "context": "Medicine · 1628",
+      "group": "17th century",
+      "note": "After he published De Motu Cordis, hostile physicians attacked him and, as a contemporary put it, he fell mightily in his practice."
+    },
+    {
+      "id": "ds-barometer",
+      "prompt": "Invented the mercury barometer, showing that air pressure holds up a column of mercury",
+      "answer": "Evangelista Torricelli",
+      "context": "Physics · 1644",
+      "group": "17th century",
+      "note": "He wrote to Michelangelo Ricci in 1644 that we live submerged at the bottom of an ocean of air."
+    },
+    {
+      "id": "ds-boyles-law",
+      "prompt": "Published the law that the pressure of a gas is inversely proportional to its volume",
+      "answer": "Robert Boyle",
+      "context": "Physics · 1662",
+      "group": "17th century",
+      "note": "Richard Towneley and Henry Power noticed the relationship first; Boyle's assistant Robert Hooke probably built the apparatus."
+    },
+    {
+      "id": "ds-cells",
+      "prompt": "Coined the biological term cell, in his illustrated microscopy book Micrographia",
+      "answer": "Robert Hooke",
+      "context": "Biology · 1665",
+      "group": "17th century",
+      "note": "The compartments reminded him of monks' cells in a monastery; Samuel Pepys sat up until two in the morning reading the book."
+    },
+    {
+      "id": "ds-white-light",
+      "prompt": "Showed with prisms that white light is a mixture of colours that can be recombined",
+      "answer": "Isaac Newton",
+      "context": "Physics · 1672",
+      "group": "17th century",
+      "note": "A bitter dispute with Robert Hooke over this work led Newton to delay publishing his Opticks until after Hooke died in 1703."
+    },
+    {
+      "id": "ds-speed-of-light",
+      "prompt": "Showed that light travels at a finite speed, by timing eclipses of Jupiter's moon Io",
+      "answer": "Ole Rømer",
+      "context": "Physics · 1676",
+      "group": "17th century",
+      "note": "He estimated light takes about 22 minutes to cross Earth's orbit; Cassini, his observatory director, never fully accepted the idea."
+    },
+    {
+      "id": "ds-microorganisms",
+      "prompt": "First observed single-celled organisms, his animalcules, through microscopes he made himself",
+      "answer": "Antonie van Leeuwenhoek",
+      "context": "Biology · 1676",
+      "group": "17th century",
+      "note": "A Delft draper who wanted to inspect thread, he kept his lens-making method secret, and it remained unknown for centuries."
+    },
+    {
+      "id": "ds-principia",
+      "prompt": "Published the three laws of motion and the law of universal gravitation",
+      "answer": "Isaac Newton",
+      "context": "Physics · 1687",
+      "group": "17th century",
+      "note": "The Principia was printed at Edmond Halley's expense, after Halley visited Newton in 1684 to ask about the inverse-square law."
+    },
+    {
+      "id": "ds-halleys-comet",
+      "prompt": "Predicted that the comet of 1682 would return in 1758",
+      "answer": "Edmond Halley",
+      "context": "Astronomy · 1705",
+      "group": "18th century",
+      "note": "Halley died in 1742; the comet was first spotted on Christmas Day 1758 by Johann Palitzsch, a German farmer and amateur astronomer."
+    },
+    {
+      "id": "ds-lightning",
+      "prompt": "Proposed experiments showing lightning is electrical, famously flying a kite in a thunderstorm",
+      "answer": "Benjamin Franklin",
+      "context": "Physics · 1752",
+      "group": "18th century",
+      "note": "Thomas-François Dalibard performed Franklin's proposed experiment in France in May 1752, before the kite flight Priestley later described."
+    },
+    {
+      "id": "ds-hydrogen",
+      "prompt": "Identified hydrogen as a distinct substance, an inflammable air that forms water when burned",
+      "answer": "Henry Cavendish",
+      "context": "Chemistry · 1766",
+      "group": "18th century",
+      "note": "Cavendish called it inflammable air; Antoine Lavoisier later reproduced the experiment and gave the element its modern name."
+    },
+    {
+      "id": "ds-oxygen",
+      "prompt": "First to publish the isolation of oxygen, which he called dephlogisticated air",
+      "answer": "Joseph Priestley",
+      "context": "Chemistry · 1774",
+      "group": "18th century",
+      "note": "Carl Wilhelm Scheele isolated it in Uppsala in 1773 or earlier but published later; Lavoisier first recognised it as an element."
+    },
+    {
+      "id": "ds-combustion",
+      "prompt": "Explained combustion as combination with oxygen, overturning the phlogiston theory",
+      "answer": "Antoine Lavoisier",
+      "context": "Chemistry · 1777",
+      "group": "18th century",
+      "note": "A tax farmer under the old regime, he was guillotined in 1794; the French government exonerated him a year and a half later."
+    },
+    {
+      "id": "ds-uranus",
+      "prompt": "Discovered the planet Uranus from his garden in Bath, with a homemade telescope",
+      "answer": "William Herschel",
+      "context": "Astronomy · 1781",
+      "group": "18th century",
+      "note": "A professional musician who composed 24 symphonies, Herschel at first reported the new object as a comet."
+    },
+    {
+      "id": "ds-coulombs-law",
+      "prompt": "Used a torsion balance to establish the inverse-square law of force between electric charges",
+      "answer": "Charles-Augustin de Coulomb",
+      "context": "Physics · 1785",
+      "group": "18th century",
+      "note": "Priestley and John Robison had suspected an inverse-square law earlier, and Henry Cavendish found it too but never published."
+    },
+    {
+      "id": "ds-deep-time",
+      "prompt": "Argued that slow, continuing processes shape the Earth over immense spans of time",
+      "answer": "James Hutton",
+      "context": "Earth science · 1785",
+      "group": "18th century",
+      "note": "At Siccar Point in 1788, his companion John Playfair said the mind seemed to grow giddy looking so far into time."
+    },
+    {
+      "id": "ds-vaccination",
+      "prompt": "Showed that inoculation with cowpox protects against smallpox, pioneering vaccination",
+      "answer": "Edward Jenner",
+      "context": "Medicine · 1796",
+      "group": "18th century",
+      "note": "Dorset farmer Benjamin Jesty had protected his own family with cowpox in 1774; Jenner's first subject was his gardener's son."
+    },
+    {
+      "id": "ds-cavendish-experiment",
+      "prompt": "Measured the gravitational attraction between lead spheres in a laboratory, finding the Earth's density",
+      "answer": "Henry Cavendish",
+      "context": "Physics · 1798",
+      "group": "18th century",
+      "note": "The torsion balance was designed by John Michell, who died before using it; G itself never appears in Cavendish's paper."
+    },
+    {
+      "id": "ds-battery",
+      "prompt": "Built the first electric battery, a pile of metal discs separated by brine-soaked cloth",
+      "answer": "Alessandro Volta",
+      "context": "Physics · 1800",
+      "group": "19th century",
+      "note": "It grew out of his argument with Luigi Galvani over frogs' legs; Volta also discovered methane in the marshes of Lake Maggiore."
+    },
+    {
+      "id": "ds-interference",
+      "prompt": "Showed that light can interfere with itself, reviving the wave theory against Newton's corpuscles",
+      "answer": "Thomas Young",
+      "context": "Physics · 1803",
+      "group": "19th century",
+      "note": "It is unclear which experiments he actually performed; the same polymath also helped decipher Egyptian hieroglyphs on the Rosetta Stone."
+    },
+    {
+      "id": "ds-atomic-theory",
+      "prompt": "Proposed that each element is made of identical atoms with a characteristic relative weight",
+      "answer": "John Dalton",
+      "context": "Chemistry · 1808",
+      "group": "19th century",
+      "note": "He gave the first scientific description of colour blindness; tests on his preserved eyeball in 1995 showed he had deuteranopia."
+    },
+    {
+      "id": "ds-avogadro",
+      "prompt": "Proposed that equal volumes of gases, at the same temperature and pressure, contain equal numbers of molecules",
+      "answer": "Amedeo Avogadro",
+      "context": "Chemistry · 1811",
+      "group": "19th century",
+      "note": "The idea won acceptance only after Stanislao Cannizzaro championed it at the Karlsruhe Congress in 1860, four years after Avogadro's death."
+    },
+    {
+      "id": "ds-fraunhofer-lines",
+      "prompt": "Systematically mapped and measured the dark lines in the spectrum of sunlight",
+      "answer": "Joseph von Fraunhofer",
+      "context": "Physics · 1814",
+      "group": "19th century",
+      "note": "William Hyde Wollaston first noticed some dark lines in 1802; Fraunhofer rediscovered them independently and measured their wavelengths."
+    },
+    {
+      "id": "ds-electromagnetism",
+      "prompt": "Showed that an electric current deflects a nearby compass needle, linking electricity and magnetism",
+      "answer": "Hans Christian Ørsted",
+      "context": "Physics · 1820",
+      "group": "19th century",
+      "note": "Tales of a lucky accident in mid-lecture oversimplify; he had been seeking a link between electricity and magnetism for years."
+    },
+    {
+      "id": "ds-carnot",
+      "prompt": "Showed that the maximum efficiency of a heat engine depends only on its hot and cold temperatures",
+      "answer": "Sadi Carnot",
+      "context": "Physics · 1824",
+      "group": "19th century",
+      "note": "His only publication, printed at his own expense, attracted little attention in his lifetime; he died of cholera aged 36."
+    },
+    {
+      "id": "ds-urea",
+      "prompt": "Synthesised urea, an organic compound, from inorganic starting materials",
+      "answer": "Friedrich Wöhler",
+      "context": "Chemistry · 1828",
+      "group": "19th century",
+      "note": "It is often said to have overthrown vitalism, the idea that organic matter needs a life force, but historians dispute this."
+    },
+    {
+      "id": "ds-induction",
+      "prompt": "Discovered electromagnetic induction, generating a current from a changing magnetic field",
+      "answer": "Michael Faraday",
+      "context": "Physics · 1831",
+      "group": "19th century",
+      "note": "Joseph Henry observed induction independently in 1832, but Faraday published first; Faraday had begun as a bookbinder's apprentice."
+    },
+    {
+      "id": "ds-mechanical-equivalent",
+      "prompt": "Measured the mechanical equivalent of heat with a paddle wheel driven by falling weights",
+      "answer": "James Prescott Joule",
+      "context": "Physics · 1845",
+      "group": "19th century",
+      "note": "Julius Robert von Mayer proposed the equivalence of heat and work in 1842, sparking a priority dispute; Joule managed a brewery."
+    },
+    {
+      "id": "ds-neptune",
+      "prompt": "Predicted the position of an unseen planet, Neptune, from irregularities in the orbit of Uranus",
+      "answer": "Urbain Le Verrier",
+      "context": "Astronomy · 1846",
+      "group": "19th century",
+      "note": "Johann Galle found it at Berlin using Le Verrier's figures; John Couch Adams had calculated independently, sparking a priority dispute."
+    },
+    {
+      "id": "ds-foucault-pendulum",
+      "prompt": "Gave the first simple, direct demonstration of the Earth's rotation with a long pendulum",
+      "answer": "Léon Foucault",
+      "context": "Physics · 1851",
+      "group": "19th century",
+      "note": "His most famous pendulum hung a 28 kilogram bob on a 67 metre wire from the dome of the Panthéon in Paris."
+    },
+    {
+      "id": "ds-cholera",
+      "prompt": "Traced a London cholera outbreak to a contaminated water pump on Broad Street",
+      "answer": "John Snow",
+      "context": "Medicine · 1854",
+      "group": "19th century",
+      "note": "Removing the pump handle is often credited with ending the outbreak, though Snow noted it may already have been declining."
+    },
+    {
+      "id": "ds-natural-selection",
+      "prompt": "Jointly presented the theory of evolution by natural selection to the Linnean Society of London",
+      "answer": "Charles Darwin and Alfred Russel Wallace",
+      "context": "Biology · 1858",
+      "group": "19th century",
+      "note": "Wallace conceived the idea in the Malay Archipelago while in bed with a fever, then sent his essay to Darwin."
+    },
+    {
+      "id": "ds-caesium",
+      "prompt": "Discovered caesium with their new technique of flame spectroscopy",
+      "answer": "Robert Bunsen and Gustav Kirchhoff",
+      "context": "Chemistry · 1860",
+      "group": "19th century",
+      "note": "Found in Dürkheim mineral water, it was named from the Latin caesius, bluish grey, after its bright blue spectral lines."
+    },
+    {
+      "id": "ds-maxwell",
+      "prompt": "Unified electricity and magnetism and predicted that light is an electromagnetic wave",
+      "answer": "James Clerk Maxwell",
+      "context": "Physics · 1865",
+      "group": "19th century",
+      "note": "Freeman Dyson called its publication the most important event of the nineteenth century in the history of the physical sciences."
+    },
+    {
+      "id": "ds-inheritance",
+      "prompt": "Discovered the basic laws of inheritance by breeding pea plants",
+      "answer": "Gregor Mendel",
+      "context": "Biology · 1866",
+      "group": "19th century",
+      "note": "He twice failed the oral exam to become a certified teacher; his work was ignored until three botanists rediscovered it in 1900."
+    },
+    {
+      "id": "ds-periodic-table",
+      "prompt": "Published a periodic table of the elements, leaving gaps for elements not yet discovered",
+      "answer": "Dmitri Mendeleev",
+      "context": "Chemistry · 1869",
+      "group": "19th century",
+      "note": "Lothar Meyer published a very similar table months later, but Mendeleev predicted the properties of gallium, scandium and germanium."
+    },
+    {
+      "id": "ds-aether",
+      "prompt": "Found no sign of the luminiferous aether in a precise interferometer experiment",
+      "answer": "Albert Michelson and Edward Morley",
+      "context": "Physics · 1887",
+      "group": "19th century",
+      "note": "Their interferometer sat on a heavy sandstone slab floating in mercury, so it could be turned smoothly through every direction."
+    },
+    {
+      "id": "ds-radio-waves",
+      "prompt": "First produced and detected radio waves, confirming Maxwell's electromagnetic theory",
+      "answer": "Heinrich Hertz",
+      "context": "Physics · 1887",
+      "group": "19th century",
+      "note": "Asked what his discovery could be used for, Hertz reportedly replied nothing; he also first noticed the photoelectric effect."
+    },
+    {
+      "id": "ds-argon",
+      "prompt": "Isolated argon from air, the first noble gas to be discovered",
+      "answer": "Lord Rayleigh and William Ramsay",
+      "context": "Chemistry · 1894",
+      "group": "19th century",
+      "note": "Henry Cavendish had suspected an unreactive component of air in 1785; the name comes from the Greek for lazy or inactive."
+    },
+    {
+      "id": "ds-x-rays",
+      "prompt": "Discovered X-rays while experimenting with cathode-ray tubes",
+      "answer": "Wilhelm Röntgen",
+      "context": "Physics · 1895",
+      "group": "19th century",
+      "note": "On seeing an X-ray image of her own hand, his wife Anna Bertha reportedly exclaimed that she had seen her death."
+    },
+    {
+      "id": "ds-radioactivity",
+      "prompt": "Discovered that uranium salts emit penetrating radiation without any need for sunlight",
+      "answer": "Henri Becquerel",
+      "context": "Physics · 1896",
+      "group": "19th century",
+      "note": "Overcast Paris skies made him store his wrapped plates in a dark cabinet; developed anyway, they showed images just as sharp."
+    },
+    {
+      "id": "ds-electron",
+      "prompt": "Showed that cathode rays are streams of tiny negatively charged particles, discovering the electron",
+      "answer": "J. J. Thomson",
+      "context": "Physics · 1897",
+      "group": "19th century",
+      "note": "Seven of his students won Nobel Prizes, and his son George later won one for showing that electrons behave as waves."
+    },
+    {
+      "id": "ds-polonium-radium",
+      "prompt": "Discovered the radioactive elements polonium and radium in uranium ore",
+      "answer": "Marie and Pierre Curie",
+      "context": "Chemistry · 1898",
+      "group": "19th century",
+      "note": "Polonium, found first, was named after Marie's homeland, Poland, which was then partitioned between Russia, Germany and Austria."
+    },
+    {
+      "id": "ds-quantum",
+      "prompt": "Explained black-body radiation by assuming energy is emitted only in discrete quanta",
+      "answer": "Max Planck",
+      "context": "Physics · 1900",
+      "group": "20th century",
+      "note": "He later called his resort to quantisation an act of despair; he presented it to the German Physical Society on 14 December 1900."
+    },
+    {
+      "id": "ds-photoelectric",
+      "prompt": "Explained the photoelectric effect by proposing that light comes in quanta of energy hf",
+      "answer": "Albert Einstein",
+      "context": "Physics · 1905",
+      "group": "20th century",
+      "note": "This, not relativity, was cited in his 1921 Nobel Prize; Millikan confirmed it while finding light particles quite unthinkable."
+    },
+    {
+      "id": "ds-special-relativity",
+      "prompt": "Published the special theory of relativity, in On the Electrodynamics of Moving Bodies",
+      "answer": "Albert Einstein",
+      "context": "Physics · 1905",
+      "group": "20th century",
+      "note": "Written while he was a patent examiner in Bern, the paper has no references and names only five other scientists."
+    },
+    {
+      "id": "ds-gold-foil",
+      "prompt": "Found that thin gold foil deflects a few alpha particles through more than 90 degrees",
+      "answer": "Geiger and Marsden, under Rutherford",
+      "context": "Physics · 1909",
+      "group": "20th century",
+      "note": "Marsden was a 20-year-old undergraduate; in 1915 he moved to Wellington, New Zealand, as professor of physics at Victoria University College."
+    },
+    {
+      "id": "ds-oil-drop",
+      "prompt": "Measured the charge of the electron by balancing charged oil droplets in an electric field",
+      "answer": "Robert Millikan, with Harvey Fletcher",
+      "context": "Physics · 1909",
+      "group": "20th century",
+      "note": "Papers found after Fletcher's death suggest Millikan pressed him to give up authorship as a condition of receiving his PhD."
+    },
+    {
+      "id": "ds-superconductivity",
+      "prompt": "Discovered superconductivity: mercury's electrical resistance vanished when cooled with liquid helium",
+      "answer": "Heike Kamerlingh Onnes",
+      "context": "Physics · 1911",
+      "group": "20th century",
+      "note": "Three years earlier, in 1908, he had become the first person to liquefy helium, which made the discovery possible."
+    },
+    {
+      "id": "ds-cosmic-rays",
+      "prompt": "Discovered cosmic rays by carrying electrometers to 5,300 metres in a balloon",
+      "answer": "Victor Hess",
+      "context": "Physics · 1912",
+      "group": "20th century",
+      "note": "To rule out the Sun as the source, he made an ascent during a near-total solar eclipse; the radiation still rose with altitude."
+    },
+    {
+      "id": "ds-cepheids",
+      "prompt": "Discovered that a Cepheid variable star's period reveals its true brightness, a cosmic yardstick",
+      "answer": "Henrietta Swan Leavitt",
+      "context": "Astronomy · 1912",
+      "group": "20th century",
+      "note": "Gösta Mittag-Leffler tried to nominate her for a Nobel Prize in 1924, not knowing she had died three years earlier."
+    },
+    {
+      "id": "ds-continental-drift",
+      "prompt": "Proposed that the continents slowly drift across the surface of the Earth",
+      "answer": "Alfred Wegener",
+      "context": "Earth science · 1912",
+      "group": "20th century",
+      "note": "Mainstream geology rejected the idea until the 1960s; Wegener died on the Greenland ice sheet in 1930, on his fourth expedition there."
+    },
+    {
+      "id": "ds-bohr-model",
+      "prompt": "Explained hydrogen's spectral lines with electrons jumping between fixed orbits",
+      "answer": "Niels Bohr",
+      "context": "Physics · 1913",
+      "group": "20th century",
+      "note": "A keen footballer, he kept goal for Akademisk Boldklub; his brother Harald played for Denmark at the 1908 Olympics."
+    },
+    {
+      "id": "ds-light-bending",
+      "prompt": "Measured starlight bending around the Sun at the 1919 eclipse, confirming general relativity",
+      "answer": "Arthur Eddington and Frank Dyson",
+      "context": "Astronomy · 1919",
+      "group": "20th century",
+      "note": "Eddington was a conscientious objector; Dyson supported his exemption from war service by proposing that he lead an eclipse expedition."
+    },
+    {
+      "id": "ds-compton",
+      "prompt": "Showed that X-rays lose energy when scattered by electrons, as if light were made of particles",
+      "answer": "Arthur Compton",
+      "context": "Physics · 1923",
+      "group": "20th century",
+      "note": "It won him the 1927 Nobel Prize; in the Second World War he oversaw the Manhattan Project's Metallurgical Laboratory."
+    },
+    {
+      "id": "ds-matter-waves",
+      "prompt": "Proposed in his PhD thesis that electrons, and all matter, have wave properties",
+      "answer": "Louis de Broglie",
+      "context": "Physics · 1924",
+      "group": "20th century",
+      "note": "He first took a degree in history before turning to physics; his Nobel Prize came after electron diffraction confirmed the idea."
+    },
+    {
+      "id": "ds-stellar-composition",
+      "prompt": "Showed in her PhD thesis that stars are made mostly of hydrogen and helium",
+      "answer": "Cecilia Payne-Gaposchkin",
+      "context": "Astronomy · 1925",
+      "group": "20th century",
+      "note": "Henry Norris Russell called the result spurious, so she wrote it was almost certainly not real; he reached it himself four years later."
+    },
+    {
+      "id": "ds-matrix-mechanics",
+      "prompt": "Launched quantum mechanics with his 1925 reinterpretation paper, developed into matrix mechanics with Born and Jordan",
+      "answer": "Werner Heisenberg",
+      "context": "Physics · 1925",
+      "group": "20th century",
+      "note": "Suffering severe hay fever, he retreated to the pollen-free North Sea island of Helgoland, where the key ideas came together."
+    },
+    {
+      "id": "ds-wave-equation",
+      "prompt": "Formulated the wave equation describing how a particle's quantum state evolves",
+      "answer": "Erwin Schrödinger",
+      "context": "Physics · 1926",
+      "group": "20th century",
+      "note": "Peter Debye's offhand remark that waves should obey a wave equation prompted the work, worked out at a sanatorium in Arosa, Switzerland."
+    },
+    {
+      "id": "ds-electron-diffraction",
+      "prompt": "Observed electrons diffracting off a nickel crystal, confirming that matter behaves as waves",
+      "answer": "Clinton Davisson and Lester Germer",
+      "context": "Physics · 1927",
+      "group": "20th century",
+      "note": "An accidental air leak forced them to heat their nickel target, which recrystallised into the large single crystals that diffracted electrons."
+    },
+    {
+      "id": "ds-penicillin",
+      "prompt": "Noticed a mould killing bacteria on a culture plate, discovering penicillin",
+      "answer": "Alexander Fleming",
+      "context": "Medicine · 1928",
+      "group": "20th century",
+      "note": "Turning penicillin into a usable drug fell largely to Howard Florey and Ernst Chain, who shared his 1945 Nobel Prize."
+    },
+    {
+      "id": "ds-expanding-universe",
+      "prompt": "Published evidence that galaxies recede at speeds proportional to their distance",
+      "answer": "Edwin Hubble",
+      "context": "Astronomy · 1929",
+      "group": "20th century",
+      "note": "Georges Lemaître noted the same proportionality in 1927, which is why it is now officially called the Hubble-Lemaître law."
+    },
+    {
+      "id": "ds-neutron",
+      "prompt": "Discovered the neutron, an uncharged particle in the atomic nucleus",
+      "answer": "James Chadwick",
+      "context": "Physics · 1932",
+      "group": "20th century",
+      "note": "In Paris, Irène Joliot-Curie and Frédéric Joliot had seen the radiation knock protons from paraffin wax but assumed it was gamma rays."
+    },
+    {
+      "id": "ds-positron",
+      "prompt": "Found the positron, the first known antiparticle, in cosmic-ray tracks in a cloud chamber",
+      "answer": "Carl David Anderson",
+      "context": "Physics · 1932",
+      "group": "20th century",
+      "note": "It confirmed Dirac's predicted anti-electron; Anderson later acknowledged inspiration from his Caltech classmate Chung-Yao Chao."
+    },
+    {
+      "id": "ds-inner-core",
+      "prompt": "Discovered from seismic waves that the Earth has a solid inner core",
+      "answer": "Inge Lehmann",
+      "context": "Earth science · 1936",
+      "group": "20th century",
+      "note": "A key clue came from waves of the 1929 Murchison earthquake in New Zealand reaching Russian stations where none were expected."
+    },
+    {
+      "id": "ds-fission",
+      "prompt": "Detected barium after bombarding uranium with neutrons, the chemical evidence for nuclear fission",
+      "answer": "Otto Hahn and Fritz Strassmann",
+      "context": "Chemistry · 1938",
+      "group": "20th century",
+      "note": "Lise Meitner and Otto Frisch explained it as the splitting of the nucleus and named it fission, but only Hahn received a Nobel."
+    },
+    {
+      "id": "ds-chain-reaction",
+      "prompt": "Led the first self-sustaining nuclear chain reaction, in a reactor beneath a Chicago stadium stand",
+      "answer": "Enrico Fermi",
+      "context": "Physics · 1942",
+      "group": "20th century",
+      "note": "Chicago Pile-1 ran for about four and a half minutes at half a watt; Eugene Wigner celebrated with a bottle of Chianti."
+    },
+    {
+      "id": "ds-transistor",
+      "prompt": "Invented the transistor at Bell Labs, starting with the point-contact transistor",
+      "answer": "Bardeen, Brattain and Shockley",
+      "context": "Physics · 1947",
+      "group": "20th century",
+      "note": "Bardeen later won a second Nobel Prize in Physics, for the theory of superconductivity, the only person to win it twice."
+    },
+    {
+      "id": "ds-double-helix",
+      "prompt": "Proposed the double-helix structure of DNA, with paired bases suggesting how genes are copied",
+      "answer": "James Watson and Francis Crick",
+      "context": "Biology · 1953",
+      "group": "20th century",
+      "note": "Their model relied on unpublished X-ray data from King's College London, including Rosalind Franklin's; she died in 1958, before the 1962 Nobel."
+    },
+    {
+      "id": "ds-neutrino",
+      "prompt": "First detected the neutrino, using antineutrinos streaming from a nuclear reactor",
+      "answer": "Clyde Cowan and Frederick Reines",
+      "context": "Physics · 1956",
+      "group": "20th century",
+      "note": "Wolfgang Pauli had proposed the particle in 1930; Reines received a Nobel Prize in 1995, but Cowan had died in 1974."
+    },
+    {
+      "id": "ds-parity",
+      "prompt": "Showed that parity is not conserved in the weak interaction, using the beta decay of cobalt-60",
+      "answer": "Chien-Shiung Wu",
+      "context": "Physics · 1956",
+      "group": "20th century",
+      "note": "Tsung-Dao Lee and Chen-Ning Yang, who proposed the test, won the 1957 Nobel Prize; Wu herself was not included."
+    },
+    {
+      "id": "ds-laser",
+      "prompt": "Built the first working laser, using a synthetic ruby crystal",
+      "answer": "Theodore Maiman",
+      "context": "Physics · 1960",
+      "group": "20th century",
+      "note": "Physical Review Letters rejected his paper, so he reported the invention in Nature; it built on laser theory by Townes and Schawlow."
+    },
+    {
+      "id": "ds-quarks",
+      "prompt": "Proposed that protons and neutrons are built from smaller constituents he named quarks",
+      "answer": "Murray Gell-Mann",
+      "context": "Physics · 1964",
+      "group": "20th century",
+      "note": "George Zweig independently proposed the same idea that year in a longer manuscript, calling the particles aces."
+    },
+    {
+      "id": "ds-cmb",
+      "prompt": "Discovered the cosmic microwave background as unexplained noise in a horn antenna",
+      "answer": "Arno Penzias and Robert Wilson",
+      "context": "Physics · 1964",
+      "group": "20th century",
+      "note": "They evicted nesting pigeons and cleaned out droppings, but the noise remained; a Princeton group nearby was preparing to search for it."
+    },
+    {
+      "id": "ds-pulsar",
+      "prompt": "Spotted a bit of scruff on radio telescope chart paper: the first known pulsar",
+      "answer": "Jocelyn Bell Burnell",
+      "context": "Astronomy · 1967",
+      "group": "20th century",
+      "note": "The signal was nicknamed LGM-1, for little green men; the 1974 Nobel Prize recognising the discovery did not include her."
+    },
+    {
+      "id": "ds-dinosaur-impact",
+      "prompt": "Proposed that an asteroid impact killed the dinosaurs, from iridium in boundary clay",
+      "answer": "Luis and Walter Alvarez",
+      "context": "Earth science · 1980",
+      "group": "20th century",
+      "note": "A father-and-son team, a physicist and a geologist, they worked with chemists Frank Asaro and Helen Michel on the iridium measurements."
+    },
+    {
+      "id": "ds-buckyballs",
+      "prompt": "Discovered buckminsterfullerene, a football-shaped molecule of sixty carbon atoms",
+      "answer": "Kroto, Curl and Smalley",
+      "context": "Chemistry · 1985",
+      "group": "20th century",
+      "note": "Named after the architect Buckminster Fuller, whose geodesic domes it resembles; the three shared the 1996 Nobel Prize in Chemistry."
+    },
+    {
+      "id": "ds-exoplanet",
+      "prompt": "Discovered the first planet orbiting a Sun-like main-sequence star, 51 Pegasi b",
+      "answer": "Michel Mayor and Didier Queloz",
+      "context": "Astronomy · 1995",
+      "group": "20th century",
+      "note": "The planet, a hot Jupiter, circles its star in about four days, far closer than Mercury is to the Sun."
+    },
+    {
+      "id": "ds-bec",
+      "prompt": "First created a Bose-Einstein condensate, using rubidium atoms cooled almost to absolute zero",
+      "answer": "Eric Cornell and Carl Wieman",
+      "context": "Physics · 1995",
+      "group": "20th century",
+      "note": "Wolfgang Ketterle at MIT produced one with sodium atoms later that year, and all three shared the 2001 Nobel Prize."
+    },
+    {
+      "id": "ds-dark-energy",
+      "prompt": "Found from distant supernovae that the expansion of the universe is accelerating",
+      "answer": "Saul Perlmutter, Brian Schmidt and Adam Riess",
+      "context": "Astronomy · 1998",
+      "group": "20th century",
+      "note": "Two rival teams reached the result independently; cosmologists had expected the expansion to be slowing down under gravity."
+    },
+    {
+      "id": "ds-graphene",
+      "prompt": "Isolated graphene, a single layer of carbon atoms, by peeling graphite with adhesive tape",
+      "answer": "Andre Geim and Konstantin Novoselov",
+      "context": "Physics · 2004",
+      "group": "21st century",
+      "note": "Geim had won an Ig Nobel Prize in 2000 for levitating a frog with magnetism; he is the only winner of both prizes."
+    },
+    {
+      "id": "ds-crispr",
+      "prompt": "Showed that the bacterial CRISPR-Cas9 system can be programmed to cut chosen DNA sequences",
+      "answer": "Jennifer Doudna and Emmanuelle Charpentier",
+      "context": "Biology · 2012",
+      "group": "21st century",
+      "note": "CRISPR sequences were first noticed by Yoshizumi Ishino in 1987; Doudna and Charpentier shared the 2020 Nobel Prize in Chemistry."
+    },
+    {
+      "id": "ds-higgs-boson",
+      "prompt": "Discovered the Higgs boson at CERN's Large Hadron Collider",
+      "answer": "The ATLAS and CMS collaborations",
+      "context": "Physics · 2012",
+      "group": "21st century",
+      "note": "Peter Higgs and François Englert won the 2013 Nobel Prize for predicting it in 1964, in two of three independent teams."
+    },
+    {
+      "id": "ds-gravitational-waves",
+      "prompt": "Made the first direct detection of gravitational waves, from two merging black holes",
+      "answer": "The LIGO and Virgo collaborations",
+      "context": "Physics · 2015",
+      "group": "21st century",
+      "note": "The signal, GW150914, came from black holes of 36 and 29 solar masses; Einstein doubted such waves could ever be detected."
+    }
+  ]
+}
