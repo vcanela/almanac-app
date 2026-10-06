@@ -28,6 +28,8 @@
     --knew: #3e6b4b;
     --shaky: #9a6d14;
     --knob: #ffffff;
+    --sea: #dfe5e3;
+    --land: #e3d8c4;
     --serif: "IBM Plex Serif", Georgia, serif;
     --sans: "IBM Plex Sans", -apple-system, system-ui, sans-serif;
     color-scheme: light dark;
@@ -43,6 +45,8 @@
       --knew: #7fb08c;
       --shaky: #d9a945;
       --knob: #ebe5d9;
+      --sea: #1b252b;
+      --land: #3b4047;
     }
   }
 
@@ -209,6 +213,17 @@
   .face .answer.long { font-size: 1.55rem; line-height: 1.3; }
   .face .answer.longer { font-size: 1.3rem; line-height: 1.4; }
   .face .context { color: var(--muted); font-size: 0.9rem; margin-top: 8px; }
+
+  /* Map cards */
+  .face.has-map { padding-top: 3vh; }
+  .map { margin-top: 10px; }
+  .map svg { display: block; width: 100%; height: auto; max-height: 52vh; border-radius: 10px; }
+  .map .sea { fill: var(--sea); }
+  .map .land { fill: var(--land); stroke: var(--paper); stroke-width: 0.8; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
+  .map .country.on { fill: var(--accent); }
+  .map .ring { fill: none; stroke: none; }
+  .map .ring.on { stroke: var(--accent); stroke-width: 2.5; vector-effect: non-scaling-stroke; }
+  .map-missing { color: var(--muted); font-style: italic; padding: 40px 0; }
   .face .again { color: var(--accent); font-size: 0.8rem; font-weight: 600; margin-top: 6px; }
   .face .answer {
     font: 400 clamp(1.8rem, 8vw, 2.4rem)/1.2 var(--serif);
@@ -296,6 +311,7 @@ const REQUEUE_GAP = 4;     // a missed card returns this many cards later
 
 let decks = [];
 const cardIndex = new Map(); // card id -> { card, deck }
+const mapSvgs = {};          // map name -> SVG markup
 let store = loadStore();
 let view = { name: 'home' };
 let round = null;
@@ -431,6 +447,9 @@ function plan() {
 
   const room = Math.min(fresh, size - picked.length);
   const newOnes = [];
+  // Deal from the decks in a random order, so with more decks than new-card
+  // slots the decks late in the list still get their turn.
+  shuffle(sources);
   for (let i = 0; newOnes.length < room; i++) {
     let more = false;
     for (const src of sources) {
@@ -474,6 +493,16 @@ function go(name, params = {}) {
 function render() {
   const views = { home: renderHome, round: renderRound, summary: renderSummary, browse: renderBrowse, settings: renderSettings };
   $app.innerHTML = (views[view.name] || renderHome)();
+  if (view.name === 'round') highlightMap();
+}
+
+// Maps are shared SVGs; the current card's country is lit by adding a class.
+function highlightMap() {
+  const { card } = cardIndex.get(round.queue[round.i].id);
+  const map = $app.querySelector('.map');
+  if (!card.map || !map) return;
+  map.querySelector(`[id="${card.target}"]`)?.classList.add('on');
+  map.querySelectorAll(`[data-for="${card.target}"]`).forEach(r => r.classList.add('on'));
 }
 
 function renderHome() {
@@ -558,10 +587,13 @@ function renderRound() {
       <div class="track"><i style="width:${pct(round.i, round.queue.length)}%"></i></div>
       <span class="count">${round.i + 1} / ${round.queue.length}</span>
     </div>
-    <div class="face"${round.revealed ? '' : ' data-action="reveal"'}>
+    <div class="face${card.map ? ' has-map' : ''}"${round.revealed ? '' : ' data-action="reveal"'}>
       <div class="label">${esc(label)}</div>
-      <div class="prompt ${lengthClass(prompt, 28, 60)}">${esc(prompt)}</div>
-      <div class="context">${esc(context)}</div>
+      ${card.map
+        ? `<div class="map">${mapSvgs[card.map] || '<p class="map-missing">This map has not been downloaded yet; open Almanac once while online.</p>'}</div>
+           <div class="context">${esc(prompt)}</div>`
+        : `<div class="prompt ${lengthClass(prompt, 28, 60)}">${esc(prompt)}</div>
+           <div class="context">${esc(context)}</div>`}
       ${entry.tries ? '<div class="again">Second look</div>' : ''}
       ${round.revealed ? `<div class="answer ${lengthClass(answer, 24, 45)}">${esc(answer)}</div>${note}` : ''}
     </div>
@@ -589,11 +621,13 @@ function onGrade(g) {
 
 function entryHtml(id) {
   const { card, prompt, answer } = sides(id);
+  // A map card's prompt is a picture, so list it by its answer instead.
+  const [p, a, n] = card.map ? [answer, card.note, ''] : [prompt, answer, card.note];
   return `<div class="entry">
-    <div class="p">${esc(prompt)}</div>
+    <div class="p">${esc(p)}</div>
     <span class="dot ${status(id)}" aria-label="${status(id)}"></span>
-    <div class="a">${esc(answer)}</div>
-    ${card.note ? `<div class="n">${esc(card.note)}</div>` : ''}
+    <div class="a">${esc(a)}</div>
+    ${n ? `<div class="n">${esc(n)}</div>` : ''}
   </div>`;
 }
 
@@ -803,6 +837,11 @@ async function init() {
       if (canReverse(d, c)) cardIndex.set(c.id + REV, { card: c, deck: d });
     }
   }
+  // Load every map the decks use; fetching them also stores them for offline use.
+  const mapNames = [...new Set(decks.flatMap(d => d.cards.map(c => c.map).filter(Boolean)))];
+  await Promise.all(mapNames.map(name =>
+    fetch(`maps/${name}.svg`).then(r => (r.ok ? r.text() : null)).then(svg => { if (svg) mapSvgs[name] = svg; }).catch(() => {})
+  ));
   if (!decks.length) {
     $app.innerHTML = '<p class="loading">The decks could not be loaded. Check the connection and open Almanac again.</p>';
     return;

@@ -1,0 +1,479 @@
+{
+  "id": "maori-traditions",
+  "title": "Māori traditions",
+  "subtitle": "Atua, ancestors and pūrākau",
+  "promptLabel": "Who is",
+  "reversible": true,
+  "reverseLabel": "Who is",
+  "about": "The atua, ancestors, voyagers, creatures and sky lore of Māori pūrākau, from the separation of Ranginui and Papatūānuku to the feats of Māui and the rising of Matariki. Cards draw mainly on Te Ara, the Encyclopedia of New Zealand, with Te Aka Māori Dictionary for spellings; traditions differ between iwi, and notes say where widely told versions vary.",
+  "cards": [
+    {
+      "id": "mt-ranginui",
+      "prompt": "Sky father, pushed up and away from the earth",
+      "answer": "Ranginui",
+      "context": "Primal parent",
+      "group": "Atua",
+      "note": "Dew is said to be his tears, falling on Papatūānuku as he mourns their separation; the heavens were thought to have 10 or 12 layers."
+    },
+    {
+      "id": "mt-papatuanuku",
+      "prompt": "Earth mother, from whom all life is born",
+      "answer": "Papatūānuku",
+      "context": "Primal parent",
+      "group": "Atua",
+      "note": "Whenua means both land and placenta, and a newborn's whenua is traditionally buried in a significant place, binding the child to the land."
+    },
+    {
+      "id": "mt-tane",
+      "prompt": "Atua of forests and birds, who separated his parents",
+      "answer": "Tāne Mahuta",
+      "context": "Child of Ranginui and Papatūānuku",
+      "group": "Atua",
+      "note": "In a Te Arawa account he lay on his back and pushed with arms and legs; other tellings have him standing on his head."
+    },
+    {
+      "id": "mt-tangaroa",
+      "prompt": "Atua of the sea and the creatures in it",
+      "answer": "Tangaroa",
+      "context": "Child of Ranginui and Papatūānuku",
+      "group": "Atua",
+      "note": "In most tellings he is a son of Ranginui and Papatūānuku; a Ngāti Raukawa account instead makes him Papatūānuku's husband."
+    },
+    {
+      "id": "mt-tawhirimatea",
+      "prompt": "Atua of wind and storms, who opposed the separation",
+      "answer": "Tāwhirimātea",
+      "context": "Child of Ranginui and Papatūānuku",
+      "group": "Atua",
+      "note": "He rose to live with his father, then attacked his brothers in revenge, snapping Tāne's trees and raising Tangaroa's waves as tall as mountains."
+    },
+    {
+      "id": "mt-tumatauenga",
+      "prompt": "Atua of war and of humankind",
+      "answer": "Tūmatauenga",
+      "context": "Child of Ranginui and Papatūānuku",
+      "group": "Atua",
+      "note": "Alone among the brothers he stood firm against Tāwhirimātea's storms; the New Zealand Army is known in Māori as Ngāti Tūmatauenga."
+    },
+    {
+      "id": "mt-rongo",
+      "prompt": "Atua of kūmara, cultivated food and peace",
+      "answer": "Rongo-mā-Tāne",
+      "context": "Child of Ranginui and Papatūānuku",
+      "group": "Atua",
+      "note": "Often simply Rongo. When Tāwhirimātea attacked, he hid inside Papatūānuku, which is said to be why kūmara grow underground."
+    },
+    {
+      "id": "mt-haumia",
+      "prompt": "Atua of fern root and uncultivated food",
+      "answer": "Haumia-tiketike",
+      "context": "Child of Ranginui and Papatūānuku",
+      "group": "Atua",
+      "note": "Also called Haumia or Haumia-tikitiki. He hid in the earth from Tāwhirimātea's storms, which is why aruhe, edible fern root, burrows underground."
+    },
+    {
+      "id": "mt-ruaumoko",
+      "prompt": "Atua of earthquakes and volcanoes",
+      "answer": "Rūaumoko",
+      "context": "Child of Ranginui and Papatūānuku",
+      "group": "Atua",
+      "note": "Still at his mother's breast when she was turned face down, he was given fire for warmth; earthquakes are his footsteps below."
+    },
+    {
+      "id": "mt-whiro",
+      "prompt": "Atua of darkness, evil and death",
+      "answer": "Whiro",
+      "context": "Child of Ranginui and Papatūānuku",
+      "group": "Atua",
+      "note": "In Wairarapa traditions he fought Tāne for the three baskets of knowledge, sending insects, birds and bats to attack him, and lost."
+    },
+    {
+      "id": "mt-hine-nui-te-po",
+      "prompt": "Atua of death, who receives the dead in the underworld",
+      "answer": "Hine-nui-te-pō",
+      "context": "Daughter of Tāne",
+      "group": "Atua",
+      "note": "Once Hine-tītama, daughter of Tāne and Hine-ahu-one, she fled to te pō on learning that her husband Tāne was also her father."
+    },
+    {
+      "id": "mt-mahuika",
+      "prompt": "Atua of fire, from whom Māui won flame",
+      "answer": "Mahuika",
+      "context": "Atua wahine",
+      "group": "Atua",
+      "note": "Te Ara calls her Māui's grandmother. In a Mātaatua tradition she married the comet Auahi-tūroa and bore five children, the five fingers."
+    },
+    {
+      "id": "mt-hine-ahu-one",
+      "prompt": "First woman, shaped by Tāne from earth at Kurawaka",
+      "answer": "Hine-ahu-one",
+      "context": "Creation",
+      "group": "Atua",
+      "note": "Her name means earth-formed woman. Tāne gave her both te ira atua and te ira tangata, so people share divine and human natures."
+    },
+    {
+      "id": "mt-hine-te-iwaiwa",
+      "prompt": "Atua of childbirth, weaving and women's arts",
+      "answer": "Hine-te-iwaiwa",
+      "context": "Atua wahine",
+      "group": "Atua",
+      "note": "Also written Hineteiwaiwa. In many tellings she is the wife of Tinirau; Te Ara also links her with the moon and fertility."
+    },
+    {
+      "id": "mt-taranga",
+      "prompt": "Mother who cast newborn Māui into the sea in her topknot",
+      "answer": "Taranga",
+      "context": "Māui's birth",
+      "group": "Māui",
+      "note": "Hence his full name, Māui-tikitiki-a-Taranga. He washed ashore and was raised by his grandfather Tamanui-ki-te-rangi, who taught him chants and incantations."
+    },
+    {
+      "id": "mt-muri-ranga-whenua",
+      "prompt": "Kuia whose jawbone Māui used as his fish hook",
+      "answer": "Muri-ranga-whenua",
+      "context": "Māui's elders",
+      "group": "Māui",
+      "note": "Te Ara records that Māui also used her jawbone to beat the sun until it slowed its path across the sky."
+    },
+    {
+      "id": "mt-te-ika-a-maui",
+      "label": "What is",
+      "reverseLabel": "What is",
+      "prompt": "Māui's great fish, hauled up from the ocean depths",
+      "answer": "Te Ika-a-Māui",
+      "context": "Fishing up the land",
+      "group": "Māui",
+      "note": "It is the North Island. Ngāti Porou say Hikurangi was the first part to break the surface; Māui baited the hook with his own blood."
+    },
+    {
+      "id": "mt-te-waka-a-maui",
+      "label": "What is",
+      "reverseLabel": "What is",
+      "prompt": "The canoe Māui fished from, now an island",
+      "answer": "Te Waka-a-Māui",
+      "context": "Fishing up the land",
+      "group": "Māui",
+      "note": "The South Island, with Rakiura (Stewart Island) as its anchor stone. Ngāti Porou name Māui's canoe Nukutaimemeha, lying upturned on Hikurangi."
+    },
+    {
+      "id": "mt-maui-sun",
+      "label": "What is",
+      "reverseLabel": "What is",
+      "prompt": "What Māui snared with ropes and beat until it slowed",
+      "answer": "Tamanui-te-rā, the sun",
+      "context": "Māui's feats",
+      "group": "Māui",
+      "note": "Days had been too short for work or sleep. The sun's rays are said to be the remnants of the ropes they used."
+    },
+    {
+      "id": "mt-maui-fire",
+      "label": "What is",
+      "reverseLabel": "What is",
+      "prompt": "What Māui tricked his kuia Mahuika into giving him",
+      "answer": "Fire",
+      "context": "Māui's feats",
+      "group": "Māui",
+      "note": "Te Ara records he took fire from her fingernails and lodged it in trees such as kaikōmako, rimu and tōtara, used for fire making.",
+      "noReverse": true
+    },
+    {
+      "id": "mt-maui-immortality",
+      "label": "What is",
+      "reverseLabel": "What is",
+      "prompt": "What Māui sought by passing through the sleeping Hine-nui-te-pō",
+      "answer": "Immortality",
+      "context": "Māui's last feat",
+      "group": "Māui",
+      "note": "He warned his companions not to laugh, but laughter woke the goddess and she crushed him; so death remains for all people.",
+      "noReverse": true
+    },
+    {
+      "id": "mt-piwakawaka",
+      "label": "Which bird",
+      "reverseLabel": "What is",
+      "prompt": "Its laughter, in many tellings, woke Hine-nui-te-pō and doomed Māui",
+      "answer": "Pīwakawaka, the fantail",
+      "context": "Māui's last feat",
+      "group": "Māui",
+      "note": "Te Ara notes some versions blame the moho pererū, the banded rail. Because of this story, a fantail indoors can signal death."
+    },
+    {
+      "id": "mt-kereru",
+      "label": "Which bird",
+      "reverseLabel": "What is",
+      "prompt": "Bird Māui became to follow his mother, her skirt colouring its feathers",
+      "answer": "Kererū",
+      "context": "Māui's feats",
+      "group": "Māui",
+      "note": "In this tradition the bird was once white; Māui hid Taranga's skirt to delay her, then flew after her still holding it."
+    },
+    {
+      "id": "mt-kupe",
+      "prompt": "Navigator who chased a great octopus across the ocean to these islands",
+      "answer": "Kupe",
+      "context": "Polynesian explorer",
+      "group": "Ancestors and voyagers",
+      "note": "Some tribal narratives make him the first Polynesian to find these islands; the octopus of Muturangi was finally killed in Cook Strait, Raukawakawa."
+    },
+    {
+      "id": "mt-kuramarotini",
+      "prompt": "Kupe's wife, who in many tellings named the land on first sight",
+      "answer": "Kuramārōtini",
+      "context": "Voyager",
+      "group": "Ancestors and voyagers",
+      "note": "Te Ara records that she devised the name Aotearoa on seeing the North Island for the first time, a cloud stretched over the land."
+    },
+    {
+      "id": "mt-aotearoa",
+      "label": "Māori name meaning",
+      "reverseLabel": "Meaning of",
+      "prompt": "Long white cloud",
+      "answer": "Aotearoa",
+      "context": "Naming the land",
+      "group": "Ancestors and voyagers",
+      "note": "Ao is cloud or world, tea is white, roa is long. In one tradition Kuramārōtini named the land after a cloud stretching over it."
+    },
+    {
+      "id": "mt-matawhaorua",
+      "label": "Which waka",
+      "reverseLabel": "Which waka is",
+      "prompt": "Kupe's voyaging canoe",
+      "answer": "Matawhaorua",
+      "context": "Waka (voyaging canoe)",
+      "group": "Ancestors and voyagers",
+      "note": "Also called Matahourua. After Kupe returned to Hawaiki it was re-adzed and renamed Ngātokimatawhaorua by its new captain, Nukutawhiti, who sailed to Hokianga."
+    },
+    {
+      "id": "mt-toi",
+      "prompt": "Early ancestor to whom many tribes trace descent",
+      "answer": "Toitehuatahi (Toi)",
+      "context": "Ancestor",
+      "group": "Ancestors and voyagers",
+      "note": "Some traditions bring him from Hawaiki, others say he was born here. His pā, Kaputerangi, stood above present-day Whakatāne."
+    },
+    {
+      "id": "mt-hawaiki",
+      "label": "What is",
+      "reverseLabel": "What is",
+      "prompt": "Ancestral homeland, where spirits return after death",
+      "answer": "Hawaiki",
+      "context": "Place of origin",
+      "group": "Ancestors and voyagers",
+      "note": "Some see it as a real Pacific island, others as a spiritual realm. Orators farewell the dead to Hawaiki-nui, Hawaiki-roa, Hawaiki-pāmamao."
+    },
+    {
+      "id": "mt-hinemoa",
+      "prompt": "Swam to Mokoia Island at night, guided by her lover's flute",
+      "answer": "Hinemoa",
+      "context": "Te Arawa tradition",
+      "group": "Ancestors and voyagers",
+      "note": "Her marriage to Tūtānekai of Ngāti Whakaue, against her people's wishes, is credited with keeping peace in the Rotorua district."
+    },
+    {
+      "id": "mt-rona",
+      "prompt": "Woman snatched up by the moon after cursing it",
+      "answer": "Rona",
+      "context": "The woman in the moon",
+      "group": "Ancestors and voyagers",
+      "note": "She stumbled fetching water when the moon hid behind cloud. She, her gourd and the tree she clutched can be seen on the full moon."
+    },
+    {
+      "id": "mt-paikea",
+      "prompt": "Ancestor who came to the East Coast on the back of a whale",
+      "answer": "Paikea",
+      "context": "Ngāti Porou tradition",
+      "group": "Ancestors and voyagers",
+      "note": "Born Kahutiaterangi, he alone survived when Ruatapu drowned the sons of Uenuku at sea; a rock off Whāngārā is said to be his whale."
+    },
+    {
+      "id": "mt-te-arawa",
+      "label": "Which waka",
+      "reverseLabel": "Which waka is",
+      "prompt": "Captained by Tamatekapua; made final landfall at Maketū",
+      "answer": "Te Arawa",
+      "context": "Waka (voyaging canoe)",
+      "group": "Ancestors and voyagers",
+      "note": "Tribes trace descent from the crews of more than 40 waka; the old idea of a single seven-canoe Great Fleet is now discredited."
+    },
+    {
+      "id": "mt-tainui",
+      "label": "Which waka",
+      "reverseLabel": "Which waka is",
+      "prompt": "Captained by Hoturoa; laid to rest at Kāwhia",
+      "answer": "Tainui",
+      "context": "Waka (voyaging canoe)",
+      "group": "Ancestors and voyagers",
+      "note": "Its resting place at Te Ahurei in Kāwhia Harbour is marked by two upright stones; a number of tribes trace their origins to it."
+    },
+    {
+      "id": "mt-mataatua",
+      "label": "Which waka",
+      "reverseLabel": "Which waka is",
+      "prompt": "Captained by Toroa; landed at Whakatāne",
+      "answer": "Mātaatua",
+      "context": "Waka (voyaging canoe)",
+      "group": "Ancestors and voyagers",
+      "note": "In many accounts Wairaka saved the drifting canoe, crying 'Me whakatāne au i ahau', naming Whakatāne; others credit Muriwai."
+    },
+    {
+      "id": "mt-taniwha",
+      "label": "What are",
+      "reverseLabel": "What are",
+      "prompt": "Supernatural water beings, some guardians, some man-eaters",
+      "answer": "Taniwha",
+      "context": "Beings of lakes, rivers and sea",
+      "group": "Creatures and beings",
+      "note": "Their forms vary between iwi: reptiles, sharks, whales, even logs. A Waikato saying runs 'he piko he taniwha', every bend a taniwha."
+    },
+    {
+      "id": "mt-kaitiaki",
+      "label": "What is a",
+      "reverseLabel": "What is a",
+      "prompt": "Guardian protecting a people or a place",
+      "answer": "Kaitiaki",
+      "context": "Role of many taniwha",
+      "group": "Creatures and beings",
+      "note": "People passing the den of a guardian taniwha would say a karakia and leave an offering, often a green twig."
+    },
+    {
+      "id": "mt-patupaiarehe",
+      "label": "What are",
+      "reverseLabel": "What are",
+      "prompt": "Fair-haired beings of misty forests and hilltops, who lured people with flute music",
+      "answer": "Patupaiarehe",
+      "context": "Supernatural people",
+      "group": "Creatures and beings",
+      "note": "They feared fire, light and cooked food. Te Ara tells how the chief Kahukura learned net making by joining them at night."
+    },
+    {
+      "id": "mt-ponaturi",
+      "label": "What are",
+      "reverseLabel": "What are",
+      "prompt": "Clawed sea dwellers who came ashore only at night",
+      "answer": "Ponaturi",
+      "context": "Supernatural people",
+      "group": "Creatures and beings",
+      "note": "In one tradition Tāwhaki avenged his father by keeping them in a house past dawn, then letting in the killing sunlight."
+    },
+    {
+      "id": "mt-ngarara-huarau",
+      "label": "Which taniwha",
+      "reverseLabel": "Who is",
+      "prompt": "Giant reptile taniwha, crushed by trees cut almost through",
+      "answer": "Ngārara Huarau",
+      "context": "Taniwha",
+      "group": "Creatures and beings",
+      "note": "In one tradition the scales he shed leaving his cave at Waimārama became tuatara; a dog under a spell lured him into the trap."
+    },
+    {
+      "id": "mt-tuhirangi",
+      "label": "Which taniwha",
+      "reverseLabel": "Who is",
+      "prompt": "Guardian placed by Kupe in Cook Strait to protect canoes",
+      "answer": "Tuhirangi",
+      "context": "Taniwha of the sea",
+      "group": "Creatures and beings",
+      "note": "Some Māori believed the dolphin Pelorus Jack, which escorted ships near French Pass around 1900, was this taniwha returned."
+    },
+    {
+      "id": "mt-ngake-whataitai",
+      "label": "Which taniwha",
+      "reverseLabel": "Who are",
+      "prompt": "Two taniwha who shaped Wellington Harbour",
+      "answer": "Ngake and Whātaitai",
+      "context": "Taniwha of the sea",
+      "group": "Creatures and beings",
+      "note": "One smashed through to Cook Strait; the other was stranded, and his spirit flew as a bird to mourn on Tangi te keo, Mt Victoria."
+    },
+    {
+      "id": "mt-matariki",
+      "label": "Māori name for",
+      "reverseLabel": "What is",
+      "prompt": "The Pleiades, whose dawn rising marks the new year",
+      "answer": "Matariki",
+      "context": "Star cluster",
+      "group": "Sky and seasons",
+      "note": "Its midwinter rising was a time to remember the dead and celebrate the harvest. Since 2022 it has been a public holiday."
+    },
+    {
+      "id": "mt-puanga",
+      "label": "Which star",
+      "reverseLabel": "What is",
+      "prompt": "Rigel, whose rising some iwi take as the new year's sign",
+      "answer": "Puanga",
+      "context": "Star in Orion",
+      "group": "Sky and seasons",
+      "note": "A saying calls it 'Puanga kai rau', Puanga of abundant food; an elder told Elsdon Best that Puanga strives with Matariki for the year."
+    },
+    {
+      "id": "mt-tautoru",
+      "label": "Māori name for",
+      "reverseLabel": "What is",
+      "prompt": "Orion's Belt",
+      "answer": "Tautoru",
+      "context": "Three stars in a row",
+      "group": "Sky and seasons",
+      "note": "Te Aka describes these stars as part of the stern of a great sky canoe, Te Waka o Tamarēreti, rising in the early morning."
+    },
+    {
+      "id": "mt-mahutonga",
+      "label": "Māori name for",
+      "reverseLabel": "What is",
+      "prompt": "The Southern Cross",
+      "answer": "Māhutonga",
+      "context": "Constellation",
+      "group": "Sky and seasons",
+      "note": "It has at least eight Māori names. Wairarapa Māori saw a gap where storm winds escaped; Tainui saw Te Punga, a sky canoe's anchor."
+    },
+    {
+      "id": "mt-te-ikaroa",
+      "label": "Māori name for",
+      "reverseLabel": "What is",
+      "prompt": "The Milky Way",
+      "answer": "Te Ikaroa",
+      "context": "Band of stars",
+      "group": "Sky and seasons",
+      "note": "In a Ngāti Kahungunu tradition it was the basket that carried the stars to the heavens. Te Mangōroa is another name for it."
+    },
+    {
+      "id": "mt-kopu",
+      "label": "Māori name for",
+      "reverseLabel": "What is",
+      "prompt": "Venus as the morning star",
+      "answer": "Kōpū",
+      "context": "Planet",
+      "group": "Sky and seasons",
+      "note": "Venus has other names too: Tāwera at dawn, and Meremere-tū-ahiahi when it stands out in the western sky after sunset."
+    },
+    {
+      "id": "mt-marama",
+      "label": "Māori name for",
+      "reverseLabel": "What is",
+      "prompt": "The moon",
+      "answer": "Marama",
+      "context": "Heavenly body",
+      "group": "Sky and seasons",
+      "note": "Marama also means a lunar month. In the maramataka, the lunar calendar, each night has its own name, generally beginning with Whiro."
+    },
+    {
+      "id": "mt-te-ra",
+      "label": "Māori name for",
+      "reverseLabel": "What is",
+      "prompt": "The sun",
+      "answer": "Te Rā",
+      "context": "Heavenly body",
+      "group": "Sky and seasons",
+      "note": "The chief of the heavenly bodies, called Te Rā-tūoi, the lean sun, in winter and Te Rā-kura, the red sun, in summer."
+    },
+    {
+      "id": "mt-takurua",
+      "label": "Māori name for",
+      "reverseLabel": "What is",
+      "prompt": "Sirius, the star of winter",
+      "answer": "Takurua",
+      "context": "Bright star",
+      "group": "Sky and seasons",
+      "note": "Takurua is also a word for winter itself, as in the saying 'Takurua hūpē nui', winter, when your nose runs."
+    }
+  ]
+}

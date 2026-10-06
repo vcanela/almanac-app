@@ -1,0 +1,818 @@
+{
+  "id": "landmarks",
+  "title": "Landmarks",
+  "subtitle": "Wonders built and natural",
+  "promptLabel": "In which country",
+  "reversible": false,
+  "about": "About a hundred famous landmarks, built and natural, from the Colosseum to Aoraki / Mount Cook. Name the country each one stands in; a few famous border sites need both countries.",
+  "cards": [
+    {
+      "id": "lm-eiffel-tower",
+      "prompt": "Eiffel Tower",
+      "answer": "France",
+      "context": "Iron lattice tower",
+      "group": "Europe",
+      "note": "Built for the 1889 World's Fair, it was the tallest human-made structure on Earth for 41 years, until the Chrysler Building overtook it."
+    },
+    {
+      "id": "lm-colosseum",
+      "prompt": "Colosseum",
+      "answer": "Italy",
+      "context": "Ancient amphitheatre",
+      "group": "Europe",
+      "note": "Begun under Emperor Vespasian in AD 72 and finished under Titus in AD 80, it staged gladiator fights, animal hunts and executions."
+    },
+    {
+      "id": "lm-parthenon",
+      "prompt": "Parthenon",
+      "answer": "Greece",
+      "context": "Ancient temple",
+      "group": "Europe",
+      "note": "Built 447 to 438 BC for the goddess Athena; in 1687 a Venetian bomb ignited the Ottoman gunpowder stored inside it."
+    },
+    {
+      "id": "lm-stonehenge",
+      "prompt": "Stonehenge",
+      "answer": "United Kingdom",
+      "context": "Prehistoric stone circle",
+      "group": "Europe",
+      "note": "Its great sarsen circle was raised around 2600 to 2400 BC, aligned with the midsummer sunrise and the midwinter sunset."
+    },
+    {
+      "id": "lm-sagrada-familia",
+      "prompt": "Sagrada Família",
+      "answer": "Spain",
+      "context": "Basilica",
+      "group": "Europe",
+      "note": "Antoni Gaudí took charge in 1883 and devoted the rest of his life to it; at his death in 1926, under a quarter was built."
+    },
+    {
+      "id": "lm-leaning-tower-pisa",
+      "prompt": "Leaning Tower of Pisa",
+      "answer": "Italy",
+      "context": "Bell tower",
+      "group": "Europe",
+      "note": "It began to tilt during construction in the 12th century because of soft ground; work from 1993 to 2001 reduced the lean."
+    },
+    {
+      "id": "lm-big-ben",
+      "prompt": "Big Ben",
+      "answer": "United Kingdom",
+      "context": "Clock tower",
+      "group": "Europe",
+      "note": "Strictly the nickname of the Great Bell, probably after Sir Benjamin Hall; the tower itself was renamed Elizabeth Tower in 2012."
+    },
+    {
+      "id": "lm-st-peters-basilica",
+      "prompt": "St Peter's Basilica",
+      "answer": "Vatican City",
+      "context": "Basilica",
+      "group": "Europe",
+      "note": "Designed chiefly by Bramante, Michelangelo and Maderno, it stands by tradition over the tomb of Saint Peter, beneath its high altar."
+    },
+    {
+      "id": "lm-neuschwanstein",
+      "prompt": "Neuschwanstein Castle",
+      "answer": "Germany",
+      "context": "Hilltop castle",
+      "group": "Europe",
+      "note": "Begun in 1869 for King Ludwig II of Bavaria as a romantic retreat honouring Wagner; the king died in 1886, before it was finished."
+    },
+    {
+      "id": "lm-saint-basils",
+      "prompt": "Saint Basil's Cathedral",
+      "answer": "Russia",
+      "context": "Cathedral",
+      "group": "Europe",
+      "note": "Built 1555 to 1561 on the orders of Ivan the Terrible to celebrate the capture of Kazan and Astrakhan."
+    },
+    {
+      "id": "lm-hagia-sophia",
+      "prompt": "Hagia Sophia",
+      "answer": "Turkey",
+      "context": "Domed basilica, now a mosque",
+      "group": "Europe",
+      "note": "Completed in AD 537 for Emperor Justinian; it became a mosque in 1453, a museum in 1935, and a mosque again in 2020."
+    },
+    {
+      "id": "lm-brandenburg-gate",
+      "prompt": "Brandenburg Gate",
+      "answer": "Germany",
+      "context": "Monumental gateway",
+      "group": "Europe",
+      "note": "Built 1788 to 1791 for King Frederick William II of Prussia; the Berlin Wall blocked the way through it until 1989."
+    },
+    {
+      "id": "lm-alhambra",
+      "prompt": "Alhambra",
+      "answer": "Spain",
+      "context": "Palace and fortress",
+      "group": "Europe",
+      "note": "Begun in 1238 by the Nasrid emirs, the last Muslim rulers of al-Andalus; Columbus later won royal backing for his voyage there."
+    },
+    {
+      "id": "lm-mont-saint-michel",
+      "prompt": "Mont-Saint-Michel",
+      "answer": "France",
+      "context": "Tidal island abbey",
+      "group": "Europe",
+      "note": "Reachable on foot at low tide, this fortified island remained unconquered throughout the Hundred Years' War."
+    },
+    {
+      "id": "lm-charles-bridge",
+      "prompt": "Charles Bridge",
+      "answer": "Czech Republic",
+      "context": "Medieval stone bridge",
+      "group": "Europe",
+      "note": "Begun in 1357 under King Charles IV, it was the only way across the Vltava in the city until 1841."
+    },
+    {
+      "id": "lm-giants-causeway",
+      "prompt": "Giant's Causeway",
+      "answer": "United Kingdom",
+      "context": "Basalt column coast",
+      "group": "Europe",
+      "note": "About 40,000 interlocking basalt columns, mostly hexagonal, left by an ancient volcanic eruption on the County Antrim coast of Northern Ireland."
+    },
+    {
+      "id": "lm-cliffs-of-moher",
+      "prompt": "Cliffs of Moher",
+      "answer": "Ireland",
+      "context": "Sea cliffs",
+      "group": "Europe",
+      "note": "They run for about 14 kilometres and rise to 214 metres above the Atlantic near O'Brien's Tower, built in 1835."
+    },
+    {
+      "id": "lm-little-mermaid",
+      "prompt": "The Little Mermaid",
+      "answer": "Denmark",
+      "context": "Bronze statue",
+      "group": "Europe",
+      "note": "Edvard Eriksen's small bronze, unveiled in 1913, honours Hans Christian Andersen's fairy tale and has been vandalised many times."
+    },
+    {
+      "id": "lm-meteora",
+      "prompt": "Meteora",
+      "answer": "Greece",
+      "context": "Clifftop monasteries",
+      "group": "Europe",
+      "note": "Monks built 24 monasteries on top of giant rock pillars from the 14th century; the name means 'lofty', like the word meteor."
+    },
+    {
+      "id": "lm-schonbrunn",
+      "prompt": "Schönbrunn Palace",
+      "answer": "Austria",
+      "context": "Baroque palace",
+      "group": "Europe",
+      "note": "The 1,441-room summer residence of the Habsburgs; its name means 'beautiful spring', after an artesian well used by the court."
+    },
+    {
+      "id": "lm-atomium",
+      "prompt": "Atomium",
+      "answer": "Belgium",
+      "context": "Steel sphere structure",
+      "group": "Europe",
+      "note": "Built for Expo 58, its nine steel spheres model the unit cell of an iron crystal magnified 165 billion times."
+    },
+    {
+      "id": "lm-belem-tower",
+      "prompt": "Belém Tower",
+      "answer": "Portugal",
+      "context": "Riverside fortress",
+      "group": "Europe",
+      "note": "A 16th-century fortress built on a small island in the Tagus, it served explorers as a point of departure and return."
+    },
+    {
+      "id": "lm-plitvice",
+      "prompt": "Plitvice Lakes",
+      "answer": "Croatia",
+      "context": "Lakes and waterfalls",
+      "group": "Europe",
+      "note": "A chain of terraced lakes joined by waterfalls and built up by tufa deposits; it became a national park in 1949."
+    },
+    {
+      "id": "lm-geirangerfjord",
+      "prompt": "Geirangerfjord",
+      "answer": "Norway",
+      "context": "Fjord",
+      "group": "Europe",
+      "note": "Listed by UNESCO in 2005 with the Nærøyfjord; its waterfalls include the Seven Sisters and the Suitor, said to be wooing them."
+    },
+    {
+      "id": "lm-wieliczka",
+      "prompt": "Wieliczka Salt Mine",
+      "answer": "Poland",
+      "context": "Salt mine",
+      "group": "Europe",
+      "note": "Mined from the 13th century until 1996, it holds underground chapels and statues carved by miners out of rock salt."
+    },
+    {
+      "id": "lm-kinderdijk",
+      "prompt": "Kinderdijk",
+      "answer": "Netherlands",
+      "context": "Windmill complex",
+      "group": "Europe",
+      "note": "Nineteen windmills built around 1740 to drain the surrounding polder, the largest group of old windmills in the country."
+    },
+    {
+      "id": "lm-chillon-castle",
+      "prompt": "Chillon Castle",
+      "answer": "Switzerland",
+      "context": "Lakeside island castle",
+      "group": "Europe",
+      "note": "A medieval island castle on a lake shore; Lord Byron's 1816 poem The Prisoner of Chillon made its dungeon famous."
+    },
+    {
+      "id": "lm-taj-mahal",
+      "prompt": "Taj Mahal",
+      "answer": "India",
+      "context": "Marble mausoleum",
+      "group": "Asia",
+      "note": "Commissioned in 1631 by the Mughal emperor Shah Jahan as the tomb of his wife Mumtaz Mahal; he is buried there too."
+    },
+    {
+      "id": "lm-forbidden-city",
+      "prompt": "Forbidden City",
+      "answer": "China",
+      "context": "Imperial palace complex",
+      "group": "Asia",
+      "note": "Home to 24 Ming and Qing emperors from 1420 to 1924; legend claims 9,999 rooms, but surveys count 8,886."
+    },
+    {
+      "id": "lm-angkor-wat",
+      "prompt": "Angkor Wat",
+      "answer": "Cambodia",
+      "context": "Temple complex",
+      "group": "Asia",
+      "note": "Built in the 12th century by King Suryavarman II as a Hindu temple to Vishnu; it later became Buddhist and appears on its nation's flag."
+    },
+    {
+      "id": "lm-petra",
+      "prompt": "Petra",
+      "answer": "Jordan",
+      "context": "Rock-cut city",
+      "group": "Asia",
+      "note": "Carved from rose-red sandstone by the Nabataeans; it was unknown to the Western world until Johann Ludwig Burckhardt reached it in 1812."
+    },
+    {
+      "id": "lm-mount-fuji",
+      "prompt": "Mount Fuji",
+      "answer": "Japan",
+      "context": "Volcano",
+      "group": "Asia",
+      "note": "An active stratovolcano with a famously symmetrical cone; it last erupted in 1707 to 1708 and is a World Heritage cultural site."
+    },
+    {
+      "id": "lm-mount-everest",
+      "prompt": "Mount Everest",
+      "answer": "China · Nepal",
+      "context": "Mountain",
+      "group": "Asia",
+      "note": "Earth's highest mountain above sea level; a joint survey in 2020 measured it at 8,848.86 metres. The border runs over its summit."
+    },
+    {
+      "id": "lm-terracotta-army",
+      "prompt": "Terracotta Army",
+      "answer": "China",
+      "context": "Buried clay army",
+      "group": "Asia",
+      "note": "Thousands of clay soldiers, horses and chariots buried with the first emperor, Qin Shi Huang; local farmers discovered them in 1974."
+    },
+    {
+      "id": "lm-burj-khalifa",
+      "prompt": "Burj Khalifa",
+      "answer": "United Arab Emirates",
+      "context": "Skyscraper",
+      "group": "Asia",
+      "note": "Opened in 2010, it took the title of world's tallest building from Taipei 101; it was called Burj Dubai until its inauguration."
+    },
+    {
+      "id": "lm-borobudur",
+      "prompt": "Borobudur",
+      "answer": "Indonesia",
+      "context": "Buddhist temple",
+      "group": "Asia",
+      "note": "The world's largest Buddhist temple, built in the 8th and 9th centuries; its central dome is ringed by 72 Buddhas inside stupas."
+    },
+    {
+      "id": "lm-kaaba",
+      "prompt": "Kaaba",
+      "answer": "Saudi Arabia",
+      "context": "Sacred shrine",
+      "group": "Asia",
+      "note": "The cube-shaped building at the centre of Islam's holiest mosque; Muslims everywhere face it to pray, and pilgrims circle it seven times."
+    },
+    {
+      "id": "lm-petronas-towers",
+      "prompt": "Petronas Towers",
+      "answer": "Malaysia",
+      "context": "Twin skyscrapers",
+      "group": "Asia",
+      "note": "These interlinked 88-storey twin towers were the tallest buildings in the world from 1998 until Taipei 101 overtook them in 2004."
+    },
+    {
+      "id": "lm-ha-long-bay",
+      "prompt": "Ha Long Bay",
+      "answer": "Vietnam",
+      "context": "Bay of limestone islets",
+      "group": "Asia",
+      "note": "Its name means 'descending dragon'; nearly 2,000 islets, most of them limestone karst towers, rise from its waters."
+    },
+    {
+      "id": "lm-potala-palace",
+      "prompt": "Potala Palace",
+      "answer": "China",
+      "context": "Mountain palace",
+      "group": "Asia",
+      "note": "Begun in 1645 under the 5th Dalai Lama, at about 3,700 metres; it was the Dalai Lamas' residence until 1959."
+    },
+    {
+      "id": "lm-golden-temple",
+      "prompt": "Golden Temple",
+      "answer": "India",
+      "context": "Temple",
+      "group": "Asia",
+      "note": "Sikhism's holiest shrine; Maharaja Ranjit Singh rebuilt it in marble and copper and overlaid the sanctum with gold leaf in 1830."
+    },
+    {
+      "id": "lm-bagan",
+      "prompt": "Bagan",
+      "answer": "Myanmar",
+      "context": "Temple plain",
+      "group": "Asia",
+      "note": "Capital of the Pagan Kingdom; more than 10,000 Buddhist temples, pagodas and monasteries were built here, and over 2,300 survive."
+    },
+    {
+      "id": "lm-kinkaku-ji",
+      "prompt": "Kinkaku-ji",
+      "answer": "Japan",
+      "context": "Buddhist temple",
+      "group": "Asia",
+      "note": "The top two floors of its Golden Pavilion are coated in gold leaf; a novice monk burned the original down in 1950."
+    },
+    {
+      "id": "lm-persepolis",
+      "prompt": "Persepolis",
+      "answer": "Iran",
+      "context": "Ancient ceremonial capital",
+      "group": "Asia",
+      "note": "Ceremonial capital of the Achaemenid Persian Empire, begun around 515 BC; Alexander the Great's army burned its palaces in 330 BC."
+    },
+    {
+      "id": "lm-sigiriya",
+      "prompt": "Sigiriya",
+      "answer": "Sri Lanka",
+      "context": "Rock fortress",
+      "group": "Asia",
+      "note": "In the 5th century King Kashyapa built his palace on this 180-metre granite rock, reached through a gateway shaped like an enormous lion."
+    },
+    {
+      "id": "lm-pamukkale",
+      "prompt": "Pamukkale",
+      "answer": "Turkey",
+      "context": "Travertine terraces",
+      "group": "Asia",
+      "note": "Its name means 'cotton castle'; brilliant white terraces formed by mineral-rich hot springs, with the ancient city of Hierapolis on top."
+    },
+    {
+      "id": "lm-tigers-nest",
+      "prompt": "Tiger's Nest",
+      "answer": "Bhutan",
+      "context": "Cliffside monastery",
+      "group": "Asia",
+      "note": "Built in 1692 around a cave where Padmasambhava, credited with bringing Vajrayana Buddhism to the region, is said to have meditated."
+    },
+    {
+      "id": "lm-lake-baikal",
+      "prompt": "Lake Baikal",
+      "answer": "Russia",
+      "context": "Rift lake",
+      "group": "Asia",
+      "note": "The world's deepest lake, at 1,642 metres, and its oldest; it holds more fresh water than all the North American Great Lakes combined."
+    },
+    {
+      "id": "lm-wat-arun",
+      "prompt": "Wat Arun",
+      "answer": "Thailand",
+      "context": "Buddhist temple",
+      "group": "Asia",
+      "note": "The 'Temple of Dawn', named after the Hindu god Aruna; its tall central spire was built in the early 19th century."
+    },
+    {
+      "id": "lm-gyeongbokgung",
+      "prompt": "Gyeongbokgung",
+      "answer": "South Korea",
+      "context": "Royal palace",
+      "group": "Asia",
+      "note": "Founded in 1395 as the Joseon dynasty's first royal palace; King Sejong led the creation of the Hangul alphabet here."
+    },
+    {
+      "id": "lm-registan",
+      "prompt": "Registan",
+      "answer": "Uzbekistan",
+      "context": "Historic square",
+      "group": "Asia",
+      "note": "The heart of Samarkand under the Timurids, framed by three great madrasas with turquoise domes and intricate mosaic tilework."
+    },
+    {
+      "id": "lm-chocolate-hills",
+      "prompt": "Chocolate Hills",
+      "answer": "Philippines",
+      "context": "Hill formation",
+      "group": "Asia",
+      "note": "At least 1,260 grassy mounds on Bohol island whose green cover turns chocolate brown in the dry season, hence the name."
+    },
+    {
+      "id": "lm-mohenjo-daro",
+      "prompt": "Mohenjo-daro",
+      "answer": "Pakistan",
+      "context": "Ancient city ruins",
+      "group": "Asia",
+      "note": "Built around 2500 BC as one of the largest cities of the Indus Valley Civilisation; its name means 'Mound of the Dead Men'."
+    },
+    {
+      "id": "lm-great-pyramid",
+      "prompt": "Great Pyramid of Giza",
+      "answer": "Egypt",
+      "context": "Ancient pyramid",
+      "group": "Africa",
+      "note": "Tomb of the pharaoh Khufu; the oldest of the Seven Wonders of the Ancient World, and the only one still largely intact."
+    },
+    {
+      "id": "lm-victoria-falls",
+      "prompt": "Victoria Falls",
+      "answer": "Zambia · Zimbabwe",
+      "context": "Waterfall",
+      "group": "Africa",
+      "note": "Known locally as Mosi-oa-Tunya, 'the smoke that thunders'; David Livingstone named it after Queen Victoria in 1855."
+    },
+    {
+      "id": "lm-kilimanjaro",
+      "prompt": "Mount Kilimanjaro",
+      "answer": "Tanzania",
+      "context": "Dormant volcano",
+      "group": "Africa",
+      "note": "Africa's highest mountain and the world's highest free-standing one, at 5,895 metres; Hans Meyer first reached its summit in 1889."
+    },
+    {
+      "id": "lm-table-mountain",
+      "prompt": "Table Mountain",
+      "answer": "South Africa",
+      "context": "Flat-topped mountain",
+      "group": "Africa",
+      "note": "Its slopes hold some 2,285 plant species, about four fifths of them fynbos, an Afrikaans word meaning 'fine bush'."
+    },
+    {
+      "id": "lm-abu-simbel",
+      "prompt": "Abu Simbel",
+      "answer": "Egypt",
+      "context": "Rock-cut temples",
+      "group": "Africa",
+      "note": "Carved for Ramesses II in the 13th century BC; in the 1960s the twin temples were moved uphill, away from rising Lake Nasser."
+    },
+    {
+      "id": "lm-robben-island",
+      "prompt": "Robben Island",
+      "answer": "South Africa",
+      "context": "Island prison",
+      "group": "Africa",
+      "note": "Nelson Mandela spent 18 of his 27 years in prison here; the name comes from the old Dutch word for seals."
+    },
+    {
+      "id": "lm-djenne-mosque",
+      "prompt": "Great Mosque of Djenné",
+      "answer": "Mali",
+      "context": "Mud-brick mosque",
+      "group": "Africa",
+      "note": "The largest adobe brick building in the world; the present mosque dates from 1907, on a site used since the 13th century."
+    },
+    {
+      "id": "lm-lalibela",
+      "prompt": "Lalibela",
+      "answer": "Ethiopia",
+      "context": "Rock-hewn churches",
+      "group": "Africa",
+      "note": "Monolithic churches carved down into solid rock, traditionally credited to King Lalibela around 1200 and laid out as a symbolic Jerusalem."
+    },
+    {
+      "id": "lm-maasai-mara",
+      "prompt": "Maasai Mara",
+      "answer": "Kenya",
+      "context": "Game reserve",
+      "group": "Africa",
+      "note": "Named after the Maasai people; 'Mara' means 'spotted' in the Maa language, after the bushy trees dotting its plains."
+    },
+    {
+      "id": "lm-carthage",
+      "prompt": "Carthage",
+      "answer": "Tunisia",
+      "context": "Ancient city ruins",
+      "group": "Africa",
+      "note": "Founded, legend says, by Queen Dido of Tyre; Rome destroyed it in 146 BC at the end of the Third Punic War."
+    },
+    {
+      "id": "lm-okavango-delta",
+      "prompt": "Okavango Delta",
+      "answer": "Botswana",
+      "context": "Inland delta",
+      "group": "Africa",
+      "note": "A river delta that never reaches the sea: its floodwaters spread into the Kalahari and almost all evaporate. It was UNESCO's 1,000th World Heritage Site."
+    },
+    {
+      "id": "lm-sossusvlei",
+      "prompt": "Sossusvlei",
+      "answer": "Namibia",
+      "context": "Salt pan among dunes",
+      "group": "Africa",
+      "note": "A clay pan ringed by towering red dunes; its name roughly means 'dead-end marsh', because the river feeding it has no outlet."
+    },
+    {
+      "id": "lm-avenue-of-baobabs",
+      "prompt": "Avenue of the Baobabs",
+      "answer": "Madagascar",
+      "context": "Tree-lined road",
+      "group": "Africa",
+      "note": "A dirt road lined with giant Grandidier's baobabs, the largest of six baobab species found only on this island."
+    },
+    {
+      "id": "lm-ait-benhaddou",
+      "prompt": "Aït Benhaddou",
+      "answer": "Morocco",
+      "context": "Fortified earthen village",
+      "group": "Africa",
+      "note": "A fortified clay village on the old caravan route between the Sahara and Marrakesh; its use as a Hollywood film set helped fund its restoration."
+    },
+    {
+      "id": "lm-leptis-magna",
+      "prompt": "Leptis Magna",
+      "answer": "Libya",
+      "context": "Roman city ruins",
+      "group": "Africa",
+      "note": "Birthplace of Emperor Septimius Severus, who enriched it; long buried under sand dunes, it is one of the best-preserved Roman sites in the Mediterranean."
+    },
+    {
+      "id": "lm-meroe",
+      "prompt": "Pyramids of Meroë",
+      "answer": "Sudan",
+      "context": "Ancient pyramids",
+      "group": "Africa",
+      "note": "Royal tombs of the Kingdom of Kush, built from about 270 BC; the last, around AD 350, was Africa's last pyramid."
+    },
+    {
+      "id": "lm-nyiragongo",
+      "prompt": "Mount Nyiragongo",
+      "answer": "DR Congo",
+      "context": "Volcano",
+      "group": "Africa",
+      "note": "Its main crater, about two kilometres wide, usually holds a lava lake, at times the most voluminous known in recent history."
+    },
+    {
+      "id": "lm-goree",
+      "prompt": "Gorée Island",
+      "answer": "Senegal",
+      "context": "Island",
+      "group": "Africa",
+      "note": "A small island off the capital, now a memorial to the Atlantic slave trade; in 1978 it was among UNESCO's first twelve World Heritage Sites."
+    },
+    {
+      "id": "lm-statue-of-liberty",
+      "prompt": "Statue of Liberty",
+      "answer": "United States",
+      "context": "Colossal statue",
+      "group": "Americas",
+      "note": "A gift from the people of France, designed by Frédéric Auguste Bartholdi, with a metal framework by Gustave Eiffel; it was dedicated in 1886."
+    },
+    {
+      "id": "lm-machu-picchu",
+      "prompt": "Machu Picchu",
+      "answer": "Peru",
+      "context": "Mountain citadel",
+      "group": "Americas",
+      "note": "Built around 1450, probably as an estate for the Inca emperor Pachacuti; Hiram Bingham brought it to world attention in 1911."
+    },
+    {
+      "id": "lm-grand-canyon",
+      "prompt": "Grand Canyon",
+      "answer": "United States",
+      "context": "Canyon",
+      "group": "Americas",
+      "note": "Carved by the Colorado River, it is more than 1,800 metres deep and exposes nearly two billion years of the planet's geological history."
+    },
+    {
+      "id": "lm-christ-the-redeemer",
+      "prompt": "Christ the Redeemer",
+      "answer": "Brazil",
+      "context": "Art Deco statue",
+      "group": "Americas",
+      "note": "Built from 1922 to 1931 of reinforced concrete and soapstone atop Corcovado mountain; Romanian sculptor Gheorghe Leonida carved the face."
+    },
+    {
+      "id": "lm-chichen-itza",
+      "prompt": "Chichen Itza",
+      "answer": "Mexico",
+      "context": "Ancient city",
+      "group": "Americas",
+      "note": "One of the largest Maya cities, a major centre of the northern Maya lowlands from about AD 600 to 1200."
+    },
+    {
+      "id": "lm-iguazu-falls",
+      "prompt": "Iguazu Falls",
+      "answer": "Argentina · Brazil",
+      "context": "Waterfall system",
+      "group": "Americas",
+      "note": "The world's largest waterfall system; its name comes from Guarani or Tupi words for 'big water'. Most falls are on the Argentine side."
+    },
+    {
+      "id": "lm-niagara-falls",
+      "prompt": "Niagara Falls",
+      "answer": "Canada · United States",
+      "context": "Waterfalls",
+      "group": "Americas",
+      "note": "Three falls on the river draining Lake Erie into Lake Ontario; Horseshoe Falls, straddling the border, is North America's most powerful waterfall."
+    },
+    {
+      "id": "lm-golden-gate-bridge",
+      "prompt": "Golden Gate Bridge",
+      "answer": "United States",
+      "context": "Suspension bridge",
+      "group": "Americas",
+      "note": "Opened in 1937 with Joseph Strauss as chief engineer, it was then the longest and tallest suspension bridge in the world."
+    },
+    {
+      "id": "lm-moai",
+      "prompt": "Moai",
+      "answer": "Chile",
+      "context": "Monolithic statues",
+      "group": "Americas",
+      "note": "Carved by the Rapa Nui people of Easter Island between 1250 and 1500; every one had been toppled by the late 19th century."
+    },
+    {
+      "id": "lm-teotihuacan",
+      "prompt": "Teotihuacan",
+      "answer": "Mexico",
+      "context": "Ancient city",
+      "group": "Americas",
+      "note": "Home to the Pyramids of the Sun and Moon; at its height it was the largest city in the Americas, centuries before the Aztecs."
+    },
+    {
+      "id": "lm-galapagos",
+      "prompt": "Galápagos Islands",
+      "answer": "Ecuador",
+      "context": "Volcanic archipelago",
+      "group": "Americas",
+      "note": "Charles Darwin studied their many endemic species in the 1830s, and they inspired his theory of evolution by natural selection."
+    },
+    {
+      "id": "lm-angel-falls",
+      "prompt": "Angel Falls",
+      "answer": "Venezuela",
+      "context": "Waterfall",
+      "group": "Americas",
+      "note": "The world's tallest uninterrupted waterfall, named after American aviator Jimmie Angel, the first person to fly over it, in 1933."
+    },
+    {
+      "id": "lm-salar-de-uyuni",
+      "prompt": "Salar de Uyuni",
+      "answer": "Bolivia",
+      "context": "Salt flat",
+      "group": "Americas",
+      "note": "The world's largest salt flat; after rain a thin film of water turns it into a vast mirror, and its brine is rich in lithium."
+    },
+    {
+      "id": "lm-cn-tower",
+      "prompt": "CN Tower",
+      "answer": "Canada",
+      "context": "Communications tower",
+      "group": "Americas",
+      "note": "Built by the Canadian National railway and completed in 1976, it was the world's tallest free-standing structure for 32 years."
+    },
+    {
+      "id": "lm-nazca-lines",
+      "prompt": "Nazca Lines",
+      "answer": "Peru",
+      "context": "Desert geoglyphs",
+      "group": "Americas",
+      "note": "Made between 500 BC and AD 500 by removing reddish pebbles to expose paler ground; many shapes are best seen from the air."
+    },
+    {
+      "id": "lm-tikal",
+      "prompt": "Tikal",
+      "answer": "Guatemala",
+      "context": "Ancient city ruins",
+      "group": "Americas",
+      "note": "A Maya city in the rainforest that peaked around AD 200 to 900; one of its ruling dynasties was founded by conquerors from Teotihuacan."
+    },
+    {
+      "id": "lm-aconcagua",
+      "prompt": "Aconcagua",
+      "answer": "Argentina",
+      "context": "Mountain",
+      "group": "Americas",
+      "note": "At nearly 7,000 metres, the highest mountain outside Asia and one of the Seven Summits; its normal route needs no technical climbing."
+    },
+    {
+      "id": "lm-great-blue-hole",
+      "prompt": "Great Blue Hole",
+      "answer": "Belize",
+      "context": "Marine sinkhole",
+      "group": "Americas",
+      "note": "A circular sinkhole 318 metres across and 124 metres deep, formed as a dry cave when sea levels were much lower, then flooded."
+    },
+    {
+      "id": "lm-citadelle-laferriere",
+      "prompt": "Citadelle Laferrière",
+      "answer": "Haiti",
+      "context": "Mountaintop fortress",
+      "group": "Americas",
+      "note": "Commissioned by revolutionary leader Henri Christophe and built by tens of thousands of former slaves to repel a French invasion that never came."
+    },
+    {
+      "id": "lm-las-lajas",
+      "prompt": "Las Lajas Sanctuary",
+      "answer": "Colombia",
+      "context": "Basilica in a canyon",
+      "group": "Americas",
+      "note": "A neo-Gothic basilica built from 1916 to 1949 in a river canyon; pilgrims believe the image of Mary on its rock wall formed miraculously."
+    },
+    {
+      "id": "lm-sydney-opera-house",
+      "prompt": "Sydney Opera House",
+      "answer": "Australia",
+      "context": "Performing arts centre",
+      "group": "Oceania",
+      "note": "Designed by Danish architect Jørn Utzon, who resigned before it was finished; Queen Elizabeth II opened it in 1973."
+    },
+    {
+      "id": "lm-uluru",
+      "prompt": "Uluru",
+      "answer": "Australia",
+      "context": "Sandstone monolith",
+      "group": "Oceania",
+      "note": "Sacred to the Pitjantjatjara, an Aṉangu people; Europeans named it Ayers Rock, and it is now officially gazetted as Uluru / Ayers Rock."
+    },
+    {
+      "id": "lm-great-barrier-reef",
+      "prompt": "Great Barrier Reef",
+      "answer": "Australia",
+      "context": "Coral reef system",
+      "group": "Oceania",
+      "note": "The world's largest coral reef system, over 2,900 reefs stretching more than 2,300 kilometres; it is the biggest structure built by living organisms."
+    },
+    {
+      "id": "lm-milford-sound",
+      "prompt": "Milford Sound / Piopiotahi",
+      "answer": "New Zealand",
+      "context": "Fiord",
+      "group": "Oceania",
+      "note": "Rudyard Kipling called it the eighth Wonder of the World; the sealer John Grono named it in 1823 after Milford Haven in Wales."
+    },
+    {
+      "id": "lm-aoraki-mount-cook",
+      "prompt": "Aoraki / Mount Cook",
+      "answer": "New Zealand",
+      "context": "Mountain",
+      "group": "Oceania",
+      "note": "The country's highest mountain, 3,724 metres as of 2014; a rock and ice avalanche in December 1991 knocked ten metres off its summit."
+    },
+    {
+      "id": "lm-twelve-apostles",
+      "prompt": "Twelve Apostles",
+      "answer": "Australia",
+      "context": "Limestone sea stacks",
+      "group": "Oceania",
+      "note": "Limestone stacks beside the Great Ocean Road; despite the name there may never have been twelve, and seven still stand."
+    },
+    {
+      "id": "lm-waitomo-caves",
+      "prompt": "Waitomo Glowworm Caves",
+      "answer": "New Zealand",
+      "context": "Cave",
+      "group": "Oceania",
+      "note": "Its ceilings glitter with Arachnocampa luminosa, a glowworm species found only in this country; visitors drift beneath them by boat."
+    },
+    {
+      "id": "lm-tongariro",
+      "prompt": "Tongariro National Park",
+      "answer": "New Zealand",
+      "context": "Volcanic national park",
+      "group": "Oceania",
+      "note": "The country's oldest national park, founded on sacred peaks gifted in 1887 by Te Heuheu Tūkino IV, leading chief of Ngāti Tūwharetoa."
+    },
+    {
+      "id": "lm-nan-madol",
+      "prompt": "Nan Madol",
+      "answer": "Micronesia",
+      "context": "Ruined island city",
+      "group": "Oceania",
+      "note": "Capital of the Saudeleur dynasty until about 1628, built as 92 artificial islets of stone and coral linked by tidal canals."
+    },
+    {
+      "id": "lm-mount-yasur",
+      "prompt": "Mount Yasur",
+      "answer": "Vanuatu",
+      "context": "Volcano",
+      "group": "Oceania",
+      "note": "It has erupted almost continuously for centuries; its glow is thought to have drawn Captain James Cook to Tanna Island in 1774."
+    }
+  ]
+}

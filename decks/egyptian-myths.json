@@ -1,0 +1,525 @@
+{
+  "id": "egyptian-myths",
+  "title": "Egyptian myths",
+  "subtitle": "Gods, symbols and the afterlife",
+  "promptLabel": "Who is",
+  "reversible": true,
+  "reverseLabel": "Who is",
+  "about": "The gods, symbols, afterlife and stories of ancient Egypt. Egyptian religion changed over three thousand years, and gods merged and swapped roles: Amun joined Ra as Amun-Ra in the New Kingdom, and Hathor and Sekhmet could be two faces of one goddess. Each card follows the version Wikipedia presents as standard, and the note names the period or source where it matters.",
+  "cards": [
+    {
+      "id": "eg-ra",
+      "prompt": "Sun god, shown falcon-headed with a sun disc",
+      "answer": "Ra",
+      "context": "God",
+      "group": "Gods and goddesses",
+      "note": "Fused with Amun as Amun-Ra in the New Kingdom; in some accounts humans came from his tears, so Egyptians called themselves the Cattle of Ra."
+    },
+    {
+      "id": "eg-osiris",
+      "prompt": "God of the dead, shown as a mummified king",
+      "answer": "Osiris",
+      "context": "God",
+      "group": "Gods and goddesses",
+      "note": "Often painted green, the colour of rebirth, or black for fertile Nile soil; one epithet, Khenti-Amentiu, meant Foremost of the Westerners."
+    },
+    {
+      "id": "eg-isis",
+      "prompt": "Goddess of magic, wife of Osiris",
+      "answer": "Isis",
+      "context": "Goddess",
+      "group": "Gods and goddesses",
+      "note": "Her original headdress was the throne sign used to write her name; her worship later spread right across the Roman Empire."
+    },
+    {
+      "id": "eg-horus",
+      "prompt": "Falcon-headed god of the sky and kingship",
+      "answer": "Horus",
+      "context": "God",
+      "group": "Gods and goddesses",
+      "note": "His earliest form, worshipped at Nekhen, is the first known national god; each living pharaoh was regarded as a manifestation of Horus."
+    },
+    {
+      "id": "eg-set",
+      "prompt": "God of deserts, storms and chaos",
+      "answer": "Set",
+      "context": "God",
+      "group": "Gods and goddesses",
+      "note": "Shown as the Set animal, a beast with squared-off ears that nobody has identified; he also defended Ra's boat against the serpent Apep."
+    },
+    {
+      "id": "eg-anubis",
+      "prompt": "Jackal-headed god of mummification and tombs",
+      "answer": "Anubis",
+      "context": "God",
+      "group": "Gods and goddesses",
+      "note": "Painted black, the colour of regeneration and fertile Nile soil; by the Middle Kingdom Osiris had replaced him as lord of the underworld."
+    },
+    {
+      "id": "eg-thoth",
+      "prompt": "Ibis-headed god of writing and wisdom",
+      "answer": "Thoth",
+      "context": "God",
+      "group": "Gods and goddesses",
+      "note": "Also shown as a baboon; the Greeks linked him with Hermes and called his cult centre Hermopolis, the city of Hermes."
+    },
+    {
+      "id": "eg-maat",
+      "prompt": "Goddess of truth, justice and cosmic order",
+      "answer": "Ma'at",
+      "context": "Goddess",
+      "group": "Gods and goddesses",
+      "note": "Often shown with an ostrich feather on her head; her opposite was isfet, meaning injustice, chaos and violence."
+    },
+    {
+      "id": "eg-hathor",
+      "prompt": "Cow goddess of love, music and joy",
+      "answer": "Hathor",
+      "context": "Goddess",
+      "group": "Gods and goddesses",
+      "note": "Her name means House of Horus; more temples were dedicated to her than to any other goddess, the most prominent at Dendera."
+    },
+    {
+      "id": "eg-bastet",
+      "prompt": "Cat goddess of protection, worshipped at Bubastis",
+      "answer": "Bastet",
+      "context": "Goddess",
+      "group": "Gods and goddesses",
+      "note": "She began as a fierce lioness goddess; only in the Third Intermediate Period, about 1070 to 712 BC, was she shown as a domestic cat."
+    },
+    {
+      "id": "eg-sekhmet",
+      "prompt": "Lioness goddess of war and healing",
+      "answer": "Sekhmet",
+      "context": "Goddess",
+      "group": "Gods and goddesses",
+      "note": "Called the Eye of Ra; the hot desert winds were said to be her breath, and she both sent plagues and cured the sick."
+    },
+    {
+      "id": "eg-ptah",
+      "prompt": "Creator god of Memphis, patron of craftsmen",
+      "answer": "Ptah",
+      "context": "God",
+      "group": "Gods and goddesses",
+      "note": "The Shabaka Stone says he gave life to all the gods through his heart and tongue; the sage Imhotep was regarded as his son."
+    },
+    {
+      "id": "eg-amun",
+      "prompt": "Hidden god of Thebes, later king of the gods",
+      "answer": "Amun",
+      "context": "God",
+      "group": "Gods and goddesses",
+      "note": "His name means the hidden one; fused with Ra as Amun-Ra, he became Zeus Ammon to the Greeks and Jupiter Ammon to the Romans."
+    },
+    {
+      "id": "eg-aten",
+      "prompt": "Sun disc with rays ending in human hands",
+      "answer": "Aten",
+      "context": "God",
+      "group": "Gods and goddesses",
+      "note": "Akhenaten made it the sole god of state worship; its temples were open to the sky, with no roofs, so sunlight reached inside."
+    },
+    {
+      "id": "eg-nut",
+      "prompt": "Sky goddess arching over the earth",
+      "answer": "Nut",
+      "context": "Goddess",
+      "group": "Gods and goddesses",
+      "note": "Egyptians said she swallowed the sun at dusk, carried it through her body overnight, and gave birth to it again at dawn."
+    },
+    {
+      "id": "eg-geb",
+      "prompt": "God of the earth, husband of the sky goddess",
+      "answer": "Geb",
+      "context": "God",
+      "group": "Gods and goddesses",
+      "note": "His laughter was believed to cause earthquakes; barley was said to grow upon his ribs, and green patches were painted on his body."
+    },
+    {
+      "id": "eg-shu",
+      "prompt": "God of air who holds up the sky",
+      "answer": "Shu",
+      "context": "God",
+      "group": "Gods and goddesses",
+      "note": "Created by Atum, he separates sky from earth; the Greeks compared him to Atlas, who also held up the heavens."
+    },
+    {
+      "id": "eg-tefnut",
+      "prompt": "Lioness-headed goddess of moisture",
+      "answer": "Tefnut",
+      "context": "Goddess",
+      "group": "Gods and goddesses",
+      "note": "Twin sister and wife of Shu, mother of Geb and Nut; she once fled to Nubia in a rage until Thoth coaxed her home."
+    },
+    {
+      "id": "eg-sobek",
+      "prompt": "Crocodile god of the Nile and pharaonic power",
+      "answer": "Sobek",
+      "context": "God",
+      "group": "Gods and goddesses",
+      "note": "Worshipped above all in the Faiyum, around Crocodilopolis; at Karanis, mummified crocodiles served as cult images of one local form of him."
+    },
+    {
+      "id": "eg-khnum",
+      "prompt": "Ram-headed potter who shaped human bodies",
+      "answer": "Khnum",
+      "context": "God",
+      "group": "Gods and goddesses",
+      "note": "Guardian of the Nile's First Cataract at Elephantine, he was thought to regulate the annual flood that brought life-giving silt."
+    },
+    {
+      "id": "eg-bes",
+      "prompt": "Household protector shown face-on, not in profile",
+      "answer": "Bes",
+      "context": "God",
+      "group": "Gods and goddesses",
+      "note": "His images scared demons away from houses; in the New Kingdom, dancers and musicians even wore tattoos of him on their thighs."
+    },
+    {
+      "id": "eg-taweret",
+      "prompt": "Hippopotamus goddess of childbirth",
+      "answer": "Taweret",
+      "context": "Goddess",
+      "group": "Gods and goddesses",
+      "note": "Usually also given lion limbs and a crocodile's back; her name means great one, a pacifying way to address dangerous deities."
+    },
+    {
+      "id": "eg-nephthys",
+      "prompt": "Sister of Isis, goddess of mourning and night",
+      "answer": "Nephthys",
+      "context": "Goddess",
+      "group": "Gods and goddesses",
+      "note": "Her name means Lady of the House; with Isis she protected the mummy in funerary rites, and she was the sister-wife of Set."
+    },
+    {
+      "id": "eg-khepri",
+      "prompt": "Scarab god of the rising sun",
+      "answer": "Khepri",
+      "context": "God",
+      "group": "Gods and goddesses",
+      "note": "Young beetles seemed to emerge from dung balls out of nothing, just as the sun was thought to be reborn each morning."
+    },
+    {
+      "id": "eg-atum",
+      "prompt": "Self-created first god, also the evening sun",
+      "answer": "Atum",
+      "context": "God",
+      "group": "Gods and goddesses",
+      "note": "His name probably comes from tm, to complete or finish; he fathered Shu and Tefnut, ancestors of the other gods."
+    },
+    {
+      "id": "eg-hapi",
+      "prompt": "God of the Nile's annual flood",
+      "answer": "Hapi",
+      "context": "God",
+      "group": "Gods and goddesses",
+      "note": "Shown with a large belly and breasts as signs of abundance, he was believed to live in a cavern near Aswan."
+    },
+    {
+      "id": "eg-ankh",
+      "label": "Name the",
+      "reverseLabel": "What is",
+      "prompt": "Looped hieroglyph meaning life",
+      "answer": "Ankh",
+      "context": "Symbol",
+      "group": "Symbols and objects",
+      "note": "Gods often hold it out to the pharaoh; Coptic Christians adapted it into the crux ansata, a looped form of the cross."
+    },
+    {
+      "id": "eg-eye-of-horus",
+      "label": "Name the",
+      "reverseLabel": "What is",
+      "prompt": "Protective eye amulet, also called the wedjat",
+      "answer": "Eye of Horus",
+      "context": "Symbol",
+      "group": "Symbols and objects",
+      "note": "In myth Set tore out Horus's eye and Thoth healed it; Horus then offered it to his dead father Osiris."
+    },
+    {
+      "id": "eg-scarab",
+      "label": "Name the",
+      "reverseLabel": "What is",
+      "prompt": "Beetle-shaped amulet and seal",
+      "answer": "Scarab",
+      "context": "Symbol",
+      "group": "Symbols and objects",
+      "note": "Heart scarabs on mummies carried Book of the Dead spell 30B, ordering the heart not to testify against its owner at judgement."
+    },
+    {
+      "id": "eg-was",
+      "label": "Name the",
+      "reverseLabel": "What is",
+      "prompt": "Forked staff topped with an animal head",
+      "answer": "Was sceptre",
+      "context": "Symbol",
+      "group": "Symbols and objects",
+      "note": "Its name means power or dominion; the head and forked tail are those of the Set animal, and it was carried by gods and kings."
+    },
+    {
+      "id": "eg-djed",
+      "label": "Name the",
+      "reverseLabel": "What is",
+      "prompt": "Pillar symbol of stability, Osiris's backbone",
+      "answer": "Djed pillar",
+      "context": "Symbol",
+      "group": "Symbols and objects",
+      "note": "In one myth a tree at Byblos grew around Osiris's coffin and was cut down to become a pillar in the king's palace."
+    },
+    {
+      "id": "eg-crook-flail",
+      "label": "Name the",
+      "reverseLabel": "What is",
+      "prompt": "Royal pair held crossed over the chest",
+      "answer": "Crook and flail",
+      "context": "Royal regalia",
+      "group": "Symbols and objects",
+      "note": "First the attributes of Osiris; the only surviving pharaonic examples were found in the tomb of Tutankhamun."
+    },
+    {
+      "id": "eg-pschent",
+      "label": "Name the",
+      "reverseLabel": "What is",
+      "prompt": "Red and white double crown of united Egypt",
+      "answer": "Pschent",
+      "context": "Royal regalia",
+      "group": "Symbols and objects",
+      "note": "It joined the white Hedjet crown of Upper Egypt with the red Deshret of Lower Egypt; no actual example has survived."
+    },
+    {
+      "id": "eg-uraeus",
+      "label": "Name the",
+      "reverseLabel": "What is",
+      "prompt": "Rearing cobra worn on the pharaoh's brow",
+      "answer": "Uraeus",
+      "context": "Royal regalia",
+      "group": "Symbols and objects",
+      "note": "It stood for Wadjet, protector of Lower Egypt; after unification the vulture of Nekhbet, patron of Upper Egypt, joined it."
+    },
+    {
+      "id": "eg-shen",
+      "label": "Name the",
+      "reverseLabel": "What is",
+      "prompt": "Loop of rope symbolising eternal protection",
+      "answer": "Shen ring",
+      "context": "Symbol",
+      "group": "Symbols and objects",
+      "note": "Its name means encircling; it is often clutched by Horus as a falcon, and stretched out it became the cartouche."
+    },
+    {
+      "id": "eg-cartouche",
+      "label": "Name the",
+      "reverseLabel": "What is",
+      "prompt": "Oval enclosing a royal name",
+      "answer": "Cartouche",
+      "context": "Symbol",
+      "group": "Symbols and objects",
+      "note": "French soldiers named it, thinking it looked like a paper cartridge, cartouche in French, for a muzzle-loading gun."
+    },
+    {
+      "id": "eg-weighing",
+      "label": "What is",
+      "reverseLabel": "What is",
+      "prompt": "Judgement of the dead in the Hall of Two Truths",
+      "answer": "Weighing of the heart",
+      "context": "Afterlife",
+      "group": "The afterlife",
+      "note": "In Book of the Dead spell 125, the dead first denied forty-two sins before forty-two divine judges, the Negative Confession."
+    },
+    {
+      "id": "eg-feather",
+      "label": "What is",
+      "reverseLabel": "What is",
+      "prompt": "Weight set against a dead person's heart",
+      "answer": "Feather of Ma'at",
+      "context": "Afterlife",
+      "group": "The afterlife",
+      "note": "A heart lighter than or equal to the feather passed to paradise; that is why hearts were left inside mummies."
+    },
+    {
+      "id": "eg-ammit",
+      "prompt": "Devourer of hearts that failed judgement",
+      "answer": "Ammit",
+      "context": "Afterlife",
+      "group": "The afterlife",
+      "note": "Part crocodile, lion and hippopotamus, the three largest man-eaters known to Egyptians; her name means Devourer of the Dead."
+    },
+    {
+      "id": "eg-duat",
+      "label": "What is",
+      "reverseLabel": "What is",
+      "prompt": "Underworld realm of the dead",
+      "answer": "Duat",
+      "context": "Afterlife",
+      "group": "The afterlife",
+      "note": "The Amduat divides it into twelve regions, one for each hour of the sun god's journey through it by night."
+    },
+    {
+      "id": "eg-book-of-dead",
+      "label": "What is",
+      "reverseLabel": "What is",
+      "prompt": "Funerary spells on papyrus, buried to guide the dead",
+      "answer": "Book of the Dead",
+      "context": "Afterlife",
+      "group": "The afterlife",
+      "note": "Its Egyptian title means Spells of Coming Forth by Day; Karl Richard Lepsius named it Todtenbuch, Book of the Dead, in 1842."
+    },
+    {
+      "id": "eg-canopic",
+      "label": "What are",
+      "reverseLabel": "What are",
+      "prompt": "Four jars holding a mummy's embalmed organs",
+      "answer": "Canopic jars",
+      "context": "Afterlife",
+      "group": "The afterlife",
+      "note": "Named after a mistaken link with Canopus, a legendary captain worshipped as a jar; lungs, liver, stomach and intestines went inside."
+    },
+    {
+      "id": "eg-four-sons",
+      "label": "Who are",
+      "reverseLabel": "Who are",
+      "prompt": "Gods on canopic lids: man, baboon, jackal, falcon",
+      "answer": "Four Sons of Horus",
+      "context": "Afterlife",
+      "group": "The afterlife",
+      "note": "Imsety guarded the liver, Hapy the lungs, Duamutef the stomach and Qebehsenuef the intestines; this Hapy is not the Nile god."
+    },
+    {
+      "id": "eg-ka",
+      "label": "What is",
+      "reverseLabel": "What is",
+      "prompt": "Vital essence that left the body at death",
+      "answer": "Ka",
+      "context": "Afterlife",
+      "group": "The afterlife",
+      "note": "Offerings of food and drink sustained it, since the ka within the offering was what it consumed; its hieroglyph is two upraised arms."
+    },
+    {
+      "id": "eg-ba",
+      "label": "What is",
+      "reverseLabel": "What is",
+      "prompt": "Part of the soul shown as a human-headed bird",
+      "answer": "Ba",
+      "context": "Afterlife",
+      "group": "The afterlife",
+      "note": "It held everything unique about a person; reunited with the ka after proper funeral rites, it formed the transfigured spirit, the akh."
+    },
+    {
+      "id": "eg-aaru",
+      "label": "What is",
+      "reverseLabel": "What is",
+      "prompt": "Paradise of reed-covered islands ruled by Osiris",
+      "answer": "Field of Reeds (Aaru)",
+      "context": "Afterlife",
+      "group": "The afterlife",
+      "note": "Usually placed in the east, where the sun rises, it was imagined as an ideal hunting and farming ground for the blessed dead."
+    },
+    {
+      "id": "eg-opening-mouth",
+      "label": "What is",
+      "reverseLabel": "What is",
+      "prompt": "Rite letting a mummy breathe, speak, eat and see",
+      "answer": "Opening of the mouth",
+      "context": "Afterlife",
+      "group": "The afterlife",
+      "note": "Tutankhamun's tomb shows his successor Ay, wearing a priest's leopard skin, performing it for the dead king."
+    },
+    {
+      "id": "eg-story-set",
+      "label": "Who",
+      "reverseLabel": "Famous for",
+      "prompt": "Murdered his brother Osiris to seize the throne",
+      "answer": "Set",
+      "context": "Osiris myth",
+      "group": "Stories",
+      "note": "In Plutarch's version, Set offers a chest at a banquet to whoever fits it, then seals Osiris inside and throws it into the Nile."
+    },
+    {
+      "id": "eg-story-isis",
+      "label": "Who",
+      "reverseLabel": "Famous for",
+      "prompt": "Gathered Osiris's body and brought him back to life",
+      "answer": "Isis",
+      "context": "Osiris myth",
+      "group": "Stories",
+      "note": "In bird form she fanned breath and life into him with her wings, and conceived his son and heir, Horus."
+    },
+    {
+      "id": "eg-story-horus",
+      "label": "Who",
+      "reverseLabel": "Famous for",
+      "prompt": "Fought Set for eighty years for Egypt's throne",
+      "answer": "Horus",
+      "context": "Osiris myth",
+      "group": "Stories",
+      "note": "Their quarrel came before a tribunal of the gods; in The Contendings of Horus and Seth, Horus beats Set in every contest."
+    },
+    {
+      "id": "eg-apep",
+      "prompt": "Chaos serpent who attacks Ra's boat each night",
+      "answer": "Apep",
+      "context": "Sun's journey",
+      "group": "Stories",
+      "note": "Greeks called him Apophis; priests made wax figures of the serpent, then mutilated and burned them to help Ra win."
+    },
+    {
+      "id": "eg-barque",
+      "label": "What is",
+      "reverseLabel": "What is",
+      "prompt": "Boat carrying Ra across the sky and underworld",
+      "answer": "Solar barque",
+      "context": "Sun's journey",
+      "group": "Stories",
+      "note": "Ra sailed the Mandjet, the Boat of Millions of Years, by day, and the Mesektet through the underworld by night."
+    },
+    {
+      "id": "eg-red-beer",
+      "label": "What was",
+      "prompt": "Trick that stopped Sekhmet's slaughter of humankind",
+      "answer": "Beer dyed red like blood",
+      "context": "Destruction of mankind",
+      "group": "Stories",
+      "note": "Ra had sent Hathor as his Eye to punish rebels; the oldest copy of the tale is on Tutankhamun's outermost gilded shrine.",
+      "noReverse": true
+    },
+    {
+      "id": "eg-nu",
+      "label": "What is",
+      "reverseLabel": "What is",
+      "prompt": "Primordial waters from which Atum arose",
+      "answer": "Nu (Nun)",
+      "context": "Creation",
+      "group": "Stories",
+      "note": "Sacred lakes at temples such as Karnak represented these waters, to which Egyptians expected everything to return at the end of time."
+    },
+    {
+      "id": "eg-ennead",
+      "label": "What was",
+      "reverseLabel": "What was",
+      "prompt": "Nine gods worshipped at Heliopolis, headed by Atum",
+      "answer": "The Ennead",
+      "context": "Creation",
+      "group": "Stories",
+      "note": "Atum, his children Shu and Tefnut, grandchildren Geb and Nut, and great-grandchildren Osiris, Isis, Set and Nephthys."
+    },
+    {
+      "id": "eg-akhenaten",
+      "label": "Who",
+      "reverseLabel": "Famous for",
+      "prompt": "Pharaoh who made the Aten Egypt's supreme god",
+      "answer": "Akhenaten",
+      "context": "Amarna period",
+      "group": "Stories",
+      "note": "Born Amenhotep IV, he built a new capital at Amarna; later pharaohs destroyed his statues and left his name off king lists."
+    },
+    {
+      "id": "eg-secret-name",
+      "label": "What was",
+      "prompt": "What Isis tricked Ra into revealing",
+      "answer": "His secret name",
+      "context": "Isis and Ra",
+      "group": "Stories",
+      "note": "Her snake's venom made Ra ill until he told her; she passed the name to Horus, bolstering his royal authority.",
+      "noReverse": true
+    }
+  ]
+}

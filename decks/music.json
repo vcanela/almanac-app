@@ -1,0 +1,990 @@
+{
+  "id": "music",
+  "title": "Classical and jazz",
+  "subtitle": "Works, records and the people behind them",
+  "promptLabel": "Composer of",
+  "reversible": false,
+  "about": "Landmark works from Allegri to Górecki and the jazz records, tunes and nicknames worth knowing. Each card names the composer or leader, and the notes flag credits that are shared, disputed or misattributed.",
+  "cards": [
+    {
+      "id": "mu-four-seasons",
+      "prompt": "The Four Seasons",
+      "answer": "Antonio Vivaldi",
+      "context": "Violin concertos · 1725",
+      "group": "Baroque",
+      "note": "Published with four sonnets, possibly by the composer himself, each split into three parts to match the three movements of its concerto."
+    },
+    {
+      "id": "mu-messiah",
+      "prompt": "Messiah",
+      "answer": "George Frideric Handel",
+      "context": "Oratorio · 1742",
+      "group": "Baroque",
+      "note": "First performed in Dublin for charity; standing for the Hallelujah chorus rests on a story about George II with no convincing evidence."
+    },
+    {
+      "id": "mu-brandenburg",
+      "prompt": "Brandenburg Concertos",
+      "answer": "Johann Sebastian Bach",
+      "context": "Six concertos · 1721",
+      "group": "Baroque",
+      "note": "Presented to the Margrave of Brandenburg in 1721; the tale that they then sat unplayed in his library is disputed by scholars."
+    },
+    {
+      "id": "mu-water-music",
+      "prompt": "Water Music",
+      "answer": "George Frideric Handel",
+      "context": "Orchestral suites · 1717",
+      "group": "Baroque",
+      "note": "About 50 musicians played it on a barge on the Thames; George I was so pleased he had it repeated at least three times."
+    },
+    {
+      "id": "mu-toccata-fugue",
+      "prompt": "Toccata and Fugue in D minor",
+      "answer": "Johann Sebastian Bach",
+      "context": "Organ work · date uncertain",
+      "group": "Baroque",
+      "note": "Long credited to Bach, though a minority of scholars have questioned his authorship since 1981; Stokowski's orchestration featured in Disney's Fantasia."
+    },
+    {
+      "id": "mu-canon-in-d",
+      "prompt": "Canon in D",
+      "answer": "Johann Pachelbel",
+      "context": "Canon · date unknown",
+      "group": "Baroque",
+      "note": "Forgotten for centuries until Jean-François Paillard's slow, lush 1968 recording made it a hit; the oldest surviving manuscript dates from around 1840."
+    },
+    {
+      "id": "mu-goldberg",
+      "prompt": "Goldberg Variations",
+      "answer": "Johann Sebastian Bach",
+      "context": "Keyboard variations · 1741",
+      "group": "Baroque",
+      "note": "Named after harpsichordist Johann Gottlieb Goldberg; Forkel's story that they were written to soothe an insomniac count is now widely doubted."
+    },
+    {
+      "id": "mu-royal-fireworks",
+      "prompt": "Music for the Royal Fireworks",
+      "answer": "George Frideric Handel",
+      "context": "Orchestral suite · 1749",
+      "group": "Baroque",
+      "note": "A public rehearsal reportedly drew over 12,000 people, jamming London Bridge for three hours; at the actual display a pavilion caught fire."
+    },
+    {
+      "id": "mu-st-matthew-passion",
+      "prompt": "St Matthew Passion",
+      "answer": "Johann Sebastian Bach",
+      "context": "Passion · 1727",
+      "group": "Baroque",
+      "note": "Mendelssohn, aged 20, revived it in Berlin in 1829, the central event in the nineteenth-century rediscovery of Bach's music."
+    },
+    {
+      "id": "mu-zadok",
+      "prompt": "Zadok the Priest",
+      "answer": "George Frideric Handel",
+      "context": "Coronation anthem · 1727",
+      "group": "Baroque",
+      "note": "Written for the coronation of George II, it has been sung before the anointing at every British coronation since."
+    },
+    {
+      "id": "mu-miserere",
+      "prompt": "Miserere",
+      "answer": "Gregorio Allegri",
+      "context": "Psalm setting · 1630s",
+      "group": "Baroque",
+      "note": "According to a letter by Leopold Mozart, his 14-year-old son heard it in the Sistine Chapel and wrote it out from memory."
+    },
+    {
+      "id": "mu-adagio-g-minor",
+      "prompt": "Adagio in G minor",
+      "answer": "Remo Giazotto",
+      "context": "Strings and organ · 1958",
+      "group": "Baroque",
+      "note": "Usually credited to Albinoni, it was composed by his biographer Giazotto, supposedly from a bass-line fragment whose existence is still debated."
+    },
+    {
+      "id": "mu-eine-kleine",
+      "prompt": "Eine kleine Nachtmusik",
+      "answer": "Wolfgang Amadeus Mozart",
+      "context": "Serenade · 1787",
+      "group": "Classical era",
+      "note": "Mozart's own catalogue lists five movements, but one minuet is lost; the serenade was not published until about 1827."
+    },
+    {
+      "id": "mu-moonlight",
+      "prompt": "Moonlight Sonata",
+      "answer": "Ludwig van Beethoven",
+      "context": "Piano sonata · 1801",
+      "group": "Classical era",
+      "note": "Dedicated to Countess Giulietta Guicciardi; the nickname grew later from moonlit imagery the poet Ludwig Rellstab attached to it."
+    },
+    {
+      "id": "mu-fur-elise",
+      "prompt": "Für Elise",
+      "answer": "Ludwig van Beethoven",
+      "context": "Bagatelle · 1810",
+      "group": "Classical era",
+      "note": "Published only in 1867, forty years after the composer's death; 'Elise' may be a misreading, and Therese Malfatti is the most popular candidate."
+    },
+    {
+      "id": "mu-choral-symphony",
+      "prompt": "Choral Symphony (No. 9)",
+      "answer": "Ludwig van Beethoven",
+      "context": "Symphony · 1824",
+      "group": "Classical era",
+      "note": "At the premiere the deaf composer was still beating time when contralto Caroline Unger turned him round to see the applause."
+    },
+    {
+      "id": "mu-requiem-d-minor",
+      "prompt": "Requiem in D minor",
+      "answer": "Wolfgang Amadeus Mozart",
+      "context": "Requiem Mass · 1791",
+      "group": "Classical era",
+      "note": "Unfinished at Mozart's death; Süssmayr completed it for Count Walsegg, who commissioned it in memory of his wife and probably meant to claim it."
+    },
+    {
+      "id": "mu-eroica",
+      "prompt": "Eroica Symphony",
+      "answer": "Ludwig van Beethoven",
+      "context": "Symphony · 1804",
+      "group": "Classical era",
+      "note": "According to Ferdinand Ries, the composer tore the title page in half on hearing that Napoleon had declared himself emperor."
+    },
+    {
+      "id": "mu-surprise",
+      "prompt": "Surprise Symphony",
+      "answer": "Joseph Haydn",
+      "context": "Symphony · 1791",
+      "group": "Classical era",
+      "note": "Asked if the sudden loud chord was meant to wake the audience, Haydn said no: he simply wanted to surprise London with something new."
+    },
+    {
+      "id": "mu-jupiter",
+      "prompt": "Jupiter Symphony",
+      "answer": "Wolfgang Amadeus Mozart",
+      "context": "Symphony · 1788",
+      "group": "Classical era",
+      "note": "His last and longest symphony; the nickname was probably coined by the London impresario Johann Peter Salomon."
+    },
+    {
+      "id": "mu-creation",
+      "prompt": "The Creation",
+      "answer": "Joseph Haydn",
+      "context": "Oratorio · 1798",
+      "group": "Classical era",
+      "note": "Inspired by hearing Handel oratorios in London; at 'Let there be light', an eyewitness said the orchestra could not continue for several minutes."
+    },
+    {
+      "id": "mu-emperor-quartet",
+      "prompt": "Emperor Quartet",
+      "answer": "Joseph Haydn",
+      "context": "String quartet · c. 1797",
+      "group": "Classical era",
+      "note": "Its slow movement varies the composer's own hymn for Emperor Francis II, a tune now sung as Germany's national anthem."
+    },
+    {
+      "id": "mu-farewell",
+      "prompt": "Farewell Symphony",
+      "answer": "Joseph Haydn",
+      "context": "Symphony · 1772",
+      "group": "Classical era",
+      "note": "In the finale the players snuff their candles and leave one by one, a hint to Prince Esterházy that his musicians wanted to go home."
+    },
+    {
+      "id": "mu-rondo-alla-turca",
+      "prompt": "Rondo alla Turca",
+      "answer": "Wolfgang Amadeus Mozart",
+      "context": "Piano sonata finale · 1784",
+      "group": "Classical era",
+      "note": "The finale of the Piano Sonata in A, K. 331, imitating the sound of Turkish Janissary bands; the composer himself titled it Alla turca."
+    },
+    {
+      "id": "mu-nutcracker",
+      "prompt": "The Nutcracker",
+      "answer": "Pyotr Ilyich Tchaikovsky",
+      "context": "Ballet · 1892",
+      "group": "Romantic",
+      "note": "Famous for its celesta, an instrument the composer had already used in The Voyevoda; the 1892 premiere was not considered a success."
+    },
+    {
+      "id": "mu-ride-valkyries",
+      "prompt": "Ride of the Valkyries",
+      "answer": "Richard Wagner",
+      "context": "Opera excerpt · 1870",
+      "group": "Romantic",
+      "note": "The composer called separate concert performances 'an utter indiscretion' and forbade them until the complete Ring cycle opened at Bayreuth in 1876."
+    },
+    {
+      "id": "mu-1812-overture",
+      "prompt": "1812 Overture",
+      "answer": "Pyotr Ilyich Tchaikovsky",
+      "context": "Concert overture · 1880",
+      "group": "Romantic",
+      "note": "The composer told his patron it would be very loud and noisy but without artistic merit, because he wrote it without love."
+    },
+    {
+      "id": "mu-blue-danube",
+      "prompt": "The Blue Danube",
+      "answer": "Johann Strauss II",
+      "context": "Waltz · 1867",
+      "group": "Romantic",
+      "note": "Asked to sign a fan, Brahms wrote out its opening bars and added 'Unfortunately not by Johannes Brahms'."
+    },
+    {
+      "id": "mu-new-world",
+      "prompt": "New World Symphony",
+      "answer": "Antonín Dvořák",
+      "context": "Symphony · 1893",
+      "group": "Romantic",
+      "note": "Premiered at Carnegie Hall to thunderous applause; Neil Armstrong took a tape recording of it on the Apollo 11 mission in 1969."
+    },
+    {
+      "id": "mu-mountain-king",
+      "prompt": "In the Hall of the Mountain King",
+      "answer": "Edvard Grieg",
+      "context": "Incidental music · 1875",
+      "group": "Romantic",
+      "note": "Written for Ibsen's Peer Gynt; the composer said it reeked so much of cowpats and ultra-Norwegianism that he could not bear to hear it."
+    },
+    {
+      "id": "mu-symphonie-fantastique",
+      "prompt": "Symphonie fantastique",
+      "answer": "Hector Berlioz",
+      "context": "Symphony · 1830",
+      "group": "Romantic",
+      "note": "Inspired by his obsession with the actress Harriet Smithson, who refused even to meet him; they married in 1833."
+    },
+    {
+      "id": "mu-unfinished",
+      "prompt": "Unfinished Symphony",
+      "answer": "Franz Schubert",
+      "context": "Symphony · 1822",
+      "group": "Romantic",
+      "note": "His friend Anselm Hüttenbrenner kept the manuscript for decades; the two completed movements were not premiered until 1865."
+    },
+    {
+      "id": "mu-minute-waltz",
+      "prompt": "Minute Waltz",
+      "answer": "Frédéric Chopin",
+      "context": "Piano waltz · 1847",
+      "group": "Romantic",
+      "note": "'Minute' means small, not sixty seconds; the French nickname, Waltz of the Little Dog, reportedly came from a dog chasing its tail."
+    },
+    {
+      "id": "mu-zarathustra",
+      "prompt": "Also sprach Zarathustra",
+      "answer": "Richard Strauss",
+      "context": "Tone poem · 1896",
+      "group": "Romantic",
+      "note": "Inspired by Nietzsche; the fanfare in Kubrick's 2001: A Space Odyssey was Karajan's 1959 recording with the Vienna Philharmonic."
+    },
+    {
+      "id": "mu-rach-2",
+      "prompt": "Piano Concerto No. 2 in C minor",
+      "answer": "Sergei Rachmaninoff",
+      "context": "Piano concerto · 1901",
+      "group": "Romantic",
+      "note": "Dedicated to Nikolai Dahl, whose months of daily hypnotherapy helped the composer recover after his First Symphony's disastrous 1897 premiere."
+    },
+    {
+      "id": "mu-hungarian-rhapsody-2",
+      "prompt": "Hungarian Rhapsody No. 2",
+      "answer": "Franz Liszt",
+      "context": "Piano rhapsody · 1847",
+      "group": "Romantic",
+      "note": "Dedicated to Count László Teleki and published in 1851, it later became a favourite soundtrack for animated cartoons."
+    },
+    {
+      "id": "mu-pictures-exhibition",
+      "prompt": "Pictures at an Exhibition",
+      "answer": "Modest Mussorgsky",
+      "context": "Piano suite · 1874",
+      "group": "Romantic",
+      "note": "A memorial to his friend Viktor Hartmann's paintings; Ravel made the famous orchestration in 1922 on a commission from Koussevitzky."
+    },
+    {
+      "id": "mu-carnival-animals",
+      "prompt": "The Carnival of the Animals",
+      "answer": "Camille Saint-Saëns",
+      "context": "Suite · 1886",
+      "group": "Romantic",
+      "note": "Fearing it would harm his serious reputation, he banned public performance in his lifetime, releasing only The Swan for publication."
+    },
+    {
+      "id": "mu-enigma",
+      "prompt": "Enigma Variations",
+      "answer": "Edward Elgar",
+      "context": "Orchestral variations · 1899",
+      "group": "Romantic",
+      "note": "Dedicated 'to my friends pictured within'; each variation sketches someone in his circle, including his publisher August Jaeger as Nimrod."
+    },
+    {
+      "id": "mu-moldau",
+      "prompt": "The Moldau",
+      "answer": "Bedřich Smetana",
+      "context": "Symphonic poem · 1874",
+      "group": "Romantic",
+      "note": "Written in late 1874 after the composer had gone deaf, it follows the river Vltava from its two small source springs."
+    },
+    {
+      "id": "mu-finlandia",
+      "prompt": "Finlandia",
+      "answer": "Jean Sibelius",
+      "context": "Tone poem · 1899",
+      "group": "Romantic",
+      "note": "A covert protest against Russian censorship, it was performed under disguised names such as Happy Feelings at the Awakening of Finnish Spring."
+    },
+    {
+      "id": "mu-midsummer-overture",
+      "prompt": "A Midsummer Night's Dream overture",
+      "answer": "Felix Mendelssohn",
+      "context": "Concert overture · 1826",
+      "group": "Romantic",
+      "note": "Written at seventeen; sixteen years later he added incidental music for the play, including the famous Wedding March."
+    },
+    {
+      "id": "mu-german-requiem",
+      "prompt": "A German Requiem",
+      "answer": "Johannes Brahms",
+      "context": "Choral work · 1868",
+      "group": "Romantic",
+      "note": "He chose texts from Luther's German Bible rather than the Latin Mass, aiming to comfort the living; his mother's death may have prompted it."
+    },
+    {
+      "id": "mu-resurrection",
+      "prompt": "Resurrection Symphony",
+      "answer": "Gustav Mahler",
+      "context": "Symphony · 1895",
+      "group": "Romantic",
+      "note": "He found his finale at Hans von Bülow's funeral, where hearing a setting of Klopstock's resurrection hymn 'struck me like lightning'."
+    },
+    {
+      "id": "mu-rite-of-spring",
+      "prompt": "The Rite of Spring",
+      "answer": "Igor Stravinsky",
+      "context": "Ballet · 1913",
+      "group": "20th century",
+      "note": "The 1913 Paris premiere provoked uproar in the theatre, later remembered as a riot; Nijinsky's choreography shocked as much as the music."
+    },
+    {
+      "id": "mu-bolero",
+      "prompt": "Boléro",
+      "answer": "Maurice Ravel",
+      "context": "Ballet · 1928",
+      "group": "20th century",
+      "note": "Commissioned by the dancer Ida Rubinstein; the composer called it seventeen minutes of 'orchestral tissue without music', one long crescendo."
+    },
+    {
+      "id": "mu-the-planets",
+      "prompt": "The Planets",
+      "answer": "Gustav Holst",
+      "context": "Orchestral suite · 1917",
+      "group": "20th century",
+      "note": "Each movement reflects a planet's astrological character; Colin Matthews added Pluto, the Renewer in 2000, six years before Pluto's demotion."
+    },
+    {
+      "id": "mu-rhapsody-in-blue",
+      "prompt": "Rhapsody in Blue",
+      "answer": "George Gershwin",
+      "context": "Piano and jazz band · 1924",
+      "group": "20th century",
+      "note": "Premiered with Paul Whiteman's band; clarinettist Ross Gorman played the opening run as a joke glissando, and the composer kept it."
+    },
+    {
+      "id": "mu-clair-de-lune",
+      "prompt": "Clair de lune",
+      "answer": "Claude Debussy",
+      "context": "Piano piece · 1905",
+      "group": "20th century",
+      "note": "Named after a Paul Verlaine poem, it is the third movement of the Suite bergamasque, begun around 1890 and revised before publication."
+    },
+    {
+      "id": "mu-adagio-strings",
+      "prompt": "Adagio for Strings",
+      "answer": "Samuel Barber",
+      "context": "String orchestra · 1936",
+      "group": "20th century",
+      "note": "Toscanini premiered it on NBC radio in 1938; it was later played at Albert Einstein's funeral and broadcast after President Kennedy's."
+    },
+    {
+      "id": "mu-carmina-burana",
+      "prompt": "Carmina Burana",
+      "answer": "Carl Orff",
+      "context": "Cantata · 1937",
+      "group": "20th century",
+      "note": "Sets 24 poems from a medieval collection; 'O Fortuna', the chorus to the goddess of fortune, both opens and closes the work."
+    },
+    {
+      "id": "mu-peter-wolf",
+      "prompt": "Peter and the Wolf",
+      "answer": "Sergei Prokofiev",
+      "context": "Symphonic tale for children · 1936",
+      "group": "20th century",
+      "note": "Commissioned by Natalya Sats of Moscow's Central Children's Theatre to introduce children to the instruments, each playing a character."
+    },
+    {
+      "id": "mu-lark-ascending",
+      "prompt": "The Lark Ascending",
+      "answer": "Ralph Vaughan Williams",
+      "context": "Romance for violin · 1914",
+      "group": "20th century",
+      "note": "Inspired by George Meredith's 1881 poem; completed for violin and piano in 1914, it waited until 1920 for its first performance."
+    },
+    {
+      "id": "mu-appalachian-spring",
+      "prompt": "Appalachian Spring",
+      "answer": "Aaron Copland",
+      "context": "Ballet · 1944",
+      "group": "20th century",
+      "note": "Written for choreographer Martha Graham, it includes variations on the Shaker tune Simple Gifts and won the Pulitzer Prize for Music."
+    },
+    {
+      "id": "mu-four-thirty-three",
+      "prompt": "4′33″",
+      "answer": "John Cage",
+      "context": "Three movements · 1952",
+      "group": "20th century",
+      "note": "After an anechoic chamber at Harvard still let him hear two sounds, his own body, he concluded that true silence cannot exist."
+    },
+    {
+      "id": "mu-leningrad",
+      "prompt": "Leningrad Symphony",
+      "answer": "Dmitri Shostakovich",
+      "context": "Symphony · 1941",
+      "group": "20th century",
+      "note": "Played in besieged Leningrad in August 1942 by Karl Eliasberg's starving orchestra and broadcast by loudspeaker towards the German lines."
+    },
+    {
+      "id": "mu-pierrot-lunaire",
+      "prompt": "Pierrot lunaire",
+      "answer": "Arnold Schoenberg",
+      "context": "Melodrama · 1912",
+      "group": "20th century",
+      "note": "Commissioned by the actress Albertine Zehme, who premiered its 21 poems in Sprechstimme, a half-spoken, half-sung style."
+    },
+    {
+      "id": "mu-end-of-time",
+      "prompt": "Quartet for the End of Time",
+      "answer": "Olivier Messiaen",
+      "context": "Chamber music · 1941",
+      "group": "20th century",
+      "note": "Written in a German prisoner-of-war camp and premiered there to about 400 prisoners and guards; the composer later claimed 5,000."
+    },
+    {
+      "id": "mu-spiegel",
+      "prompt": "Spiegel im Spiegel",
+      "answer": "Arvo Pärt",
+      "context": "Violin and piano · 1978",
+      "group": "20th century",
+      "note": "Written just before the composer left Soviet Estonia, in his tintinnabuli style; the title means 'mirror in the mirror'."
+    },
+    {
+      "id": "mu-sorrowful-songs",
+      "prompt": "Symphony of Sorrowful Songs",
+      "answer": "Henryk Górecki",
+      "context": "Symphony · 1976",
+      "group": "20th century",
+      "note": "A 1992 release with soprano Dawn Upshaw sold over a million copies, probably the best-selling contemporary classical record."
+    },
+    {
+      "id": "mu-magic-flute",
+      "prompt": "The Magic Flute",
+      "answer": "Wolfgang Amadeus Mozart",
+      "context": "Singspiel · 1791",
+      "group": "Opera",
+      "note": "Premiered two months before the composer's death; the librettist Emanuel Schikaneder played Papageno himself in his own Vienna theatre."
+    },
+    {
+      "id": "mu-la-traviata",
+      "prompt": "La traviata",
+      "answer": "Giuseppe Verdi",
+      "context": "Opera · 1853",
+      "group": "Opera",
+      "note": "After the Venice premiere the composer wrote: 'La traviata last night a failure. Was the fault mine or the singers'?'"
+    },
+    {
+      "id": "mu-carmen",
+      "prompt": "Carmen",
+      "answer": "Georges Bizet",
+      "context": "Opera · 1875",
+      "group": "Opera",
+      "note": "Its Paris premiere met a cool reception, and the composer died of heart disease three months later, aged 36."
+    },
+    {
+      "id": "mu-la-boheme",
+      "prompt": "La bohème",
+      "answer": "Giacomo Puccini",
+      "context": "Opera · 1896",
+      "group": "Opera",
+      "note": "Toscanini conducted the Turin premiere; Leoncavallo's rival opera on the same source, Murger's Paris vignettes, is now rarely staged."
+    },
+    {
+      "id": "mu-figaro",
+      "prompt": "The Marriage of Figaro",
+      "answer": "Wolfgang Amadeus Mozart",
+      "context": "Opera buffa · 1786",
+      "group": "Opera",
+      "note": "Lorenzo Da Ponte adapted Beaumarchais's comedy, whose frank treatment of class conflict had led to its ban in Vienna as a play."
+    },
+    {
+      "id": "mu-barber-seville",
+      "prompt": "The Barber of Seville",
+      "answer": "Gioachino Rossini",
+      "context": "Opera buffa · 1816",
+      "group": "Opera",
+      "note": "Reportedly composed in under three weeks; the Rome premiere was a disaster, with supporters of rival Paisiello jeering throughout."
+    },
+    {
+      "id": "mu-turandot",
+      "prompt": "Turandot",
+      "answer": "Giacomo Puccini",
+      "context": "Opera · 1926",
+      "group": "Opera",
+      "note": "Left unfinished at the composer's death; at the premiere Toscanini stopped mid-act and told the audience the maestro had died at this point."
+    },
+    {
+      "id": "mu-tristan",
+      "prompt": "Tristan und Isolde",
+      "answer": "Richard Wagner",
+      "context": "Music drama · 1865",
+      "group": "Opera",
+      "note": "Its opening Tristan chord is a landmark of chromatic harmony; Vienna abandoned a production after more than 70 rehearsals, sealing its unperformable reputation."
+    },
+    {
+      "id": "mu-lorfeo",
+      "prompt": "L'Orfeo",
+      "answer": "Claudio Monteverdi",
+      "context": "Opera · 1607",
+      "group": "Opera",
+      "note": "Written for the Mantua carnival, it is the earliest opera still regularly performed, though Peri's Dafne and Euridice came first."
+    },
+    {
+      "id": "mu-dido-aeneas",
+      "prompt": "Dido and Aeneas",
+      "answer": "Henry Purcell",
+      "context": "Opera · c. 1689",
+      "group": "Opera",
+      "note": "Performed by 1689 at Josias Priest's girls' school in Chelsea; its climax is Dido's Lament, 'When I am laid in earth'."
+    },
+    {
+      "id": "mu-cavalleria",
+      "prompt": "Cavalleria rusticana",
+      "answer": "Pietro Mascagni",
+      "context": "One-act opera · 1890",
+      "group": "Opera",
+      "note": "His wife reportedly submitted the score on the final day of a publisher's competition; it was chosen as a finalist from 73 entries."
+    },
+    {
+      "id": "mu-peter-grimes",
+      "prompt": "Peter Grimes",
+      "answer": "Benjamin Britten",
+      "context": "Opera · 1945",
+      "group": "Opera",
+      "note": "Based on George Crabbe's poem The Borough; Koussevitzky, who commissioned it, called it the greatest opera since Carmen."
+    },
+    {
+      "id": "mu-einstein-beach",
+      "prompt": "Einstein on the Beach",
+      "answer": "Philip Glass",
+      "context": "Opera · 1976",
+      "group": "Opera",
+      "note": "Created with director Robert Wilson, it runs about five hours without an interval, and the audience may come and go freely."
+    },
+    {
+      "id": "mu-kind-of-blue",
+      "label": "Who recorded",
+      "prompt": "Kind of Blue",
+      "answer": "Miles Davis",
+      "context": "Album · 1959",
+      "group": "Jazz records",
+      "note": "Recorded in two sessions with almost no rehearsal; the players got only sketches of scales, with Coltrane, Cannonball Adderley and Bill Evans."
+    },
+    {
+      "id": "mu-love-supreme",
+      "label": "Who recorded",
+      "prompt": "A Love Supreme",
+      "answer": "John Coltrane",
+      "context": "Album · 1965",
+      "group": "Jazz records",
+      "note": "Recorded in one session in December 1964; in Acknowledgement, the four-note motif becomes Coltrane's own overdubbed chant of the title."
+    },
+    {
+      "id": "mu-time-out",
+      "label": "Who recorded",
+      "prompt": "Time Out",
+      "answer": "The Dave Brubeck Quartet",
+      "context": "Album · 1959",
+      "group": "Jazz records",
+      "note": "Built on unusual time signatures such as 9/8 and 5/4, it became the first jazz album to sell a million copies."
+    },
+    {
+      "id": "mu-mingus-ah-um",
+      "label": "Who recorded",
+      "prompt": "Mingus Ah Um",
+      "answer": "Charles Mingus",
+      "context": "Album · 1959",
+      "group": "Jazz records",
+      "note": "Columbia refused the lyrics of 'Fables of Faubus', mocking Arkansas governor Orval Faubus, so it appeared as an instrumental."
+    },
+    {
+      "id": "mu-moanin",
+      "label": "Who recorded",
+      "prompt": "Moanin'",
+      "answer": "Art Blakey",
+      "context": "Album · 1958",
+      "group": "Jazz records",
+      "note": "Recorded with his Jazz Messengers, including Lee Morgan and Benny Golson; pianist Bobby Timmons wrote the title track."
+    },
+    {
+      "id": "mu-saxophone-colossus",
+      "label": "Who recorded",
+      "prompt": "Saxophone Colossus",
+      "answer": "Sonny Rollins",
+      "context": "Album · 1956",
+      "group": "Jazz records",
+      "note": "Recorded in a single day in June 1956 with Tommy Flanagan, Doug Watkins and Max Roach; often seen as his breakthrough record."
+    },
+    {
+      "id": "mu-somethin-else",
+      "label": "Who recorded",
+      "prompt": "Somethin' Else",
+      "answer": "Cannonball Adderley",
+      "context": "Album · 1958",
+      "group": "Jazz records",
+      "note": "Miles Davis, by then rarely a sideman, plays on it, wrote the title track and chose most of the material."
+    },
+    {
+      "id": "mu-shape-of-jazz",
+      "label": "Who recorded",
+      "prompt": "The Shape of Jazz to Come",
+      "answer": "Ornette Coleman",
+      "context": "Album · 1959",
+      "group": "Jazz records",
+      "note": "A pianoless quartet with Don Cherry, Charlie Haden and Billy Higgins; the leader wanted to call it Focus on Sanity."
+    },
+    {
+      "id": "mu-getz-gilberto",
+      "label": "Who recorded",
+      "prompt": "Getz/Gilberto",
+      "answer": "Stan Getz and João Gilberto",
+      "context": "Album · 1964",
+      "group": "Jazz records",
+      "note": "Astrud Gilberto's vocal on The Girl from Ipanema launched her career; the album won the Grammy for Album of the Year in 1965."
+    },
+    {
+      "id": "mu-ella-and-louis",
+      "label": "Who recorded",
+      "prompt": "Ella and Louis",
+      "answer": "Ella Fitzgerald and Louis Armstrong",
+      "context": "Album · 1956",
+      "group": "Jazz records",
+      "note": "Norman Granz chose eleven ballads and backing from Oscar Peterson, Herb Ellis, Ray Brown and Buddy Rich; the first of their three Verve albums."
+    },
+    {
+      "id": "mu-head-hunters",
+      "label": "Who recorded",
+      "prompt": "Head Hunters",
+      "answer": "Herbie Hancock",
+      "context": "Album · 1973",
+      "group": "Jazz records",
+      "note": "On the reworked Watermelon Man, percussionist Bill Summers blows into a beer bottle, imitating the hindewhu of Central Africa."
+    },
+    {
+      "id": "mu-koln-concert",
+      "label": "Who recorded",
+      "prompt": "The Köln Concert",
+      "answer": "Keith Jarrett",
+      "context": "Live album · 1975",
+      "group": "Jazz records",
+      "note": "Organised by 18-year-old promoter Vera Brandes, it was played on a small, faulty piano instead of the requested Bösendorfer concert grand."
+    },
+    {
+      "id": "mu-waltz-for-debby",
+      "label": "Who recorded",
+      "prompt": "Waltz for Debby",
+      "answer": "The Bill Evans Trio",
+      "context": "Live album · 1962",
+      "group": "Jazz records",
+      "note": "Recorded at the Village Vanguard in June 1961; bassist Scott LaFaro died in a car accident just ten days later."
+    },
+    {
+      "id": "mu-blue-train",
+      "label": "Who recorded",
+      "prompt": "Blue Train",
+      "answer": "John Coltrane",
+      "context": "Album · 1958",
+      "group": "Jazz records",
+      "note": "His only session as leader for Blue Note, which, unlike his previous label, paid the musicians to rehearse beforehand."
+    },
+    {
+      "id": "mu-west-end-blues",
+      "label": "Who recorded",
+      "prompt": "West End Blues",
+      "answer": "Louis Armstrong",
+      "context": "Opening trumpet cadenza · 1928",
+      "group": "Jazz records",
+      "note": "King Oliver wrote the tune and recorded it first; this Hot Five version, with Earl Hines on piano, became a defining moment of early jazz."
+    },
+    {
+      "id": "mu-bitches-brew",
+      "label": "Who recorded",
+      "prompt": "Bitches Brew",
+      "answer": "Miles Davis",
+      "context": "Album · 1970",
+      "group": "Jazz records",
+      "note": "Producer Teo Macero spliced, looped and edited the 1969 sessions; it became Davis's highest-charting album on the Billboard 200."
+    },
+    {
+      "id": "mu-strange-fruit",
+      "label": "Who recorded",
+      "prompt": "Strange Fruit",
+      "answer": "Billie Holiday",
+      "context": "Recording · 1939",
+      "group": "Jazz records",
+      "note": "Columbia would not record Abel Meeropol's anti-lynching song, so she cut it for Milt Gabler's Commodore label; it became one of her biggest-selling records."
+    },
+    {
+      "id": "mu-sing-sing-sing",
+      "label": "Who recorded",
+      "prompt": "Sing, Sing, Sing",
+      "answer": "Benny Goodman",
+      "context": "Big band recording · 1937",
+      "group": "Jazz records",
+      "note": "Louis Prima wrote it; this version, driven by Gene Krupa's drums, ran almost nine minutes across both sides of a 12-inch 78."
+    },
+    {
+      "id": "mu-ko-ko",
+      "label": "Who recorded",
+      "prompt": "Ko-Ko",
+      "answer": "Charlie Parker",
+      "context": "Bebop recording · 1945",
+      "group": "Jazz records",
+      "note": "Built on the chords of Ray Noble's 'Cherokee'; accounts differ on whether Dizzy Gillespie or Miles Davis played trumpet on the session."
+    },
+    {
+      "id": "mu-massey-hall",
+      "label": "Who recorded",
+      "prompt": "Jazz at Massey Hall",
+      "answer": "The Quintet",
+      "context": "Live album · 1953",
+      "group": "Jazz records",
+      "note": "Parker, billed as Charlie Chan, joined Gillespie, Powell, Mingus and Roach in Toronto; a heavyweight boxing match kept the crowd small."
+    },
+    {
+      "id": "mu-a-train",
+      "label": "Composer of",
+      "prompt": "Take the 'A' Train",
+      "answer": "Billy Strayhorn",
+      "context": "Swing tune · 1939",
+      "group": "Jazz standards and composers",
+      "note": "Ellington's subway directions to his home began with these words; the tune became the signature of the Ellington orchestra."
+    },
+    {
+      "id": "mu-round-midnight",
+      "label": "Composer of",
+      "prompt": "'Round Midnight",
+      "answer": "Thelonious Monk",
+      "context": "Jazz ballad · 1943",
+      "group": "Jazz standards and composers",
+      "note": "Cootie Williams made the first recording in 1944 and shares a credit with lyricist Bernie Hanighen; the composer first recorded it in 1947."
+    },
+    {
+      "id": "mu-take-five",
+      "label": "Composer of",
+      "prompt": "Take Five",
+      "answer": "Paul Desmond",
+      "context": "Tune in 5/4 · 1959",
+      "group": "Jazz standards and composers",
+      "note": "Meant as a showcase for drummer Joe Morello; the composer left his royalties to the American Red Cross, which still receives them."
+    },
+    {
+      "id": "mu-so-what",
+      "label": "Composer of",
+      "prompt": "So What",
+      "answer": "Miles Davis",
+      "context": "Modal tune · 1959",
+      "group": "Jazz standards and composers",
+      "note": "Sixteen bars of D Dorian, a bridge a semitone up, then D again; Gil Evans wrote the piano and bass introduction."
+    },
+    {
+      "id": "mu-summertime",
+      "label": "Composer of",
+      "prompt": "Summertime",
+      "answer": "George Gershwin",
+      "context": "Aria · 1935",
+      "group": "Jazz standards and composers",
+      "note": "Sung by Clara as a lullaby, DuBose Heyward's words are the first heard in Porgy and Bess."
+    },
+    {
+      "id": "mu-autumn-leaves",
+      "label": "Composer of",
+      "prompt": "Autumn Leaves",
+      "answer": "Joseph Kosma",
+      "context": "Song · 1945",
+      "group": "Jazz standards and composers",
+      "note": "Written to Jacques Prévert's French lyrics as Les Feuilles mortes; Johnny Mercer added the English words in 1950."
+    },
+    {
+      "id": "mu-body-and-soul",
+      "label": "Composer of",
+      "prompt": "Body and Soul",
+      "answer": "Johnny Green",
+      "context": "Song · 1930",
+      "group": "Jazz standards and composers",
+      "note": "Written for Gertrude Lawrence; Coleman Hawkins's 1939 recording barely states the melody, improvising two choruses that made him a national name."
+    },
+    {
+      "id": "mu-mood-indigo",
+      "label": "Composer of",
+      "prompt": "Mood Indigo",
+      "answer": "Duke Ellington",
+      "context": "Jazz standard · 1930",
+      "group": "Jazz standards and composers",
+      "note": "Co-credited to clarinettist Barney Bigard, whose theme came from his teacher Lorenzo Tio; muted voicings created a ghostly 'mike-tone'."
+    },
+    {
+      "id": "mu-giant-steps",
+      "label": "Composer of",
+      "prompt": "Giant Steps",
+      "answer": "John Coltrane",
+      "context": "Jazz composition · 1959",
+      "group": "Jazz standards and composers",
+      "note": "Its racing chord cycle, now called Coltrane changes, caught pianist Tommy Flanagan unrehearsed; his halting solo is famous."
+    },
+    {
+      "id": "mu-caravan",
+      "label": "Composer of",
+      "prompt": "Caravan",
+      "answer": "Juan Tizol",
+      "context": "Jazz standard · 1936",
+      "group": "Jazz standards and composers",
+      "note": "Credited jointly to Tizol and Duke Ellington; the trombonist played on its first recording, issued under Barney Bigard's name."
+    },
+    {
+      "id": "mu-footprints",
+      "label": "Composer of",
+      "prompt": "Footprints",
+      "answer": "Wayne Shorter",
+      "context": "Jazz standard · 1966",
+      "group": "Jazz standards and composers",
+      "note": "First recorded for his album Adam's Apple, but Miles Davis's version on Miles Smiles, recorded later, was released first."
+    },
+    {
+      "id": "mu-blue-in-green",
+      "label": "Composer of",
+      "prompt": "Blue in Green",
+      "answer": "Bill Evans",
+      "context": "Ballad · 1959",
+      "group": "Jazz standards and composers",
+      "note": "Credited to Miles Davis on Kind of Blue, but Evans said he wrote it; his own Portrait in Jazz credits Davis and Evans."
+    },
+    {
+      "id": "mu-satchmo",
+      "label": "Who was",
+      "prompt": "Satchmo",
+      "answer": "Louis Armstrong",
+      "context": "Trumpet",
+      "group": "Jazz nicknames",
+      "note": "Said to be short for 'satchel mouth', from a childhood tale of stashing coins in his mouth; friends also called him Pops."
+    },
+    {
+      "id": "mu-lady-day",
+      "label": "Who was",
+      "prompt": "Lady Day",
+      "answer": "Billie Holiday",
+      "context": "Singer",
+      "group": "Jazz nicknames",
+      "note": "Born Eleanora Fagan; saxophonist Lester Young gave her the nickname, and she returned the favour."
+    },
+    {
+      "id": "mu-bird",
+      "label": "Who was",
+      "prompt": "Bird",
+      "answer": "Charlie Parker",
+      "context": "Alto saxophone",
+      "group": "Jazz nicknames",
+      "note": "Short for Yardbird, a name picked up on the road with Jay McShann's band; New York's Birdland club was named for him in 1949."
+    },
+    {
+      "id": "mu-duke",
+      "label": "Who was",
+      "prompt": "Duke",
+      "answer": "Duke Ellington",
+      "context": "Piano and bandleader",
+      "group": "Jazz nicknames",
+      "note": "A childhood friend, Edgar McEntee, gave him the title to match his dapper dress and the bearing of a young nobleman."
+    },
+    {
+      "id": "mu-count",
+      "label": "Who was",
+      "prompt": "Count",
+      "answer": "Count Basie",
+      "context": "Piano and bandleader",
+      "group": "Jazz nicknames",
+      "note": "He became known as Count in the late 1920s, around the time he joined Walter Page's band, joining jazz's royalty of Dukes and Kings."
+    },
+    {
+      "id": "mu-trane",
+      "label": "Who was",
+      "prompt": "Trane",
+      "answer": "John Coltrane",
+      "context": "Tenor saxophone",
+      "group": "Jazz nicknames",
+      "note": "Critic Ira Gitler coined 'sheets of sound' for his cascading runs during his late 1950s stint with Miles Davis."
+    },
+    {
+      "id": "mu-dizzy",
+      "label": "Who was",
+      "prompt": "Dizzy",
+      "answer": "Dizzy Gillespie",
+      "context": "Trumpet",
+      "group": "Jazz nicknames",
+      "note": "His upturned bell began in 1953 when dancers fell onto his trumpet on stage; he liked the sound and had more made."
+    },
+    {
+      "id": "mu-prez",
+      "label": "Who was",
+      "prompt": "Prez",
+      "answer": "Lester Young",
+      "context": "Tenor saxophone",
+      "group": "Jazz nicknames",
+      "note": "Billie Holiday named him President, after Roosevelt, as the greatest tenor player; Mingus mourned him in Goodbye Pork Pie Hat."
+    },
+    {
+      "id": "mu-first-lady-of-song",
+      "label": "Who was",
+      "prompt": "The First Lady of Song",
+      "answer": "Ella Fitzgerald",
+      "context": "Singer",
+      "group": "Jazz nicknames",
+      "note": "At 17 she entered the Apollo's 1934 Amateur Night planning to dance, lost her nerve, sang instead and won first prize."
+    },
+    {
+      "id": "mu-divine-one",
+      "label": "Who was",
+      "prompt": "The Divine One",
+      "answer": "Sarah Vaughan",
+      "context": "Singer",
+      "group": "Jazz nicknames",
+      "note": "Chicago disc jockey Dave Garroway coined it; pianist John Malachi had already dubbed her Sassy, a name she liked."
+    },
+    {
+      "id": "mu-cannonball",
+      "label": "Who was",
+      "prompt": "Cannonball",
+      "answer": "Cannonball Adderley",
+      "context": "Alto saxophone",
+      "group": "Jazz nicknames",
+      "note": "A corruption of 'cannibal', for his schoolboy appetite; in 1955 he sat in with Oscar Pettiford at Café Bohemia and caused a sensation."
+    },
+    {
+      "id": "mu-bags",
+      "label": "Who was",
+      "prompt": "Bags",
+      "answer": "Milt Jackson",
+      "context": "Vibraphone",
+      "group": "Jazz nicknames",
+      "note": "A Detroit bass player named him for the bags under his eyes; his tune Bags' Groove became a jazz standard."
+    }
+  ]
+}

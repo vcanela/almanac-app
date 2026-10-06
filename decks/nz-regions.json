@@ -1,0 +1,259 @@
+{
+  "id": "nz-regions",
+  "title": "New Zealand regions",
+  "subtitle": "Regions, seats and te reo names",
+  "promptLabel": "Regional council seat of",
+  "reversible": true,
+  "reverseLabel": "Regional council seat for which region",
+  "context": "Aotearoa New Zealand",
+  "about": "The sixteen regions of New Zealand, north to south, with the town where each regional council or unitary authority sits, followed by the established te reo Māori names for the regions and the three main islands.",
+  "cards": [
+    {
+      "id": "nz-ntl",
+      "prompt": "Northland",
+      "answer": "Whangārei",
+      "group": "Regional centres",
+      "note": "Whangārei is New Zealand's northernmost city and by far Northland's largest settlement, home to over a quarter of the region's people."
+    },
+    {
+      "id": "nz-akl",
+      "prompt": "Auckland",
+      "answer": "Auckland",
+      "group": "Regional centres",
+      "note": "Auckland Council began on 1 November 2010, merging the regional council and seven city and district councils into one unitary authority."
+    },
+    {
+      "id": "nz-wko",
+      "prompt": "Waikato",
+      "answer": "Hamilton",
+      "group": "Regional centres",
+      "note": "Hamilton is named after Captain John Fane Charles Hamilton of HMS Esk, killed at the Battle of Gate Pā in 1864."
+    },
+    {
+      "id": "nz-bop",
+      "prompt": "Bay of Plenty",
+      "answer": "Whakatāne",
+      "group": "Regional centres",
+      "note": "The name recalls Wairaka of the Mātaatua canoe, who cried that she would act as a man and paddled the drifting canoe ashore."
+    },
+    {
+      "id": "nz-gis",
+      "prompt": "Gisborne",
+      "answer": "Gisborne",
+      "group": "Regional centres",
+      "note": "Gisborne District Council is a unitary authority; Cook first set foot in New Zealand here, at Tūranganui-a-Kiwa, in October 1769."
+    },
+    {
+      "id": "nz-hkb",
+      "prompt": "Hawke's Bay",
+      "answer": "Napier",
+      "group": "Regional centres",
+      "note": "The 1931 Hawke's Bay earthquake killed 256 people and levelled much of Napier, which was rebuilt in the Art Deco style."
+    },
+    {
+      "id": "nz-tki",
+      "prompt": "Taranaki",
+      "answer": "Stratford",
+      "group": "Regional centres",
+      "note": "Stratford, rather than New Plymouth, was chosen as a compromise between the long-standing rival interests of north and south Taranaki."
+    },
+    {
+      "id": "nz-mwt",
+      "prompt": "Manawatū-Whanganui",
+      "answer": "Palmerston North",
+      "group": "Regional centres",
+      "note": "The council trades as Horizons. North was added to the city's name in the 1870s to avoid confusion with Palmerston in Otago."
+    },
+    {
+      "id": "nz-wgn",
+      "prompt": "Wellington",
+      "answer": "Wellington",
+      "group": "Regional centres",
+      "note": "Parliament moved from Auckland to Wellington in 1865, partly because the more central site suited members travelling from the South Island."
+    },
+    {
+      "id": "nz-tas",
+      "prompt": "Tasman",
+      "answer": "Richmond",
+      "group": "Regional centres",
+      "note": "Tasman District Council is a unitary authority; Richmond, its largest town, lies about 13 km south of Nelson near the head of Tasman Bay."
+    },
+    {
+      "id": "nz-nsn",
+      "prompt": "Nelson",
+      "answer": "Nelson",
+      "group": "Regional centres",
+      "note": "Nelson became a city by royal charter in 1858, making it the oldest city in the South Island; it is a unitary authority."
+    },
+    {
+      "id": "nz-mbh",
+      "prompt": "Marlborough",
+      "answer": "Blenheim",
+      "group": "Regional centres",
+      "note": "Blenheim is named after the 1704 Battle of Blenheim, won by the Duke of Marlborough, who also gave the region its name."
+    },
+    {
+      "id": "nz-wtc",
+      "prompt": "West Coast",
+      "answer": "Greymouth",
+      "group": "Regional centres",
+      "note": "Greymouth takes its name from the Grey River, named in 1846 by the explorer Thomas Brunner after Governor George Grey."
+    },
+    {
+      "id": "nz-can",
+      "prompt": "Canterbury",
+      "answer": "Christchurch",
+      "group": "Regional centres",
+      "note": "The regional council trades as Environment Canterbury. Christchurch was named in 1848 after Christ Church, John Robert Godley's college at Oxford."
+    },
+    {
+      "id": "nz-ota",
+      "prompt": "Otago",
+      "answer": "Dunedin",
+      "group": "Regional centres",
+      "note": "Dunedin, founded in 1848 by Free Church of Scotland settlers, takes its name from Dùn Èideann, the Scottish Gaelic name for Edinburgh."
+    },
+    {
+      "id": "nz-stl",
+      "prompt": "Southland",
+      "answer": "Invercargill",
+      "group": "Regional centres",
+      "note": "The council trades as Environment Southland. Invercargill joins the Scots inver, a river mouth, to the name of Otago superintendent William Cargill."
+    },
+    {
+      "id": "nz-ntl-reo",
+      "label": "Te reo Māori name for",
+      "reverseLabel": "English name for",
+      "prompt": "Northland",
+      "answer": "Te Tai Tokerau",
+      "group": "Te reo Māori names",
+      "note": "Usually translated as the northern coast or northern tide; Northland Regional Council writes it as one word, Te Taitokerau."
+    },
+    {
+      "id": "nz-akl-reo",
+      "label": "Te reo Māori name for",
+      "reverseLabel": "English name for",
+      "prompt": "Auckland",
+      "answer": "Tāmaki Makaurau",
+      "group": "Te reo Māori names",
+      "note": "Usually rendered as Tāmaki desired by many, for its rich land and harbours; the origin of the name Tāmaki itself is disputed."
+    },
+    {
+      "id": "nz-bop-reo",
+      "label": "Te reo Māori name for",
+      "reverseLabel": "English name for",
+      "prompt": "Bay of Plenty",
+      "answer": "Te Moana-a-Toi",
+      "group": "Te reo Māori names",
+      "note": "The sea of Toi, after Toi-te-huatahi, an early ancestor of several Bay of Plenty iwi; the regional council calls itself Toi Moana."
+    },
+    {
+      "id": "nz-gis-reo",
+      "label": "Te reo Māori name for",
+      "reverseLabel": "English name for",
+      "prompt": "Gisborne",
+      "answer": "Te Tairāwhiti",
+      "group": "Te reo Māori names",
+      "note": "Often translated as the coast of the sunrise or the eastern coast; it is the first part of the mainland to see the sunrise."
+    },
+    {
+      "id": "nz-hkb-reo",
+      "label": "Te reo Māori name for",
+      "reverseLabel": "English name for",
+      "prompt": "Hawke's Bay",
+      "answer": "Te Matau-a-Māui",
+      "group": "Te reo Māori names",
+      "note": "The fishhook of Māui; in tradition, the curve of the bay between Portland Island and Cape Kidnappers is the hook that caught the North Island."
+    },
+    {
+      "id": "nz-wgn-reo",
+      "label": "Te reo Māori name for",
+      "reverseLabel": "English name for",
+      "prompt": "Wellington",
+      "answer": "Te Upoko-o-te-Ika-a-Māui",
+      "group": "Te reo Māori names",
+      "note": "The head of Māui's fish; Greater Wellington uses it for the region, while Te Whanganui-a-Tara properly names the harbour and city."
+    },
+    {
+      "id": "nz-tas-reo",
+      "label": "Te reo Māori name for",
+      "reverseLabel": "English name for",
+      "prompt": "Tasman",
+      "answer": "Te Tai-o-Aorere",
+      "group": "Te reo Māori names",
+      "note": "The name Tasman District Council uses for itself; it is also the official Māori name of Tasman Bay, made a dual name in 2014."
+    },
+    {
+      "id": "nz-nsn-reo",
+      "label": "Te reo Māori name for",
+      "reverseLabel": "English name for",
+      "prompt": "Nelson",
+      "answer": "Whakatū",
+      "group": "Te reo Māori names",
+      "note": "Used by Nelson City Council and often glossed as to raise or establish; traditions differ, and the variant Wakatū recalls a canoe."
+    },
+    {
+      "id": "nz-wtc-reo",
+      "label": "Te reo Māori name for",
+      "reverseLabel": "English name for",
+      "prompt": "West Coast",
+      "answer": "Te Tai Poutini",
+      "group": "Te reo Māori names",
+      "note": "The coast of Poutini, the taniwha who guards pounamu in Ngāi Tahu tradition; the form Te Tai o Poutini is also widely used."
+    },
+    {
+      "id": "nz-can-reo",
+      "label": "Te reo Māori name for",
+      "reverseLabel": "English name for",
+      "prompt": "Canterbury",
+      "answer": "Waitaha",
+      "group": "Te reo Māori names",
+      "note": "Named for Waitaha, remembered in southern tradition as the first people of the South Island; Environment Canterbury is Kaunihera Taiao ki Waitaha."
+    },
+    {
+      "id": "nz-ota-reo",
+      "label": "Te reo Māori name for",
+      "reverseLabel": "English name for",
+      "prompt": "Otago",
+      "answer": "Ōtākou",
+      "group": "Te reo Māori names",
+      "note": "Originally a village near the entrance to Otago Harbour; Otago is the southern dialect form, and the meaning of the name is disputed."
+    },
+    {
+      "id": "nz-stl-reo",
+      "label": "Te reo Māori name for",
+      "reverseLabel": "English name for",
+      "prompt": "Southland",
+      "answer": "Murihiku",
+      "group": "Te reo Māori names",
+      "note": "The tail end of the land; it once meant the South Island south of the Waitaki River, but now usually refers to Southland."
+    },
+    {
+      "id": "nz-ni-reo",
+      "label": "Te reo Māori name for",
+      "reverseLabel": "English name for",
+      "prompt": "North Island",
+      "answer": "Te Ika-a-Māui",
+      "group": "Te reo Māori names",
+      "note": "The fish of Māui, hauled from the sea in tradition; it became an official name, alongside North Island, in 2013."
+    },
+    {
+      "id": "nz-si-reo",
+      "label": "Te reo Māori name for",
+      "reverseLabel": "English name for",
+      "prompt": "South Island",
+      "answer": "Te Waipounamu",
+      "group": "Te reo Māori names",
+      "note": "Usually translated as the waters of pounamu, or greenstone; it and the name South Island both became official in 2013."
+    },
+    {
+      "id": "nz-sti-reo",
+      "label": "Te reo Māori name for",
+      "reverseLabel": "English name for",
+      "prompt": "Stewart Island",
+      "answer": "Rakiura",
+      "group": "Te reo Māori names",
+      "note": "Usually translated as glowing skies, often linked to the aurora australis; the dual name Stewart Island/Rakiura became official in 1998."
+    }
+  ]
+}

@@ -1,0 +1,970 @@
+{
+  "id": "sky-and-space",
+  "title": "Sky and space",
+  "subtitle": "Moons, stars and space firsts",
+  "promptLabel": "Name",
+  "reversible": true,
+  "reverseLabel": "What is",
+  "about": "Moons of the Solar System, the brightest stars and the landmarks of the southern sky as seen from New Zealand, and the firsts of the space age. Where a first is contested, the card names exactly what was achieved.",
+  "cards": [
+    {
+      "id": "sk-moon",
+      "prompt": "Largest moon relative to the size of its planet",
+      "answer": "The Moon",
+      "context": "Satellite",
+      "group": "Moons",
+      "note": "Its diameter is roughly a quarter of Earth's; it is also the fifth-largest moon in the Solar System."
+    },
+    {
+      "id": "sk-ganymede",
+      "prompt": "Largest moon in the Solar System",
+      "answer": "Ganymede",
+      "context": "Moon of Jupiter",
+      "group": "Moons",
+      "note": "Larger than Mercury but under half its mass, it is the only moon known to generate its own magnetic field."
+    },
+    {
+      "id": "sk-titan",
+      "prompt": "Largest moon of Saturn",
+      "answer": "Titan",
+      "context": "Moon",
+      "group": "Moons",
+      "note": "The only moon with a dense atmosphere, mostly nitrogen; the surface pressure is about 1.45 times Earth's at sea level."
+    },
+    {
+      "id": "sk-titania",
+      "prompt": "Largest moon of Uranus",
+      "answer": "Titania",
+      "context": "Moon",
+      "group": "Moons",
+      "note": "Found by William Herschel in 1787 and named after the fairy queen in Shakespeare's A Midsummer Night's Dream."
+    },
+    {
+      "id": "sk-triton",
+      "prompt": "Largest moon of Neptune",
+      "answer": "Triton",
+      "context": "Moon",
+      "group": "Moons",
+      "note": "Voyager 2 saw nitrogen geysers rising up to 8 km in 1989; its surface, near 38 K, is among the coldest known."
+    },
+    {
+      "id": "sk-charon",
+      "prompt": "Largest moon of Pluto",
+      "answer": "Charon",
+      "context": "Moon",
+      "group": "Moons",
+      "note": "Half Pluto's diameter, it puts their barycentre outside Pluto; the pair are mutually tidally locked, each always showing the same face."
+    },
+    {
+      "id": "sk-phobos",
+      "prompt": "Largest moon of Mars",
+      "answer": "Phobos",
+      "context": "Moon",
+      "group": "Moons",
+      "note": "It orbits faster than Mars rotates, so it rises in the west; tides shrink its orbit by about 2 m per century."
+    },
+    {
+      "id": "sk-deimos",
+      "prompt": "Smaller, outer moon of Mars",
+      "answer": "Deimos",
+      "context": "Moon",
+      "group": "Moons",
+      "note": "Named after Dread, who joins Fear in the Iliad; tidal acceleration is slowly enlarging its orbit, unlike that of Phobos."
+    },
+    {
+      "id": "sk-io",
+      "prompt": "Most volcanically active body in the Solar System",
+      "answer": "Io",
+      "context": "Moon of Jupiter",
+      "group": "Moons",
+      "note": "Tidal flexing, sustained by its 1:2:4 orbital resonance with Europa and Ganymede, powers more than 400 active volcanoes."
+    },
+    {
+      "id": "sk-europa",
+      "prompt": "Smallest Galilean moon, with an ocean beneath its ice",
+      "answer": "Europa",
+      "context": "Moon",
+      "group": "Moons",
+      "note": "The smoothest known object in the Solar System; its hidden ocean may hold two to three times the water in Earth's oceans."
+    },
+    {
+      "id": "sk-callisto",
+      "prompt": "Galilean moon with the oldest, most cratered surface",
+      "answer": "Callisto",
+      "context": "Moon",
+      "group": "Moons",
+      "note": "Outside the orbital resonance of the inner three, it suffers little tidal heating; its Valhalla impact basin is ringed by vast concentric ridges."
+    },
+    {
+      "id": "sk-titan-lakes",
+      "prompt": "Moon with seas of liquid methane and ethane",
+      "answer": "Titan",
+      "context": "Moon",
+      "group": "Moons",
+      "note": "Apart from Earth, the only known body with stable liquid on its surface; Kraken Mare, near the north pole, is the largest sea.",
+      "noReverse": true
+    },
+    {
+      "id": "sk-enceladus",
+      "prompt": "Saturn moon whose south-pole geysers feed the E ring",
+      "answer": "Enceladus",
+      "context": "Moon",
+      "group": "Moons",
+      "note": "Fresh snow makes it one of the most reflective bodies in the Solar System; the jets tap a global ocean beneath the ice."
+    },
+    {
+      "id": "sk-mimas",
+      "prompt": "Saturn moon whose giant crater recalls the Death Star",
+      "answer": "Mimas",
+      "context": "Moon",
+      "group": "Moons",
+      "note": "Herschel crater spans about a third of its diameter; resonance with Mimas clears the Cassini Division in Saturn's rings."
+    },
+    {
+      "id": "sk-iapetus",
+      "prompt": "Saturn moon with one dark and one bright hemisphere",
+      "answer": "Iapetus",
+      "context": "Moon",
+      "group": "Moons",
+      "note": "Cassini found it in 1671 but could see it on only one side of Saturn, and rightly deduced a dark hemisphere."
+    },
+    {
+      "id": "sk-hyperion",
+      "prompt": "Sponge-like Saturn moon with a chaotic rotation",
+      "answer": "Hyperion",
+      "context": "Moon",
+      "group": "Moons",
+      "note": "The first non-round moon discovered, in 1848; its porous body tumbles unpredictably, influenced by a 3:4 resonance with Titan."
+    },
+    {
+      "id": "sk-phoebe",
+      "prompt": "First moon discovered by photography",
+      "answer": "Phoebe",
+      "context": "Moon of Saturn",
+      "group": "Moons",
+      "note": "Found by Pickering in 1899; its retrograde orbit suggests a captured centaur, and its dust forms the vast Phoebe ring."
+    },
+    {
+      "id": "sk-rhea",
+      "prompt": "Second-largest moon of Saturn",
+      "answer": "Rhea",
+      "context": "Moon",
+      "group": "Moons",
+      "note": "Roughly three-quarters ice; a 2008 suggestion that it had rings of its own was not confirmed by later Cassini observations."
+    },
+    {
+      "id": "sk-janus-epimetheus",
+      "prompt": "Saturn moons that swap orbits every four years",
+      "answer": "Janus and Epimetheus",
+      "context": "Moon",
+      "group": "Moons",
+      "note": "Their mean orbits differ by only 50 km; this horseshoe exchange is the only known configuration of its kind among moons."
+    },
+    {
+      "id": "sk-pan",
+      "prompt": "Walnut-shaped moon that clears Saturn's Encke Gap",
+      "answer": "Pan",
+      "context": "Moon",
+      "group": "Moons",
+      "note": "Its equatorial ridge is ring material it has swept up; Mark Showalter found it in 1990 in old Voyager 2 images."
+    },
+    {
+      "id": "sk-miranda",
+      "prompt": "Uranus moon with perhaps the tallest cliff in the Solar System",
+      "answer": "Miranda",
+      "context": "Moon",
+      "group": "Moons",
+      "note": "Verona Rupes is about 20 km high; the patchwork surface may record tidal heating during a past resonance with Umbriel."
+    },
+    {
+      "id": "sk-oberon",
+      "prompt": "Outermost of the five major moons of Uranus",
+      "answer": "Oberon",
+      "context": "Moon",
+      "group": "Moons",
+      "note": "Found by Herschel the same night as Titania in 1787, and named after the fairy king in A Midsummer Night's Dream."
+    },
+    {
+      "id": "sk-ariel",
+      "prompt": "Most reflective moon of Uranus",
+      "answer": "Ariel",
+      "context": "Moon",
+      "group": "Moons",
+      "note": "Named after the spirit in The Tempest and a sylph in Pope's poem; some of its plains may be under 100 million years old."
+    },
+    {
+      "id": "sk-umbriel",
+      "prompt": "Darkest of the major moons of Uranus",
+      "answer": "Umbriel",
+      "context": "Moon",
+      "group": "Moons",
+      "note": "Named after a melancholy sprite in Pope's The Rape of the Lock, from the Latin umbra; a bright ring marks Wunda crater."
+    },
+    {
+      "id": "sk-triton-retrograde",
+      "prompt": "Only large moon with a retrograde orbit",
+      "answer": "Triton",
+      "context": "Moon",
+      "group": "Moons",
+      "note": "Orbiting against its planet's spin points to capture: Triton was probably once a dwarf planet from the Kuiper belt.",
+      "noReverse": true
+    },
+    {
+      "id": "sk-nereid",
+      "prompt": "Neptune moon with a highly eccentric, year-long orbit",
+      "answer": "Nereid",
+      "context": "Moon",
+      "group": "Moons",
+      "note": "With eccentricity 0.75, its distance from Neptune swings between about 1.4 and 9.7 million km; Kuiper discovered it in 1949."
+    },
+    {
+      "id": "sk-dactyl",
+      "prompt": "First moon of an asteroid to be discovered",
+      "answer": "Dactyl",
+      "context": "Asteroid moon",
+      "group": "Moons",
+      "note": "The Galileo spacecraft imaged it in 1993 while passing asteroid 243 Ida; it is only about 1.6 km long."
+    },
+    {
+      "id": "sk-dimorphos",
+      "prompt": "Asteroid moonlet struck by NASA's DART probe",
+      "answer": "Dimorphos",
+      "context": "Asteroid moon",
+      "group": "Moons",
+      "note": "The 2022 impact cut its 11 hour 55 minute orbit of Didymos by about 33 minutes, the first test of asteroid deflection."
+    },
+    {
+      "id": "sk-sirius",
+      "reverseLabel": "Brightest star of which constellation",
+      "prompt": "Canis Major",
+      "answer": "Sirius",
+      "context": "Star",
+      "group": "Stars and constellations",
+      "note": "The brightest star in the night sky, at magnitude −1.46, partly because it is only 8.6 light-years away; Māori call it Takurua.",
+      "label": "Brightest star in"
+    },
+    {
+      "id": "sk-canopus",
+      "reverseLabel": "Brightest star of which constellation",
+      "prompt": "Carina",
+      "answer": "Canopus",
+      "context": "Star",
+      "group": "Stars and constellations",
+      "note": "Second-brightest star in the night sky; Māori call it Atutahi, and spacecraft star trackers have used it to fix their orientation.",
+      "label": "Brightest star in"
+    },
+    {
+      "id": "sk-alpha-centauri",
+      "reverseLabel": "Brightest star of which constellation",
+      "prompt": "Centaurus",
+      "answer": "Alpha Centauri (Rigil Kentaurus)",
+      "context": "Star",
+      "group": "Stars and constellations",
+      "note": "A pair 4.34 light-years away: Rigil Kentaurus and Toliman orbit each other every 80 years, with Proxima a distant third.",
+      "label": "Brightest star in"
+    },
+    {
+      "id": "sk-proxima",
+      "prompt": "Nearest star to the Sun",
+      "answer": "Proxima Centauri",
+      "context": "Star",
+      "group": "Stars and constellations",
+      "note": "A red dwarf 4.25 light-years away, too faint to see with the naked eye; it hosts at least two confirmed planets."
+    },
+    {
+      "id": "sk-crux",
+      "prompt": "Smallest of the 88 constellations",
+      "answer": "Crux (Southern Cross)",
+      "context": "Constellation",
+      "group": "Stars and constellations",
+      "note": "Māori call it Māhutonga; extending the line from Gacrux through Acrux about 4.5 times locates the south celestial pole."
+    },
+    {
+      "id": "sk-acrux",
+      "reverseLabel": "Brightest star of which constellation",
+      "prompt": "Crux",
+      "answer": "Acrux",
+      "context": "Star",
+      "group": "Stars and constellations",
+      "note": "The foot of the Southern Cross, about 350 light-years away; the single point we see is a multiple system of hot B-type stars.",
+      "label": "Brightest star in"
+    },
+    {
+      "id": "sk-mimosa",
+      "reverseLabel": "Second-brightest star of which constellation",
+      "prompt": "Crux",
+      "answer": "Mimosa",
+      "context": "Star",
+      "group": "Stars and constellations",
+      "note": "A hot blue giant about 280 light-years away, only 8 to 11 million years old and massive enough to end as a supernova.",
+      "label": "Second-brightest star in"
+    },
+    {
+      "id": "sk-gacrux",
+      "prompt": "Red giant at the top of the Southern Cross",
+      "answer": "Gacrux",
+      "context": "Star",
+      "group": "Stars and constellations",
+      "note": "About 89 light-years away, it is the nearest M-type red giant to the Sun; its orange-red tint shows to the naked eye."
+    },
+    {
+      "id": "sk-hadar",
+      "prompt": "Inner pointer to the Southern Cross",
+      "answer": "Hadar",
+      "context": "Star",
+      "group": "Stars and constellations",
+      "note": "Beta Centauri is a triple system about 360 light-years away, more than 80 times farther than the outer pointer, Alpha Centauri."
+    },
+    {
+      "id": "sk-coalsack",
+      "prompt": "Dark nebula beside the Southern Cross",
+      "answer": "Coalsack",
+      "context": "Nebula",
+      "group": "Stars and constellations",
+      "note": "A dust cloud about 590 light-years away that blocks background starlight; in Aboriginal astronomy it is the head of the Emu in the Sky."
+    },
+    {
+      "id": "sk-pleiades",
+      "prompt": "Star cluster called Matariki in te reo Māori",
+      "answer": "Pleiades",
+      "context": "Star cluster",
+      "group": "Stars and constellations",
+      "note": "Its dawn rising in midwinter signals the Māori New Year, an official public holiday in New Zealand since 2022."
+    },
+    {
+      "id": "sk-lmc",
+      "prompt": "Satellite galaxy that hosted Supernova 1987A",
+      "answer": "Large Magellanic Cloud",
+      "context": "Galaxy",
+      "group": "Stars and constellations",
+      "note": "About 163,000 light-years away; neutrinos from the supernova arrived hours before its light, the first ever detected from a supernova."
+    },
+    {
+      "id": "sk-smc",
+      "prompt": "Dwarf galaxy in Tucana visible to the naked eye",
+      "answer": "Small Magellanic Cloud",
+      "context": "Galaxy",
+      "group": "Stars and constellations",
+      "note": "Henrietta Leavitt's study of its Cepheid variables revealed the period-luminosity relation, a key rung of the cosmic distance ladder."
+    },
+    {
+      "id": "sk-omega-centauri",
+      "prompt": "Largest globular cluster in the Milky Way",
+      "answer": "Omega Centauri",
+      "context": "Star cluster",
+      "group": "Stars and constellations",
+      "note": "About 10 million stars, 17,000 light-years away; it may be the core of a dwarf galaxy disrupted and absorbed by the Milky Way."
+    },
+    {
+      "id": "sk-betelgeuse",
+      "prompt": "Red supergiant marking Orion's shoulder",
+      "answer": "Betelgeuse",
+      "context": "Star",
+      "group": "Stars and constellations",
+      "note": "Its Great Dimming of 2019 to 2020, a roughly threefold fall in brightness, was caused by dust from a surface mass ejection."
+    },
+    {
+      "id": "sk-rigel",
+      "reverseLabel": "Brightest star of which constellation",
+      "prompt": "Orion",
+      "answer": "Rigel",
+      "context": "Star",
+      "group": "Stars and constellations",
+      "note": "A blue supergiant about 850 light-years away; as Puanga, its dawn rising marks the Māori New Year for some iwi.",
+      "label": "Brightest star in"
+    },
+    {
+      "id": "sk-polaris",
+      "reverseLabel": "Brightest star of which constellation",
+      "prompt": "Ursa Minor",
+      "answer": "Polaris",
+      "context": "Star",
+      "group": "Stars and constellations",
+      "note": "Within 0.7 degrees of the north celestial pole, so it never rises from New Zealand; it is also the nearest Cepheid variable.",
+      "label": "Brightest star in"
+    },
+    {
+      "id": "sk-polaris-australis",
+      "prompt": "Faint star nearest the south celestial pole",
+      "answer": "Polaris Australis (Sigma Octantis)",
+      "context": "Star",
+      "group": "Stars and constellations",
+      "note": "At magnitude 5.5 and about one degree from the pole, it is the dimmest star shown on any national flag, Brazil's."
+    },
+    {
+      "id": "sk-arcturus",
+      "reverseLabel": "Brightest star of which constellation",
+      "prompt": "Boötes",
+      "answer": "Arcturus",
+      "context": "Star",
+      "group": "Stars and constellations",
+      "note": "The brightest star in the northern celestial hemisphere, an orange giant 37 light-years away whose light opened Chicago's 1933 World's Fair.",
+      "label": "Brightest star in"
+    },
+    {
+      "id": "sk-vega",
+      "reverseLabel": "Brightest star of which constellation",
+      "prompt": "Lyra",
+      "answer": "Vega",
+      "context": "Star",
+      "group": "Stars and constellations",
+      "note": "Long the zero point of the magnitude scale; in 1850 it became the first star other than the Sun to be photographed.",
+      "label": "Brightest star in"
+    },
+    {
+      "id": "sk-capella",
+      "reverseLabel": "Brightest star of which constellation",
+      "prompt": "Auriga",
+      "answer": "Capella",
+      "context": "Star",
+      "group": "Stars and constellations",
+      "note": "Not one star but four, in two binary pairs: a close pair of yellow giants and a fainter, distant pair, 43 light-years away.",
+      "label": "Brightest star in"
+    },
+    {
+      "id": "sk-procyon",
+      "reverseLabel": "Brightest star of which constellation",
+      "prompt": "Canis Minor",
+      "answer": "Procyon",
+      "context": "Star",
+      "group": "Stars and constellations",
+      "note": "Its Greek name means 'before the dog' because it rises ahead of Sirius; like Sirius, it has a white dwarf companion.",
+      "label": "Brightest star in"
+    },
+    {
+      "id": "sk-achernar",
+      "reverseLabel": "Brightest star of which constellation",
+      "prompt": "Eridanus",
+      "answer": "Achernar",
+      "context": "Star",
+      "group": "Stars and constellations",
+      "note": "It spins so fast that its equatorial diameter is about 35% larger than its polar one; the name means 'end of the river'.",
+      "label": "Brightest star in"
+    },
+    {
+      "id": "sk-altair",
+      "reverseLabel": "Brightest star of which constellation",
+      "prompt": "Aquila",
+      "answer": "Altair",
+      "context": "Star",
+      "group": "Stars and constellations",
+      "note": "It spins in under eight hours, flattening it; it was the first main-sequence star other than the Sun to have its surface imaged.",
+      "label": "Brightest star in"
+    },
+    {
+      "id": "sk-aldebaran",
+      "reverseLabel": "Brightest star of which constellation",
+      "prompt": "Taurus",
+      "answer": "Aldebaran",
+      "context": "Star",
+      "group": "Stars and constellations",
+      "note": "Arabic for 'the follower', as it trails the Pleiades; it lies well in front of the Hyades cluster, 67 against 150 light-years.",
+      "label": "Brightest star in"
+    },
+    {
+      "id": "sk-antares",
+      "reverseLabel": "Brightest star of which constellation",
+      "prompt": "Scorpius",
+      "answer": "Antares",
+      "context": "Star",
+      "group": "Stars and constellations",
+      "note": "A red supergiant named 'rival to Ares' for its Mars-like colour; Māori call it Rēhua and regard it as chief of all stars.",
+      "label": "Brightest star in"
+    },
+    {
+      "id": "sk-shaula",
+      "reverseLabel": "Second-brightest star of which constellation",
+      "prompt": "Scorpius",
+      "answer": "Shaula",
+      "context": "Star",
+      "group": "Stars and constellations",
+      "note": "Its Arabic name means 'the raised tail', as it marks the scorpion's sting; it is a triple system about 570 light-years away.",
+      "label": "Second-brightest star in"
+    },
+    {
+      "id": "sk-spica",
+      "reverseLabel": "Brightest star of which constellation",
+      "prompt": "Virgo",
+      "answer": "Spica",
+      "context": "Star",
+      "group": "Stars and constellations",
+      "note": "Its two main stars orbit every four days, distorting each other into ellipsoids; Hipparchus's data on it led him to precession.",
+      "label": "Brightest star in"
+    },
+    {
+      "id": "sk-pollux",
+      "reverseLabel": "Brightest star of which constellation",
+      "prompt": "Gemini",
+      "answer": "Pollux",
+      "context": "Star",
+      "group": "Stars and constellations",
+      "note": "Though designated beta, it outshines alpha Castor; at 34 light-years it is the nearest giant star, and has a planet named Thestias.",
+      "label": "Brightest star in"
+    },
+    {
+      "id": "sk-castor",
+      "prompt": "Gemini star that is really six stars",
+      "answer": "Castor",
+      "context": "Star",
+      "group": "Stars and constellations",
+      "note": "Three visual components, each a spectroscopic binary; the two brightest pairs orbit each other every 459 years, 49 light-years away."
+    },
+    {
+      "id": "sk-fomalhaut",
+      "reverseLabel": "Brightest star of which constellation",
+      "prompt": "Piscis Austrinus",
+      "answer": "Fomalhaut",
+      "context": "Star",
+      "group": "Stars and constellations",
+      "note": "Ringed by debris discs; its once-celebrated planet, Fomalhaut b, now appears to be an expanding cloud of debris from a collision.",
+      "label": "Brightest star in"
+    },
+    {
+      "id": "sk-deneb",
+      "reverseLabel": "Brightest star of which constellation",
+      "prompt": "Cygnus",
+      "answer": "Deneb",
+      "context": "Star",
+      "group": "Stars and constellations",
+      "note": "A blue supergiant 1,400 to 2,600 light-years away, among the most luminous first-magnitude stars; its name is Arabic for 'tail'.",
+      "label": "Brightest star in"
+    },
+    {
+      "id": "sk-regulus",
+      "reverseLabel": "Brightest star of which constellation",
+      "prompt": "Leo",
+      "answer": "Regulus",
+      "context": "Star",
+      "group": "Stars and constellations",
+      "note": "Only 0.47 degrees from the ecliptic, it is often occulted by the Moon; it spins every 15.9 hours, close to breakup speed.",
+      "label": "Brightest star in"
+    },
+    {
+      "id": "sk-adhara",
+      "reverseLabel": "Second-brightest star of which constellation",
+      "prompt": "Canis Major",
+      "answer": "Adhara",
+      "context": "Star",
+      "group": "Stars and constellations",
+      "note": "About 4.7 million years ago it was the brightest star in our sky, at magnitude −3.99; it is now the sky's brightest extreme-ultraviolet source.",
+      "label": "Second-brightest star in"
+    },
+    {
+      "id": "sk-mira",
+      "prompt": "Prototype long-period variable in Cetus",
+      "answer": "Mira",
+      "context": "Star",
+      "group": "Stars and constellations",
+      "note": "Latin for 'wonderful'; it brightens and fades over about 332 days, and GALEX found it trailing a tail 13 light-years long."
+    },
+    {
+      "id": "sk-algol",
+      "prompt": "Eclipsing binary known as the Demon Star",
+      "answer": "Algol",
+      "context": "Star",
+      "group": "Stars and constellations",
+      "note": "It dims from magnitude 2.1 to 3.4 every 2.86 days; John Goodricke proposed in 1783 that a dark body passes in front."
+    },
+    {
+      "id": "sk-hydra",
+      "prompt": "Largest of the 88 constellations",
+      "answer": "Hydra",
+      "context": "Constellation",
+      "group": "Stars and constellations",
+      "note": "It covers 1,303 square degrees; its brightest star, Alphard, means 'the solitary one', having few bright neighbours."
+    },
+    {
+      "id": "sk-sputnik-1",
+      "label": "First",
+      "reverseLabel": "Was the first",
+      "prompt": "Artificial satellite",
+      "answer": "Sputnik 1",
+      "context": "1957",
+      "group": "Space firsts",
+      "note": "A 58 cm, 83.6 kg sphere orbiting every 96 minutes; drag on its orbit revealed the density of the upper atmosphere."
+    },
+    {
+      "id": "sk-laika",
+      "label": "First",
+      "reverseLabel": "Was the first",
+      "prompt": "Animal to orbit the Earth",
+      "answer": "Laika",
+      "context": "1957",
+      "group": "Space firsts",
+      "note": "She flew on Sputnik 2; officials hid for decades that she died of overheating within hours, which was revealed only in 2002."
+    },
+    {
+      "id": "sk-explorer-1",
+      "label": "First",
+      "reverseLabel": "Was the first",
+      "prompt": "Spacecraft to detect the Van Allen belts",
+      "answer": "Explorer 1",
+      "context": "1958",
+      "group": "Space firsts",
+      "note": "Its Geiger counter read zero at high altitude, saturated by trapped particles; James Van Allen's team realised why."
+    },
+    {
+      "id": "sk-luna-2",
+      "label": "First",
+      "reverseLabel": "Was the first",
+      "prompt": "Spacecraft to impact the Moon",
+      "answer": "Luna 2",
+      "context": "1959",
+      "group": "Space firsts",
+      "note": "It struck east of Mare Imbrium in September 1959, the first human-made object to reach another celestial body."
+    },
+    {
+      "id": "sk-luna-3",
+      "label": "First",
+      "reverseLabel": "Was the first",
+      "prompt": "Spacecraft to photograph the Moon's far side",
+      "answer": "Luna 3",
+      "context": "1959",
+      "group": "Space firsts",
+      "note": "It developed its film on board, then scanned it for radio transmission, imaging about 70% of the far side."
+    },
+    {
+      "id": "sk-gagarin",
+      "label": "First",
+      "reverseLabel": "Was the first",
+      "prompt": "Human in space",
+      "answer": "Yuri Gagarin",
+      "context": "1961",
+      "group": "Space firsts",
+      "note": "Vostok 1 made one orbit in about 108 minutes; Gagarin ejected at 7 km and landed separately by parachute."
+    },
+    {
+      "id": "sk-mariner-2",
+      "label": "First",
+      "reverseLabel": "Was the first",
+      "prompt": "Spacecraft to fly successfully past another planet",
+      "answer": "Mariner 2",
+      "context": "1962",
+      "group": "Space firsts",
+      "note": "Passing Venus, it measured a very hot surface, and on the way confirmed that the solar wind streams continuously."
+    },
+    {
+      "id": "sk-tereshkova",
+      "label": "First",
+      "reverseLabel": "Was the first",
+      "prompt": "Woman in space",
+      "answer": "Valentina Tereshkova",
+      "context": "1963",
+      "group": "Space firsts",
+      "note": "She flew Vostok 6 alone for nearly three days and 48 orbits, and remains the only woman to have flown a solo mission."
+    },
+    {
+      "id": "sk-leonov",
+      "label": "First",
+      "reverseLabel": "Was the first",
+      "prompt": "Person to walk in space",
+      "answer": "Alexei Leonov",
+      "context": "1965",
+      "group": "Space firsts",
+      "note": "Outside Voskhod 2 for about 12 minutes, his suit ballooned in the vacuum, so he bled off pressure to squeeze back in."
+    },
+    {
+      "id": "sk-mariner-4",
+      "label": "First",
+      "reverseLabel": "Was the first",
+      "prompt": "Spacecraft to fly past Mars",
+      "answer": "Mariner 4",
+      "context": "1965",
+      "group": "Space firsts",
+      "note": "Its images showed a cratered surface; radio occultation revealed a surface pressure under 1% of Earth's."
+    },
+    {
+      "id": "sk-luna-9",
+      "label": "First",
+      "reverseLabel": "Was the first",
+      "prompt": "Spacecraft to soft-land on the Moon",
+      "answer": "Luna 9",
+      "context": "1966",
+      "group": "Space firsts",
+      "note": "Its photos showed the ground could bear a lander; Jodrell Bank decoded the signal, and a British newspaper published them first."
+    },
+    {
+      "id": "sk-apollo-8",
+      "label": "First",
+      "reverseLabel": "Was the first",
+      "prompt": "Crewed spacecraft to orbit the Moon",
+      "answer": "Apollo 8",
+      "context": "1968",
+      "group": "Space firsts",
+      "note": "Borman, Lovell and Anders made ten lunar orbits, becoming the first humans to see the far side with their own eyes."
+    },
+    {
+      "id": "sk-apollo-11",
+      "label": "First",
+      "reverseLabel": "Was the first",
+      "prompt": "People to walk on the Moon",
+      "answer": "Neil Armstrong and Buzz Aldrin",
+      "context": "1969",
+      "group": "Space firsts",
+      "note": "They landed Eagle in the Sea of Tranquility while Michael Collins orbited in Columbia, and collected 21.5 kg of samples."
+    },
+    {
+      "id": "sk-venera-7",
+      "label": "First",
+      "reverseLabel": "Was the first",
+      "prompt": "Spacecraft to transmit from another planet's surface",
+      "answer": "Venera 7",
+      "context": "1970",
+      "group": "Space firsts",
+      "note": "Faint signals found on tape revealed about 475 °C and roughly 90 times Earth's sea-level pressure on Venus."
+    },
+    {
+      "id": "sk-lunokhod-1",
+      "label": "First",
+      "reverseLabel": "Was the first",
+      "prompt": "Robotic rover to drive on another world",
+      "answer": "Lunokhod 1",
+      "context": "1970",
+      "group": "Space firsts",
+      "note": "Driven from Earth, it covered 10.5 km; found again in 2010, its French laser retroreflector was then used for laser ranging."
+    },
+    {
+      "id": "sk-salyut-1",
+      "label": "First",
+      "reverseLabel": "Was the first",
+      "prompt": "Space station",
+      "answer": "Salyut 1",
+      "context": "1971",
+      "group": "Space firsts",
+      "note": "Its only crew, from Soyuz 11, died when their capsule lost its air during re-entry; they remain the only humans to die in space."
+    },
+    {
+      "id": "sk-mariner-9",
+      "label": "First",
+      "reverseLabel": "Was the first",
+      "prompt": "Spacecraft to orbit another planet",
+      "answer": "Mariner 9",
+      "context": "1971",
+      "group": "Space firsts",
+      "note": "It arrived during a planet-wide dust storm, waited, then mapped 85% of Mars; Valles Marineris is named after it."
+    },
+    {
+      "id": "sk-mars-3",
+      "label": "First",
+      "reverseLabel": "Was the first",
+      "prompt": "Spacecraft to soft-land on Mars",
+      "answer": "Mars 3",
+      "context": "1971",
+      "group": "Space firsts",
+      "note": "Transmission stopped about 20 seconds after it began, during a great dust storm, leaving only a grey image without detail."
+    },
+    {
+      "id": "sk-pioneer-10",
+      "label": "First",
+      "reverseLabel": "Was the first",
+      "prompt": "Spacecraft to fly past Jupiter",
+      "answer": "Pioneer 10",
+      "context": "1973",
+      "group": "Space firsts",
+      "note": "It was also the first to cross the asteroid belt, and carries a plaque for any finder; its last signal came in 2003.",
+      "noReverse": true
+    },
+    {
+      "id": "sk-mariner-10",
+      "label": "First",
+      "reverseLabel": "Was the first",
+      "prompt": "Spacecraft to fly past Mercury",
+      "answer": "Mariner 10",
+      "context": "1974",
+      "group": "Space firsts",
+      "note": "It was the first to use one planet's gravity, that of Venus, to reach another, and found Mercury's magnetic field.",
+      "noReverse": true
+    },
+    {
+      "id": "sk-viking-1",
+      "label": "First",
+      "reverseLabel": "Was the first",
+      "prompt": "Fully successful Mars lander",
+      "answer": "Viking 1",
+      "context": "1976",
+      "group": "Space firsts",
+      "note": "It worked on the surface for over six years until 1982, a record not broken until the Opportunity rover in 2010."
+    },
+    {
+      "id": "sk-voyager-2",
+      "label": "First",
+      "reverseLabel": "Was the first",
+      "prompt": "Spacecraft to fly past Uranus",
+      "answer": "Voyager 2",
+      "context": "1986",
+      "group": "Space firsts",
+      "note": "It remains the only spacecraft to visit Uranus or Neptune, using a rare alignment of the outer planets in the late 1970s.",
+      "noReverse": true
+    },
+    {
+      "id": "sk-hubble",
+      "label": "First",
+      "reverseLabel": "Was the first",
+      "prompt": "Space telescope designed to be serviced by astronauts",
+      "answer": "Hubble Space Telescope",
+      "context": "1990",
+      "group": "Space firsts",
+      "note": "Its 2.4 m mirror was ground about 2.2 micrometres too flat at the edge; corrective optics fitted in orbit in 1993 fixed it."
+    },
+    {
+      "id": "sk-sojourner",
+      "label": "First",
+      "reverseLabel": "Was the first",
+      "prompt": "Rover to drive on Mars",
+      "answer": "Sojourner",
+      "context": "1997",
+      "group": "Space firsts",
+      "note": "A 10.6 kg rover from Mars Pathfinder, named after abolitionist Sojourner Truth; it lasted 83 sols instead of the planned 8."
+    },
+    {
+      "id": "sk-near-shoemaker",
+      "label": "First",
+      "reverseLabel": "Was the first",
+      "prompt": "Spacecraft to land on an asteroid",
+      "answer": "NEAR Shoemaker",
+      "context": "2001",
+      "group": "Space firsts",
+      "note": "Built as an orbiter, it was eased down onto 433 Eros and survived, then measured surface composition with its gamma-ray spectrometer."
+    },
+    {
+      "id": "sk-huygens",
+      "label": "First",
+      "reverseLabel": "Was the first",
+      "prompt": "Spacecraft to land in the outer Solar System",
+      "answer": "Huygens",
+      "context": "2005",
+      "group": "Space firsts",
+      "note": "ESA's probe parachuted onto Titan, the farthest landing ever made, and found rounded water-ice pebbles on a dry lakebed."
+    },
+    {
+      "id": "sk-hayabusa",
+      "label": "First",
+      "reverseLabel": "Was the first",
+      "prompt": "Spacecraft to return asteroid samples to Earth",
+      "answer": "Hayabusa",
+      "context": "2010",
+      "group": "Space firsts",
+      "note": "Despite failing reaction wheels and ion engines, it brought back about 1,500 grains from Itokawa; its name means peregrine falcon."
+    },
+    {
+      "id": "sk-voyager-1",
+      "label": "First",
+      "reverseLabel": "Was the first",
+      "prompt": "Spacecraft to enter interstellar space",
+      "answer": "Voyager 1",
+      "context": "2012",
+      "group": "Space firsts",
+      "note": "It crossed the heliopause at about 121 AU, confirmed by a sharp jump in plasma density inferred from plasma oscillations."
+    },
+    {
+      "id": "sk-philae",
+      "label": "First",
+      "reverseLabel": "Was the first",
+      "prompt": "Spacecraft to soft-land on a comet",
+      "answer": "Philae",
+      "context": "2014",
+      "group": "Space firsts",
+      "note": "Its harpoons failed, so it bounced twice on comet 67P and settled in shadow, working on battery power for about 64 hours."
+    },
+    {
+      "id": "sk-falcon-9",
+      "label": "First",
+      "reverseLabel": "Was the first",
+      "prompt": "Orbital rocket to land its first stage vertically",
+      "answer": "Falcon 9",
+      "context": "2015",
+      "group": "Space firsts",
+      "note": "The booster touched down at Cape Canaveral after launching 11 Orbcomm satellites, and now stands outside SpaceX headquarters."
+    },
+    {
+      "id": "sk-new-horizons",
+      "label": "First",
+      "reverseLabel": "Was the first",
+      "prompt": "Spacecraft to fly past Pluto",
+      "answer": "New Horizons",
+      "context": "2015",
+      "group": "Space firsts",
+      "note": "Launched at about 16.26 km/s relative to Earth, the fastest launch ever, it carries some of Clyde Tombaugh's ashes."
+    },
+    {
+      "id": "sk-electron",
+      "label": "First",
+      "reverseLabel": "Was the first",
+      "prompt": "Rocket to reach orbit from New Zealand",
+      "answer": "Electron (Rocket Lab)",
+      "context": "2018",
+      "group": "Space firsts",
+      "note": "Launched from Māhia Peninsula; its Rutherford engines were the first electric-pump-fed engines to power an orbital-class rocket."
+    },
+    {
+      "id": "sk-change-4",
+      "label": "First",
+      "reverseLabel": "Was the first",
+      "prompt": "Spacecraft to land on the Moon's far side",
+      "answer": "Chang'e 4",
+      "context": "2019",
+      "group": "Space firsts",
+      "note": "It landed in Von Kármán crater, talking to Earth through the Queqiao relay satellite near the Earth-Moon L2 point."
+    },
+    {
+      "id": "sk-eht",
+      "label": "First",
+      "reverseLabel": "Was the first",
+      "prompt": "Telescope to image a black hole's shadow",
+      "answer": "Event Horizon Telescope",
+      "context": "2019",
+      "group": "Space firsts",
+      "note": "Linking radio dishes across Earth at 1.3 mm wavelength, it imaged M87*, a black hole of about 6.5 billion solar masses."
+    },
+    {
+      "id": "sk-jwst",
+      "label": "Largest",
+      "reverseLabel": "Is the largest",
+      "prompt": "Telescope in space",
+      "answer": "James Webb Space Telescope",
+      "context": "2021",
+      "group": "Space firsts",
+      "note": "Its 6.5 m mirror of 18 gold-coated beryllium segments must stay below 50 K, shaded by a five-layer sunshield near Sun-Earth L2."
+    },
+    {
+      "id": "sk-ingenuity",
+      "label": "First",
+      "reverseLabel": "Was the first",
+      "prompt": "Aircraft to make a powered flight on another planet",
+      "answer": "Ingenuity",
+      "context": "2021",
+      "group": "Space firsts",
+      "note": "In Martian air about 1% as dense as Earth's, its rotors spun at over 2,400 rpm; it made 72 flights."
+    },
+    {
+      "id": "sk-parker",
+      "label": "First",
+      "reverseLabel": "Was the first",
+      "prompt": "Spacecraft to fly through the Sun's corona",
+      "answer": "Parker Solar Probe",
+      "context": "2021",
+      "group": "Space firsts",
+      "note": "It crossed the Alfvén critical surface in April 2021; it honours Eugene Parker, who predicted the solar wind in 1958."
+    },
+    {
+      "id": "sk-chandrayaan-3",
+      "label": "First",
+      "reverseLabel": "Was the first",
+      "prompt": "Spacecraft to soft-land near the Moon's south pole",
+      "answer": "Chandrayaan-3",
+      "context": "2023",
+      "group": "Space firsts",
+      "note": "Its Vikram lander set down near 69° S, making India the fourth nation to soft-land on the Moon."
+    },
+    {
+      "id": "sk-change-6",
+      "label": "First",
+      "reverseLabel": "Was the first",
+      "prompt": "Mission to return samples from the Moon's far side",
+      "answer": "Chang'e 6",
+      "context": "2024",
+      "group": "Space firsts",
+      "note": "It brought back about 1,935 g from the Apollo basin, inside the vast South Pole-Aitken basin, possibly including mantle fragments."
+    }
+  ]
+}

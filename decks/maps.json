@@ -1,0 +1,1765 @@
+{
+  "id": "maps",
+  "title": "Maps",
+  "subtitle": "Which country is highlighted?",
+  "promptLabel": "Which country is highlighted",
+  "reversible": false,
+  "about": "Every country in the world capitals deck, highlighted on a map of its region. Countries too small to see are ringed. Borders from Natural Earth, which is in the public domain.",
+  "cards": [
+    {
+      "id": "map-fr",
+      "prompt": "Europe",
+      "answer": "France",
+      "map": "europe",
+      "target": "w-fr",
+      "group": "Europe",
+      "note": "Capital: Paris."
+    },
+    {
+      "id": "map-mc",
+      "prompt": "Europe",
+      "answer": "Monaco",
+      "map": "europe",
+      "target": "w-mc",
+      "group": "Europe",
+      "note": "Capital: Monaco."
+    },
+    {
+      "id": "map-be",
+      "prompt": "Europe",
+      "answer": "Belgium",
+      "map": "europe",
+      "target": "w-be",
+      "group": "Europe",
+      "note": "Capital: Brussels."
+    },
+    {
+      "id": "map-nl",
+      "prompt": "Europe",
+      "answer": "Netherlands",
+      "map": "europe",
+      "target": "w-nl",
+      "group": "Europe",
+      "note": "Capital: Amsterdam."
+    },
+    {
+      "id": "map-lu",
+      "prompt": "Europe",
+      "answer": "Luxembourg",
+      "map": "europe",
+      "target": "w-lu",
+      "group": "Europe",
+      "note": "Capital: Luxembourg City."
+    },
+    {
+      "id": "map-de",
+      "prompt": "Europe",
+      "answer": "Germany",
+      "map": "europe",
+      "target": "w-de",
+      "group": "Europe",
+      "note": "Capital: Berlin."
+    },
+    {
+      "id": "map-ch",
+      "prompt": "Europe",
+      "answer": "Switzerland",
+      "map": "europe",
+      "target": "w-ch",
+      "group": "Europe",
+      "note": "Capital: Bern."
+    },
+    {
+      "id": "map-li",
+      "prompt": "Europe",
+      "answer": "Liechtenstein",
+      "map": "europe",
+      "target": "w-li",
+      "group": "Europe",
+      "note": "Capital: Vaduz."
+    },
+    {
+      "id": "map-at",
+      "prompt": "Europe",
+      "answer": "Austria",
+      "map": "europe",
+      "target": "w-at",
+      "group": "Europe",
+      "note": "Capital: Vienna."
+    },
+    {
+      "id": "map-gb",
+      "prompt": "Europe",
+      "answer": "United Kingdom",
+      "map": "europe",
+      "target": "w-gb",
+      "group": "Europe",
+      "note": "Capital: London."
+    },
+    {
+      "id": "map-ie",
+      "prompt": "Europe",
+      "answer": "Ireland",
+      "map": "europe",
+      "target": "w-ie",
+      "group": "Europe",
+      "note": "Capital: Dublin."
+    },
+    {
+      "id": "map-is",
+      "prompt": "Europe",
+      "answer": "Iceland",
+      "map": "europe",
+      "target": "w-is",
+      "group": "Europe",
+      "note": "Capital: Reykjavík."
+    },
+    {
+      "id": "map-dk",
+      "prompt": "Europe",
+      "answer": "Denmark",
+      "map": "europe",
+      "target": "w-dk",
+      "group": "Europe",
+      "note": "Capital: Copenhagen."
+    },
+    {
+      "id": "map-no",
+      "prompt": "Europe",
+      "answer": "Norway",
+      "map": "europe",
+      "target": "w-no",
+      "group": "Europe",
+      "note": "Capital: Oslo."
+    },
+    {
+      "id": "map-se",
+      "prompt": "Europe",
+      "answer": "Sweden",
+      "map": "europe",
+      "target": "w-se",
+      "group": "Europe",
+      "note": "Capital: Stockholm."
+    },
+    {
+      "id": "map-fi",
+      "prompt": "Europe",
+      "answer": "Finland",
+      "map": "europe",
+      "target": "w-fi",
+      "group": "Europe",
+      "note": "Capital: Helsinki."
+    },
+    {
+      "id": "map-ee",
+      "prompt": "Europe",
+      "answer": "Estonia",
+      "map": "europe",
+      "target": "w-ee",
+      "group": "Europe",
+      "note": "Capital: Tallinn."
+    },
+    {
+      "id": "map-lv",
+      "prompt": "Europe",
+      "answer": "Latvia",
+      "map": "europe",
+      "target": "w-lv",
+      "group": "Europe",
+      "note": "Capital: Riga."
+    },
+    {
+      "id": "map-lt",
+      "prompt": "Europe",
+      "answer": "Lithuania",
+      "map": "europe",
+      "target": "w-lt",
+      "group": "Europe",
+      "note": "Capital: Vilnius."
+    },
+    {
+      "id": "map-pt",
+      "prompt": "Europe",
+      "answer": "Portugal",
+      "map": "europe",
+      "target": "w-pt",
+      "group": "Europe",
+      "note": "Capital: Lisbon."
+    },
+    {
+      "id": "map-es",
+      "prompt": "Europe",
+      "answer": "Spain",
+      "map": "europe",
+      "target": "w-es",
+      "group": "Europe",
+      "note": "Capital: Madrid."
+    },
+    {
+      "id": "map-ad",
+      "prompt": "Europe",
+      "answer": "Andorra",
+      "map": "europe",
+      "target": "w-ad",
+      "group": "Europe",
+      "note": "Capital: Andorra la Vella."
+    },
+    {
+      "id": "map-it",
+      "prompt": "Europe",
+      "answer": "Italy",
+      "map": "europe",
+      "target": "w-it",
+      "group": "Europe",
+      "note": "Capital: Rome."
+    },
+    {
+      "id": "map-va",
+      "prompt": "Europe",
+      "answer": "Vatican City",
+      "map": "europe",
+      "target": "w-va",
+      "group": "Europe",
+      "note": "Capital: Vatican City."
+    },
+    {
+      "id": "map-sm",
+      "prompt": "Europe",
+      "answer": "San Marino",
+      "map": "europe",
+      "target": "w-sm",
+      "group": "Europe",
+      "note": "Capital: San Marino."
+    },
+    {
+      "id": "map-mt",
+      "prompt": "Europe",
+      "answer": "Malta",
+      "map": "europe",
+      "target": "w-mt",
+      "group": "Europe",
+      "note": "Capital: Valletta."
+    },
+    {
+      "id": "map-si",
+      "prompt": "Europe",
+      "answer": "Slovenia",
+      "map": "europe",
+      "target": "w-si",
+      "group": "Europe",
+      "note": "Capital: Ljubljana."
+    },
+    {
+      "id": "map-hr",
+      "prompt": "Europe",
+      "answer": "Croatia",
+      "map": "europe",
+      "target": "w-hr",
+      "group": "Europe",
+      "note": "Capital: Zagreb."
+    },
+    {
+      "id": "map-ba",
+      "prompt": "Europe",
+      "answer": "Bosnia and Herzegovina",
+      "map": "europe",
+      "target": "w-ba",
+      "group": "Europe",
+      "note": "Capital: Sarajevo."
+    },
+    {
+      "id": "map-rs",
+      "prompt": "Europe",
+      "answer": "Serbia",
+      "map": "europe",
+      "target": "w-rs",
+      "group": "Europe",
+      "note": "Capital: Belgrade."
+    },
+    {
+      "id": "map-me",
+      "prompt": "Europe",
+      "answer": "Montenegro",
+      "map": "europe",
+      "target": "w-me",
+      "group": "Europe",
+      "note": "Capital: Podgorica."
+    },
+    {
+      "id": "map-al",
+      "prompt": "Europe",
+      "answer": "Albania",
+      "map": "europe",
+      "target": "w-al",
+      "group": "Europe",
+      "note": "Capital: Tirana."
+    },
+    {
+      "id": "map-mk",
+      "prompt": "Europe",
+      "answer": "North Macedonia",
+      "map": "europe",
+      "target": "w-mk",
+      "group": "Europe",
+      "note": "Capital: Skopje."
+    },
+    {
+      "id": "map-gr",
+      "prompt": "Europe",
+      "answer": "Greece",
+      "map": "europe",
+      "target": "w-gr",
+      "group": "Europe",
+      "note": "Capital: Athens."
+    },
+    {
+      "id": "map-bg",
+      "prompt": "Europe",
+      "answer": "Bulgaria",
+      "map": "europe",
+      "target": "w-bg",
+      "group": "Europe",
+      "note": "Capital: Sofia."
+    },
+    {
+      "id": "map-ro",
+      "prompt": "Europe",
+      "answer": "Romania",
+      "map": "europe",
+      "target": "w-ro",
+      "group": "Europe",
+      "note": "Capital: Bucharest."
+    },
+    {
+      "id": "map-md",
+      "prompt": "Europe",
+      "answer": "Moldova",
+      "map": "europe",
+      "target": "w-md",
+      "group": "Europe",
+      "note": "Capital: Chișinău."
+    },
+    {
+      "id": "map-ua",
+      "prompt": "Europe",
+      "answer": "Ukraine",
+      "map": "europe",
+      "target": "w-ua",
+      "group": "Europe",
+      "note": "Capital: Kyiv."
+    },
+    {
+      "id": "map-hu",
+      "prompt": "Europe",
+      "answer": "Hungary",
+      "map": "europe",
+      "target": "w-hu",
+      "group": "Europe",
+      "note": "Capital: Budapest."
+    },
+    {
+      "id": "map-sk",
+      "prompt": "Europe",
+      "answer": "Slovakia",
+      "map": "europe",
+      "target": "w-sk",
+      "group": "Europe",
+      "note": "Capital: Bratislava."
+    },
+    {
+      "id": "map-cz",
+      "prompt": "Europe",
+      "answer": "Czech Republic",
+      "map": "europe",
+      "target": "w-cz",
+      "group": "Europe",
+      "note": "Capital: Prague."
+    },
+    {
+      "id": "map-pl",
+      "prompt": "Europe",
+      "answer": "Poland",
+      "map": "europe",
+      "target": "w-pl",
+      "group": "Europe",
+      "note": "Capital: Warsaw."
+    },
+    {
+      "id": "map-by",
+      "prompt": "Europe",
+      "answer": "Belarus",
+      "map": "europe",
+      "target": "w-by",
+      "group": "Europe",
+      "note": "Capital: Minsk."
+    },
+    {
+      "id": "map-ru",
+      "prompt": "Europe",
+      "answer": "Russia",
+      "map": "europe",
+      "target": "w-ru",
+      "group": "Europe",
+      "note": "Capital: Moscow."
+    },
+    {
+      "id": "map-ca",
+      "prompt": "North America",
+      "answer": "Canada",
+      "map": "north-america",
+      "target": "w-ca",
+      "group": "North America",
+      "note": "Capital: Ottawa."
+    },
+    {
+      "id": "map-us",
+      "prompt": "North America",
+      "answer": "United States",
+      "map": "north-america",
+      "target": "w-us",
+      "group": "North America",
+      "note": "Capital: Washington, D.C.."
+    },
+    {
+      "id": "map-mx",
+      "prompt": "North America",
+      "answer": "Mexico",
+      "map": "north-america",
+      "target": "w-mx",
+      "group": "North America",
+      "note": "Capital: Mexico City."
+    },
+    {
+      "id": "map-bz",
+      "prompt": "Central America and the Caribbean",
+      "answer": "Belize",
+      "map": "caribbean",
+      "target": "w-bz",
+      "group": "Central America and the Caribbean",
+      "note": "Capital: Belmopan."
+    },
+    {
+      "id": "map-gt",
+      "prompt": "Central America and the Caribbean",
+      "answer": "Guatemala",
+      "map": "caribbean",
+      "target": "w-gt",
+      "group": "Central America and the Caribbean",
+      "note": "Capital: Guatemala City."
+    },
+    {
+      "id": "map-sv",
+      "prompt": "Central America and the Caribbean",
+      "answer": "El Salvador",
+      "map": "caribbean",
+      "target": "w-sv",
+      "group": "Central America and the Caribbean",
+      "note": "Capital: San Salvador."
+    },
+    {
+      "id": "map-hn",
+      "prompt": "Central America and the Caribbean",
+      "answer": "Honduras",
+      "map": "caribbean",
+      "target": "w-hn",
+      "group": "Central America and the Caribbean",
+      "note": "Capital: Tegucigalpa."
+    },
+    {
+      "id": "map-ni",
+      "prompt": "Central America and the Caribbean",
+      "answer": "Nicaragua",
+      "map": "caribbean",
+      "target": "w-ni",
+      "group": "Central America and the Caribbean",
+      "note": "Capital: Managua."
+    },
+    {
+      "id": "map-cr",
+      "prompt": "Central America and the Caribbean",
+      "answer": "Costa Rica",
+      "map": "caribbean",
+      "target": "w-cr",
+      "group": "Central America and the Caribbean",
+      "note": "Capital: San José."
+    },
+    {
+      "id": "map-pa",
+      "prompt": "Central America and the Caribbean",
+      "answer": "Panama",
+      "map": "caribbean",
+      "target": "w-pa",
+      "group": "Central America and the Caribbean",
+      "note": "Capital: Panama City."
+    },
+    {
+      "id": "map-tt",
+      "prompt": "Central America and the Caribbean",
+      "answer": "Trinidad and Tobago",
+      "map": "caribbean",
+      "target": "w-tt",
+      "group": "Central America and the Caribbean",
+      "note": "Capital: Port of Spain."
+    },
+    {
+      "id": "map-gd",
+      "prompt": "Central America and the Caribbean",
+      "answer": "Grenada",
+      "map": "caribbean",
+      "target": "w-gd",
+      "group": "Central America and the Caribbean",
+      "note": "Capital: St. George's."
+    },
+    {
+      "id": "map-vc",
+      "prompt": "Central America and the Caribbean",
+      "answer": "Saint Vincent and the Grenadines",
+      "map": "caribbean",
+      "target": "w-vc",
+      "group": "Central America and the Caribbean",
+      "note": "Capital: Kingstown."
+    },
+    {
+      "id": "map-bb",
+      "prompt": "Central America and the Caribbean",
+      "answer": "Barbados",
+      "map": "caribbean",
+      "target": "w-bb",
+      "group": "Central America and the Caribbean",
+      "note": "Capital: Bridgetown."
+    },
+    {
+      "id": "map-lc",
+      "prompt": "Central America and the Caribbean",
+      "answer": "Saint Lucia",
+      "map": "caribbean",
+      "target": "w-lc",
+      "group": "Central America and the Caribbean",
+      "note": "Capital: Castries."
+    },
+    {
+      "id": "map-dm",
+      "prompt": "Central America and the Caribbean",
+      "answer": "Dominica",
+      "map": "caribbean",
+      "target": "w-dm",
+      "group": "Central America and the Caribbean",
+      "note": "Capital: Roseau."
+    },
+    {
+      "id": "map-ag",
+      "prompt": "Central America and the Caribbean",
+      "answer": "Antigua and Barbuda",
+      "map": "caribbean",
+      "target": "w-ag",
+      "group": "Central America and the Caribbean",
+      "note": "Capital: St. John's."
+    },
+    {
+      "id": "map-kn",
+      "prompt": "Central America and the Caribbean",
+      "answer": "Saint Kitts and Nevis",
+      "map": "caribbean",
+      "target": "w-kn",
+      "group": "Central America and the Caribbean",
+      "note": "Capital: Basseterre."
+    },
+    {
+      "id": "map-do",
+      "prompt": "Central America and the Caribbean",
+      "answer": "Dominican Republic",
+      "map": "caribbean",
+      "target": "w-do",
+      "group": "Central America and the Caribbean",
+      "note": "Capital: Santo Domingo."
+    },
+    {
+      "id": "map-ht",
+      "prompt": "Central America and the Caribbean",
+      "answer": "Haiti",
+      "map": "caribbean",
+      "target": "w-ht",
+      "group": "Central America and the Caribbean",
+      "note": "Capital: Port-au-Prince."
+    },
+    {
+      "id": "map-jm",
+      "prompt": "Central America and the Caribbean",
+      "answer": "Jamaica",
+      "map": "caribbean",
+      "target": "w-jm",
+      "group": "Central America and the Caribbean",
+      "note": "Capital: Kingston."
+    },
+    {
+      "id": "map-cu",
+      "prompt": "Central America and the Caribbean",
+      "answer": "Cuba",
+      "map": "caribbean",
+      "target": "w-cu",
+      "group": "Central America and the Caribbean",
+      "note": "Capital: Havana."
+    },
+    {
+      "id": "map-bs",
+      "prompt": "Central America and the Caribbean",
+      "answer": "The Bahamas",
+      "map": "caribbean",
+      "target": "w-bs",
+      "group": "Central America and the Caribbean",
+      "note": "Capital: Nassau."
+    },
+    {
+      "id": "map-co",
+      "prompt": "South America",
+      "answer": "Colombia",
+      "map": "south-america",
+      "target": "w-co",
+      "group": "South America",
+      "note": "Capital: Bogotá."
+    },
+    {
+      "id": "map-ec",
+      "prompt": "South America",
+      "answer": "Ecuador",
+      "map": "south-america",
+      "target": "w-ec",
+      "group": "South America",
+      "note": "Capital: Quito."
+    },
+    {
+      "id": "map-pe",
+      "prompt": "South America",
+      "answer": "Peru",
+      "map": "south-america",
+      "target": "w-pe",
+      "group": "South America",
+      "note": "Capital: Lima."
+    },
+    {
+      "id": "map-cl",
+      "prompt": "South America",
+      "answer": "Chile",
+      "map": "south-america",
+      "target": "w-cl",
+      "group": "South America",
+      "note": "Capital: Santiago."
+    },
+    {
+      "id": "map-bo",
+      "prompt": "South America",
+      "answer": "Bolivia",
+      "map": "south-america",
+      "target": "w-bo",
+      "group": "South America",
+      "note": "Capital: Sucre · La Paz."
+    },
+    {
+      "id": "map-py",
+      "prompt": "South America",
+      "answer": "Paraguay",
+      "map": "south-america",
+      "target": "w-py",
+      "group": "South America",
+      "note": "Capital: Asunción."
+    },
+    {
+      "id": "map-ar",
+      "prompt": "South America",
+      "answer": "Argentina",
+      "map": "south-america",
+      "target": "w-ar",
+      "group": "South America",
+      "note": "Capital: Buenos Aires."
+    },
+    {
+      "id": "map-uy",
+      "prompt": "South America",
+      "answer": "Uruguay",
+      "map": "south-america",
+      "target": "w-uy",
+      "group": "South America",
+      "note": "Capital: Montevideo."
+    },
+    {
+      "id": "map-br",
+      "prompt": "South America",
+      "answer": "Brazil",
+      "map": "south-america",
+      "target": "w-br",
+      "group": "South America",
+      "note": "Capital: Brasília."
+    },
+    {
+      "id": "map-sr",
+      "prompt": "South America",
+      "answer": "Suriname",
+      "map": "south-america",
+      "target": "w-sr",
+      "group": "South America",
+      "note": "Capital: Paramaribo."
+    },
+    {
+      "id": "map-gy",
+      "prompt": "South America",
+      "answer": "Guyana",
+      "map": "south-america",
+      "target": "w-gy",
+      "group": "South America",
+      "note": "Capital: Georgetown."
+    },
+    {
+      "id": "map-ve",
+      "prompt": "South America",
+      "answer": "Venezuela",
+      "map": "south-america",
+      "target": "w-ve",
+      "group": "South America",
+      "note": "Capital: Caracas."
+    },
+    {
+      "id": "map-ma",
+      "prompt": "Africa",
+      "answer": "Morocco",
+      "map": "africa",
+      "target": "w-ma",
+      "group": "Africa",
+      "note": "Capital: Rabat."
+    },
+    {
+      "id": "map-dz",
+      "prompt": "Africa",
+      "answer": "Algeria",
+      "map": "africa",
+      "target": "w-dz",
+      "group": "Africa",
+      "note": "Capital: Algiers."
+    },
+    {
+      "id": "map-tn",
+      "prompt": "Africa",
+      "answer": "Tunisia",
+      "map": "africa",
+      "target": "w-tn",
+      "group": "Africa",
+      "note": "Capital: Tunis."
+    },
+    {
+      "id": "map-ly",
+      "prompt": "Africa",
+      "answer": "Libya",
+      "map": "africa",
+      "target": "w-ly",
+      "group": "Africa",
+      "note": "Capital: Tripoli."
+    },
+    {
+      "id": "map-eg",
+      "prompt": "Africa",
+      "answer": "Egypt",
+      "map": "africa",
+      "target": "w-eg",
+      "group": "Africa",
+      "note": "Capital: Cairo."
+    },
+    {
+      "id": "map-sd",
+      "prompt": "Africa",
+      "answer": "Sudan",
+      "map": "africa",
+      "target": "w-sd",
+      "group": "Africa",
+      "note": "Capital: Khartoum."
+    },
+    {
+      "id": "map-cv",
+      "prompt": "Africa",
+      "answer": "Cape Verde",
+      "map": "africa",
+      "target": "w-cv",
+      "group": "Africa",
+      "note": "Capital: Praia."
+    },
+    {
+      "id": "map-mr",
+      "prompt": "Africa",
+      "answer": "Mauritania",
+      "map": "africa",
+      "target": "w-mr",
+      "group": "Africa",
+      "note": "Capital: Nouakchott."
+    },
+    {
+      "id": "map-sn",
+      "prompt": "Africa",
+      "answer": "Senegal",
+      "map": "africa",
+      "target": "w-sn",
+      "group": "Africa",
+      "note": "Capital: Dakar."
+    },
+    {
+      "id": "map-gm",
+      "prompt": "Africa",
+      "answer": "The Gambia",
+      "map": "africa",
+      "target": "w-gm",
+      "group": "Africa",
+      "note": "Capital: Banjul."
+    },
+    {
+      "id": "map-gw",
+      "prompt": "Africa",
+      "answer": "Guinea-Bissau",
+      "map": "africa",
+      "target": "w-gw",
+      "group": "Africa",
+      "note": "Capital: Bissau."
+    },
+    {
+      "id": "map-gn",
+      "prompt": "Africa",
+      "answer": "Guinea",
+      "map": "africa",
+      "target": "w-gn",
+      "group": "Africa",
+      "note": "Capital: Conakry."
+    },
+    {
+      "id": "map-sl",
+      "prompt": "Africa",
+      "answer": "Sierra Leone",
+      "map": "africa",
+      "target": "w-sl",
+      "group": "Africa",
+      "note": "Capital: Freetown."
+    },
+    {
+      "id": "map-lr",
+      "prompt": "Africa",
+      "answer": "Liberia",
+      "map": "africa",
+      "target": "w-lr",
+      "group": "Africa",
+      "note": "Capital: Monrovia."
+    },
+    {
+      "id": "map-ci",
+      "prompt": "Africa",
+      "answer": "Ivory Coast",
+      "map": "africa",
+      "target": "w-ci",
+      "group": "Africa",
+      "note": "Capital: Yamoussoukro."
+    },
+    {
+      "id": "map-ml",
+      "prompt": "Africa",
+      "answer": "Mali",
+      "map": "africa",
+      "target": "w-ml",
+      "group": "Africa",
+      "note": "Capital: Bamako."
+    },
+    {
+      "id": "map-bf",
+      "prompt": "Africa",
+      "answer": "Burkina Faso",
+      "map": "africa",
+      "target": "w-bf",
+      "group": "Africa",
+      "note": "Capital: Ouagadougou."
+    },
+    {
+      "id": "map-gh",
+      "prompt": "Africa",
+      "answer": "Ghana",
+      "map": "africa",
+      "target": "w-gh",
+      "group": "Africa",
+      "note": "Capital: Accra."
+    },
+    {
+      "id": "map-tg",
+      "prompt": "Africa",
+      "answer": "Togo",
+      "map": "africa",
+      "target": "w-tg",
+      "group": "Africa",
+      "note": "Capital: Lomé."
+    },
+    {
+      "id": "map-bj",
+      "prompt": "Africa",
+      "answer": "Benin",
+      "map": "africa",
+      "target": "w-bj",
+      "group": "Africa",
+      "note": "Capital: Porto-Novo."
+    },
+    {
+      "id": "map-ne",
+      "prompt": "Africa",
+      "answer": "Niger",
+      "map": "africa",
+      "target": "w-ne",
+      "group": "Africa",
+      "note": "Capital: Niamey."
+    },
+    {
+      "id": "map-ng",
+      "prompt": "Africa",
+      "answer": "Nigeria",
+      "map": "africa",
+      "target": "w-ng",
+      "group": "Africa",
+      "note": "Capital: Abuja."
+    },
+    {
+      "id": "map-td",
+      "prompt": "Africa",
+      "answer": "Chad",
+      "map": "africa",
+      "target": "w-td",
+      "group": "Africa",
+      "note": "Capital: N'Djamena."
+    },
+    {
+      "id": "map-cf",
+      "prompt": "Africa",
+      "answer": "Central African Republic",
+      "map": "africa",
+      "target": "w-cf",
+      "group": "Africa",
+      "note": "Capital: Bangui."
+    },
+    {
+      "id": "map-cm",
+      "prompt": "Africa",
+      "answer": "Cameroon",
+      "map": "africa",
+      "target": "w-cm",
+      "group": "Africa",
+      "note": "Capital: Yaoundé."
+    },
+    {
+      "id": "map-gq",
+      "prompt": "Africa",
+      "answer": "Equatorial Guinea",
+      "map": "africa",
+      "target": "w-gq",
+      "group": "Africa",
+      "note": "Capital: Ciudad de la Paz."
+    },
+    {
+      "id": "map-st",
+      "prompt": "Africa",
+      "answer": "São Tomé and Príncipe",
+      "map": "africa",
+      "target": "w-st",
+      "group": "Africa",
+      "note": "Capital: São Tomé."
+    },
+    {
+      "id": "map-ga",
+      "prompt": "Africa",
+      "answer": "Gabon",
+      "map": "africa",
+      "target": "w-ga",
+      "group": "Africa",
+      "note": "Capital: Libreville."
+    },
+    {
+      "id": "map-cg",
+      "prompt": "Africa",
+      "answer": "Republic of the Congo",
+      "map": "africa",
+      "target": "w-cg",
+      "group": "Africa",
+      "note": "Capital: Brazzaville."
+    },
+    {
+      "id": "map-cd",
+      "prompt": "Africa",
+      "answer": "DR Congo",
+      "map": "africa",
+      "target": "w-cd",
+      "group": "Africa",
+      "note": "Capital: Kinshasa."
+    },
+    {
+      "id": "map-ao",
+      "prompt": "Africa",
+      "answer": "Angola",
+      "map": "africa",
+      "target": "w-ao",
+      "group": "Africa",
+      "note": "Capital: Luanda."
+    },
+    {
+      "id": "map-er",
+      "prompt": "Africa",
+      "answer": "Eritrea",
+      "map": "africa",
+      "target": "w-er",
+      "group": "Africa",
+      "note": "Capital: Asmara."
+    },
+    {
+      "id": "map-dj",
+      "prompt": "Africa",
+      "answer": "Djibouti",
+      "map": "africa",
+      "target": "w-dj",
+      "group": "Africa",
+      "note": "Capital: Djibouti City."
+    },
+    {
+      "id": "map-et",
+      "prompt": "Africa",
+      "answer": "Ethiopia",
+      "map": "africa",
+      "target": "w-et",
+      "group": "Africa",
+      "note": "Capital: Addis Ababa."
+    },
+    {
+      "id": "map-so",
+      "prompt": "Africa",
+      "answer": "Somalia",
+      "map": "africa",
+      "target": "w-so",
+      "group": "Africa",
+      "note": "Capital: Mogadishu."
+    },
+    {
+      "id": "map-ss",
+      "prompt": "Africa",
+      "answer": "South Sudan",
+      "map": "africa",
+      "target": "w-ss",
+      "group": "Africa",
+      "note": "Capital: Juba."
+    },
+    {
+      "id": "map-ug",
+      "prompt": "Africa",
+      "answer": "Uganda",
+      "map": "africa",
+      "target": "w-ug",
+      "group": "Africa",
+      "note": "Capital: Kampala."
+    },
+    {
+      "id": "map-ke",
+      "prompt": "Africa",
+      "answer": "Kenya",
+      "map": "africa",
+      "target": "w-ke",
+      "group": "Africa",
+      "note": "Capital: Nairobi."
+    },
+    {
+      "id": "map-rw",
+      "prompt": "Africa",
+      "answer": "Rwanda",
+      "map": "africa",
+      "target": "w-rw",
+      "group": "Africa",
+      "note": "Capital: Kigali."
+    },
+    {
+      "id": "map-bi",
+      "prompt": "Africa",
+      "answer": "Burundi",
+      "map": "africa",
+      "target": "w-bi",
+      "group": "Africa",
+      "note": "Capital: Gitega."
+    },
+    {
+      "id": "map-tz",
+      "prompt": "Africa",
+      "answer": "Tanzania",
+      "map": "africa",
+      "target": "w-tz",
+      "group": "Africa",
+      "note": "Capital: Dodoma."
+    },
+    {
+      "id": "map-mw",
+      "prompt": "Africa",
+      "answer": "Malawi",
+      "map": "africa",
+      "target": "w-mw",
+      "group": "Africa",
+      "note": "Capital: Lilongwe."
+    },
+    {
+      "id": "map-zm",
+      "prompt": "Africa",
+      "answer": "Zambia",
+      "map": "africa",
+      "target": "w-zm",
+      "group": "Africa",
+      "note": "Capital: Lusaka."
+    },
+    {
+      "id": "map-zw",
+      "prompt": "Africa",
+      "answer": "Zimbabwe",
+      "map": "africa",
+      "target": "w-zw",
+      "group": "Africa",
+      "note": "Capital: Harare."
+    },
+    {
+      "id": "map-mz",
+      "prompt": "Africa",
+      "answer": "Mozambique",
+      "map": "africa",
+      "target": "w-mz",
+      "group": "Africa",
+      "note": "Capital: Maputo."
+    },
+    {
+      "id": "map-km",
+      "prompt": "Africa",
+      "answer": "Comoros",
+      "map": "africa",
+      "target": "w-km",
+      "group": "Africa",
+      "note": "Capital: Moroni."
+    },
+    {
+      "id": "map-mg",
+      "prompt": "Africa",
+      "answer": "Madagascar",
+      "map": "africa",
+      "target": "w-mg",
+      "group": "Africa",
+      "note": "Capital: Antananarivo."
+    },
+    {
+      "id": "map-sc",
+      "prompt": "Africa",
+      "answer": "Seychelles",
+      "map": "africa",
+      "target": "w-sc",
+      "group": "Africa",
+      "note": "Capital: Victoria."
+    },
+    {
+      "id": "map-mu",
+      "prompt": "Africa",
+      "answer": "Mauritius",
+      "map": "africa",
+      "target": "w-mu",
+      "group": "Africa",
+      "note": "Capital: Port Louis."
+    },
+    {
+      "id": "map-na",
+      "prompt": "Africa",
+      "answer": "Namibia",
+      "map": "africa",
+      "target": "w-na",
+      "group": "Africa",
+      "note": "Capital: Windhoek."
+    },
+    {
+      "id": "map-bw",
+      "prompt": "Africa",
+      "answer": "Botswana",
+      "map": "africa",
+      "target": "w-bw",
+      "group": "Africa",
+      "note": "Capital: Gaborone."
+    },
+    {
+      "id": "map-za",
+      "prompt": "Africa",
+      "answer": "South Africa",
+      "map": "africa",
+      "target": "w-za",
+      "group": "Africa",
+      "note": "Capital: Pretoria · Cape Town · Bloemfontein."
+    },
+    {
+      "id": "map-ls",
+      "prompt": "Africa",
+      "answer": "Lesotho",
+      "map": "africa",
+      "target": "w-ls",
+      "group": "Africa",
+      "note": "Capital: Maseru."
+    },
+    {
+      "id": "map-sz",
+      "prompt": "Africa",
+      "answer": "Eswatini",
+      "map": "africa",
+      "target": "w-sz",
+      "group": "Africa",
+      "note": "Capital: Mbabane · Lobamba."
+    },
+    {
+      "id": "map-tr",
+      "prompt": "Asia",
+      "answer": "Turkey",
+      "map": "asia",
+      "target": "w-tr",
+      "group": "Asia",
+      "note": "Capital: Ankara."
+    },
+    {
+      "id": "map-cy",
+      "prompt": "Asia",
+      "answer": "Cyprus",
+      "map": "asia",
+      "target": "w-cy",
+      "group": "Asia",
+      "note": "Capital: Nicosia."
+    },
+    {
+      "id": "map-ge",
+      "prompt": "Asia",
+      "answer": "Georgia",
+      "map": "asia",
+      "target": "w-ge",
+      "group": "Asia",
+      "note": "Capital: Tbilisi."
+    },
+    {
+      "id": "map-am",
+      "prompt": "Asia",
+      "answer": "Armenia",
+      "map": "asia",
+      "target": "w-am",
+      "group": "Asia",
+      "note": "Capital: Yerevan."
+    },
+    {
+      "id": "map-az",
+      "prompt": "Asia",
+      "answer": "Azerbaijan",
+      "map": "asia",
+      "target": "w-az",
+      "group": "Asia",
+      "note": "Capital: Baku."
+    },
+    {
+      "id": "map-sy",
+      "prompt": "Asia",
+      "answer": "Syria",
+      "map": "asia",
+      "target": "w-sy",
+      "group": "Asia",
+      "note": "Capital: Damascus."
+    },
+    {
+      "id": "map-lb",
+      "prompt": "Asia",
+      "answer": "Lebanon",
+      "map": "asia",
+      "target": "w-lb",
+      "group": "Asia",
+      "note": "Capital: Beirut."
+    },
+    {
+      "id": "map-il",
+      "prompt": "Asia",
+      "answer": "Israel",
+      "map": "asia",
+      "target": "w-il",
+      "group": "Asia",
+      "note": "Capital: Jerusalem."
+    },
+    {
+      "id": "map-ps",
+      "prompt": "Asia",
+      "answer": "Palestine",
+      "map": "asia",
+      "target": "w-ps",
+      "group": "Asia",
+      "note": "Capital: Jerusalem (claimed) · Ramallah (administrative)."
+    },
+    {
+      "id": "map-jo",
+      "prompt": "Asia",
+      "answer": "Jordan",
+      "map": "asia",
+      "target": "w-jo",
+      "group": "Asia",
+      "note": "Capital: Amman."
+    },
+    {
+      "id": "map-iq",
+      "prompt": "Asia",
+      "answer": "Iraq",
+      "map": "asia",
+      "target": "w-iq",
+      "group": "Asia",
+      "note": "Capital: Baghdad."
+    },
+    {
+      "id": "map-kw",
+      "prompt": "Asia",
+      "answer": "Kuwait",
+      "map": "asia",
+      "target": "w-kw",
+      "group": "Asia",
+      "note": "Capital: Kuwait City."
+    },
+    {
+      "id": "map-sa",
+      "prompt": "Asia",
+      "answer": "Saudi Arabia",
+      "map": "asia",
+      "target": "w-sa",
+      "group": "Asia",
+      "note": "Capital: Riyadh."
+    },
+    {
+      "id": "map-bh",
+      "prompt": "Asia",
+      "answer": "Bahrain",
+      "map": "asia",
+      "target": "w-bh",
+      "group": "Asia",
+      "note": "Capital: Manama."
+    },
+    {
+      "id": "map-qa",
+      "prompt": "Asia",
+      "answer": "Qatar",
+      "map": "asia",
+      "target": "w-qa",
+      "group": "Asia",
+      "note": "Capital: Doha."
+    },
+    {
+      "id": "map-ae",
+      "prompt": "Asia",
+      "answer": "United Arab Emirates",
+      "map": "asia",
+      "target": "w-ae",
+      "group": "Asia",
+      "note": "Capital: Abu Dhabi."
+    },
+    {
+      "id": "map-om",
+      "prompt": "Asia",
+      "answer": "Oman",
+      "map": "asia",
+      "target": "w-om",
+      "group": "Asia",
+      "note": "Capital: Muscat."
+    },
+    {
+      "id": "map-ye",
+      "prompt": "Asia",
+      "answer": "Yemen",
+      "map": "asia",
+      "target": "w-ye",
+      "group": "Asia",
+      "note": "Capital: Sanaa."
+    },
+    {
+      "id": "map-kz",
+      "prompt": "Asia",
+      "answer": "Kazakhstan",
+      "map": "asia",
+      "target": "w-kz",
+      "group": "Asia",
+      "note": "Capital: Astana."
+    },
+    {
+      "id": "map-kg",
+      "prompt": "Asia",
+      "answer": "Kyrgyzstan",
+      "map": "asia",
+      "target": "w-kg",
+      "group": "Asia",
+      "note": "Capital: Bishkek."
+    },
+    {
+      "id": "map-tj",
+      "prompt": "Asia",
+      "answer": "Tajikistan",
+      "map": "asia",
+      "target": "w-tj",
+      "group": "Asia",
+      "note": "Capital: Dushanbe."
+    },
+    {
+      "id": "map-uz",
+      "prompt": "Asia",
+      "answer": "Uzbekistan",
+      "map": "asia",
+      "target": "w-uz",
+      "group": "Asia",
+      "note": "Capital: Tashkent."
+    },
+    {
+      "id": "map-tm",
+      "prompt": "Asia",
+      "answer": "Turkmenistan",
+      "map": "asia",
+      "target": "w-tm",
+      "group": "Asia",
+      "note": "Capital: Ashgabat."
+    },
+    {
+      "id": "map-ir",
+      "prompt": "Asia",
+      "answer": "Iran",
+      "map": "asia",
+      "target": "w-ir",
+      "group": "Asia",
+      "note": "Capital: Tehran."
+    },
+    {
+      "id": "map-af",
+      "prompt": "Asia",
+      "answer": "Afghanistan",
+      "map": "asia",
+      "target": "w-af",
+      "group": "Asia",
+      "note": "Capital: Kabul."
+    },
+    {
+      "id": "map-pk",
+      "prompt": "Asia",
+      "answer": "Pakistan",
+      "map": "asia",
+      "target": "w-pk",
+      "group": "Asia",
+      "note": "Capital: Islamabad."
+    },
+    {
+      "id": "map-in",
+      "prompt": "Asia",
+      "answer": "India",
+      "map": "asia",
+      "target": "w-in",
+      "group": "Asia",
+      "note": "Capital: New Delhi."
+    },
+    {
+      "id": "map-np",
+      "prompt": "Asia",
+      "answer": "Nepal",
+      "map": "asia",
+      "target": "w-np",
+      "group": "Asia",
+      "note": "Capital: Kathmandu."
+    },
+    {
+      "id": "map-bt",
+      "prompt": "Asia",
+      "answer": "Bhutan",
+      "map": "asia",
+      "target": "w-bt",
+      "group": "Asia",
+      "note": "Capital: Thimphu."
+    },
+    {
+      "id": "map-bd",
+      "prompt": "Asia",
+      "answer": "Bangladesh",
+      "map": "asia",
+      "target": "w-bd",
+      "group": "Asia",
+      "note": "Capital: Dhaka."
+    },
+    {
+      "id": "map-lk",
+      "prompt": "Asia",
+      "answer": "Sri Lanka",
+      "map": "asia",
+      "target": "w-lk",
+      "group": "Asia",
+      "note": "Capital: Sri Jayawardenepura Kotte."
+    },
+    {
+      "id": "map-mv",
+      "prompt": "Asia",
+      "answer": "Maldives",
+      "map": "asia",
+      "target": "w-mv",
+      "group": "Asia",
+      "note": "Capital: Malé."
+    },
+    {
+      "id": "map-cn",
+      "prompt": "Asia",
+      "answer": "China",
+      "map": "asia",
+      "target": "w-cn",
+      "group": "Asia",
+      "note": "Capital: Beijing."
+    },
+    {
+      "id": "map-mn",
+      "prompt": "Asia",
+      "answer": "Mongolia",
+      "map": "asia",
+      "target": "w-mn",
+      "group": "Asia",
+      "note": "Capital: Ulaanbaatar."
+    },
+    {
+      "id": "map-kp",
+      "prompt": "Asia",
+      "answer": "North Korea",
+      "map": "asia",
+      "target": "w-kp",
+      "group": "Asia",
+      "note": "Capital: Pyongyang."
+    },
+    {
+      "id": "map-kr",
+      "prompt": "Asia",
+      "answer": "South Korea",
+      "map": "asia",
+      "target": "w-kr",
+      "group": "Asia",
+      "note": "Capital: Seoul."
+    },
+    {
+      "id": "map-jp",
+      "prompt": "Asia",
+      "answer": "Japan",
+      "map": "asia",
+      "target": "w-jp",
+      "group": "Asia",
+      "note": "Capital: Tokyo."
+    },
+    {
+      "id": "map-mm",
+      "prompt": "Asia",
+      "answer": "Myanmar",
+      "map": "asia",
+      "target": "w-mm",
+      "group": "Asia",
+      "note": "Capital: Naypyidaw."
+    },
+    {
+      "id": "map-th",
+      "prompt": "Asia",
+      "answer": "Thailand",
+      "map": "asia",
+      "target": "w-th",
+      "group": "Asia",
+      "note": "Capital: Bangkok."
+    },
+    {
+      "id": "map-la",
+      "prompt": "Asia",
+      "answer": "Laos",
+      "map": "asia",
+      "target": "w-la",
+      "group": "Asia",
+      "note": "Capital: Vientiane."
+    },
+    {
+      "id": "map-kh",
+      "prompt": "Asia",
+      "answer": "Cambodia",
+      "map": "asia",
+      "target": "w-kh",
+      "group": "Asia",
+      "note": "Capital: Phnom Penh."
+    },
+    {
+      "id": "map-vn",
+      "prompt": "Asia",
+      "answer": "Vietnam",
+      "map": "asia",
+      "target": "w-vn",
+      "group": "Asia",
+      "note": "Capital: Hanoi."
+    },
+    {
+      "id": "map-my",
+      "prompt": "Asia",
+      "answer": "Malaysia",
+      "map": "asia",
+      "target": "w-my",
+      "group": "Asia",
+      "note": "Capital: Kuala Lumpur."
+    },
+    {
+      "id": "map-sg",
+      "prompt": "Asia",
+      "answer": "Singapore",
+      "map": "asia",
+      "target": "w-sg",
+      "group": "Asia",
+      "note": "Capital: Singapore."
+    },
+    {
+      "id": "map-bn",
+      "prompt": "Asia",
+      "answer": "Brunei",
+      "map": "asia",
+      "target": "w-bn",
+      "group": "Asia",
+      "note": "Capital: Bandar Seri Begawan."
+    },
+    {
+      "id": "map-id",
+      "prompt": "Asia",
+      "answer": "Indonesia",
+      "map": "asia",
+      "target": "w-id",
+      "group": "Asia",
+      "note": "Capital: Jakarta."
+    },
+    {
+      "id": "map-tl",
+      "prompt": "Asia",
+      "answer": "East Timor",
+      "map": "asia",
+      "target": "w-tl",
+      "group": "Asia",
+      "note": "Capital: Dili."
+    },
+    {
+      "id": "map-ph",
+      "prompt": "Asia",
+      "answer": "Philippines",
+      "map": "asia",
+      "target": "w-ph",
+      "group": "Asia",
+      "note": "Capital: Manila."
+    },
+    {
+      "id": "map-au",
+      "prompt": "Oceania",
+      "answer": "Australia",
+      "map": "oceania",
+      "target": "w-au",
+      "group": "Oceania",
+      "note": "Capital: Canberra."
+    },
+    {
+      "id": "map-nz",
+      "prompt": "Oceania",
+      "answer": "New Zealand",
+      "map": "oceania",
+      "target": "w-nz",
+      "group": "Oceania",
+      "note": "Capital: Wellington."
+    },
+    {
+      "id": "map-pg",
+      "prompt": "Oceania",
+      "answer": "Papua New Guinea",
+      "map": "oceania",
+      "target": "w-pg",
+      "group": "Oceania",
+      "note": "Capital: Port Moresby."
+    },
+    {
+      "id": "map-sb",
+      "prompt": "Oceania",
+      "answer": "Solomon Islands",
+      "map": "oceania",
+      "target": "w-sb",
+      "group": "Oceania",
+      "note": "Capital: Honiara."
+    },
+    {
+      "id": "map-vu",
+      "prompt": "Oceania",
+      "answer": "Vanuatu",
+      "map": "oceania",
+      "target": "w-vu",
+      "group": "Oceania",
+      "note": "Capital: Port Vila."
+    },
+    {
+      "id": "map-fj",
+      "prompt": "Oceania",
+      "answer": "Fiji",
+      "map": "oceania",
+      "target": "w-fj",
+      "group": "Oceania",
+      "note": "Capital: Suva."
+    },
+    {
+      "id": "map-pw",
+      "prompt": "Oceania",
+      "answer": "Palau",
+      "map": "oceania",
+      "target": "w-pw",
+      "group": "Oceania",
+      "note": "Capital: Ngerulmud."
+    },
+    {
+      "id": "map-fm",
+      "prompt": "Oceania",
+      "answer": "Micronesia",
+      "map": "oceania",
+      "target": "w-fm",
+      "group": "Oceania",
+      "note": "Capital: Palikir."
+    },
+    {
+      "id": "map-mh",
+      "prompt": "Oceania",
+      "answer": "Marshall Islands",
+      "map": "oceania",
+      "target": "w-mh",
+      "group": "Oceania",
+      "note": "Capital: Majuro."
+    },
+    {
+      "id": "map-nr",
+      "prompt": "Oceania",
+      "answer": "Nauru",
+      "map": "oceania",
+      "target": "w-nr",
+      "group": "Oceania",
+      "note": "Capital: Yaren (de facto)."
+    },
+    {
+      "id": "map-ki",
+      "prompt": "Oceania",
+      "answer": "Kiribati",
+      "map": "oceania",
+      "target": "w-ki",
+      "group": "Oceania",
+      "note": "Capital: South Tarawa."
+    },
+    {
+      "id": "map-tv",
+      "prompt": "Oceania",
+      "answer": "Tuvalu",
+      "map": "oceania",
+      "target": "w-tv",
+      "group": "Oceania",
+      "note": "Capital: Funafuti."
+    },
+    {
+      "id": "map-ws",
+      "prompt": "Oceania",
+      "answer": "Samoa",
+      "map": "oceania",
+      "target": "w-ws",
+      "group": "Oceania",
+      "note": "Capital: Apia."
+    },
+    {
+      "id": "map-to",
+      "prompt": "Oceania",
+      "answer": "Tonga",
+      "map": "oceania",
+      "target": "w-to",
+      "group": "Oceania",
+      "note": "Capital: Nukuʻalofa."
+    }
+  ]
+}

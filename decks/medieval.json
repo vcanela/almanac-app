@@ -1,0 +1,1053 @@
+{
+  "id": "medieval",
+  "title": "Medieval empires",
+  "subtitle": "Rulers, battles and wonders, 400 to 1600",
+  "promptLabel": "Who",
+  "reversible": true,
+  "reverseLabel": "Famous for",
+  "about": "Rulers, battles, capitals, great buildings and famous troops of the medieval world, from Attila to Bayinnaung, across Europe, Asia, Africa and the Americas. Every fact was checked against English Wikipedia; legends are flagged as legends, and the Mali capital is marked as disputed.",
+  "cards": [
+    {
+      "id": "md-joan",
+      "prompt": "Peasant girl who led a French army to relieve the siege of Orléans in 1429",
+      "answer": "Joan of Arc",
+      "context": "France · 15th century",
+      "group": "Rulers and heroes",
+      "note": "Sold to the English and tried for heresy at Rouen, she was burned in 1431, aged about nineteen; she was canonised in 1920."
+    },
+    {
+      "id": "md-genghis",
+      "prompt": "Founder of the Mongol Empire, acclaimed as its ruler at an assembly in 1206",
+      "answer": "Genghis Khan",
+      "context": "Mongolia · c. 1200",
+      "group": "Rulers and heroes",
+      "note": "Born Temüjin, he was buried on or near the sacred peak Burkhan Khaldun, but the details of his burial were kept secret."
+    },
+    {
+      "id": "md-charlemagne",
+      "prompt": "King of the Franks crowned emperor in Rome by Pope Leo III in 800",
+      "answer": "Charlemagne",
+      "context": "Francia · c. 800",
+      "group": "Rulers and heroes",
+      "note": "The Abbasid caliph Harun al-Rashid sent him an elephant named Abul-Abbas, which arrived at Aachen in 802."
+    },
+    {
+      "id": "md-saladin",
+      "prompt": "Sultan of Egypt and Syria who retook Jerusalem from the crusaders in 1187",
+      "answer": "Saladin",
+      "context": "Egypt and Syria · 12th century",
+      "group": "Rulers and heroes",
+      "note": "He gave so much of his wealth away that at his death in 1193 nothing was left to pay for his funeral."
+    },
+    {
+      "id": "md-richard",
+      "prompt": "English king called 'the Lionheart', a leader of the Third Crusade",
+      "answer": "Richard I",
+      "context": "England · 12th century",
+      "group": "Rulers and heroes",
+      "note": "Captured on his way home from crusade, he was held for ransom by Emperor Henry VI; as king he spent perhaps six months in England."
+    },
+    {
+      "id": "md-wallace",
+      "prompt": "Scottish leader who, with Andrew Moray, won at Stirling Bridge in 1297",
+      "answer": "William Wallace",
+      "context": "Scotland · 13th century",
+      "group": "Rulers and heroes",
+      "note": "Captured near Glasgow in 1305 and handed to Edward I, he was hanged, drawn and quartered in London for treason."
+    },
+    {
+      "id": "md-attila",
+      "prompt": "Ruler of the Huns who invaded Gaul in 451 and Italy in 452",
+      "answer": "Attila",
+      "context": "Central Europe · 5th century",
+      "group": "Rulers and heroes",
+      "note": "According to Priscus, he died in 453 during the feast for his marriage to Ildico, after a sudden, severe bleed, perhaps a nosebleed."
+    },
+    {
+      "id": "md-kublai",
+      "prompt": "Grandson of Genghis Khan who founded the Yuan dynasty of China",
+      "answer": "Kublai Khan",
+      "context": "China · 13th century",
+      "group": "Rulers and heroes",
+      "note": "His summer capital, Shangdu, is the Xanadu of Western legend; his main capital, Khanbaliq, stood where Beijing is today."
+    },
+    {
+      "id": "md-vlad",
+      "prompt": "Prince of Wallachia nicknamed 'the Impaler' for his brutal punishments",
+      "answer": "Vlad III Dracula",
+      "context": "Wallachia · 15th century",
+      "group": "Rulers and heroes",
+      "note": "Dracula means 'son of Dracul', the name his father took on joining the Order of the Dragon; it probably inspired Bram Stoker."
+    },
+    {
+      "id": "md-justinian",
+      "prompt": "Byzantine emperor who rebuilt Hagia Sophia and codified Roman law",
+      "answer": "Justinian I",
+      "context": "Byzantium · 6th century",
+      "group": "Rulers and heroes",
+      "note": "During the Nika riots of 532 he considered fleeing the capital by sea; his wife Theodora apparently persuaded him to stay."
+    },
+    {
+      "id": "md-mehmed",
+      "prompt": "Ottoman sultan who conquered Constantinople at the age of 21",
+      "answer": "Mehmed II",
+      "context": "Ottoman Empire · 15th century",
+      "group": "Rulers and heroes",
+      "note": "With a chain barring the Golden Horn, he had his lighter warships dragged overland on a wooden track into the harbour."
+    },
+    {
+      "id": "md-mansamusa",
+      "prompt": "Mali emperor whose lavish gold gifts in Cairo, on his 1324 pilgrimage, reportedly lowered gold's value",
+      "answer": "Mansa Musa",
+      "context": "West Africa · 14th century",
+      "group": "Rulers and heroes",
+      "note": "He brought the Andalusian poet Abu Ishaq al-Sahili to Mali and helped make Timbuktu a centre of Islamic learning."
+    },
+    {
+      "id": "md-barbarossa",
+      "prompt": "Holy Roman Emperor who drowned crossing a river on the Third Crusade in 1190",
+      "answer": "Frederick Barbarossa",
+      "context": "Holy Roman Empire · 12th century",
+      "group": "Rulers and heroes",
+      "note": "Legend says he is not dead but asleep with his knights in a cave in the Kyffhäuser mountains, waiting to return."
+    },
+    {
+      "id": "md-elcid",
+      "prompt": "Castilian knight who captured Valencia in 1094 and ruled it until his death",
+      "answer": "El Cid",
+      "context": "Spain · 11th century",
+      "group": "Rulers and heroes",
+      "note": "Legend says his widow Jimena had his armoured corpse tied onto his horse Babieca to rally Valencia's defenders."
+    },
+    {
+      "id": "md-moctezuma",
+      "prompt": "Aztec emperor when Hernán Cortés arrived in 1519",
+      "answer": "Moctezuma II",
+      "context": "Mexico · 16th century",
+      "group": "Rulers and heroes",
+      "note": "His name means roughly 'he frowns like a lord'; he died in 1520 while a captive of the Spaniards."
+    },
+    {
+      "id": "md-timur",
+      "prompt": "Turco-Mongol conqueror who captured the Ottoman sultan Bayezid at Ankara in 1402",
+      "answer": "Timur (Tamerlane)",
+      "context": "Central Asia · 14th century",
+      "group": "Rulers and heroes",
+      "note": "Tamerlane comes from Persian Timur-i Lang, 'Timur the Lame'; Soviet scientists who exhumed him in 1941 confirmed his crippled right leg."
+    },
+    {
+      "id": "md-alaric",
+      "prompt": "Gothic king whose army sacked Rome in 410",
+      "answer": "Alaric I",
+      "context": "Italy · 5th century",
+      "group": "Rulers and heroes",
+      "note": "Legend says he was buried with treasure beneath the Busento riverbed, and the captives who dug the grave were killed."
+    },
+    {
+      "id": "md-babur",
+      "prompt": "Founder of the Mughal Empire in India",
+      "answer": "Babur",
+      "context": "Central Asia and India · 16th century",
+      "group": "Rulers and heroes",
+      "note": "A descendant of both Timur and Genghis Khan, he wrote a vivid memoir, the Baburnama, in Chagatai Turkic."
+    },
+    {
+      "id": "md-yisunsin",
+      "prompt": "Korean admiral famed for his turtle ships against the Japanese invasions",
+      "answer": "Yi Sun-sin",
+      "context": "Korea · 16th century",
+      "group": "Rulers and heroes",
+      "note": "Once arrested, taken to Seoul in chains and tortured by his own government, he died from a gunshot at Noryang in 1598."
+    },
+    {
+      "id": "md-pachacuti",
+      "prompt": "Ninth Sapa Inca, who turned the small Kingdom of Cusco into an empire",
+      "answer": "Pachacuti",
+      "context": "Andes · 15th century",
+      "group": "Rulers and heroes",
+      "note": "Most archaeologists believe Machu Picchu was built as his royal estate; pachakutiy means 'the turn of the world' in Quechua."
+    },
+    {
+      "id": "md-belisarius",
+      "prompt": "Justinian's general who conquered the Vandal kingdom of North Africa",
+      "answer": "Belisarius",
+      "context": "Byzantium · 6th century",
+      "group": "Rulers and heroes",
+      "note": "A later legend says Justinian blinded him and left him a beggar; in fact he was restored to favour before dying in 565."
+    },
+    {
+      "id": "md-yoritomo",
+      "prompt": "Victor of the Genpei War who founded Japan's first shogunate",
+      "answer": "Minamoto no Yoritomo",
+      "context": "Japan · 12th century",
+      "group": "Rulers and heroes",
+      "note": "He ruled from Kamakura, far from the imperial court at Kyoto; after his death his widow Hōjō Masako acted as regent."
+    },
+    {
+      "id": "md-theodoric",
+      "prompt": "Ostrogothic king who ruled Italy from Ravenna between 493 and 526",
+      "answer": "Theodoric the Great",
+      "context": "Italy · c. 500",
+      "group": "Rulers and heroes",
+      "note": "Raised as a hostage in Constantinople, he killed his rival Odoacer with his own sword at a banquet celebrating their treaty."
+    },
+    {
+      "id": "md-sundiata",
+      "prompt": "Founder of the Mali Empire after defeating the Sosso king at Kirina",
+      "answer": "Sundiata Keita",
+      "context": "West Africa · 13th century",
+      "group": "Rulers and heroes",
+      "note": "In the epic told by griots, he could not walk as a child until one day he miraculously rose and walked."
+    },
+    {
+      "id": "md-tariq",
+      "prompt": "Umayyad commander who led the Muslim invasion of Visigothic Iberia in 711",
+      "answer": "Tariq ibn Ziyad",
+      "context": "Iberia · 8th century",
+      "group": "Rulers and heroes",
+      "note": "The Rock of Gibraltar is named after him: Gibraltar comes from the Arabic Jabal Tariq, 'mountain of Tariq'."
+    },
+    {
+      "id": "md-guiscard",
+      "prompt": "Norman adventurer whose capture of Bari in 1071 ended Byzantine rule in Italy",
+      "answer": "Robert Guiscard",
+      "context": "Southern Italy · 11th century",
+      "group": "Rulers and heroes",
+      "note": "His nickname Guiscard is variously rendered 'the Resourceful', 'the Cunning', 'the Fox' or 'the Weasel'."
+    },
+    {
+      "id": "md-jadwiga",
+      "prompt": "Crowned 'King' of Poland in 1384 to stress her sovereign status",
+      "answer": "Jadwiga",
+      "context": "Poland · 14th century",
+      "group": "Rulers and heroes",
+      "note": "Her marriage to Lithuania's pagan ruler Jogaila, who converted to Catholicism, linked the two realms; she was canonised in 1997."
+    },
+    {
+      "id": "md-zizka",
+      "prompt": "Hussite general who stayed undefeated in battle, even after going blind",
+      "answer": "Jan Žižka",
+      "context": "Bohemia · 15th century",
+      "group": "Rulers and heroes",
+      "note": "According to the chronicler Piccolomini, his dying wish was for his skin to be made into drums so he could still lead his troops."
+    },
+    {
+      "id": "md-vytautas",
+      "prompt": "Grand Duke of Lithuania who led its forces beside Jogaila at Grunwald in 1410",
+      "answer": "Vytautas the Great",
+      "context": "Lithuania · 15th century",
+      "group": "Rulers and heroes",
+      "note": "Poles stopped the envoys carrying documents for his coronation as King of Lithuania; he died in 1430 at Trakai, uncrowned."
+    },
+    {
+      "id": "md-prithviraj",
+      "prompt": "Rajput king who beat Muhammad of Ghor at Tarain in 1191, then lost there in 1192",
+      "answer": "Prithviraj Chauhan",
+      "context": "North India · 12th century",
+      "group": "Rulers and heroes",
+      "note": "The later epic Prithviraj Raso tells how he eloped with Samyogita, daughter of his rival King Jayachandra of Kannauj."
+    },
+    {
+      "id": "md-leloi",
+      "prompt": "Rebel leader who drove out the Ming and became emperor of Đại Việt in 1428",
+      "answer": "Lê Lợi",
+      "context": "Vietnam · 15th century",
+      "group": "Rulers and heroes",
+      "note": "Legend says a golden turtle took back his magic sword in a Hanoi lake, now Hoàn Kiếm, 'Lake of the Returned Sword'."
+    },
+    {
+      "id": "md-bayinnaung",
+      "prompt": "Burmese king who built the largest empire in Southeast Asian history",
+      "answer": "Bayinnaung",
+      "context": "Burma · 16th century",
+      "group": "Rulers and heroes",
+      "note": "Thais, his former enemies, still remember him as the 'Conqueror of the Ten Directions'; his empire included Ayutthaya and Lan Xang."
+    },
+    {
+      "id": "md-suryavarman",
+      "prompt": "Khmer king who won a nine-year war of succession and reigned until 1050",
+      "answer": "Suryavarman I",
+      "context": "Cambodia · 11th century",
+      "group": "Rulers and heroes",
+      "note": "Known as the 'King of the Just Laws', he had some 4,000 officials swear allegiance; the oath survives in inscriptions of 1011."
+    },
+    {
+      "id": "md-gudit",
+      "prompt": "Legendary 10th-century queen said to have laid waste to the Kingdom of Aksum",
+      "answer": "Gudit (Yodit)",
+      "context": "Ethiopia · 10th century",
+      "group": "Rulers and heroes",
+      "note": "Her story survives mainly in oral tradition; she is said to have destroyed Aksum's churches and tried to wipe out its royal dynasty."
+    },
+    {
+      "id": "md-koten",
+      "prompt": "Cuman khan who led his people into Hungary after defeats by the Mongols",
+      "answer": "Köten (Kotyan)",
+      "context": "Hungary · 13th century",
+      "group": "Rulers and heroes",
+      "note": "Accused of aiding the Mongols, he and his retinue were massacred at Pest in March 1241 by a mob led by some barons."
+    },
+    {
+      "id": "md-ivaylo",
+      "prompt": "Peasant rebel, possibly a swineherd, who became tsar of Bulgaria in 1278",
+      "answer": "Ivaylo",
+      "context": "Bulgaria · 13th century",
+      "group": "Rulers and heroes",
+      "note": "The Byzantines nicknamed him Lakhanas, 'cabbage'; he beat both Byzantines and Mongols before the Mongols killed him in exile in 1281."
+    },
+    {
+      "id": "md-hastings",
+      "label": "Year of",
+      "prompt": "Battle of Hastings",
+      "answer": "1066",
+      "context": "Norman conquest of England",
+      "group": "Battles",
+      "note": "Harold had beaten Harald Hardrada at Stamford Bridge weeks earlier; the Bayeux Tapestry's arrow-in-the-eye figure may not even be him.",
+      "noReverse": true
+    },
+    {
+      "id": "md-constantinople",
+      "label": "Year of",
+      "prompt": "Fall of Constantinople",
+      "answer": "1453",
+      "context": "Ottoman siege of the Byzantine capital",
+      "group": "Battles",
+      "note": "It is said the last emperor, Constantine XI, threw aside his purple regalia and died leading the final charge in the streets.",
+      "noReverse": true
+    },
+    {
+      "id": "md-agincourt",
+      "label": "Year of",
+      "prompt": "Battle of Agincourt",
+      "answer": "1415",
+      "context": "Hundred Years' War, under Henry V",
+      "group": "Battles",
+      "note": "Fought on Saint Crispin's Day; English and Welsh archers made up nearly 80 percent of Henry's army, and French knights struggled through mud.",
+      "noReverse": true
+    },
+    {
+      "id": "md-tours",
+      "label": "Year of",
+      "prompt": "Battle of Tours",
+      "answer": "732",
+      "context": "Umayyad invasion of Gaul",
+      "group": "Battles",
+      "note": "Chroniclers later nicknamed the Frankish victor Charles 'Martel', the Hammer; Arabic sources call it the Battle of the Highway of the Martyrs.",
+      "noReverse": true
+    },
+    {
+      "id": "md-crecy",
+      "label": "Year of",
+      "prompt": "Battle of Crécy",
+      "answer": "1346",
+      "context": "Hundred Years' War, under Edward III",
+      "group": "Battles",
+      "note": "The blind King John of Bohemia had his horse tied to his attendants' and charged into the fight; all were killed.",
+      "noReverse": true
+    },
+    {
+      "id": "md-bannockburn",
+      "label": "Year of",
+      "prompt": "Battle of Bannockburn",
+      "answer": "1314",
+      "context": "Robert the Bruce against Edward II",
+      "group": "Battles",
+      "note": "On the first day, the lightly armed Bruce met the charging knight Henry de Bohun in single combat and killed him.",
+      "noReverse": true
+    },
+    {
+      "id": "md-stirlingbridge",
+      "label": "Year of",
+      "prompt": "Battle of Stirling Bridge",
+      "answer": "1297",
+      "context": "First War of Scottish Independence",
+      "group": "Battles",
+      "note": "The Lanercost Chronicle claims Wallace had a strip of the dead English official Hugh de Cressingham's skin made into a sword belt.",
+      "noReverse": true
+    },
+    {
+      "id": "md-hattin",
+      "label": "Year of",
+      "prompt": "Battle of Hattin",
+      "answer": "1187",
+      "context": "Saladin against the crusader states",
+      "group": "Battles",
+      "note": "The crusaders' relic of the True Cross was captured; Saladin spared King Guy, assuring him that 'kings do not kill kings'.",
+      "noReverse": true
+    },
+    {
+      "id": "md-manzikert",
+      "label": "Year of",
+      "prompt": "Battle of Manzikert",
+      "answer": "1071",
+      "context": "Byzantines against the Seljuk Turks",
+      "group": "Battles",
+      "note": "Sultan Alp Arslan set his boot on the captured Emperor Romanos IV's neck, then treated him kindly and freed him a week later.",
+      "noReverse": true
+    },
+    {
+      "id": "md-tenochtitlan",
+      "label": "Year of",
+      "prompt": "Fall of Tenochtitlan",
+      "answer": "1521",
+      "context": "Spanish conquest of the Aztec Empire",
+      "group": "Battles",
+      "note": "Cortés had sloops built to blockade the island city, where a smallpox epidemic had already killed many of its leaders.",
+      "noReverse": true
+    },
+    {
+      "id": "md-grunwald",
+      "label": "Year of",
+      "prompt": "Battle of Grunwald (Tannenberg)",
+      "answer": "1410",
+      "context": "Poland and Lithuania against the Teutonic Order",
+      "group": "Battles",
+      "note": "Before the battle the Grand Master sent two swords as an insult; the 'Grunwald Swords' became a national symbol of Poland.",
+      "noReverse": true
+    },
+    {
+      "id": "md-kosovo",
+      "label": "Year of",
+      "prompt": "Battle of Kosovo",
+      "answer": "1389",
+      "context": "Serbs against the Ottoman Turks",
+      "group": "Battles",
+      "note": "Both Prince Lazar and Sultan Murad I died; it is the only time an Ottoman sultan was killed in battle.",
+      "noReverse": true
+    },
+    {
+      "id": "md-ainjalut",
+      "label": "Year of",
+      "prompt": "Battle of Ain Jalut",
+      "answer": "1260",
+      "context": "Mamluks against the Mongols",
+      "group": "Battles",
+      "note": "A feigned retreat by the Mamluk general Baybars helped trap the Mongols; it was the first major halt to their advance.",
+      "noReverse": true
+    },
+    {
+      "id": "md-catalaunian",
+      "label": "Year of",
+      "prompt": "Battle of the Catalaunian Plains",
+      "answer": "451",
+      "context": "Romans and Visigoths against Attila",
+      "group": "Battles",
+      "note": "Jordanes says the Visigothic king Theodoric I fell in the fighting, possibly thrown from his horse and trampled by his own men.",
+      "noReverse": true
+    },
+    {
+      "id": "md-peipus",
+      "label": "Year of",
+      "prompt": "Battle on the Ice (Lake Peipus)",
+      "answer": "1242",
+      "context": "Alexander Nevsky against crusading knights",
+      "group": "Battles",
+      "note": "The famous image of knights drowning through breaking ice comes from Eisenstein's 1938 film Alexander Nevsky, not the medieval sources.",
+      "noReverse": true
+    },
+    {
+      "id": "md-cajamarca",
+      "label": "Year of",
+      "prompt": "Battle of Cajamarca",
+      "answer": "1532",
+      "context": "Spanish conquest of the Inca Empire",
+      "group": "Battles",
+      "note": "Fewer than 200 Spaniards under Pizarro seized Atahualpa in the town plaza, though nearly 80,000 Inca troops were camped nearby.",
+      "noReverse": true
+    },
+    {
+      "id": "md-panipat",
+      "label": "Year of",
+      "prompt": "First Battle of Panipat",
+      "answer": "1526",
+      "context": "Babur's invasion of North India",
+      "group": "Battles",
+      "note": "The noise of Babur's cannon panicked the Delhi sultan's war elephants; Sultan Ibrahim Lodi died on the field with thousands of his men.",
+      "noReverse": true
+    },
+    {
+      "id": "md-navas",
+      "label": "Year of",
+      "prompt": "Battle of Las Navas de Tolosa",
+      "answer": "1212",
+      "context": "Reconquista of Spain",
+      "group": "Battles",
+      "note": "A local shepherd, Martín Alhaja, guided the Christian army through the Despeñaperros Pass to surprise the Almohad camp.",
+      "noReverse": true
+    },
+    {
+      "id": "md-legnica",
+      "label": "Year of",
+      "prompt": "Battle of Legnica",
+      "answer": "1241",
+      "context": "Mongol invasion of Poland",
+      "group": "Battles",
+      "note": "Duke Henry II the Pious was beheaded while fleeing, and the Mongols paraded his head on a spear before the town.",
+      "noReverse": true
+    },
+    {
+      "id": "md-mohi",
+      "label": "Year of",
+      "prompt": "Battle of Mohi",
+      "answer": "1241",
+      "context": "Mongol invasion of Hungary",
+      "group": "Battles",
+      "note": "King Béla IV escaped to the island fortress of Trogir on the Adriatic coast and stayed there until the Mongols withdrew.",
+      "noReverse": true
+    },
+    {
+      "id": "md-nagashino",
+      "label": "Year of",
+      "prompt": "Battle of Nagashino",
+      "answer": "1575",
+      "context": "Oda Nobunaga against the Takeda clan",
+      "group": "Battles",
+      "note": "A captured messenger, Torii Suneemon, was told to shout that no help was coming; he shouted that it was, and was crucified.",
+      "noReverse": true
+    },
+    {
+      "id": "md-myeongnyang",
+      "label": "Year of",
+      "prompt": "Battle of Myeongnyang",
+      "answer": "1597",
+      "context": "Japanese invasions of Korea",
+      "group": "Battles",
+      "note": "Yi Sun-sin had only 13 ships; Korean sources say between 120 and 133 Japanese ships took part in the fighting.",
+      "noReverse": true
+    },
+    {
+      "id": "md-lechfeld",
+      "label": "Year of",
+      "prompt": "Battle of Lechfeld",
+      "answer": "955",
+      "context": "Otto I against the Magyars",
+      "group": "Battles",
+      "note": "The captured Hungarian leaders were hanged at Augsburg; the victory ended major Magyar raids into Western Europe.",
+      "noReverse": true
+    },
+    {
+      "id": "md-bouvines",
+      "label": "Year of",
+      "prompt": "Battle of Bouvines",
+      "answer": "1214",
+      "context": "Philip II of France against Emperor Otto IV",
+      "group": "Battles",
+      "note": "The defeat so weakened England's King John, Otto's ally, that his barons forced him to agree to Magna Carta the next year.",
+      "noReverse": true
+    },
+    {
+      "id": "md-talas",
+      "label": "Year of",
+      "prompt": "Battle of Talas",
+      "answer": "751",
+      "context": "Abbasids against Tang China",
+      "group": "Battles",
+      "note": "An 11th-century writer claimed Chinese prisoners taken here taught papermaking at Samarkand; historians now doubt the story.",
+      "noReverse": true
+    },
+    {
+      "id": "md-bachdang",
+      "label": "Year of",
+      "prompt": "Battle of Bạch Đằng (against the Yuan fleet)",
+      "answer": "1288",
+      "context": "Mongol invasions of Vietnam",
+      "group": "Battles",
+      "note": "Prince Trần Hưng Đạo planted iron-tipped stakes in the riverbed; the falling tide left the Yuan fleet stranded on them.",
+      "noReverse": true
+    },
+    {
+      "id": "md-cap-byzantine",
+      "label": "Capital of",
+      "reverseLabel": "Capital of which empire",
+      "prompt": "Byzantine Empire",
+      "answer": "Constantinople",
+      "context": "330 to 1453",
+      "group": "Capitals of empires",
+      "note": "Constantine rebuilt the old Greek city of Byzantium as 'New Rome', and it later took his own name.",
+      "noReverse": true
+    },
+    {
+      "id": "md-cap-mongol",
+      "label": "Capital of",
+      "reverseLabel": "Capital of which empire",
+      "prompt": "Mongol Empire",
+      "answer": "Karakorum",
+      "context": "1235 to 1260",
+      "group": "Capitals of empires",
+      "note": "An enslaved Parisian goldsmith, Guillaume Bouchier, built a silver tree there whose golden serpents poured out drinks on command."
+    },
+    {
+      "id": "md-cap-inca",
+      "label": "Capital of",
+      "reverseLabel": "Capital of which empire",
+      "prompt": "Inca Empire",
+      "answer": "Cusco",
+      "context": "15th and 16th centuries",
+      "group": "Capitals of empires",
+      "note": "The empire's Quechua name means 'land of four parts'; the corners of its four regions met at this city."
+    },
+    {
+      "id": "md-cap-aztec",
+      "label": "Capital of",
+      "reverseLabel": "Capital of which empire",
+      "prompt": "Aztec Empire",
+      "answer": "Tenochtitlan",
+      "context": "14th to 16th centuries",
+      "group": "Capitals of empires",
+      "note": "Built on an island in Lake Texcoco, it now lies beneath the historic centre of Mexico City."
+    },
+    {
+      "id": "md-cap-khmer",
+      "label": "Capital of",
+      "reverseLabel": "Capital of which empire",
+      "prompt": "Khmer Empire",
+      "answer": "Angkor",
+      "context": "9th to 15th centuries",
+      "group": "Capitals of empires",
+      "note": "Its name simply means 'capital city' in Khmer; after Ayutthaya sacked it in 1431, its people moved south."
+    },
+    {
+      "id": "md-cap-carolingian",
+      "label": "Capital of",
+      "reverseLabel": "Capital of which empire",
+      "prompt": "Carolingian Empire",
+      "answer": "Aachen",
+      "context": "Late 8th and 9th centuries",
+      "group": "Capitals of empires",
+      "note": "Its French name, Aix-la-Chapelle, honours the palatine chapel Charlemagne built there; Romans had earlier built spas at its warm springs."
+    },
+    {
+      "id": "md-cap-abbasid",
+      "label": "Capital of",
+      "reverseLabel": "Capital of which empire",
+      "prompt": "Abbasid Caliphate",
+      "answer": "Baghdad",
+      "context": "From 762",
+      "group": "Capitals of empires",
+      "note": "Caliph al-Mansur founded the city in 762; for part of the 9th century the caliphs ruled from Samarra instead."
+    },
+    {
+      "id": "md-cap-cordoba",
+      "label": "Capital of",
+      "reverseLabel": "Capital of which empire",
+      "prompt": "Umayyad Caliphate of al-Andalus",
+      "answer": "Córdoba",
+      "context": "929 to 1031",
+      "group": "Capitals of empires",
+      "note": "Under Caliph al-Hakam II its royal library reportedly held 400,000 to 500,000 volumes, when Saint Gall Abbey owned just over 100."
+    },
+    {
+      "id": "md-cap-visigoth",
+      "label": "Capital of",
+      "reverseLabel": "Capital of which empire",
+      "prompt": "Visigothic Kingdom of Hispania",
+      "answer": "Toledo",
+      "context": "6th and 7th centuries",
+      "group": "Capitals of empires",
+      "note": "Earlier, before losing most of Gaul to the Franks, the Visigoths had ruled from Toulouse."
+    },
+    {
+      "id": "md-cap-ostrogoth",
+      "label": "Capital of",
+      "reverseLabel": "Capital of which empire",
+      "prompt": "Ostrogothic Kingdom of Italy",
+      "answer": "Ravenna",
+      "context": "493 to 540",
+      "group": "Capitals of empires",
+      "note": "When Belisarius took the city in 540, the Ostrogoths moved their capital to Pavia and fought on under Totila.",
+      "noReverse": true
+    },
+    {
+      "id": "md-cap-mali",
+      "label": "Capital of",
+      "reverseLabel": "Capital of which empire",
+      "prompt": "Mali Empire",
+      "answer": "Niani (disputed)",
+      "context": "13th and 14th centuries",
+      "group": "Capitals of empires",
+      "note": "Historians dispute the site: proposals include Niani in Guinea, a town on the Niger, a moving court, or no fixed capital."
+    },
+    {
+      "id": "md-cap-toungoo",
+      "label": "Capital of",
+      "reverseLabel": "Capital of which empire",
+      "prompt": "Bayinnaung's Toungoo Empire",
+      "answer": "Pegu (Bago)",
+      "context": "16th century",
+      "group": "Capitals of empires",
+      "note": "Tabinshwehti moved his capital here for its trade; it had been the capital of the conquered Hanthawaddy kingdom.",
+      "noReverse": true
+    },
+    {
+      "id": "md-cap-japan",
+      "label": "Capital of",
+      "reverseLabel": "Capital of which empire",
+      "prompt": "Imperial Japan",
+      "answer": "Kyoto",
+      "context": "794 to 1869",
+      "group": "Capitals of empires",
+      "note": "Founded by Emperor Kanmu as Heian-kyō, 'tranquil capital', it was laid out on a grid modelled on Tang China's Chang'an."
+    },
+    {
+      "id": "md-cap-joseon",
+      "label": "Capital of",
+      "reverseLabel": "Capital of which empire",
+      "prompt": "Joseon Korea",
+      "answer": "Hanseong (Seoul)",
+      "context": "From 1394",
+      "group": "Capitals of empires",
+      "note": "The new dynasty moved its capital here in 1394; Hanseong means 'fortress city on the Han River'."
+    },
+    {
+      "id": "md-cap-ottoman",
+      "label": "Capital of",
+      "reverseLabel": "Capital of which empire",
+      "prompt": "Ottoman Empire before 1453",
+      "answer": "Edirne (Adrianople)",
+      "context": "1360s to 1453",
+      "group": "Capitals of empires",
+      "note": "Sultan Murad moved the Ottoman capital here from Bursa; Mehmed the Conqueror was born in the city."
+    },
+    {
+      "id": "md-cap-tang",
+      "label": "Capital of",
+      "reverseLabel": "Capital of which empire",
+      "prompt": "Tang dynasty China",
+      "answer": "Chang'an (Xi'an)",
+      "context": "7th to 10th centuries",
+      "group": "Capitals of empires",
+      "note": "Records around 750 called it a 'million-man city'; modern estimates put its walled population at 800,000 to 1,000,000.",
+      "noReverse": true
+    },
+    {
+      "id": "md-hagiasophia",
+      "label": "Where is",
+      "prompt": "Hagia Sophia",
+      "answer": "Istanbul, Turkey",
+      "context": "Byzantine domed church, now a mosque",
+      "group": "Great buildings",
+      "note": "Designed by the geometers Isidore of Miletus and Anthemius of Tralles, it was completed in 537 as the world's largest interior space.",
+      "noReverse": true
+    },
+    {
+      "id": "md-notredame",
+      "label": "Where is",
+      "prompt": "Notre-Dame cathedral, damaged by fire in 2019",
+      "answer": "Paris, France",
+      "context": "Gothic cathedral",
+      "group": "Great buildings",
+      "note": "One of the first buildings to use flying buttresses; after costly repairs to its roof and spire, it reopened in December 2024.",
+      "noReverse": true
+    },
+    {
+      "id": "md-angkorwat",
+      "label": "Where is",
+      "prompt": "Angkor Wat",
+      "answer": "Siem Reap, Cambodia",
+      "context": "Khmer temple complex",
+      "group": "Great buildings",
+      "note": "Built for Suryavarman II as a Hindu temple to Vishnu, it gradually became Buddhist; it is the world's largest religious complex.",
+      "noReverse": true
+    },
+    {
+      "id": "md-forbiddencity",
+      "label": "Where is",
+      "prompt": "The Forbidden City",
+      "answer": "Beijing, China",
+      "context": "Imperial palace complex",
+      "group": "Great buildings",
+      "note": "Built from 1406 to 1420 under the Ming, it was home to 24 Ming and Qing emperors until 1924.",
+      "noReverse": true
+    },
+    {
+      "id": "md-machupicchu",
+      "label": "Where is",
+      "prompt": "Machu Picchu",
+      "answer": "Peru, near Cusco",
+      "context": "Inca mountain citadel",
+      "group": "Great buildings",
+      "note": "Its original Inca name may have been Huayna Picchu; the American historian Hiram Bingham brought it to international attention in 1911.",
+      "noReverse": true
+    },
+    {
+      "id": "md-alhambra",
+      "label": "Where is",
+      "prompt": "The Alhambra",
+      "answer": "Granada, Spain",
+      "context": "Nasrid palace and fortress",
+      "group": "Great buildings",
+      "note": "Its Arabic name means 'the red one'; it is one of the best-preserved palaces surviving from the medieval Islamic world.",
+      "noReverse": true
+    },
+    {
+      "id": "md-domeofrock",
+      "label": "Where is",
+      "prompt": "Dome of the Rock",
+      "answer": "Jerusalem",
+      "context": "Octagonal Islamic shrine",
+      "group": "Great buildings",
+      "note": "Built for the Umayyad caliph Abd al-Malik in 691 to 692 over the Foundation Stone, it is Islam's oldest surviving building.",
+      "noReverse": true
+    },
+    {
+      "id": "md-westminster",
+      "label": "Where is",
+      "prompt": "Westminster Abbey",
+      "answer": "London, England",
+      "context": "Royal abbey church",
+      "group": "Great buildings",
+      "note": "Edward the Confessor built its first large church in the 1040s; coronations of English monarchs have taken place there since 1066.",
+      "noReverse": true
+    },
+    {
+      "id": "md-mezquita",
+      "label": "Where is",
+      "prompt": "The Mezquita, a mosque turned cathedral",
+      "answer": "Córdoba, Spain",
+      "context": "Umayyad great mosque",
+      "group": "Great buildings",
+      "note": "Its signature rows of two-tiered arches reused Roman and Visigothic columns; Castile converted it into a cathedral in 1236.",
+      "noReverse": true
+    },
+    {
+      "id": "md-krak",
+      "label": "Where is",
+      "prompt": "Krak des Chevaliers",
+      "answer": "Near Homs, Syria",
+      "context": "Crusader castle",
+      "group": "Great buildings",
+      "note": "The Mamluks took it from the Knights Hospitaller in 1271 after a 36-day siege, supposedly using a forged surrender order.",
+      "noReverse": true
+    },
+    {
+      "id": "md-borobudur",
+      "label": "Where is",
+      "prompt": "Borobudur",
+      "answer": "Central Java, Indonesia",
+      "context": "Buddhist temple",
+      "group": "Great buildings",
+      "note": "This 9th-century temple carries 2,672 relief panels; the British administrator Thomas Stamford Raffles brought it to world attention in 1814.",
+      "noReverse": true
+    },
+    {
+      "id": "md-todaiji",
+      "label": "Where is",
+      "prompt": "Tōdai-ji",
+      "answer": "Nara, Japan",
+      "context": "Buddhist temple",
+      "group": "Great buildings",
+      "note": "Its Great Buddha Hall houses the world's largest bronze statue of the Buddha Vairocana, known in Japanese as the Daibutsu.",
+      "noReverse": true
+    },
+    {
+      "id": "md-shwedagon",
+      "label": "Where is",
+      "prompt": "Shwedagon Pagoda",
+      "answer": "Yangon, Myanmar",
+      "context": "Gilded Buddhist stupa",
+      "group": "Great buildings",
+      "note": "Legend says it enshrines eight hairs of the Buddha; a Portuguese adventurer seized its huge bell, which fell into the Bago River.",
+      "noReverse": true
+    },
+    {
+      "id": "md-qutbminar",
+      "label": "Where is",
+      "prompt": "Qutb Minar",
+      "answer": "Delhi, India",
+      "context": "Minaret and victory tower",
+      "group": "Great buildings",
+      "note": "Aibak began it after the defeat of Prithviraj Chauhan but finished only the first storey; later sultans completed it.",
+      "noReverse": true
+    },
+    {
+      "id": "md-djenne",
+      "label": "Where is",
+      "prompt": "Great Mosque of Djenné",
+      "answer": "Mali",
+      "context": "Mud-brick mosque",
+      "group": "Great buildings",
+      "note": "The townspeople repair it at an annual festival; the first mosque here dates from about the 13th century, the present one from 1907.",
+      "noReverse": true
+    },
+    {
+      "id": "md-tikal",
+      "label": "Where is",
+      "prompt": "Temple of the Great Jaguar (Temple I)",
+      "answer": "Tikal, Guatemala",
+      "context": "Maya pyramid temple",
+      "group": "Great buildings",
+      "note": "Named for a carved lintel showing a king on a jaguar throne; it is the funerary temple of the ruler Jasaw Chan K'awiil I.",
+      "noReverse": true
+    },
+    {
+      "id": "md-lalibela",
+      "label": "Where is",
+      "prompt": "Bete Giyorgis, the Church of Saint George",
+      "answer": "Lalibela, Ethiopia",
+      "context": "Rock-hewn church",
+      "group": "Great buildings",
+      "note": "One of eleven churches cut from solid rock; the town, once called Roha, was renamed after the Zagwe king Lalibela.",
+      "noReverse": true
+    },
+    {
+      "id": "md-samurai",
+      "label": "Name the troops",
+      "reverseLabel": "Who were",
+      "prompt": "Hereditary warrior class of Japan, serving as retainers to their lords",
+      "answer": "Samurai",
+      "context": "Japan · 12th century onward",
+      "group": "Famous troops",
+      "note": "Their name probably comes from saburau, 'one who serves'; swordsmanship, archery and horsemanship were their primary martial skills."
+    },
+    {
+      "id": "md-templars",
+      "label": "Name the troops",
+      "reverseLabel": "Who were",
+      "prompt": "Crusading military order, early bankers of Christendom, suppressed by the pope in 1312",
+      "answer": "Knights Templar",
+      "context": "Crusader states · 12th century",
+      "group": "Famous troops",
+      "note": "Their emblem of two knights sharing one horse stressed their poverty; Philip IV of France had many arrested in 1307."
+    },
+    {
+      "id": "md-longbowmen",
+      "label": "Name the troops",
+      "reverseLabel": "Who were",
+      "prompt": "Archers with bows about six feet long, decisive at Crécy and Agincourt",
+      "answer": "English longbowmen",
+      "context": "Hundred Years' War · 14th century",
+      "group": "Famous troops",
+      "note": "About 137 bows survive, most recovered from Henry VIII's warship Mary Rose, which sank at Portsmouth in 1545."
+    },
+    {
+      "id": "md-janissaries",
+      "label": "Name the troops",
+      "reverseLabel": "Who were",
+      "prompt": "Ottoman sultan's elite household infantry, recruited through the devshirme",
+      "answer": "Janissaries",
+      "context": "Ottoman Empire · 15th century",
+      "group": "Famous troops",
+      "note": "Their name means 'new soldier'; they were forbidden to marry until retirement and, unlike other Muslims, to wear beards."
+    },
+    {
+      "id": "md-horsearchers",
+      "label": "Name the troops",
+      "reverseLabel": "Who were",
+      "prompt": "Steppe riders who shot from the saddle as they conquered from China to Hungary",
+      "answer": "Mongol horse archers",
+      "context": "Central Asia · 13th century",
+      "group": "Famous troops",
+      "note": "Each rider kept three or four horses, changing mounts to travel fast for days; their composite bows were horn, wood and sinew."
+    },
+    {
+      "id": "md-teutonic",
+      "label": "Name the troops",
+      "reverseLabel": "Who were",
+      "prompt": "German crusading order that conquered and Christianised Prussia",
+      "answer": "Teutonic Knights",
+      "context": "Baltic · 13th century",
+      "group": "Famous troops",
+      "note": "Founded around 1190 at Acre to aid pilgrims and run hospitals, the order still exists today as a Catholic religious institution."
+    },
+    {
+      "id": "md-berserkers",
+      "label": "Name the troops",
+      "reverseLabel": "Who were",
+      "prompt": "Norse warriors said to fight in a trance-like fury",
+      "answer": "Berserkers",
+      "context": "Scandinavia · Viking Age",
+      "group": "Famous troops",
+      "note": "Their name most likely means 'bear-shirt'; Snorri Sturluson's reading, 'bare-shirt', meaning without armour, is now largely abandoned."
+    },
+    {
+      "id": "md-conquistadors",
+      "label": "Name the troops",
+      "reverseLabel": "Who were",
+      "prompt": "Iberian adventurers who overthrew the Aztec and Inca empires",
+      "answer": "Conquistadors",
+      "context": "Americas · 16th century",
+      "group": "Famous troops",
+      "note": "Hernán Cortés and Francisco Pizarro were second cousins, both from Extremadura, where many of the Spanish conquerors were born."
+    },
+    {
+      "id": "md-mamluks",
+      "label": "Name the troops",
+      "reverseLabel": "Who were",
+      "prompt": "Slave-soldiers, bought young and trained, who seized power in Egypt in 1250",
+      "answer": "Mamluks",
+      "context": "Egypt · 13th century",
+      "group": "Famous troops",
+      "note": "Their name means 'one who is owned'; they ruled Egypt as a sultanate from 1250 until the Ottoman conquest of 1517."
+    },
+    {
+      "id": "md-varangian",
+      "label": "Name the troops",
+      "reverseLabel": "Who were",
+      "prompt": "Byzantine emperors' axe-bearing bodyguard of Norsemen, later joined by Anglo-Saxons",
+      "answer": "Varangian Guard",
+      "context": "Byzantium · 11th century",
+      "group": "Famous troops",
+      "note": "Harald Hardrada served in it before becoming King of Norway; Anna Komnene called its men 'axe-bearing barbarians'."
+    },
+    {
+      "id": "md-cataphracts",
+      "label": "Name the troops",
+      "reverseLabel": "Who were",
+      "prompt": "Heavy lancers with horse and rider both encased in armour",
+      "answer": "Cataphracts",
+      "context": "Byzantium · 10th century",
+      "group": "Famous troops",
+      "note": "Emperor Nikephoros II Phokas revived them in a blunt-nosed wedge; the historian Leo the Deacon called them 'fully iron-clad'."
+    },
+    {
+      "id": "md-pikemen",
+      "label": "Name the troops",
+      "reverseLabel": "Who were",
+      "prompt": "Mercenary pike infantry from the Alpine cantons, hired across Europe for deep-column attacks",
+      "answer": "Swiss pikemen",
+      "context": "Alps · 15th century",
+      "group": "Famous troops",
+      "note": "Their German name Reisläufer means 'one who goes to war'; the Pontifical Swiss Guard at the Vatican is their last remnant."
+    },
+    {
+      "id": "md-jaguar",
+      "label": "Name the troops",
+      "reverseLabel": "Who were",
+      "prompt": "Aztec elite warriors, admitted after capturing four enemies in battle",
+      "answer": "Jaguar warriors",
+      "context": "Aztec Empire · 15th century",
+      "group": "Famous troops",
+      "note": "Their animal represented the god Tezcatlipoca; they fought with the macuahuitl, a wooden club edged with obsidian blades."
+    },
+    {
+      "id": "md-wagons",
+      "label": "Name the troops",
+      "reverseLabel": "Who were",
+      "prompt": "Bohemian rebels' carts, chained into mobile forts bristling with hand cannons",
+      "answer": "Hussite war wagons",
+      "context": "Bohemia · 15th century",
+      "group": "Famous troops",
+      "note": "Their gun called píšťala, 'pipe', possibly gave us 'pistol', and their houfnice gave English the word 'howitzer'."
+    },
+    {
+      "id": "md-genoese",
+      "label": "Name the troops",
+      "reverseLabel": "Who were",
+      "prompt": "Italian mercenary crossbowmen, each with a big pavise shield, who fought for France at Crécy",
+      "answer": "Genoese crossbowmen",
+      "context": "Italy · 14th century",
+      "group": "Famous troops",
+      "note": "Each worked with two assistants, one holding the pavise and one spanning a second bow, doubling the rate of fire."
+    },
+    {
+      "id": "md-housecarls",
+      "label": "Name the troops",
+      "reverseLabel": "Who were",
+      "prompt": "Disciplined royal bodyguards of Cnut the Great, later Harold's elite at Hastings",
+      "answer": "Housecarls",
+      "context": "England · 11th century",
+      "group": "Famous troops",
+      "note": "A 12th-century Danish historian says Cnut's household warriors lived under their own law, the Witherlogh or Lex Castrensis."
+    }
+  ]
+}

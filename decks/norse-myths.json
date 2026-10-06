@@ -1,0 +1,557 @@
+{
+  "id": "norse-myths",
+  "title": "Norse myths",
+  "subtitle": "Gods, giants and the end of the world",
+  "promptLabel": "Who is",
+  "reversible": true,
+  "reverseLabel": "Who is",
+  "about": "The gods, giants, creatures, worlds and stories of Norse myth, from the void of Ginnungagap to Ragnarök. Almost everything comes from two thirteenth-century Icelandic books, the Poetic Edda and Snorri Sturluson's Prose Edda, which sometimes disagree. Each card follows the version Wikipedia presents as standard, and notes flag the main variants. Names follow the spellings of Wikipedia's article titles.",
+  "cards": [
+    {
+      "id": "nm-odin",
+      "prompt": "Chief of the gods, one-eyed seeker of wisdom",
+      "answer": "Odin",
+      "context": "Æsir",
+      "group": "Gods and goddesses",
+      "note": "He gave an eye for wisdom, hidden in Mímir's well; Wednesday comes from Old English Wōdnesdæg, the day of Woden."
+    },
+    {
+      "id": "nm-thor",
+      "prompt": "Hammer-wielding god of thunder and storms",
+      "answer": "Thor",
+      "context": "Æsir",
+      "group": "Gods and goddesses",
+      "note": "Thursday comes from Old English for Thunor's day; Thor's hero shrew, a mammal with interlocking vertebrae, is named for his strength."
+    },
+    {
+      "id": "nm-loki",
+      "prompt": "Shape-shifting trickster among the gods",
+      "answer": "Loki",
+      "context": "Son of a jötunn",
+      "group": "Gods and goddesses",
+      "note": "In the poem Lokasenna he gatecrashes a feast in the hall of the sea giant Ægir and insults the gods one by one."
+    },
+    {
+      "id": "nm-frigg",
+      "prompt": "Queen of the gods, wife of Odin",
+      "answer": "Frigg",
+      "context": "Æsir",
+      "group": "Gods and goddesses",
+      "note": "Friday comes from Old English Frīgedæg, day of Frig; in Grímnismál she sits with Odin on Hliðskjálf, looking into all worlds."
+    },
+    {
+      "id": "nm-freyja",
+      "prompt": "Goddess of love who rides a chariot drawn by cats",
+      "answer": "Freyja",
+      "context": "Vanir",
+      "group": "Gods and goddesses",
+      "note": "She takes half of those who die in battle to her field Fólkvangr; Odin receives the other half in Valhalla."
+    },
+    {
+      "id": "nm-freyr",
+      "prompt": "God of fertility, fair weather and good harvests",
+      "answer": "Freyr",
+      "context": "Vanir",
+      "group": "Gods and goddesses",
+      "note": "He gave away his sword to win the giantess Gerðr, so at Ragnarök he faces Surtr without it and falls."
+    },
+    {
+      "id": "nm-baldr",
+      "prompt": "Shining, beloved son of Odin and Frigg",
+      "answer": "Baldr",
+      "context": "Æsir",
+      "group": "Gods and goddesses",
+      "note": "He was burned on his great ship Hringhorni; his wife Nanna died of grief on seeing his body carried aboard."
+    },
+    {
+      "id": "nm-tyr",
+      "prompt": "One-handed god of war",
+      "answer": "Týr",
+      "context": "Æsir",
+      "group": "Gods and goddesses",
+      "note": "Tuesday comes from Old English tīwesdæg, the day of Tīw; Snorri calls him the bravest and most valiant, with great power over victory."
+    },
+    {
+      "id": "nm-heimdall",
+      "prompt": "Watchman of the gods who guards the rainbow bridge",
+      "answer": "Heimdall",
+      "context": "Æsir",
+      "group": "Gods and goddesses",
+      "note": "Snorri says he needs less sleep than a bird and can hear grass growing on the earth and wool on sheep."
+    },
+    {
+      "id": "nm-njordr",
+      "prompt": "God of the sea, seafaring, fishing and wealth",
+      "answer": "Njörðr",
+      "context": "Vanir",
+      "group": "Gods and goddesses",
+      "note": "Sent to the Æsir as a hostage after their war with the Vanir; Njarðvík in Iceland is among the places named after him."
+    },
+    {
+      "id": "nm-idunn",
+      "prompt": "Goddess who keeps the apples of youth",
+      "answer": "Iðunn",
+      "context": "Æsir",
+      "group": "Gods and goddesses",
+      "note": "Wife of the poet god Bragi; when a giant carried her off, the gods began to grow grey and old."
+    },
+    {
+      "id": "nm-hel",
+      "prompt": "Ruler of the underworld realm of the dead",
+      "answer": "Hel",
+      "context": "Daughter of Loki",
+      "group": "Gods and goddesses",
+      "note": "Snorri describes her as half black and half flesh-coloured, so she is easy to recognise, and rather downcast and fierce-looking."
+    },
+    {
+      "id": "nm-bragi",
+      "prompt": "God of poetry",
+      "answer": "Bragi",
+      "context": "Æsir",
+      "group": "Gods and goddesses",
+      "note": "Many scholars think he is the ninth-century skald Bragi Boddason, counted the first skald, raised to divine status after death."
+    },
+    {
+      "id": "nm-hodr",
+      "prompt": "Blind god tricked into killing his brother",
+      "answer": "Höðr",
+      "context": "Æsir",
+      "group": "Gods and goddesses",
+      "note": "Odin fathered a son, Váli, to avenge the killing; Váli grew to adulthood within a single day and slew Höðr."
+    },
+    {
+      "id": "nm-sif",
+      "prompt": "Golden-haired wife of Thor",
+      "answer": "Sif",
+      "context": "Æsir",
+      "group": "Gods and goddesses",
+      "note": "Loki cut off her hair as a prank; to make amends he had dwarfs, the sons of Ivaldi, craft her new hair of gold."
+    },
+    {
+      "id": "nm-skadi",
+      "prompt": "Giantess of winter and the mountains",
+      "answer": "Skaði",
+      "context": "Jötunn",
+      "group": "Gods and goddesses",
+      "note": "Seeking vengeance for her father, she was allowed to choose a husband by his feet alone; hoping for Baldr, she got Njörðr."
+    },
+    {
+      "id": "nm-vidarr",
+      "prompt": "Silent god who avenges Odin at Ragnarök",
+      "answer": "Víðarr",
+      "context": "Æsir",
+      "group": "Gods and goddesses",
+      "note": "Snorri says he tears Fenrir's jaws apart, one foot in a thick shoe; in Völuspá he thrusts his sword into the wolf's heart."
+    },
+    {
+      "id": "nm-ullr",
+      "prompt": "Stepson of Thor, an unrivalled archer and skier",
+      "answer": "Ullr",
+      "context": "Æsir",
+      "group": "Gods and goddesses",
+      "note": "Norwegian place names such as Ullensaker preserve his name, and many skiers wear a medallion of him as a lucky talisman."
+    },
+    {
+      "id": "nm-forseti",
+      "prompt": "God of justice and reconciliation",
+      "answer": "Forseti",
+      "context": "Æsir",
+      "group": "Gods and goddesses",
+      "note": "Son of Baldr and Nanna; his hall Glitnir has pillars of gold and a silver roof, and forseti means president in Icelandic."
+    },
+    {
+      "id": "nm-mimir",
+      "prompt": "Wise being whose severed head counsels Odin",
+      "answer": "Mímir",
+      "context": "Æsir",
+      "group": "Gods and goddesses",
+      "note": "Sent to the Vanir as a hostage, he was beheaded; Odin embalmed the head with herbs and spoke charms so it could speak."
+    },
+    {
+      "id": "nm-fenrir",
+      "label": "Which creature",
+      "reverseLabel": "What is",
+      "prompt": "Monstrous wolf who will swallow Odin at Ragnarök",
+      "answer": "Fenrir",
+      "context": "Child of Loki",
+      "group": "Creatures and giants",
+      "note": "Raised among the gods, he grew so fierce that only Týr had the courage to approach him and give him food."
+    },
+    {
+      "id": "nm-jormungandr",
+      "label": "Which creature",
+      "reverseLabel": "What is",
+      "prompt": "Sea serpent encircling the world, biting its own tail",
+      "answer": "Jörmungandr",
+      "context": "Child of Loki",
+      "group": "Creatures and giants",
+      "note": "Odin threw it into the ocean around Midgard; at Ragnarök Thor kills it, then falls dead nine paces later, poisoned by its venom."
+    },
+    {
+      "id": "nm-sleipnir",
+      "label": "Which creature",
+      "reverseLabel": "What is",
+      "prompt": "Odin's eight-legged horse",
+      "answer": "Sleipnir",
+      "context": "Creature",
+      "group": "Creatures and giants",
+      "note": "Hermóðr rode him for nine nights to Hel to ransom Baldr; Icelandic folklore says his hoof formed the horseshoe-shaped canyon Ásbyrgi."
+    },
+    {
+      "id": "nm-ymir",
+      "prompt": "Primeval giant whose body became the world",
+      "answer": "Ymir",
+      "context": "Jötunn",
+      "group": "Creatures and giants",
+      "note": "Odin, Vili and Vé killed him; his flesh became the earth, his blood the sea, his bones the hills, his skull the sky."
+    },
+    {
+      "id": "nm-surtr",
+      "prompt": "Fire giant who will burn the whole world",
+      "answer": "Surtr",
+      "context": "Jötunn",
+      "group": "Creatures and giants",
+      "note": "He guards the frontier of Muspelheim with a flaming sword; Surtsey, a volcanic island that appeared off Iceland in 1963, bears his name."
+    },
+    {
+      "id": "nm-ratatoskr",
+      "label": "Which creature",
+      "reverseLabel": "What is",
+      "prompt": "Squirrel who runs up and down the World Tree",
+      "answer": "Ratatoskr",
+      "context": "Creature",
+      "group": "Creatures and giants",
+      "note": "He carries messages between the eagle perched at the top and the dragon beneath the roots; his name probably means drill-tooth."
+    },
+    {
+      "id": "nm-nidhogg",
+      "label": "Which creature",
+      "reverseLabel": "What is",
+      "prompt": "Dragon gnawing at a root of the World Tree",
+      "answer": "Nidhogg",
+      "context": "Creature",
+      "group": "Creatures and giants",
+      "note": "Völuspá places it at Náströnd, where it sucks the corpses of the dead, among them perjurers and murderers."
+    },
+    {
+      "id": "nm-huginn-muninn",
+      "label": "Which creatures",
+      "reverseLabel": "What are",
+      "prompt": "Pair of ravens who perch on Odin's shoulders",
+      "answer": "Huginn and Muninn",
+      "context": "Creatures",
+      "group": "Creatures and giants",
+      "note": "In Grímnismál they fly each day over the wide earth; Odin fears for Huginn, but he fears more for Muninn."
+    },
+    {
+      "id": "nm-valkyries",
+      "label": "Who were",
+      "reverseLabel": "Who were",
+      "prompt": "Women who choose the slain and lead them to Odin",
+      "answer": "The Valkyries",
+      "context": "Odin's host",
+      "group": "Creatures and giants",
+      "note": "Their name means chooser of the slain; Wagner's Ride of the Valkyries comes from his opera Die Walküre, first staged in 1870."
+    },
+    {
+      "id": "nm-norns",
+      "label": "Who were",
+      "reverseLabel": "Who were",
+      "prompt": "Three women by a well who shape human destiny",
+      "answer": "The Norns",
+      "context": "Deities",
+      "group": "Creatures and giants",
+      "note": "Often named Urðr, Verðandi and Skuld, they sprinkle the World Tree daily with water and clay so it will not rot."
+    },
+    {
+      "id": "nm-audumbla",
+      "label": "Which creature",
+      "reverseLabel": "What is",
+      "prompt": "Primeval cow whose milk fed the first giant",
+      "answer": "Auðumbla",
+      "context": "Creature",
+      "group": "Creatures and giants",
+      "note": "She licked salty ice for three days, freeing Búri, grandfather of Odin and his brothers Vili and Vé."
+    },
+    {
+      "id": "nm-thjazi",
+      "prompt": "Giant whose eyes were cast into the sky as stars",
+      "answer": "Þjazi",
+      "context": "Jötunn",
+      "group": "Creatures and giants",
+      "note": "Snorri says Odin set them there; in the poem Hárbarðsljóð, Thor claims that he threw them up himself."
+    },
+    {
+      "id": "nm-yggdrasil",
+      "label": "What is",
+      "reverseLabel": "What is",
+      "prompt": "Immense sacred ash tree at the centre of the cosmos",
+      "answer": "Yggdrasil",
+      "context": "Cosmos",
+      "group": "Worlds and places",
+      "note": "Its name is usually read as Odin's horse, a gallows image recalling his hanging from a tree in Hávamál."
+    },
+    {
+      "id": "nm-asgard",
+      "label": "What is",
+      "reverseLabel": "What is",
+      "prompt": "Fortified home of the Æsir gods",
+      "answer": "Asgard",
+      "context": "World",
+      "group": "Worlds and places",
+      "note": "Snorri's prologue to the Prose Edda says Asgard was the town of Troy before the Greeks overran it."
+    },
+    {
+      "id": "nm-midgard",
+      "label": "What is",
+      "reverseLabel": "What is",
+      "prompt": "World of humans, walled against the giants",
+      "answer": "Midgard",
+      "context": "World",
+      "group": "Worlds and places",
+      "note": "Old English middangeard, middle enclosure, occurs six times in Beowulf and inspired the name of Tolkien's Middle-earth."
+    },
+    {
+      "id": "nm-valhalla",
+      "label": "What is",
+      "reverseLabel": "What is",
+      "prompt": "Odin's hall of warriors slain in battle",
+      "answer": "Valhalla",
+      "context": "Hall",
+      "group": "Worlds and places",
+      "note": "Grímnismál gives it 540 doors, with 800 warriors marching out of each; spear shafts are its rafters."
+    },
+    {
+      "id": "nm-bifrost",
+      "label": "What is",
+      "reverseLabel": "What is",
+      "prompt": "Burning rainbow bridge from earth to the realm of the gods",
+      "answer": "Bifröst",
+      "context": "Bridge",
+      "group": "Worlds and places",
+      "note": "Snorri says its red band is fire that keeps the giants out; it will break when the sons of Muspell ride over it."
+    },
+    {
+      "id": "nm-niflheim",
+      "label": "What is",
+      "reverseLabel": "What is",
+      "prompt": "Primordial world of ice and mist",
+      "answer": "Niflheim",
+      "context": "World",
+      "group": "Worlds and places",
+      "note": "Its name means home of mist; the name survives only in Snorri's Gylfaginning and the late poem Hrafnagaldr Óðins."
+    },
+    {
+      "id": "nm-muspelheim",
+      "label": "What is",
+      "reverseLabel": "What is",
+      "prompt": "Primordial realm of fire in the south",
+      "answer": "Muspelheim",
+      "context": "World",
+      "group": "Worlds and places",
+      "note": "Snorri says sparks flying out of it became the sun, the moon and the stars when the gods set them in the sky."
+    },
+    {
+      "id": "nm-jotunheimr",
+      "label": "What is",
+      "reverseLabel": "What is",
+      "prompt": "Land of the giants",
+      "answer": "Jötunheimr",
+      "context": "World",
+      "group": "Worlds and places",
+      "note": "Norway's Jotunheimen mountains, home to the country's 29 highest peaks, took the name in 1862 from the poet Aasmund Olavsson Vinje."
+    },
+    {
+      "id": "nm-hel-realm",
+      "label": "What is",
+      "reverseLabel": "What is",
+      "prompt": "Underworld for those who die of sickness or old age",
+      "answer": "Hel, or Helheim",
+      "context": "Realm of the dead",
+      "group": "Worlds and places",
+      "note": "Hermóðr rode nine nights through deep, dark valleys to reach it, crossing the river Gjöll by a bridge roofed with gold."
+    },
+    {
+      "id": "nm-ginnungagap",
+      "label": "What is",
+      "reverseLabel": "What is",
+      "prompt": "Yawning void that existed before creation",
+      "answer": "Ginnungagap",
+      "context": "Creation",
+      "group": "Worlds and places",
+      "note": "A fifteenth-century Norse text, Gripla, used the name for a real sea lying between Vinland and Greenland."
+    },
+    {
+      "id": "nm-mjolnir",
+      "label": "Name the",
+      "reverseLabel": "What is",
+      "prompt": "Hammer of Thor",
+      "answer": "Mjölnir",
+      "context": "Treasure",
+      "group": "Treasures",
+      "note": "The dwarfs Brokkr and Eitri forged it; its handle came out short because Loki, as a fly, stung Brokkr's eyelid."
+    },
+    {
+      "id": "nm-gungnir",
+      "label": "Name the",
+      "reverseLabel": "What is",
+      "prompt": "Spear of Odin",
+      "answer": "Gungnir",
+      "context": "Treasure",
+      "group": "Treasures",
+      "note": "Made by the sons of Ivaldi; in Völuspá, Odin throws a spear over the Vanir host to begin the first war."
+    },
+    {
+      "id": "nm-draupnir",
+      "label": "Name the",
+      "reverseLabel": "What is",
+      "prompt": "Ring of Odin that drips eight more every ninth night",
+      "answer": "Draupnir",
+      "context": "Treasure",
+      "group": "Treasures",
+      "note": "Odin laid it on Baldr's funeral pyre and Hermóðr brought it back; Skírnir offered it when wooing Gerðr for Freyr."
+    },
+    {
+      "id": "nm-skidbladnir",
+      "label": "Name the",
+      "reverseLabel": "What is",
+      "prompt": "Ship of Freyr",
+      "answer": "Skíðblaðnir",
+      "context": "Treasure",
+      "group": "Treasures",
+      "note": "Made by the sons of Ivaldi, it always has a fair wind, yet it folds up like cloth to fit in a pocket."
+    },
+    {
+      "id": "nm-gleipnir",
+      "label": "Name the",
+      "reverseLabel": "What is",
+      "prompt": "Fetter that binds the wolf Fenrir",
+      "answer": "Gleipnir",
+      "context": "Treasure",
+      "group": "Treasures",
+      "note": "Dwarfs made it from six things, including a cat's footsteps, a woman's beard and mountain roots; it is thin as silk."
+    },
+    {
+      "id": "nm-brisingamen",
+      "label": "Name the",
+      "reverseLabel": "What is",
+      "prompt": "Necklace of Freyja",
+      "answer": "Brísingamen",
+      "context": "Treasure",
+      "group": "Treasures",
+      "note": "In the poem Húsdrápa, Heimdall and Loki fight over it in the shape of seals; Beowulf names a similar Brosinga mene."
+    },
+    {
+      "id": "nm-megingjord",
+      "label": "Name the",
+      "reverseLabel": "What is",
+      "prompt": "Power belt of Thor",
+      "answer": "Megingjörð",
+      "context": "Treasure",
+      "group": "Treasures",
+      "note": "Worn, it doubles Thor's already prodigious strength; his other great possessions are his hammer and his iron gloves, Járngreipr."
+    },
+    {
+      "id": "nm-gjallarhorn",
+      "label": "Name the",
+      "reverseLabel": "What is",
+      "prompt": "Horn of Heimdall",
+      "answer": "Gjallarhorn",
+      "context": "Treasure",
+      "group": "Treasures",
+      "note": "Its name means the loud sounding horn; Heimdall will blow it mightily as the enemies of the gods gather at Vígríðr."
+    },
+    {
+      "id": "nm-binding-of-fenrir",
+      "label": "Which story",
+      "reverseLabel": "What happens in",
+      "prompt": "Týr places his hand in a wolf's jaws as a pledge",
+      "answer": "The binding of Fenrir",
+      "context": "Myth",
+      "group": "Stories",
+      "note": "Bound on the island Lyngvi with a sword wedged in his jaws, the wolf drools a river named Ván."
+    },
+    {
+      "id": "nm-mistletoe",
+      "label": "What was",
+      "prompt": "The one thing that never swore to spare Baldr",
+      "answer": "Mistletoe",
+      "context": "Death of Baldr",
+      "group": "Stories",
+      "note": "Hel would release Baldr if all things wept for him; only the giantess Þökk, perhaps Loki in disguise, refused.",
+      "noReverse": true
+    },
+    {
+      "id": "nm-ragnarok",
+      "label": "What is",
+      "reverseLabel": "What is",
+      "prompt": "Foretold battle in which Odin, Thor and Loki die",
+      "answer": "Ragnarök",
+      "context": "Prophecy",
+      "group": "Stories",
+      "note": "It begins after Fimbulwinter, three winters with no summer; afterwards the world rises again, cleansed and fertile."
+    },
+    {
+      "id": "nm-hymir",
+      "prompt": "Giant who took Thor fishing for the World Serpent",
+      "answer": "Hymir",
+      "context": "Jötunn",
+      "group": "Stories",
+      "note": "Thor baited his hook with an ox head, but the frightened giant cut the line; the Altuna Runestone may show the scene."
+    },
+    {
+      "id": "nm-sigyn",
+      "prompt": "Wife who holds a bowl over the bound Loki",
+      "answer": "Sigyn",
+      "context": "Loki's punishment",
+      "group": "Stories",
+      "note": "When she leaves to empty the full bowl, venom drips on Loki and he shakes so violently that the earth trembles."
+    },
+    {
+      "id": "nm-kvasir",
+      "prompt": "Wise being whose blood became the mead of poetry",
+      "answer": "Kvasir",
+      "context": "Mead of poetry",
+      "group": "Stories",
+      "note": "Made from the gods' spittle at the truce ending their war; Odin later won the brewed mead from the giant Suttungr."
+    },
+    {
+      "id": "nm-svadilfari",
+      "label": "Which creature",
+      "reverseLabel": "What is",
+      "prompt": "Stallion that hauled stone for the giant building Asgard's wall",
+      "answer": "Svaðilfari",
+      "context": "Asgard's wall",
+      "group": "Stories",
+      "note": "The builder was to win Freyja, the sun and the moon; once Loki, as a mare, lured the stallion away, Thor killed the builder."
+    },
+    {
+      "id": "nm-thrymr",
+      "prompt": "Giant who stole Thor's hammer and demanded Freyja as bride",
+      "answer": "Þrymr",
+      "context": "Jötunn",
+      "group": "Stories",
+      "note": "Thor went to the wedding veiled as the bride, with Loki as bridesmaid, and struck Þrymr once the hammer lay in his lap."
+    },
+    {
+      "id": "nm-nine-nights",
+      "label": "How long",
+      "prompt": "How long Odin hung on the windy tree to win the runes",
+      "answer": "Nine nights",
+      "context": "Hávamál",
+      "group": "Stories",
+      "note": "Hávamál says he was wounded with a spear, given himself to himself, and given no bread or drink before taking the runes.",
+      "noReverse": true
+    },
+    {
+      "id": "nm-idunn-nut",
+      "label": "What was",
+      "prompt": "The shape Loki gave Iðunn to fly her home",
+      "answer": "A nut",
+      "context": "Iðunn's apples",
+      "group": "Stories",
+      "note": "Loki borrowed Freyja's falcon shape; Þjazi chased him as an eagle, and the gods lit a fire that burned his feathers.",
+      "noReverse": true
+    }
+  ]
+}
