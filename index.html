@@ -316,6 +316,20 @@
   .up-row b { display: block; font: 500 1.02rem var(--serif); }
   .up-row span { color: var(--muted); font-size: 0.9rem; }
 
+  /* Your month */
+  .month-head { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+  .month-head .pagetitle { margin: 0; text-align: center; flex: 1; }
+  .month-nav { background: none; border: 1px solid var(--rule); border-radius: 10px; width: 40px; height: 40px; font-size: 1.3rem; color: var(--ink); }
+  .month-nav:disabled { opacity: 0.3; cursor: default; }
+  .month-head + .lede { text-align: center; margin-top: 4px; }
+  .month-deck { border-top: 1px solid var(--rule); padding: 14px 0 10px; }
+  .month-deck-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+  .month-deck-head b { font: 500 1.08rem var(--serif); }
+  .month-deck-head span { color: var(--muted); font-size: 0.88rem; white-space: nowrap; }
+  .month-deck .label { margin: 10px 0 6px; }
+  .chips.left { justify-content: flex-start; }
+  .month-line { display: flex; justify-content: space-between; align-items: center; width: 100%; background: none; border: 0; border-top: 1px solid var(--rule); padding: 10px 0; text-align: left; }
+
   /* Which came first? */
   .duel { flex: 1; display: flex; flex-direction: column; gap: 12px; padding-top: 4vh; }
   .duel .label { text-align: center; }
@@ -547,7 +561,12 @@ function grade(id, g) {
   if (g === 'knew') b = s ? Math.min(s.b + 1, INTERVALS.length - 1) : FIRST_KNEW_BOX;
   else if (g === 'shaky') b = s ? Math.max(1, s.b - 1) : 1;
   else b = 1;
-  store.cards[id] = { b, d: t + INTERVALS[b], n: (s ? s.n : 0) + 1, l: t };
+  // f: the day first met; s: the day first settled (kept even if it later slips back).
+  const rec = { b, d: t + INTERVALS[b], n: (s ? s.n : 0) + 1, l: t, f: s ? cardDates(s).first : t };
+  const settledBefore = s ? cardDates(s).settled : null;
+  if (settledBefore != null) rec.s = settledBefore;
+  else if (b >= SETTLED_BOX) rec.s = t;
+  store.cards[id] = rec;
   saveStore();
 }
 
@@ -1442,6 +1461,94 @@ function renderDuelEnd() {
     </div>`;
 }
 
+/* ---------- Your month ---------- */
+// What you settled and met in a month, deck by deck, with your daily fives and
+// journeys. Only what was achieved: no comparisons, no count of days missed.
+
+// When a card was first met and first settled. Records from before these dates
+// were kept (October 2026) fall back to the last review: every card settled by
+// then was still in its first settled box, so its last review is its settling day.
+function cardDates(st) {
+  return { first: st.f ?? st.l, settled: st.s ?? (st.b >= SETTLED_BOX ? st.l : null) };
+}
+const monthOf = day => new Date(day * 86400000).toISOString().slice(0, 7); // day numbers are local days
+const monthName = key => new Date(key + '-15T12:00').toLocaleDateString('en-NZ', { month: 'long', year: 'numeric' });
+let journeyTitles = null;
+
+async function openMonth() {
+  if (!journeyTitles) {
+    try { journeyTitles = Object.fromEntries((await (await fetch('maps/journeys.json')).json()).map(r => [r.id, r.title])); }
+    catch { journeyTitles = {}; }
+  }
+  go('month', { key: monthOf(today()) });
+}
+
+function monthsWithActivity() {
+  const keys = new Set([monthOf(today())]);
+  for (const st of Object.values(store.cards)) keys.add(monthOf(cardDates(st).first));
+  for (const k of Object.keys(store.daily)) keys.add(k.slice(0, 7));
+  return [...keys].sort();
+}
+
+// What a card taught you, for its button: the capital, the composer, the country on the map.
+function learnedText(id) {
+  const { card, answer } = sides(id);
+  return card.map ? `${card.answer} on the map` : answer;
+}
+
+function renderMonth() {
+  const key = view.key;
+  const byDeck = new Map();
+  const bucket = deckId => byDeck.get(deckId) || byDeck.set(deckId, { met: [], settled: [] }).get(deckId);
+  for (const [id, st] of Object.entries(store.cards)) {
+    const info = cardIndex.get(id);
+    if (!info) continue; // a card from a deck since removed
+    const { first, settled } = cardDates(st);
+    if (monthOf(first) === key) bucket(info.deck.id).met.push(id);
+    if (settled != null && monthOf(settled) === key) bucket(info.deck.id).settled.push(id);
+  }
+  let settledAll = 0, metAll = 0;
+  for (const b of byDeck.values()) { settledAll += b.settled.length; metAll += b.met.length; }
+  const dailyDays = Object.keys(store.daily).filter(k => k.startsWith(key)).sort();
+  const journeys = Object.entries(store.journeys).filter(([, j]) => j.day.startsWith(key));
+
+  const deckRows = decks.filter(d => byDeck.has(d.id)).map(d => {
+    const { met, settled } = byDeck.get(d.id);
+    const hard = [...settled].sort((a, b) => store.cards[b].n - store.cards[a].n).slice(0, 3);
+    const parts = [];
+    if (settled.length) parts.push(`${settled.length} settled`);
+    if (met.length) parts.push(`${met.length} new`);
+    return `<div class="month-deck">
+      <div class="month-deck-head"><b>${esc(d.title)}</b><span>${parts.join(' · ')}</span></div>
+      ${hard.length ? `<p class="label">Hard-won</p><div class="chips left">${hard.map(id =>
+        `<button class="chip" data-action="peek" data-id="${esc(baseId(id))}">${esc(learnedText(id))}<small>${store.cards[id].n} reviews</small></button>`).join('')}</div>` : ''}
+    </div>`;
+  }).join('');
+
+  const months = monthsWithActivity();
+  const at = months.indexOf(key);
+  const prev = months[at - 1], next = months[at + 1];
+  const empty = !settledAll && !metAll && !dailyDays.length && !journeys.length;
+  return `<button class="back" data-action="home">‹ Almanac</button>
+    <div class="month-head">
+      <button class="month-nav" data-action="month-go" data-key="${prev || ''}" ${prev ? '' : 'disabled'} aria-label="Previous month">‹</button>
+      <h2 class="pagetitle">${esc(monthName(key))}</h2>
+      <button class="month-nav" data-action="month-go" data-key="${next || ''}" ${next ? '' : 'disabled'} aria-label="Next month">›</button>
+    </div>
+    <p class="lede">Your month in the almanac.</p>
+    ${empty ? '<p class="sky-hint">Nothing here yet. This page fills in as you go.</p>' : `
+    <div class="tally">
+      <div><b>${settledAll}</b><span>settled</span></div>
+      <div><b>${metAll}</b><span>new cards met</span></div>
+      <div><b>${dailyDays.length}</b><span>daily fives</span></div>
+    </div>
+    ${deckRows}
+    ${dailyDays.length ? `<p class="label group">The daily five</p>${dailyDays.map(k =>
+      `<button class="month-line" data-action="daily-day" data-key="${k}"><span>${esc(new Date(k + 'T12:00').toLocaleDateString('en-NZ', { weekday: 'short', day: 'numeric' }))}</span><span class="dots">${dots(store.daily[k])}</span></button>`).join('')}` : ''}
+    ${journeys.length ? `<p class="label group">Journeys</p>${journeys.map(([id, j]) =>
+      `<div class="month-line"><span>${esc((journeyTitles && journeyTitles[id]) || id)}</span><span class="dots">${dots(j.results)}</span></div>`).join('')}` : ''}`}`;
+}
+
 /* ---------- Views ---------- */
 function go(name, params = {}) {
   view = { name, ...params };
@@ -1453,7 +1560,7 @@ function render() {
   const views = { home: renderHome, round: renderRound, summary: renderSummary, browse: renderBrowse,
                   settings: renderSettings, peek: renderPeek, daily: renderDaily,
                   journeys: renderJourneys, journey: renderJourney, 'journey-end': renderJourneyEnd, sky: renderSky,
-                  duel: renderDuel, 'duel-end': renderDuelEnd };
+                  duel: renderDuel, 'duel-end': renderDuelEnd, month: renderMonth };
   $app.innerHTML = (views[view.name] || renderHome)();
   if (view.name === 'journey' || view.name === 'journey-end') decorateTrip(view.name === 'journey-end');
   const shown = view.name === 'round' ? round.queue[round.i].id : view.name === 'peek' ? view.id : null;
@@ -1564,6 +1671,7 @@ function renderHome() {
     <button class="linkrow" data-action="journeys"><span>Overland journeys</span><span aria-hidden="true">›</span></button>
     <button class="linkrow" data-action="sky"><span>Tonight’s sky</span><span aria-hidden="true">›</span></button>
     <button class="linkrow" data-action="duel"><span>Which came first?</span><span aria-hidden="true">›</span></button>
+    <button class="linkrow" data-action="month"><span>Your month</span><span aria-hidden="true">›</span></button>
     <section class="today">${todayHtml}</section>
     <p class="label">Decks</p>
     ${rows}
@@ -1795,6 +1903,9 @@ $app.addEventListener('click', ev => {
     case 'journeys': trip = null; openJourneys(); break;
     case 'sky': openSky(); break;
     case 'duel': startDuel(); break;
+    case 'month': openMonth(); break;
+    case 'month-go': if (el.dataset.key) go('month', { key: el.dataset.key }); break;
+    case 'daily-day': go('daily', { key: el.dataset.key }); break;
     case 'duel-pick': onDuelPick(+el.dataset.k); break;
     case 'duel-next': onDuelNext(); break;
     case 'sky-face': skyState.facing = +el.dataset.az; render(); break;

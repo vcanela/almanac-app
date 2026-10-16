@@ -89,8 +89,12 @@ Optional card fields: `label` and `reverseLabel` (override the deck's), `context
 - Events come from existing cards with a definite year (`datedEvents()`): discoveries (year at the end of `context`), medieval battles (`answer` is the year), music works and records (year at the end of `context`), space firsts (`context` is the year). Approximate dates (`c. 1021`, `1630s`, `date unknown`) are excluded. About 250 events.
 - After answering, each event links to its card.
 
+## Your month
+- Per month: cards settled, new cards met, daily fives played; deck by deck with up to three "hard-won" settled cards (most reviews), then the daily fives and journeys of that month. Arrows move between months with activity. Only achievements: no comparisons, no count of missed days.
+- Relies on two dates per card record: `f` (day first met) and `s` (day first settled, kept if the card later slips back). `cardDates()` falls back for records made before October 2026, when these were added: `f` and `s` become the last review `l` (exact for `s`, since every card settled by then was still in box 4).
+
 ## Storage
-- `localStorage` key `almanac.v1`: `{ v, cards: { id: { b, d, n, l } }, daily: { "YYYY-MM-DD": [grades] }, journeys: { routeId: { day, results } }, settings: { size, fresh, notes, off, revOff } }`. `b` box, `d` due day, `n` times graded, `l` last day. `off` lists decks excluded from rounds; `revOff` decks with reverse switched off.
+- `localStorage` key `almanac.v1`: `{ v, cards: { id: { b, d, n, l, f, s } }, daily: { "YYYY-MM-DD": [grades] }, journeys: { routeId: { day, results } }, settings: { size, fresh, notes, off, revOff } }`. `b` box, `d` due day, `n` times graded, `l` last day, `f` first met, `s` first settled (both days). `off` lists decks excluded from rounds; `revOff` decks with reverse switched off.
 - An iOS home screen app has storage separate from Safari, hence Settings has export and import.
 
 ## Local testing
