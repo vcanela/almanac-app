@@ -11,7 +11,7 @@ A personal recall trainer for geography and general knowledge, used by Victor on
 ## Structure
 No build step, no dependencies. A handful of static files rather than one, because offline use on iPhone needs a manifest, icons and a service worker.
 
-- `index.html`: the whole app (HTML, CSS, JS inline).
+- `index.html`: the app (HTML, CSS, JS inline), plus `sky/astro.js` for the astronomy.
 - `sw.js`: service worker. Network first for the app's own files (4 s timeout, then the stored copy), with `cache: 'no-cache'` to bypass GitHub Pages' 10-minute `max-age`; cache first for Google Fonts. Updates appear on the next launch. Bump `CACHE` only to force a clean cache.
 - iOS suspends home screen apps rather than closing them, so `index.html` reloads itself when brought back after more than an hour (never mid-round).
 - `manifest.webmanifest`, `icons/`: home screen install. Icons are drawn by `tools/make-icons.py` (Pillow).
@@ -76,6 +76,13 @@ Optional card fields: `label` and `reverseLabel` (override the deck's), `context
 - Surprise me: a random start, then a shortest route (shuffled neighbours) to a country 6 to 12 countries away.
 - The map window follows play (the last two countries and the current one), then shows the whole route at the end. A country more than three times the area of the rest of the window's countries (Russia, China) only pulls the window a little way towards itself. Done countries are tinted by grade and labelled, the label sized to fit or left off.
 - Island nations have no land neighbours, so they never appear in journeys.
+
+## Tonight's sky
+- A planisphere for Auckland (`SKY` in `index.html`: −36.8485, 174.7633): stereographic dome, zenith at the centre, the facing direction at the bottom (default south), a time slider from sunset to sunrise in five-minute steps, "Up tonight" in plain words, tap for details and a link to the matching card. It never touches the schedule.
+- `sky/astro.js` (global `Astro`): Sun and planets from Standish's JPL Keplerian elements (Table 1, 1800 to 2050); Moon from Schlyter's method with the main perturbations and topocentric parallax; precession J2000 to date (Meeus 21.2); GMST (Meeus 12.4); `crossings()` for rise and set. Checked against JPL Horizons from Auckland in 2026 and 2031: all bodies within 5 arcminutes (Saturn worst; most within 1); Sun and Moon rise and set within a minute; Moon illumination within 0.4%.
+- `sky/stars.json`: Yale Bright Star Catalogue (CDS V/50), stars to V 4.5 as `[hr, ra, dec, vmag, bv]` J2000, IAU names, four verified Māori names, 27 constellation figures (simplified from d3-celestial, BSD 3-Clause, credited in the file), 11 deep-sky objects, HR to card id links. Loaded the first time the page opens.
+- Rise and set: Sun and Moon at −0.833° (upper limb, refraction), planets and stars at −0.5667°. Seasonal notes: Matariki (Pleiades) and Puanga (Rigel) when up an hour before sunrise, May to July.
+- Chart units: the horizon circle has radius `K` = 500, so text sizes are ordinary numbers (tiny SVG font sizes can be clamped by browsers).
 
 ## Storage
 - `localStorage` key `almanac.v1`: `{ v, cards: { id: { b, d, n, l } }, daily: { "YYYY-MM-DD": [grades] }, journeys: { routeId: { day, results } }, settings: { size, fresh, notes, off, revOff } }`. `b` box, `d` due day, `n` times graded, `l` last day. `off` lists decks excluded from rounds; `revOff` decks with reverse switched off.
