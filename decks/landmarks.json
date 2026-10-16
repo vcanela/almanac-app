@@ -5,6 +5,7 @@
   "promptLabel": "In which country",
   "reversible": false,
   "about": "About a hundred famous landmarks, built and natural, from the Colosseum to Aoraki / Mount Cook. Name the country each one stands in; a few famous border sites need both countries.",
+  "chip": "prompt",
   "cards": [
     {
       "id": "lm-eiffel-tower",

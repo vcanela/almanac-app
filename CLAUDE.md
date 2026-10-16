@@ -57,8 +57,19 @@ Optional card fields: `label` and `reverseLabel` (override the deck's), `context
 - The two directions of one item never share a round.
 - Per-deck switch on the browse page, stored in `settings.revOff`. Home shows a "Reverse: N of M settled" line once any reversed card has been seen.
 
+## The daily five
+- Five cards a day, one from each of five decks, chosen by a PRNG seeded from the local date (`almanac:YYYY-MM-DD`; FNV-1a then mulberry32) over decks sorted by id. It ignores which decks are switched off, so everyone gets the same five.
+- It never touches the schedule. Results go in `store.daily[YYYY-MM-DD]` as grades (about four months kept). Home shows Play, or the dots (● knew, ◐ shaky, ○ missed) with Review and Share. Share uses the share sheet, else the clipboard.
+
+## Rabbit holes
+- `buildLinks()` runs at load; no link data is stored. A card links to another when they share a name (France the capital card, France on the map, the Eiffel Tower) or when its note mentions another card's answer or prompt.
+- Names come from prompt and answer, split at " · ", without parentheses, at least 4 characters, no digits. A mention must stand alone: not inside a longer capitalised name ("Nelson Mandela" is not Nelson), though a sentence-initial word next to it is ignored.
+- Up to three links per card, same-name links first, spread across decks, never two buttons with the same text. Namesakes are kept on purpose (Georgia and Georgia, Saturn's moon Rhea); the button names the other side of the card, so Paris of Troy reads "Trojan prince who carried off Helen".
+- Deck field `"chip": "prompt"` labels links to that deck by the card's prompt (landmarks: the landmark, not its country).
+- Tapping a link opens a read-only `peek` view whose `back` is the previous view, so a round resumes exactly where it was. Peeking never touches the schedule.
+
 ## Storage
-- `localStorage` key `almanac.v1`: `{ v, cards: { id: { b, d, n, l } }, settings: { size, fresh, notes, off, revOff } }`. `b` box, `d` due day, `n` times graded, `l` last day. `off` lists decks excluded from rounds; `revOff` decks with reverse switched off.
+- `localStorage` key `almanac.v1`: `{ v, cards: { id: { b, d, n, l } }, daily: { "YYYY-MM-DD": [grades] }, settings: { size, fresh, notes, off, revOff } }`. `b` box, `d` due day, `n` times graded, `l` last day. `off` lists decks excluded from rounds; `revOff` decks with reverse switched off.
 - An iOS home screen app has storage separate from Safari, hence Settings has export and import.
 
 ## Local testing

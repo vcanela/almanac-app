@@ -214,6 +214,57 @@
   .face .answer.longer { font-size: 1.3rem; line-height: 1.4; }
   .face .context { color: var(--muted); font-size: 0.9rem; margin-top: 8px; }
 
+  /* The daily five */
+  .daily {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    border: 1px solid var(--rule);
+    border-radius: 14px;
+    padding: 14px 16px 14px 20px;
+    margin-bottom: 12px;
+  }
+  .daily h2 { font: 500 1.1rem var(--serif); margin: 0; }
+  .daily p { margin: 2px 0 0; color: var(--muted); font-size: 0.88rem; }
+  .daily .btn { width: auto; padding: 10px 16px; flex: none; }
+  .daily .pair { display: flex; gap: 8px; flex: none; }
+  .dots { letter-spacing: 0.12em; font-size: 1.15rem; }
+  .dots.big { font-size: 2rem; margin: 0 0 18px; }
+  .dots .knew, .result.knew { color: var(--knew); }
+  .dots .shaky, .result.shaky { color: var(--shaky); }
+  .dots .missed, .result.missed { color: var(--accent); }
+  .daily-entry { width: 100%; text-align: left; background: none; border: 0; border-top: 1px solid var(--rule); }
+  .result { grid-column: 2; grid-row: 1 / 3; align-self: center; font-size: 1.2rem; }
+  .toast {
+    position: fixed;
+    left: 50%;
+    bottom: calc(env(safe-area-inset-bottom) + 28px);
+    transform: translateX(-50%);
+    background: var(--ink);
+    color: var(--paper);
+    padding: 10px 18px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+  }
+
+  /* Rabbit holes */
+  .related { margin-top: 24px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
+  .chip {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid var(--rule);
+    background: var(--card);
+    border-radius: 12px;
+    padding: 7px 14px 6px;
+    font: 500 0.92rem/1.25 var(--serif);
+  }
+  .chip small { font: 400 0.72rem/1.3 var(--sans); color: var(--muted); }
+  .face.peek { padding-top: 2vh; }
+  .deckname { font-size: 0.85rem; color: var(--muted); margin: 0 0 14px; }
+
   /* Map cards */
   .face.has-map { padding-top: 3vh; }
   .map { margin-top: 10px; }
@@ -319,7 +370,7 @@ const $app = document.getElementById('app');
 
 /* ---------- Storage ---------- */
 function defaultStore() {
-  return { v: 1, cards: {}, settings: { size: 15, fresh: 5, notes: true, off: {}, revOff: {} } };
+  return { v: 1, cards: {}, daily: {}, settings: { size: 15, fresh: 5, notes: true, off: {}, revOff: {} } };
 }
 function normalise(s) {
   const d = defaultStore();
@@ -328,6 +379,7 @@ function normalise(s) {
   return {
     v: 1,
     cards: s.cards && typeof s.cards === 'object' ? s.cards : {},
+    daily: s.daily && typeof s.daily === 'object' ? s.daily : {},
     settings: { ...d.settings, ...set, off: { ...set.off }, revOff: { ...set.revOff } },
   };
 }
@@ -483,6 +535,183 @@ function nextDueText() {
   return `The next card comes back in ${days} days.`;
 }
 
+/* ---------- Rabbit holes ---------- */
+// Links between cards, found when the app loads: the same thing in another deck
+// (France the capital card, France on the map, the Eiffel Tower), or a note
+// that names another card (the Ares note mentions Phobos and Deimos).
+const links = new Map(); // forward card id -> up to MAX_LINKS of { id, term, same }
+const MAX_LINKS = 3;
+
+// The names a card is known by: its answer and prompt, split at " · ",
+// without parentheses, skipping numbers and very short words (Io, Ra, Set).
+function termsOf(card) {
+  const out = [];
+  for (const side of card.map ? [card.answer] : [card.answer, card.prompt]) {
+    for (const part of String(side).split(' · ')) {
+      const t = part.replace(/\s*\([^)]*\)/g, '').trim();
+      if (t.length >= 4 && !/\d/.test(t)) out.push(t);
+    }
+  }
+  return out;
+}
+
+function buildLinks() {
+  const order = new Map(decks.map((d, i) => [d.id, i]));
+  const same = new Map();   // plain term -> card ids
+  const named = new Map();  // exact proper name -> card ids
+  const add = (m, k, id) => { if (!m.has(k)) m.set(k, []); m.get(k).push(id); };
+  for (const d of decks) {
+    for (const c of d.cards) {
+      for (const t of termsOf(c)) {
+        add(same, plain(t), c.id);
+        if (/^\p{Lu}/u.test(t) && t.split(' ').length <= 4) add(named, t, c.id);
+      }
+    }
+  }
+  for (const d of decks) {
+    for (const c of d.cards) {
+      const found = new Map(); // id -> { term, same: true for the same thing, false for a mention }
+      for (const t of termsOf(c)) {
+        for (const id of same.get(plain(t)) || []) if (!found.has(id)) found.set(id, { term: t, same: true });
+      }
+      // Mentions: a name standing on its own in the note. A name inside a longer
+      // one does not count ("Nelson Mandela" is not Nelson), though a capitalised
+      // word that merely starts a sentence ("When Belisarius...") is ignored.
+      const note = c.note || '';
+      const tokens = [...note.matchAll(/[\p{L}\p{M}'’-]+/gu)].map(m => {
+        const before = note.slice(0, m.index).trimEnd();
+        return { w: m[0].replace(/['’]s$/, ''), cap: /^\p{Lu}/u.test(m[0]), start: !before || /[.!?;:]$/.test(before) };
+      });
+      for (let i = 0; i < tokens.length; i++) {
+        for (let n = 1; n <= 4 && i + n <= tokens.length; n++) {
+          const ids = named.get(tokens.slice(i, i + n).map(t => t.w).join(' '));
+          if (!ids) continue;
+          const prev = tokens[i - 1];
+          const next = tokens[i + n];
+          if ((prev && prev.cap && !prev.start) || (next && next.cap)) continue;
+          for (const id of ids) if (!found.has(id)) found.set(id, { term: tokens.slice(i, i + n).map(t => t.w).join(' '), same: false });
+        }
+      }
+      found.delete(c.id);
+      // Same-thing links first, then mentions; spread across decks where possible.
+      const ranked = [...found].sort((a, b) =>
+        b[1].same - a[1].same || order.get(cardIndex.get(a[0]).deck.id) - order.get(cardIndex.get(b[0]).deck.id));
+      // Never two buttons with the same text (two Horus cards read as one link).
+      const picked = [];
+      const decksUsed = new Set();
+      const texts = new Set();
+      const take = link => { picked.push(link); texts.add(chipText(link)); };
+      for (const [id, how] of ranked) {
+        const link = { id, ...how };
+        const deckId = cardIndex.get(id).deck.id;
+        if (picked.length < MAX_LINKS && !decksUsed.has(deckId) && !texts.has(chipText(link))) { take(link); decksUsed.add(deckId); }
+      }
+      for (const [id, how] of ranked) {
+        const link = { id, ...how };
+        if (picked.length < MAX_LINKS && !picked.some(p => p.id === id) && !texts.has(chipText(link))) take(link);
+      }
+      if (picked.length) links.set(c.id, picked);
+    }
+  }
+}
+
+// How a linked card is named on its button. A mention shows the name that was
+// mentioned (Phobos). The same thing elsewhere shows the card's other side, so
+// Zeus leads to "Jupiter", and a namesake reads as one ("Trojan prince who
+// carried off Helen", not a second "Paris").
+function chipText(link) {
+  const { card, deck } = cardIndex.get(link.id);
+  if (card.map) return `${card.answer} on the map`;
+  if (deck.chip === 'prompt') return card.prompt; // e.g. landmarks: name the landmark, not its country
+  const key = plain(link.term);
+  const inPrompt = plain(card.prompt).includes(key);
+  const other = inPrompt ? card.answer : card.prompt;
+  const usable = other.length <= 40 && !/^\d+$/.test(other) && !plain(other).includes(key);
+  return (inPrompt || link.same) && usable ? other : link.term;
+}
+
+function relatedHtml(id) {
+  const found = links.get(baseId(id)) || [];
+  if (!found.length) return '';
+  return `<div class="related"><p class="label">Related</p><div class="chips">${found.map(link =>
+    `<button class="chip" data-action="peek" data-id="${esc(link.id)}">${esc(chipText(link))}<small>${esc(cardIndex.get(link.id).deck.title)}</small></button>`
+  ).join('')}</div></div>`;
+}
+
+/* ---------- The daily five ---------- */
+// Five cards chosen from the date alone, so everyone gets the same five that day.
+// It never touches the spaced repetition schedule.
+const DAILY_SIZE = 5;
+const DOT = { knew: '●', shaky: '◐', missed: '○' };
+
+function dayKey(date = new Date()) { return date.toLocaleDateString('en-CA'); } // YYYY-MM-DD, local
+
+// A repeatable random sequence from a text seed (FNV-1a hash, then mulberry32).
+function seededRandom(text) {
+  let h = 2166136261;
+  for (const ch of text) h = Math.imul(h ^ ch.codePointAt(0), 16777619);
+  return () => {
+    h = (h + 0x6D2B79F5) | 0;
+    let t = Math.imul(h ^ (h >>> 15), h | 1);
+    t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+}
+
+function dailyCards(key) {
+  const rnd = seededRandom('almanac:' + key);
+  const pool = [...decks].sort((a, b) => (a.id < b.id ? -1 : 1));
+  for (let i = pool.length - 1; i > 0; i--) {
+    const j = Math.floor(rnd() * (i + 1));
+    [pool[i], pool[j]] = [pool[j], pool[i]];
+  }
+  return pool.slice(0, DAILY_SIZE).map(d => d.cards[Math.floor(rnd() * d.cards.length)].id);
+}
+
+function dots(results) {
+  return results.map(g => `<span class="${g}">${DOT[g]}</span>`).join('');
+}
+
+function startDaily() {
+  const key = dayKey();
+  round = { daily: key, queue: dailyCards(key).map(id => ({ id, tries: 0 })), i: 0, revealed: false, results: [] };
+  go('round');
+}
+
+function finishDaily() {
+  store.daily[round.daily] = round.results;
+  // Keep about four months of results.
+  for (const k of Object.keys(store.daily).sort().slice(0, -120)) delete store.daily[k];
+  saveStore();
+  go('daily', { key: round.daily });
+}
+
+function longDate(key) {
+  return new Date(key + 'T12:00').toLocaleDateString('en-NZ', { weekday: 'long', day: 'numeric', month: 'long' });
+}
+
+async function shareDaily(key) {
+  const res = store.daily[key];
+  if (!res) return;
+  const day = new Date(key + 'T12:00').toLocaleDateString('en-NZ', { day: 'numeric', month: 'long' });
+  const text = `Almanac · ${day}\n${res.map(g => DOT[g]).join('')}`;
+  const url = location.origin + location.pathname;
+  if (navigator.share) {
+    try { await navigator.share({ text, url }); return; }
+    catch (err) { if (err.name === 'AbortError') return; }
+  }
+  try { await navigator.clipboard.writeText(`${text}\n${url}`); flash('Copied, ready to paste'); }
+  catch { window.prompt('Copy this:', `${text}\n${url}`); }
+}
+
+function flash(message) {
+  const el = document.createElement('div');
+  el.className = 'toast';
+  el.textContent = message;
+  document.body.append(el);
+  setTimeout(() => el.remove(), 2200);
+}
+
 /* ---------- Views ---------- */
 function go(name, params = {}) {
   view = { name, ...params };
@@ -491,18 +720,68 @@ function go(name, params = {}) {
 }
 
 function render() {
-  const views = { home: renderHome, round: renderRound, summary: renderSummary, browse: renderBrowse, settings: renderSettings };
+  const views = { home: renderHome, round: renderRound, summary: renderSummary, browse: renderBrowse,
+                  settings: renderSettings, peek: renderPeek, daily: renderDaily };
   $app.innerHTML = (views[view.name] || renderHome)();
-  if (view.name === 'round') highlightMap();
+  const shown = view.name === 'round' ? round.queue[round.i].id : view.name === 'peek' ? view.id : null;
+  if (shown) highlightMap(shown);
 }
 
-// Maps are shared SVGs; the current card's country is lit by adding a class.
-function highlightMap() {
-  const { card } = cardIndex.get(round.queue[round.i].id);
+// Maps are shared SVGs; the card's country is lit by adding a class.
+function highlightMap(id) {
+  const { card } = cardIndex.get(id);
   const map = $app.querySelector('.map');
   if (!card.map || !map) return;
   map.querySelector(`[id="${card.target}"]`)?.classList.add('on');
   map.querySelectorAll(`[data-for="${card.target}"]`).forEach(r => r.classList.add('on'));
+}
+
+// The inside of a card: label, prompt (or map), context line, then the answer and note once revealed.
+function faceHtml(id, revealed, extra = '') {
+  const { card, label, prompt, answer, context } = sides(id);
+  const note = store.settings.notes && card.note ? `<div class="note">${esc(card.note)}</div>` : '';
+  return `<div class="label">${esc(label)}</div>
+    ${card.map
+      ? `<div class="map">${mapSvgs[card.map] || '<p class="map-missing">This map has not been downloaded yet; open Almanac once while online.</p>'}</div>
+         <div class="context">${esc(prompt)}</div>`
+      : `<div class="prompt ${lengthClass(prompt, 28, 60)}">${esc(prompt)}</div>
+         <div class="context">${esc(context)}</div>`}
+    ${extra}
+    ${revealed ? `<div class="answer ${lengthClass(answer, 24, 45)}">${esc(answer)}</div>${note}${relatedHtml(id)}` : ''}`;
+}
+
+// Reading a linked card. `back` is the view to return to, so a round resumes exactly where it was.
+function renderPeek() {
+  const { card, deck } = cardIndex.get(view.id);
+  const backTo = view.back.name === 'round' ? (round && round.daily ? 'Back to the daily five' : 'Back to the round') : 'Back';
+  return `<button class="back" data-action="back">‹ ${backTo}</button>
+    <div class="face peek${card.map ? ' has-map' : ''}">
+      <p class="deckname">${esc(deck.title)}</p>
+      ${faceHtml(view.id, true)}
+    </div>`;
+}
+
+function renderDaily() {
+  const res = store.daily[view.key] || [];
+  const ids = dailyCards(view.key);
+  const items = ids.map((id, i) => {
+    const { card, prompt, answer } = sides(id);
+    const [p, a] = card.map ? [answer, `${cardIndex.get(id).deck.title}`] : [prompt, answer];
+    return `<button class="entry daily-entry" data-action="peek" data-id="${esc(id)}">
+      <div class="p">${esc(p)}</div>
+      <span class="result ${res[i] || ''}">${DOT[res[i]] || ''}</span>
+      <div class="a">${esc(a)}</div>
+    </button>`;
+  }).join('');
+  return `<button class="back" data-action="home">‹ Almanac</button>
+    <h2 class="pagetitle">The daily five</h2>
+    <p class="lede">${esc(longDate(view.key))}. The same five for everyone today; tap one to read it again.</p>
+    <p class="dots big">${dots(res)}</p>
+    ${items}
+    <div class="stack">
+      <button class="btn" data-action="share" data-key="${esc(view.key)}">Share</button>
+      <button class="btn quiet" data-action="home">Back to the almanac</button>
+    </div>`;
 }
 
 function renderHome() {
@@ -539,7 +818,16 @@ function renderHome() {
     </div>`;
   }).join('');
 
+  const done = store.daily[dayKey()];
+  const dailyHtml = done
+    ? `<div><h2>The daily five</h2><p class="dots">${dots(done)}</p></div>
+       <div class="pair"><button class="btn quiet" data-action="daily-review">Review</button>
+         <button class="btn quiet" data-action="share" data-key="${dayKey()}">Share</button></div>`
+    : `<div><h2>The daily five</h2><p>Five questions, the same for everyone today.</p></div>
+       <button class="btn" data-action="daily">Play</button>`;
+
   return `<header class="masthead"><h1>Almanac</h1><div class="date">${esc(date)}</div></header>
+    <section class="daily">${dailyHtml}</section>
     <section class="today">${todayHtml}</section>
     <p class="label">Decks</p>
     ${rows}
@@ -573,8 +861,7 @@ function lengthClass(text, long, longer) {
 
 function renderRound() {
   const entry = round.queue[round.i];
-  const { card, label, prompt, answer, context } = sides(entry.id);
-  const note = store.settings.notes && card.note ? `<div class="note">${esc(card.note)}</div>` : '';
+  const { card } = sides(entry.id);
   const actions = round.revealed
     ? `<button class="grade missed" data-action="grade" data-grade="missed">Missed</button>
        <button class="grade shaky" data-action="grade" data-grade="shaky">Shaky</button>
@@ -585,23 +872,24 @@ function renderRound() {
     <div class="topbar">
       <button class="close" data-action="home" aria-label="End round">×</button>
       <div class="track"><i style="width:${pct(round.i, round.queue.length)}%"></i></div>
-      <span class="count">${round.i + 1} / ${round.queue.length}</span>
+      <span class="count">${round.daily ? 'Daily · ' : ''}${round.i + 1} / ${round.queue.length}</span>
     </div>
     <div class="face${card.map ? ' has-map' : ''}"${round.revealed ? '' : ' data-action="reveal"'}>
-      <div class="label">${esc(label)}</div>
-      ${card.map
-        ? `<div class="map">${mapSvgs[card.map] || '<p class="map-missing">This map has not been downloaded yet; open Almanac once while online.</p>'}</div>
-           <div class="context">${esc(prompt)}</div>`
-        : `<div class="prompt ${lengthClass(prompt, 28, 60)}">${esc(prompt)}</div>
-           <div class="context">${esc(context)}</div>`}
-      ${entry.tries ? '<div class="again">Second look</div>' : ''}
-      ${round.revealed ? `<div class="answer ${lengthClass(answer, 24, 45)}">${esc(answer)}</div>${note}` : ''}
+      ${faceHtml(entry.id, round.revealed, entry.tries ? '<div class="again">Second look</div>' : '')}
     </div>
     <div class="actions">${actions}</div>
   </div>`;
 }
 
 function onGrade(g) {
+  if (round.daily) {
+    round.results.push(g);
+    round.i++;
+    round.revealed = false;
+    if (round.i >= round.queue.length) finishDaily();
+    else render();
+    return;
+  }
   const entry = round.queue[round.i];
   // Only the first sighting in a round changes the schedule; repeats are practice.
   if (!entry.tries) {
@@ -767,6 +1055,11 @@ $app.addEventListener('click', ev => {
   const id = el.dataset.deck;
   switch (el.dataset.action) {
     case 'start': startRound(); break;
+    case 'daily': startDaily(); break;
+    case 'daily-review': go('daily', { key: dayKey() }); break;
+    case 'share': shareDaily(el.dataset.key); break;
+    case 'peek': view = { name: 'peek', id: el.dataset.id, back: view }; render(); window.scrollTo(0, 0); break;
+    case 'back': view = view.back; render(); window.scrollTo(0, 0); break;
     case 'reveal': round.revealed = true; render(); break;
     case 'grade': onGrade(el.dataset.grade); break;
     case 'home': round = null; go('home'); break;
@@ -815,7 +1108,7 @@ const RELOAD_AFTER = 60 * 60 * 1000; // one hour
 let hiddenAt = 0;
 document.addEventListener('visibilitychange', () => {
   if (document.hidden) { hiddenAt = Date.now(); return; }
-  if (view.name === 'round') return;
+  if (view.name === 'round' || view.name === 'peek') return;
   if (hiddenAt && Date.now() - hiddenAt > RELOAD_AFTER) location.reload();
   else if (view.name === 'home') render();
 });
@@ -837,6 +1130,7 @@ async function init() {
       if (canReverse(d, c)) cardIndex.set(c.id + REV, { card: c, deck: d });
     }
   }
+  buildLinks();
   // Load every map the decks use; fetching them also stores them for offline use.
   const mapNames = [...new Set(decks.flatMap(d => d.cards.map(c => c.map).filter(Boolean)))];
   await Promise.all(mapNames.map(name =>
