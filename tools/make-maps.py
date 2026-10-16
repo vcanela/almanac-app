@@ -219,5 +219,164 @@ def build(ne_path):
     print(f"decks/maps.json: {len(deck_cards)} cards")
 
 
+def equal_earth(lon, lat):
+    """Equal Earth projection (Šavrič, Patterson and Jenny, 2018)."""
+    A1, A2, A3, A4 = 1.340264, -0.081106, 0.000893, 0.003796
+    lam, phi = math.radians(lon), math.radians(lat)
+    t = math.asin(math.sqrt(3) / 2 * math.sin(phi))
+    t2 = t * t
+    t6 = t2 ** 3
+    x = 2 * math.sqrt(3) * lam * math.cos(t) / (3 * (9 * A4 * t6 * t2 + 7 * A3 * t6 + 3 * A2 * t2 + A1))
+    y = t * (A1 + A2 * t2 + t6 * (A3 + A4 * t2))
+    return x, -y
+
+
+def ring_area(r):
+    return abs(sum(r[i][0] * r[i - 1][1] - r[i - 1][0] * r[i][1] for i in range(len(r)))) / 2
+
+
+def inside(pt, r):
+    x, y = pt
+    hit = False
+    for i in range(len(r)):
+        (x1, y1), (x2, y2) = r[i - 1], r[i]
+        if (y1 > y) != (y2 > y) and x < x1 + (y - y1) * (x2 - x1) / (y2 - y1):
+            hit = not hit
+    return hit
+
+
+def label_point(r):
+    """A point well inside the ring: the grid point farthest from its edge."""
+    xs, ys = [p[0] for p in r], [p[1] for p in r]
+    edge = r[:: max(1, len(r) // 300)]
+    best, best_d = ((min(xs) + max(xs)) / 2, (min(ys) + max(ys)) / 2), -1
+    for i in range(1, 30):
+        for j in range(1, 30):
+            pt = (min(xs) + (max(xs) - min(xs)) * i / 30, min(ys) + (max(ys) - min(ys)) * j / 30)
+            if inside(pt, r):
+                d = min(math.hypot(pt[0] - e[0], pt[1] - e[1]) for e in edge)
+                if d > best_d:
+                    best, best_d = pt, d
+    return best
+
+
+WORLD_WIDTH = 2000
+WORLD_TOLERANCE = 0.3   # finer than the regional maps, because journeys zoom in
+NEAR = 60               # for borders, a polygon counts as part of a country's main territory
+                        # within this many units (about 1,200 km) of it: Kaliningrad and
+                        # East Malaysia yes, French Guiana and Hawaii no
+NEAR_BOX = 25           # for the map window, a tighter rule (about 500 km), so outlying
+                        # islands (the Azores, the Canaries, Svalbard) do not stretch it
+
+
+def build_world(features, world):
+    deck_ids = {c["id"][2:].upper(): c["id"] for c in world}
+    x_edge, _ = equal_earth(180, 0)
+    _, y_top = equal_earth(0, 84)
+    _, y_bottom = equal_earth(0, -58)
+    scale = WORLD_WIDTH / (2 * x_edge)
+    height = round((y_bottom - y_top) * scale)
+    view = lambda lon, lat: ((equal_earth(lon, lat)[0] + x_edge) * scale, (equal_earth(lon, lat)[1] - y_top) * scale)
+
+    countries = {}  # card id -> list of (view outer ring, raw vertices of all its rings)
+    plain_land = []
+    for f in features:
+        if f["properties"]["ADMIN"] == "Antarctica":
+            continue
+        card_id = deck_ids.get(f["properties"]["ISO_A2_EH"])
+        geom = f["geometry"]
+        for poly in geom["coordinates"] if geom["type"] == "MultiPolygon" else [geom["coordinates"]]:
+            vr = [view(lo, max(-58, min(84, la))) for lo, la in poly[0]]
+            # Holes matter for borders: Lesotho, San Marino and Vatican City are holes in their neighbours.
+            raw = [pt for ring in poly for pt in ring]
+            if card_id:
+                countries.setdefault(card_id, []).append((vr, raw))
+            else:
+                plain_land.append(vr)
+
+    def simplified_d(rings):
+        parts = []
+        for r in rings:
+            k = max(range(len(r)), key=lambda i: math.hypot(r[i][0] - r[0][0], r[i][1] - r[0][1]))
+            s = (simplify(r[:k + 1], WORLD_TOLERANCE)[:-1] + simplify(r[k:] + [r[0]], WORLD_TOLERANCE)[:-1]) if k else r[:1]
+            if len(s) >= 3:
+                parts.append("M" + "L".join(f"{x:.1f},{y:.1f}" for x, y in s) + "Z")
+        return "".join(parts)
+
+    # Each country's main territory: its largest polygon, plus any polygon within
+    # NEAR of a polygon already included, so island chains link up (Indonesia's
+    # islands reach New Guinea) but distant territories do not (French Guiana).
+    def box_of(r):
+        xs, ys = [p[0] for p in r], [p[1] for p in r]
+        return min(xs), min(ys), max(xs), max(ys)
+
+    def box_gap(a, b):
+        dx = max(0, max(a[0], b[0]) - min(a[2], b[2]))
+        dy = max(0, max(a[1], b[1]) - min(a[3], b[3]))
+        return math.hypot(dx, dy)
+
+    meta, vertex_sets = {}, {}
+    for cid, rings in countries.items():
+        main = max(rings, key=lambda r: ring_area(r[0]))
+        boxes = [box_of(vr) for vr, _ in rings]
+
+        def cluster(limit):
+            included = {rings.index(main)}
+            grew = True
+            while grew:
+                grew = False
+                for i in range(len(rings)):
+                    if i not in included and any(box_gap(boxes[i], boxes[j]) < limit for j in included):
+                        included.add(i)
+                        grew = True
+            return [rings[i] for i in sorted(included)]
+
+        core = cluster(NEAR_BOX)
+        xs = [p[0] for vr, _ in core for p in vr]
+        ys = [p[1] for vr, _ in core for p in vr]
+        meta[cid] = {"box": [round(min(xs), 1), round(min(ys), 1), round(max(xs), 1), round(max(ys), 1)],
+                     "label": [round(v, 1) for v in label_point(main[0])], "near": []}
+        vertex_sets[cid] = {(round(lo, 3), round(la, 3)) for _, raw in cluster(NEAR) for lo, la in raw}
+
+    # Neighbours share border vertices in the Natural Earth data.
+    by_vertex = {}
+    for cid, vs in vertex_sets.items():
+        for v in vs:
+            by_vertex.setdefault(v, set()).add(cid)
+    shared = {}
+    for ids in by_vertex.values():
+        for a in ids:
+            for b in ids:
+                if a < b:
+                    shared[(a, b)] = shared.get((a, b), 0) + 1
+    for (a, b), n in shared.items():
+        if n >= 2:
+            meta[a]["near"].append(b)
+            meta[b]["near"].append(a)
+    for m in meta.values():
+        m["near"].sort()
+
+    out = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {WORLD_WIDTH} {height}" role="img" aria-label="World map">',
+           f'<rect class="sea" x="-2000" y="-2000" width="{WORLD_WIDTH + 4000}" height="{height + 4000}"/>',
+           f'<path class="land" d="{simplified_d(plain_land)}"/>']
+    for cid, rings in sorted(countries.items()):
+        out.append(f'<path class="land country" id="{cid}" d="{simplified_d([vr for vr, _ in rings])}"/>')
+    out.append('<g class="labels"></g></svg>')
+    svg = "".join(out)
+    Path("maps/world.svg").write_text(svg)
+    Path("maps/world.json").write_text(json.dumps({"width": WORLD_WIDTH, "height": height, "countries": meta},
+                                                  ensure_ascii=False, separators=(",", ":")) + "\n")
+    linked = sum(1 for m in meta.values() if m["near"])
+    print(f"world: {len(meta)} countries, {linked} with land neighbours, {len(svg) // 1024} KB")
+
+    # Every named journey must be overland: each step a land neighbour of the last.
+    names = {c["id"]: c["prompt"] for c in world}
+    for j in json.load(open("maps/journeys.json")):
+        route = j["countries"]
+        bad = [f"{names[a]} / {names[b]}" for a, b in zip(route, route[1:]) if b not in meta[a]["near"]]
+        print(f"  journey {j['id']}: {len(route)} countries" + (f", NOT ADJACENT: {bad}" if bad else ", ok"))
+
+
 if __name__ == "__main__":
     build(sys.argv[1])
+    build_world(json.load(open(sys.argv[1]))["features"], json.load(open("decks/world-capitals.json"))["cards"])

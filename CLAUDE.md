@@ -68,8 +68,17 @@ Optional card fields: `label` and `reverseLabel` (override the deck's), `context
 - Deck field `"chip": "prompt"` labels links to that deck by the card's prompt (landmarks: the landmark, not its country).
 - Tapping a link opens a read-only `peek` view whose `back` is the previous view, so a round resumes exactly where it was. Peeking never touches the schedule.
 
+## Overland journeys
+- Name each country as it lights up along an overland route; never touches the schedule. Last result per named route in `store.journeys[id] = { day, results }` (surprise routes are not saved).
+- `tools/make-maps.py` also builds `maps/world.svg` (Equal Earth projection, 2000 wide, no Antarctica, path `id` = world card id, an empty `<g class="labels">`) and `maps/world.json` (`{ width, height, countries: { id: { box, label, near } } }`). Both load the first time the Journeys page opens, then work offline.
+- `near` (land neighbours) comes from shared border vertices, holes included (Lesotho, San Marino, Vatican City). Only a country's main territory counts: its largest polygon plus polygons chained within `NEAR` (60 units, about 1,200 km), so East Malaysia and Kaliningrad count but French Guiana does not. `box` uses a tighter chain, `NEAR_BOX` (25 units), so the Azores or the Canaries do not stretch the map window. `label` is a well-inside point of the largest polygon.
+- `maps/journeys.json` holds the named routes (id, title, story, countries as world card ids). The script checks every step is a land neighbour and prints any that is not.
+- Surprise me: a random start, then a shortest route (shuffled neighbours) to a country 6 to 12 countries away.
+- The map window follows play (the last two countries and the current one), then shows the whole route at the end. A country more than three times the area of the rest of the window's countries (Russia, China) only pulls the window a little way towards itself. Done countries are tinted by grade and labelled, the label sized to fit or left off.
+- Island nations have no land neighbours, so they never appear in journeys.
+
 ## Storage
-- `localStorage` key `almanac.v1`: `{ v, cards: { id: { b, d, n, l } }, daily: { "YYYY-MM-DD": [grades] }, settings: { size, fresh, notes, off, revOff } }`. `b` box, `d` due day, `n` times graded, `l` last day. `off` lists decks excluded from rounds; `revOff` decks with reverse switched off.
+- `localStorage` key `almanac.v1`: `{ v, cards: { id: { b, d, n, l } }, daily: { "YYYY-MM-DD": [grades] }, journeys: { routeId: { day, results } }, settings: { size, fresh, notes, off, revOff } }`. `b` box, `d` due day, `n` times graded, `l` last day. `off` lists decks excluded from rounds; `revOff` decks with reverse switched off.
 - An iOS home screen app has storage separate from Safari, hence Settings has export and import.
 
 ## Local testing

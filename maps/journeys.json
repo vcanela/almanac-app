@@ -1,0 +1,56 @@
+[
+  {
+    "id": "cape-to-cairo",
+    "title": "Cape to Cairo",
+    "story": "Cecil Rhodes dreamed of a railway from the Cape to Cairo through British territory; it was never completed.",
+    "countries": ["w-za", "w-zw", "w-zm", "w-tz", "w-ug", "w-ss", "w-sd", "w-eg"]
+  },
+  {
+    "id": "pan-american",
+    "title": "The Pan-American Highway",
+    "story": "The highway runs from Alaska to the far south of Argentina, broken only by the roadless Darién Gap between Panama and Colombia.",
+    "countries": ["w-ca", "w-us", "w-mx", "w-gt", "w-sv", "w-hn", "w-ni", "w-cr", "w-pa", "w-co", "w-ec", "w-pe", "w-cl", "w-ar"]
+  },
+  {
+    "id": "silk-road",
+    "title": "The Silk Road",
+    "story": "For over a thousand years, caravans carried silk, spices and ideas overland between China and the Mediterranean.",
+    "countries": ["w-cn", "w-kg", "w-uz", "w-tm", "w-ir", "w-tr"]
+  },
+  {
+    "id": "danube",
+    "title": "Following the Danube",
+    "story": "Europe's second-longest river flows through or along the borders of ten countries, more than any other river in the world.",
+    "countries": ["w-de", "w-at", "w-sk", "w-hu", "w-hr", "w-rs", "w-bg", "w-ro", "w-md", "w-ua"]
+  },
+  {
+    "id": "mekong",
+    "title": "Down the Mekong",
+    "story": "Rising on the Tibetan Plateau, the Mekong flows through six countries to its delta in southern Vietnam.",
+    "countries": ["w-cn", "w-mm", "w-la", "w-th", "w-kh", "w-vn"]
+  },
+  {
+    "id": "andes",
+    "title": "The spine of the Andes",
+    "story": "The world's longest continental mountain range runs about 7,000 km down the western side of South America.",
+    "countries": ["w-ve", "w-co", "w-ec", "w-pe", "w-bo", "w-cl", "w-ar"]
+  },
+  {
+    "id": "sahel",
+    "title": "Across the Sahel",
+    "story": "The Sahel is the semi-arid belt between the Sahara and the savanna, stretching from the Atlantic to the Red Sea.",
+    "countries": ["w-sn", "w-ml", "w-bf", "w-ne", "w-td", "w-sd", "w-er"]
+  },
+  {
+    "id": "iberia-to-istanbul",
+    "title": "From Iberia to Istanbul",
+    "story": "A road trip around the northern Mediterranean, through the Balkans to the city that was once Byzantium and Constantinople.",
+    "countries": ["w-es", "w-fr", "w-it", "w-si", "w-hr", "w-ba", "w-me", "w-al", "w-gr", "w-tr"]
+  },
+  {
+    "id": "lisbon-to-moscow",
+    "title": "Lisbon to Moscow",
+    "story": "Napoleon marched the last stretch of this road in 1812; only a fraction of his Grande Armée came back.",
+    "countries": ["w-pt", "w-es", "w-fr", "w-de", "w-pl", "w-by", "w-ru"]
+  }
+]
