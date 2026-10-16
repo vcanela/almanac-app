@@ -84,6 +84,11 @@ Optional card fields: `label` and `reverseLabel` (override the deck's), `context
 - Rise and set: Sun and Moon at −0.833° (upper limb, refraction), planets and stars at −0.5667°. Seasonal notes: Matariki (Pleiades) and Puanga (Rigel) when up an hour before sunrise, May to July.
 - Chart units: the horizon circle has radius `K` = 500, so text sizes are ordinary numbers (tiny SVG font sizes can be clamped by browsers).
 
+## Which came first?
+- Two dated events; tap the earlier. Ten pairs a run, gaps narrowing from centuries (`DUEL_GAPS`) to 3 to 10 years, the partner preferably from another deck. Never touches the schedule; nothing is stored.
+- Events come from existing cards with a definite year (`datedEvents()`): discoveries (year at the end of `context`), medieval battles (`answer` is the year), music works and records (year at the end of `context`), space firsts (`context` is the year). Approximate dates (`c. 1021`, `1630s`, `date unknown`) are excluded. About 250 events.
+- After answering, each event links to its card.
+
 ## Storage
 - `localStorage` key `almanac.v1`: `{ v, cards: { id: { b, d, n, l } }, daily: { "YYYY-MM-DD": [grades] }, journeys: { routeId: { day, results } }, settings: { size, fresh, notes, off, revOff } }`. `b` box, `d` due day, `n` times graded, `l` last day. `off` lists decks excluded from rounds; `revOff` decks with reverse switched off.
 - An iOS home screen app has storage separate from Safari, hence Settings has export and import.
