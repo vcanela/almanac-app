@@ -287,34 +287,79 @@
     stroke-linejoin: round;
   }
 
-  /* Tonight's sky: the dome is always a night sky, in either theme. */
-  .facing { margin: 0 0 14px; }
+  /* Tonight's sky: the dome is always a night sky, in either theme. Text sizes are
+     divided by the zoom (--z), so labels keep their size on screen as you zoom in. */
+  .sky-dome {
+    --sky-bg: #0d1626; --sky-edge: #36465e; --sky-line: #8fb3ff; --sky-label: #e9e4d8;
+    --sky-planet: #ffd98a; --sky-dso: #c9b8ff; --moon-lit: #f3efe2; --moon-dark: #2b3445;
+  }
+  .facing { margin: 0 0 12px; }
   .sky-dome svg { display: block; width: 100%; height: auto; max-height: 70vh; margin: 0 auto; touch-action: manipulation; }
-  .sky-dome .dome { fill: #0d1626; stroke: #36465e; stroke-width: 3; }
-  .sky-dome .ring-alt { fill: none; stroke: #ffffff; stroke-opacity: 0.08; stroke-width: 2; stroke-dasharray: 10 10; }
-  .sky-dome .cardinal { fill: var(--muted); font: 600 35px var(--sans); text-anchor: middle; dominant-baseline: middle; }
-  .sky-dome .figure { stroke: #8fb3ff; stroke-opacity: 0.32; stroke-width: 2.2; }
-  .sky-dome .con-name { fill: #8fb3ff; fill-opacity: 0.55; font: italic 25px var(--serif); text-anchor: middle; }
-  .sky-dome .star-name { fill: #e9e4d8; fill-opacity: 0.75; font: 24px var(--sans); dominant-baseline: middle; }
-  .sky-dome .planet { stroke: #0d1626; stroke-width: 2; }
-  .sky-dome .planet-name { fill: #ffd98a; font: 600 28px var(--sans); dominant-baseline: middle; }
-  .sky-dome .moon-dark { fill: #2b3445; }
-  .sky-dome .moon-lit { fill: #f3efe2; }
-  .sky-dome .dso { fill: #dfe8ff; fill-opacity: 0.12; }
-  .sky-dome .dso.cluster { fill: none; stroke: #dfe8ff; stroke-opacity: 0.4; stroke-width: 2; stroke-dasharray: 4 4; }
-  .sky-dome .dso.dark-nebula { fill: #000; fill-opacity: 0.45; }
+  .sky-dome .dome { fill: var(--sky-bg); stroke: var(--sky-edge); stroke-width: 3; }
+  .sky-dome .ring-alt { fill: none; stroke: var(--sky-label); stroke-opacity: 0.1; stroke-width: 1.5; stroke-dasharray: 8 8; vector-effect: non-scaling-stroke; }
+  .sky-dome .cardinal { fill: var(--muted); font: 600 calc(35px / var(--z, 1)) var(--sans); text-anchor: middle; dominant-baseline: middle; }
+  .sky-dome .figure { stroke: var(--sky-line); stroke-opacity: 0.32; stroke-width: 1.1; vector-effect: non-scaling-stroke; }
+  .sky-dome .con-name { fill: var(--sky-line); fill-opacity: 0.6; font: italic calc(24px / var(--z, 1)) var(--serif); text-anchor: middle; }
+  .sky-dome .star-name { fill: var(--sky-label); fill-opacity: 0.78; font: calc(22px / var(--z, 1)) var(--sans); dominant-baseline: middle; }
+  .sky-dome .planet { stroke: var(--sky-bg); stroke-width: 1; vector-effect: non-scaling-stroke; }
+  .sky-dome .planet-name { fill: var(--sky-planet); font: 600 calc(26px / var(--z, 1)) var(--sans); dominant-baseline: middle; }
+  .sky-dome .moon-dark { fill: var(--moon-dark); }
+  .sky-dome .moon-lit { fill: var(--moon-lit); }
+  .sky-dome .dso-sym { fill: none; stroke: var(--sky-dso); stroke-opacity: 0.7; stroke-width: 1.1; vector-effect: non-scaling-stroke; }
+  .sky-dome .dso-sym.dotted { stroke-dasharray: 2 2.5; }
+  .sky-dome .dso-dark { fill: #000; fill-opacity: 0.5; }
+  .sky-dome .dso-name { fill: var(--sky-dso); fill-opacity: 0.8; font: calc(19px / var(--z, 1)) var(--sans); text-anchor: middle; dominant-baseline: hanging; }
   .sky-dome .hit { fill: transparent; cursor: pointer; }
+  .sky-layers { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 12px; }
+  .sky-layers button { border: 1px solid var(--rule); background: none; border-radius: 999px; padding: 5px 11px; font-size: 0.8rem; color: var(--muted); }
+  .sky-layers button[aria-pressed="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+  .sky-tools { display: flex; gap: 8px; margin: 12px 0 0; }
+  .sky-tools .btn { flex: 1; padding: 11px; }
+  .sky-red { border: 1px solid var(--rule); background: none; border-radius: 10px; padding: 0 14px; font-weight: 600; color: var(--accent); flex: none; }
+  .sky-red[aria-pressed="true"] { background: var(--accent); color: var(--paper); border-color: var(--accent); }
   .sky-time { display: flex; align-items: center; gap: 14px; margin: 14px 0 6px; }
   .sky-time span { font: 500 1.05rem var(--serif); min-width: 4.6em; font-variant-numeric: tabular-nums; }
   .sky-time input { flex: 1; accent-color: var(--accent); }
   .sky-hint { color: var(--muted); font-size: 0.88rem; text-align: center; margin: 10px 0; }
-  .sky-pick { border: 1px solid var(--rule); border-radius: 12px; padding: 14px 16px; margin: 10px 0; background: var(--card); }
-  .sky-pick h3 { font: 500 1.2rem var(--serif); margin: 0; }
+  .sky-pick { position: relative; border: 1px solid var(--rule); border-radius: 12px; padding: 14px 16px; margin: 10px 0; background: var(--card); }
+  .sky-pick h3 { font: 500 1.2rem var(--serif); margin: 0 28px 0 0; }
   .sky-pick .kind { color: var(--muted); font-size: 0.85rem; margin: 0 0 6px; }
   .sky-pick p { margin: 0 0 8px; }
+  .sky-unpick { position: absolute; top: 6px; right: 8px; background: none; border: 0; font-size: 1.4rem; line-height: 1; color: var(--muted); padding: 4px 6px; }
   .up-row { display: block; width: 100%; text-align: left; background: none; border: 0; border-top: 1px solid var(--rule); padding: 11px 0; }
   .up-row b { display: block; font: 500 1.02rem var(--serif); }
   .up-row span { color: var(--muted); font-size: 0.9rem; }
+
+  /* Full screen: the dome fills what the controls leave. */
+  .sky-full {
+    position: fixed; inset: 0; z-index: 10; background: var(--paper);
+    display: flex; flex-direction: column;
+    padding: calc(env(safe-area-inset-top) + 8px) 12px calc(env(safe-area-inset-bottom) + 10px);
+  }
+  .sky-full-top { display: flex; align-items: center; gap: 10px; }
+  .sky-full-top .close { margin-left: -6px; }
+  .sky-full-top .facing { flex: 1; margin: 0; }
+  .sky-full-top .facing button { padding: 8px 0; }
+  .sky-full-top .sky-red { align-self: stretch; }
+  .sky-dome.full { flex: 1; min-height: 0; display: flex; align-items: center; justify-content: center; touch-action: none; }
+  .sky-dome.full svg { width: 100%; height: 100%; max-height: none; touch-action: none; }
+  .sky-sheet { position: absolute; left: 12px; right: 12px; bottom: calc(env(safe-area-inset-bottom) + 112px); max-height: 42vh; overflow: auto; }
+  .sky-sheet .sky-pick { margin: 0; box-shadow: 0 6px 24px rgba(0, 0, 0, 0.35); }
+  .sky-full-bottom .sky-time { margin: 6px 0 8px; }
+  .sky-full-bottom .sky-layers { margin: 0; justify-content: center; }
+
+  /* Red light: dim red on black everywhere, kind to dark-adapted eyes. */
+  :root[data-night="on"] {
+    --paper: #090000; --card: #140303; --ink: #d9402f; --muted: #8a2a1f; --rule: #2e0a06;
+    --accent: #ff4433; --knew: #b8392a; --shaky: #a8452c; --knob: #7a1d14;
+    --sea: #140303; --land: #2c0905; --done-knew: #4a120c; --done-shaky: #561a0e; --done-missed: #3c0d08;
+    color-scheme: dark;
+  }
+  :root[data-night="on"] .sky-dome {
+    --sky-bg: #050000; --sky-edge: #3a0a06; --sky-line: #a3271b; --sky-label: #c43a2c;
+    --sky-planet: #ff5a3c; --sky-dso: #b2301f; --moon-lit: #d63b2a; --moon-dark: #2a0703;
+  }
+  :root[data-night="on"] .sky-pick, :root[data-night="on"] .sky-sheet .sky-pick { box-shadow: none; }
 
   /* Your month */
   .month-head { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
@@ -477,7 +522,8 @@ const $app = document.getElementById('app');
 
 /* ---------- Storage ---------- */
 function defaultStore() {
-  return { v: 1, cards: {}, daily: {}, journeys: {}, settings: { size: 15, fresh: 5, notes: true, off: {}, revOff: {} } };
+  return { v: 1, cards: {}, daily: {}, journeys: {},
+           settings: { size: 15, fresh: 5, notes: true, off: {}, revOff: {}, night: false, skyLayers: {} } };
 }
 function normalise(s) {
   const d = defaultStore();
@@ -488,7 +534,7 @@ function normalise(s) {
     cards: s.cards && typeof s.cards === 'object' ? s.cards : {},
     daily: s.daily && typeof s.daily === 'object' ? s.daily : {},
     journeys: s.journeys && typeof s.journeys === 'object' ? s.journeys : {},
-    settings: { ...d.settings, ...set, off: { ...set.off }, revOff: { ...set.revOff } },
+    settings: { ...d.settings, ...set, off: { ...set.off }, revOff: { ...set.revOff }, skyLayers: { ...set.skyLayers } },
   };
 }
 function loadStore() {
@@ -1038,17 +1084,23 @@ function renderJourneyEnd() {
 // A planisphere for Auckland: the whole sky as a dome, horizon at the edge and
 // the zenith in the centre (stereographic projection), turned so the direction
 // you face is at the bottom. Positions come from sky/astro.js; stars from
-// sky/stars.json (Yale Bright Star Catalogue), loaded the first time.
+// sky/stars.json (Yale Bright Star Catalogue), constellations from
+// sky/constellations.json and deep-sky objects from sky/deepsky.json, all loaded
+// the first time. Full screen adds pinch zoom and drag; layers declutter.
 const SKY = { lat: -36.8485, lon: 174.7633, place: 'Auckland' };
 const PLANETS = ['mercury', 'venus', 'mars', 'jupiter', 'saturn'];
 const PLANET_COLOUR = { mercury: '#d9d0c1', venus: '#fffbe8', mars: '#ff9b70', jupiter: '#f4e4c4', saturn: '#eedaa2' };
 const STEP = 5 * 60000; // the time slider moves in five-minute steps
 const K = 500;          // chart units: the horizon circle has radius K
+const HALF = 1.16 * K;  // half the width of the unzoomed view, compass letters included
+const MAX_ZOOM = 10;
+const LAYERS = [['lines', 'Lines'], ['names', 'Constellations'], ['stars', 'Star names'], ['deep', 'Deep sky'], ['grid', 'Grid']];
 let skyData = null;
-let skyState = null; // { sunset, sunrise, t, facing, pick }
+let skyState = null; // { sunset, sunrise, t, facing, pick, full, zoom: { s, x, y } }
 
 const cap = s => s[0].toUpperCase() + s.slice(1);
 const clock = d => d.toLocaleTimeString('en-NZ', { hour: 'numeric', minute: '2-digit' }).replace(' ', ' ');
+const layerOn = key => store.settings.skyLayers[key] !== false;
 
 function compass(az) {
   return ['north', 'north-east', 'east', 'south-east', 'south', 'south-west', 'west', 'north-west'][Math.round(az / 45) % 8];
@@ -1057,10 +1109,37 @@ function height(alt) {
   return alt > 75 ? 'nearly overhead' : alt > 50 ? 'high' : alt > 20 ? 'part-way up' : 'low';
 }
 
+/* Red light: the whole app in dim red on black, kindest to dark-adapted eyes. */
+function applyNight() {
+  const on = !!store.settings.night;
+  document.documentElement.dataset.night = on ? 'on' : '';
+  document.querySelectorAll('meta[name="theme-color"]').forEach(m => {
+    if (!m.dataset.day) m.dataset.day = m.content;
+    m.content = on ? '#090000' : m.dataset.day;
+  });
+}
+
+async function loadSkyData() {
+  const base = await (await fetch('sky/stars.json')).json();
+  const optional = path => fetch(path).then(r => (r.ok ? r.json() : null)).catch(() => null);
+  const [cons, deep] = await Promise.all([optional('sky/constellations.json'), optional('sky/deepsky.json')]);
+  const stars = base.stars.concat((cons && cons.extraStars) || []);
+  const figures = cons ? cons.constellations
+    : base.figures.map(f => ({ ...f, meaning: null, story: null, brightest: null, cards: [] }));
+  const dso = deep ? deep.objects
+    : base.objects.map(o => ({ id: o.id, cat: null, alt: null, name: o.name, type: o.kind, ra: o.ra, dec: o.dec,
+                               mag: null, size: [o.size * 60, o.size * 60], dist: null, con: null, note: null, card: o.card }));
+  const starCon = new Map();
+  for (const f of figures) for (const pair of f.lines) for (const hr of pair) if (!starCon.has(hr)) starCon.set(hr, f.abbr);
+  // The 27 best-known figures are named at any zoom; the rest from twice zoom.
+  const major = new Set(base.figures.map(f => f.abbr));
+  return { ...base, stars, starById: new Map(stars.map(s => [s[0], s])), figures, dso, starCon, major };
+}
+
 async function openSky() {
   if (!skyData) {
     $app.innerHTML = '<p class="loading">Rolling out the star chart…</p>';
-    try { skyData = await (await fetch('sky/stars.json')).json(); }
+    try { skyData = await loadSkyData(); }
     catch {
       $app.innerHTML = `<p class="loading">The star chart has not been downloaded yet; open Tonight's sky once while online.</p>
         <div class="stack"><button class="btn quiet" data-action="home">Back to the almanac</button></div>`;
@@ -1076,7 +1155,8 @@ async function openSky() {
     const sunset = [...cs].reverse().find(c => !c.rising && c.time < sunrise).time;
     const dark = sunset.getTime() + 90 * 60000;
     const start = now > sunset && now < sunrise ? now : dark;
-    skyState = { sunset, sunrise, t: new Date(Math.round(start / STEP) * STEP), facing: 180, pick: null };
+    skyState = { sunset, sunrise, t: new Date(Math.round(start / STEP) * STEP), facing: 180, pick: null,
+                 full: false, zoom: { s: 1, x: 0, y: 0 } };
   }
   go('sky');
 }
@@ -1088,8 +1168,16 @@ function skyXY(alt, az) {
   return [r * Math.sin(p), r * Math.cos(p)];
 }
 
-// Star colour from its B-V index, from blue-white to orange.
+// An angular radius (degrees) as chart units at a given chart position: the
+// stereographic scale grows from 1/2 per radian at the zenith towards the horizon.
+function angularRadius(deg, x, y) {
+  const r0 = Math.hypot(x, y) / K;
+  return K * ((deg * Math.PI) / 180) * (1 + r0 * r0) / 2;
+}
+
+// Star colour from its B-V index, from blue-white to orange; all reds under red light.
 function starColour(bv) {
+  if (store.settings.night) return bv != null && bv > 1 ? '#ff5236' : '#ff3b2b';
   if (bv == null) return '#f4f1ea';
   if (bv < 0) return '#c4d6ff';
   if (bv < 0.3) return '#e8eeff';
@@ -1107,94 +1195,141 @@ function phaseName(m) {
 }
 
 // The Moon drawn at its phase, its bright limb turned towards the Sun.
-function moonSvg(m, sun, R = 0.045 * K) {
+function moonSvg(m, sun, R) {
   const [x, y] = skyXY(m.alt, m.az);
   const [sx, sy] = skyXY(sun.alt, sun.az);
   const turn = (Math.atan2(sy - y, sx - x) * 180) / Math.PI;
   const c = 1 - 2 * m.illum; // cosine of the phase angle, near enough
   const lit = `M0,${-R} A${R},${R} 0 0 1 0,${R} A${(R * Math.abs(c)).toFixed(2)},${R} 0 0 ${c < 0 ? 1 : 0} 0,${-R}Z`;
   return `<g transform="translate(${x.toFixed(1)} ${y.toFixed(1)}) rotate(${turn.toFixed(1)})">
-      <circle r="${R}" class="moon-dark"/><path d="${lit}" class="moon-lit"/></g>`;
+      <circle r="${R.toFixed(1)}" class="moon-dark"/><path d="${lit}" class="moon-lit"/></g>`;
+}
+
+// Standard chart symbols: galaxy an ellipse, open cluster a dotted circle,
+// globular a circle with a cross, nebula a square, planetary nebula a ringed dot.
+function dsoSymbol(o, x, y, r) {
+  const X = x.toFixed(1), Y = y.toFixed(1), R = r.toFixed(1);
+  switch (o.type) {
+    case 'galaxy': {
+      const ratio = Math.max(0.35, (o.size[1] || o.size[0]) / o.size[0]);
+      return `<ellipse cx="${X}" cy="${Y}" rx="${R}" ry="${(r * ratio).toFixed(1)}" transform="rotate(-30 ${X} ${Y})" class="dso-sym"/>`;
+    }
+    case 'globular cluster':
+      return `<circle cx="${X}" cy="${Y}" r="${R}" class="dso-sym"/><path d="M${(x - r).toFixed(1)},${Y}H${(x + r).toFixed(1)}M${X},${(y - r).toFixed(1)}V${(y + r).toFixed(1)}" class="dso-sym"/>`;
+    case 'open cluster': case 'asterism': case 'double star': case 'star cloud':
+      return `<circle cx="${X}" cy="${Y}" r="${R}" class="dso-sym dotted"/>`;
+    case 'planetary nebula':
+      return `<circle cx="${X}" cy="${Y}" r="${(r * 0.6).toFixed(1)}" class="dso-sym"/><path d="M${(x - r).toFixed(1)},${Y}h${(r * 0.4).toFixed(1)}M${(x + r).toFixed(1)},${Y}h${(-r * 0.4).toFixed(1)}M${X},${(y - r).toFixed(1)}v${(r * 0.4).toFixed(1)}M${X},${(y + r).toFixed(1)}v${(-r * 0.4).toFixed(1)}" class="dso-sym"/>`;
+    case 'dark nebula':
+      return `<circle cx="${X}" cy="${Y}" r="${R}" class="dso-dark"/>`;
+    default: // nebula, supernova remnant
+      return `<rect x="${(x - r).toFixed(1)}" y="${(y - r).toFixed(1)}" width="${(2 * r).toFixed(1)}" height="${(2 * r).toFixed(1)}" rx="${(r * 0.25).toFixed(1)}" class="dso-sym"/>`;
+  }
+}
+
+function viewBoxOf(zoom) {
+  const h = HALF / zoom.s;
+  return [zoom.x - h, zoom.y - h, 2 * h, 2 * h];
 }
 
 function skySvg() {
   const t = skyState.t;
+  const zoom = skyState.full ? skyState.zoom : { s: 1, x: 0, y: 0 };
+  const s = zoom.s;
+  const q = 1 / Math.sqrt(s); // stars and symbols shrink a little as you zoom, so detail opens up
   const at = Astro.starProjector(t, SKY.lat, SKY.lon);
   const b = Astro.bodies(t, SKY.lat, SKY.lon);
   const stars = new Map(skyData.stars.map(([hr, ra, dec, mag, bv]) => [hr, { ...at(ra, dec), mag, bv }]));
   const parts = [];
   const pick = (kind, id) => `data-action="sky-pick" data-kind="${kind}" data-id="${id}"`;
+  const hit = (x, y, r, kind, id) => `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${(r / s).toFixed(1)}" class="hit" ${pick(kind, id)}/>`;
 
-  // Dome, altitude rings at 30 and 60 degrees, compass points.
   parts.push(`<circle r="${K}" class="dome"/>`);
-  for (const alt of [30, 60]) parts.push(`<circle r="${(K * Math.tan(((90 - alt) * Math.PI) / 360)).toFixed(1)}" class="ring-alt"/>`);
+  if (layerOn('grid')) {
+    for (const alt of [30, 60]) parts.push(`<circle r="${(K * Math.tan(((90 - alt) * Math.PI) / 360)).toFixed(1)}" class="ring-alt"/>`);
+  }
   for (const [az, name] of [[0, 'N'], [90, 'E'], [180, 'S'], [270, 'W']]) {
     const [x, y] = skyXY(-6, az);
     parts.push(`<text x="${x.toFixed(1)}" y="${y.toFixed(1)}" class="cardinal">${name}</text>`);
   }
   parts.push('<g clip-path="url(#dome-clip)">');
 
-  // Constellation figures and names.
-  for (const f of skyData.figures) {
-    for (const [a, c] of f.lines) {
-      const s1 = stars.get(a), s2 = stars.get(c);
-      if (s1 && s2 && (s1.alt > 0 || s2.alt > 0)) {
-        const [x1, y1] = skyXY(s1.alt, s1.az), [x2, y2] = skyXY(s2.alt, s2.az);
-        parts.push(`<line x1="${x1.toFixed(1)}" y1="${y1.toFixed(1)}" x2="${x2.toFixed(1)}" y2="${y2.toFixed(1)}" class="figure"/>`);
+  // Constellation figures, then their names (tap a name for the constellation).
+  if (layerOn('lines')) {
+    for (const f of skyData.figures) {
+      for (const [a, c] of f.lines) {
+        const s1 = stars.get(a), s2 = stars.get(c);
+        if (s1 && s2 && (s1.alt > 0 || s2.alt > 0)) {
+          const [x1, y1] = skyXY(s1.alt, s1.az), [x2, y2] = skyXY(s2.alt, s2.az);
+          parts.push(`<line x1="${x1.toFixed(1)}" y1="${y1.toFixed(1)}" x2="${x2.toFixed(1)}" y2="${y2.toFixed(1)}" class="figure"/>`);
+        }
       }
     }
-    const l = at(f.label[0], f.label[1]);
-    if (l.alt > 4) {
+  }
+  if (layerOn('names')) {
+    for (const f of skyData.figures) {
+      if (s < 2 && !skyData.major.has(f.abbr)) continue;
+      const l = at(f.label[0], f.label[1]);
+      if (l.alt <= 4) continue;
       const [x, y] = skyXY(l.alt, l.az);
-      parts.push(`<text x="${x.toFixed(1)}" y="${y.toFixed(1)}" class="con-name">${esc(f.common || f.name)}</text>`);
+      const label = f.common || f.name;
+      const w = (label.length * 13) / s, h = 30 / s;
+      parts.push(`<text x="${x.toFixed(1)}" y="${y.toFixed(1)}" class="con-name">${esc(label)}</text>
+        <rect x="${(x - w / 2).toFixed(1)}" y="${(y - h * 0.8).toFixed(1)}" width="${w.toFixed(1)}" height="${h.toFixed(1)}" class="hit" ${pick('con', f.abbr)}/>`);
     }
   }
 
-  // Deep-sky objects: faint patches sized to their apparent diameter.
-  for (const o of skyData.objects) {
-    const p = at(o.ra, o.dec);
-    if (p.alt <= 0) continue;
-    const [x, y] = skyXY(p.alt, p.az);
-    const r0 = Math.hypot(x, y) / K;
-    const r = K * Math.max(0.012, ((o.size / 2) * Math.PI) / 180 * (1 + r0 * r0) / 2);
-    parts.push(`<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${r.toFixed(1)}" class="dso ${o.kind.replace(' ', '-')}" ${pick('object', o.id)}/>`);
+  // Deep-sky objects: symbols sized to their apparent size; names appear as you zoom in.
+  if (layerOn('deep')) {
+    const limit = s >= 4 ? 99 : s >= 2 ? 8 : 5.5;
+    for (const o of skyData.dso) {
+      const p = at(o.ra, o.dec);
+      if (p.alt <= 0) continue;
+      const [x, y] = skyXY(p.alt, p.az);
+      const r = Math.max(0.008 * K * q, angularRadius(o.size[0] / 120, x, y));
+      parts.push(dsoSymbol(o, x, y, r), hit(x, y, Math.max(22, r * s), 'dso', o.id));
+      if ((o.mag != null && o.mag < limit) || (o.name && s >= 2) || (o.name && o.mag != null && o.mag < 4)) {
+        parts.push(`<text x="${x.toFixed(1)}" y="${(y + r + 14 / s).toFixed(1)}" class="dso-name">${esc(o.name || o.cat)}</text>`);
+      }
+    }
   }
 
-  // Stars, brightest last so they sit on top. Names go on the bright ones,
-  // skipping any that would sit on a brighter star's name (Rigil Kentaurus and Toliman).
-  const named = [...stars].filter(([hr, s]) => skyData.names[hr] && s.mag < 1.6 && s.alt > 3).map(([hr, s]) => [hr, skyXY(s.alt, s.az)]);
+  // Stars, brightest last so they sit on top. Names on the bright ones (more as
+  // you zoom), skipping any that would sit on a brighter star's name.
+  const nameLimit = s >= 4 ? 99 : s >= 2 ? 2.6 : 1.6;
+  const named = layerOn('stars')
+    ? [...stars].filter(([hr, st]) => skyData.names[hr] && st.mag < nameLimit && st.alt > 3).map(([hr, st]) => [hr, skyXY(st.alt, st.az)])
+    : [];
   const labelled = new Set();
   for (const [hr, [x, y]] of named) {
-    if (!named.some(([o, [ox, oy]]) => labelled.has(o) && Math.hypot(ox - x, oy - y) < 0.03 * K)) labelled.add(hr);
+    if (!named.some(([o, [ox, oy]]) => labelled.has(o) && Math.hypot(ox - x, oy - y) < (0.03 * K) / s)) labelled.add(hr);
   }
-  for (const [hr, s] of [...stars].reverse()) {
-    if (s.alt <= 0) continue;
-    const [x, y] = skyXY(s.alt, s.az);
-    const r = K * (0.0035 + 0.0042 * Math.max(0, 4.6 - s.mag));
-    // Faint stars fade, as they do to the eye.
-    const glow = Math.min(1, Math.max(0.35, (5 - s.mag) / 2.5));
-    parts.push(`<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${r.toFixed(1)}" fill="${starColour(s.bv)}" fill-opacity="${glow.toFixed(2)}"/>`);
-    if (skyData.names[hr] && (s.mag < 2.6 || skyData.cards[hr])) {
-      parts.push(`<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${0.035 * K}" class="hit" ${pick('star', hr)}/>`);
-      if (labelled.has(hr)) parts.push(`<text x="${(x + r + 0.012 * K).toFixed(1)}" y="${y.toFixed(1)}" class="star-name">${esc(skyData.names[hr])}</text>`);
-    }
+  for (const [hr, st] of [...stars].reverse()) {
+    if (st.alt <= 0) continue;
+    const [x, y] = skyXY(st.alt, st.az);
+    const r = K * q * (0.0035 + 0.0042 * Math.max(0, 4.6 - st.mag));
+    const glow = Math.min(1, Math.max(0.35, (5 - st.mag) / 2.5)); // faint stars fade, as they do to the eye
+    parts.push(`<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${r.toFixed(1)}" fill="${starColour(st.bv)}" fill-opacity="${glow.toFixed(2)}"/>`);
+    if (skyData.names[hr] || skyData.cards[hr]) parts.push(hit(x, y, 17, 'star', hr));
+    if (labelled.has(hr)) parts.push(`<text x="${(x + r + 6 / s).toFixed(1)}" y="${y.toFixed(1)}" class="star-name">${esc(skyData.names[hr])}</text>`);
   }
 
-  // Planets and the Moon.
+  // Planets and the Moon, always shown.
   for (const name of PLANETS) {
     const p = b[name];
     if (p.alt <= 0) continue;
     const [x, y] = skyXY(p.alt, p.az);
-    parts.push(`<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${0.017 * K}" fill="${PLANET_COLOUR[name]}" class="planet"/>
-      <text x="${(x + 0.03 * K).toFixed(1)}" y="${y.toFixed(1)}" class="planet-name">${cap(name)}</text>
-      <circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${0.045 * K}" class="hit" ${pick('planet', name)}/>`);
+    const fill = store.settings.night ? '#ff5a3c' : PLANET_COLOUR[name];
+    parts.push(`<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${(0.017 * K * q).toFixed(1)}" fill="${fill}" class="planet"/>
+      <text x="${(x + (0.017 * K * q) + 7 / s).toFixed(1)}" y="${y.toFixed(1)}" class="planet-name">${cap(name)}</text>`, hit(x, y, 24, 'planet', name));
   }
   if (b.moon.alt > 0) {
     const [x, y] = skyXY(b.moon.alt, b.moon.az);
-    parts.push(moonSvg(b.moon, b.sun), `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${0.06 * K}" class="hit" ${pick('moon', 'moon')}/>`);
+    parts.push(moonSvg(b.moon, b.sun, Math.max(0.045 * K * q, angularRadius(0.26, x, y))), hit(x, y, 30, 'moon', 'moon'));
   }
   parts.push('</g>');
-  return `<svg viewBox="${-1.16 * K} ${-1.16 * K} ${2.32 * K} ${2.32 * K}" role="img" aria-label="Sky chart for ${esc(clock(t))}">
+  const [vx, vy, vw, vh] = viewBoxOf(zoom);
+  return `<svg viewBox="${vx.toFixed(1)} ${vy.toFixed(1)} ${vw.toFixed(1)} ${vh.toFixed(1)}" style="--z:${s}" role="img" aria-label="Sky chart for ${esc(clock(t))}">
     <defs><clipPath id="dome-clip"><circle r="${K}"/></clipPath></defs>${parts.join('')}</svg>`;
 }
 
@@ -1235,80 +1370,149 @@ function upTonightHtml() {
 
   // The Southern Cross never sets from Auckland; Matariki and Puanga in their season.
   const at = Astro.starProjector(t, SKY.lat, SKY.lon);
-  const acrux = skyData.stars.find(s => s[0] === 4730);
+  const acrux = skyData.starById.get(4730);
   const crux = at(acrux[1], acrux[2]);
-  line('Southern Cross', `${cap(height(crux.alt))} in the ${compass(crux.az)}. From Auckland it never sets.`, 'star', 4730);
+  line('Southern Cross', `${cap(height(crux.alt))} in the ${compass(crux.az)}. From Auckland it never sets.`, 'con', 'Cru');
   const month = t.getMonth() + 1;
   const dawn = new Date(skyState.sunrise.getTime() - 60 * 60000);
   const pre = Astro.starProjector(dawn, SKY.lat, SKY.lon);
-  const pleiades = skyData.objects.find(o => o.id === 'pleiades');
+  const pleiades = skyData.dso.find(o => o.id === 'm45' || o.id === 'pleiades');
   if (pleiades && month >= 5 && month <= 7 && pre(pleiades.ra, pleiades.dec).alt > 2) {
-    line('Matariki', 'Up in the north-east before dawn; its midwinter rising marks the Māori New Year.', 'object', 'pleiades');
+    line('Matariki', 'Up in the north-east before dawn; its midwinter rising marks the Māori New Year.', 'dso', pleiades.id);
   }
-  const rigel = skyData.stars.find(s => s[0] === 1713);
+  const rigel = skyData.starById.get(1713);
   if (rigel && month >= 5 && month <= 7 && pre(rigel[1], rigel[2]).alt > 2) {
     line('Puanga', 'Rigel, up before dawn; some iwi mark the new year by its rising.', 'star', 1713);
   }
   return rows.join('');
 }
 
+const lightYears = ly => (ly >= 1e6 ? `${+(ly / 1e6).toPrecision(2)} million light-years` : `${Math.round(ly).toLocaleString('en-NZ')} light-years`);
+const arcSize = ([a, b]) => {
+  const fmt = v => (v >= 60 ? `${+(v / 60).toPrecision(2)}°` : `${+v.toPrecision(2)}′`);
+  return b && Math.abs(a - b) > 0.5 ? `${fmt(a)} × ${fmt(b)}` : fmt(a);
+};
+
+// A card's button in the info panel: its answer, unless the answer is the thing
+// already tapped, then its question ("Brightest star in Lyra"). Repeats are skipped.
+function panelLabel(id, term) {
+  const { card } = cardIndex.get(id);
+  if (card.map) return `${card.answer} on the map`;
+  if (!plain(card.answer).includes(plain(term))) return card.answer;
+  const q = card.label ? `${card.label} ${card.prompt}` : card.prompt;
+  return q.length <= 44 && !/^\d+$/.test(card.prompt) ? q : card.answer;
+}
+function cardChips(ids, term, skip = []) {
+  const seen = new Set(skip.map(plain));
+  return ids.filter(id => cardIndex.has(id)).map(id => [id, panelLabel(id, term)])
+    .filter(([, label]) => !seen.has(plain(label)) && seen.add(plain(label)))
+    .map(([id, label]) => `<button class="chip" data-action="peek" data-id="${esc(id)}">${esc(label)}<small>${esc(cardIndex.get(id).deck.title)}</small></button>`).join('');
+}
+const conChip = abbr => {
+  const f = skyData.figures.find(c => c.abbr === abbr);
+  return f ? `<button class="chip" data-action="sky-pick" data-kind="con" data-id="${f.abbr}">In ${esc(f.name)}<small>Constellation</small></button>` : '';
+};
+
+// The info panel for whatever was tapped.
 function pickHtml() {
   const p = skyState.pick;
-  if (!p) return '<p class="sky-hint">Tap a bright star, planet or the Moon to find out more.</p>';
+  if (!p) return '<p class="sky-hint">Tap a star, constellation name, deep-sky object, planet or the Moon to find out more.</p>';
   const t = skyState.t;
   const at = Astro.starProjector(t, SKY.lat, SKY.lon);
-  let name, kind, pos, extra = '', cardId = null;
+  const where = pos => (pos.alt > 0 ? `${Math.round(pos.alt)}° up in the ${compass(pos.az)}.` : 'Below the horizon at this time.');
+  let title, kind, body = '', chips = '';
   if (p.kind === 'star') {
-    const s = skyData.stars.find(x => x[0] === +p.id);
-    name = skyData.names[p.id] || `HR ${p.id}`;
+    const s = skyData.starById.get(+p.id);
+    title = skyData.names[p.id] || `HR ${p.id}`;
     kind = `Star, magnitude ${s[3].toFixed(1)}`;
-    pos = at(s[1], s[2]);
-    if (skyData.maori[p.id]) extra = `Māori name: ${skyData.maori[p.id]}. `;
-    if (s[2] < -(90 - Math.abs(SKY.lat))) extra += 'From Auckland it never sets. ';
-    cardId = skyData.cards[p.id] || null;
-  } else if (p.kind === 'object') {
-    const o = skyData.objects.find(x => x.id === p.id);
-    name = o.name;
-    kind = cap(o.kind);
-    pos = at(o.ra, o.dec);
-    cardId = o.card;
+    body = where(at(s[1], s[2]));
+    if (skyData.maori[p.id]) body += ` Māori name: ${skyData.maori[p.id]}.`;
+    if (s[2] < -(90 - Math.abs(SKY.lat))) body += ' From Auckland it never sets.';
+    chips = cardChips(skyData.cards[p.id] ? [skyData.cards[p.id]] : [], title) + conChip(skyData.starCon.get(+p.id));
+  } else if (p.kind === 'dso') {
+    const o = skyData.dso.find(x => x.id === p.id);
+    title = o.name || o.cat;
+    kind = [o.name ? o.cat : null, o.alt, cap(o.type)].filter(Boolean).join(' · ');
+    const facts = [o.mag != null ? `magnitude ${o.mag}` : null, o.size ? `${arcSize(o.size)} across` : null, o.dist ? lightYears(o.dist) + ' away' : null].filter(Boolean);
+    body = `${where(at(o.ra, o.dec))}${facts.length ? ` ${cap(facts.join(', '))}.` : ''}${o.note ? ` ${o.note}` : ''}`;
+    chips = cardChips(o.card ? [o.card] : [], title) + (o.con ? conChip(o.con) : '');
+  } else if (p.kind === 'con') {
+    const f = skyData.figures.find(c => c.abbr === p.id);
+    title = f.common ? `${f.name}, the ${f.common}` : f.name;
+    kind = f.meaning ? `Constellation: ${f.meaning}` : 'Constellation';
+    body = `${where(at(f.label[0], f.label[1]))}${f.story ? ` ${f.story}` : ''}`;
+    const bright = f.brightest && skyData.starById.get(f.brightest);
+    const brightName = bright ? skyData.names[f.brightest] || 'Brightest star' : null;
+    chips = (bright ? `<button class="chip" data-action="sky-pick" data-kind="star" data-id="${f.brightest}">${esc(brightName)}<small>Brightest star</small></button>` : '')
+      + cardChips(f.cards || [], f.name, brightName ? [brightName] : []);
   } else {
     const b = Astro.bodies(t, SKY.lat, SKY.lon);
-    const body = b[p.id];
-    name = p.id === 'moon' ? 'The Moon' : cap(p.id);
-    kind = p.id === 'moon' ? `${cap(phaseName(body))}, ${Math.round(100 * body.illum)}% lit` : 'Planet';
-    pos = body;
-    if (p.id !== 'moon') extra = `${(body.dist).toFixed(2)} au from Earth tonight, light taking ${Math.round(body.dist * 8.317)} minutes to reach you. `;
-    // The planet's namesake in the myths decks, or the Moon's card.
+    const bodyAt = b[p.id];
+    title = p.id === 'moon' ? 'The Moon' : cap(p.id);
+    kind = p.id === 'moon' ? `${cap(phaseName(bodyAt))}, ${Math.round(100 * bodyAt.illum)}% lit` : 'Planet';
+    body = where(bodyAt);
+    if (p.id !== 'moon') body += ` ${bodyAt.dist.toFixed(2)} au from Earth tonight, light taking ${Math.round(bodyAt.dist * 8.317)} minutes to reach you.`;
+    // The planet's namesake in the myths deck, or the Moon's card.
     const want = p.id === 'moon' ? 'The Moon' : cap(p.id);
     for (const [id, { card, deck }] of cardIndex) {
-      if (!id.endsWith(REV) && card.answer === want && (deck.id === 'greek-myths' || deck.id === 'sky-and-space')) { cardId = id; break; }
+      if (!id.endsWith(REV) && card.answer === want && (deck.id === 'greek-myths' || deck.id === 'sky-and-space')) { chips = cardChips([id], title); break; }
     }
   }
-  const where = pos.alt > 0 ? `${Math.round(pos.alt)}° up in the ${compass(pos.az)}.` : 'Below the horizon at this time.';
   return `<div class="sky-pick">
-    <h3>${esc(name)}</h3>
+    <button class="sky-unpick" data-action="sky-unpick" aria-label="Close">×</button>
+    <h3>${esc(title)}</h3>
     <p class="kind">${esc(kind)}</p>
-    <p>${esc(where)} ${esc(extra)}</p>
-    ${cardId && cardIndex.has(cardId) ? `<button class="chip" data-action="peek" data-id="${esc(cardId)}">${esc(chipText({ id: cardId, term: name, same: true }))}<small>${esc(cardIndex.get(cardId).deck.title)}</small></button>` : ''}
+    <p>${esc(body)}</p>
+    ${chips ? `<div class="chips left">${chips}</div>` : ''}
   </div>`;
 }
 
-function renderSky() {
-  const { sunset, sunrise, t, facing } = skyState;
+function layersHtml() {
+  return `<div class="sky-layers">${LAYERS.map(([key, name]) =>
+    `<button data-action="sky-layer" data-layer="${key}" aria-pressed="${layerOn(key)}">${name}</button>`).join('')}</div>`;
+}
+
+function facingHtml(short) {
+  return `<div class="seg facing">${[[0, 'North'], [90, 'East'], [180, 'South'], [270, 'West']].map(([az, n]) =>
+    `<button data-action="sky-face" data-az="${az}" aria-pressed="${skyState.facing === az}">${short ? n[0] : n}</button>`).join('')}</div>`;
+}
+
+function timeHtml() {
+  const { sunset, sunrise, t } = skyState;
   const steps = Math.round((sunrise - sunset) / STEP);
-  const at = Math.round((t - sunset) / STEP);
+  return `<div class="sky-time">
+      <span id="sky-clock">${clock(t)}</span>
+      <input id="sky-slider" type="range" min="0" max="${steps}" value="${Math.round((t - sunset) / STEP)}" aria-label="Time tonight">
+    </div>`;
+}
+
+function renderSky() {
+  const { sunset, sunrise } = skyState;
+  const red = `<button class="sky-red" data-action="sky-night" aria-pressed="${!!store.settings.night}">Red light</button>`;
+  if (skyState.full) {
+    return `<div class="sky-full">
+      <div class="sky-full-top">
+        <button class="close" data-action="sky-full" aria-label="Leave full screen">×</button>
+        ${facingHtml(true)}
+        ${red}
+      </div>
+      <div id="sky-dome" class="sky-dome full">${skySvg()}</div>
+      <div id="sky-pick" class="sky-sheet">${skyState.pick ? pickHtml() : ''}</div>
+      <div class="sky-full-bottom">${timeHtml()}${layersHtml()}</div>
+    </div>`;
+  }
   const night = sunset.toLocaleDateString('en-NZ', { weekday: 'long', day: 'numeric', month: 'long' });
   return `<button class="back" data-action="home">‹ Almanac</button>
     <h2 class="pagetitle">Tonight’s sky</h2>
     <p class="lede">${SKY.place}, ${esc(night)}. Sunset ${clock(sunset)}, sunrise ${clock(sunrise)}.</p>
-    <div class="seg facing">${[[0, 'North'], [90, 'East'], [180, 'South'], [270, 'West']].map(([az, n]) =>
-      `<button data-action="sky-face" data-az="${az}" aria-pressed="${facing === az}">${n}</button>`).join('')}</div>
+    ${facingHtml(false)}
+    ${layersHtml()}
     <div id="sky-dome" class="sky-dome">${skySvg()}</div>
-    <div class="sky-time">
-      <span id="sky-clock">${clock(t)}</span>
-      <input id="sky-slider" type="range" min="0" max="${steps}" value="${at}" aria-label="Time tonight">
+    <div class="sky-tools">
+      <button class="btn quiet" data-action="sky-full">Full screen, with zoom</button>
+      ${red}
     </div>
+    ${timeHtml()}
     <div id="sky-pick">${pickHtml()}</div>
     <p class="label group">Up tonight</p>
     <div id="sky-up">${upTonightHtml()}</div>`;
@@ -1316,14 +1520,85 @@ function renderSky() {
 
 // Moving the slider redraws only the chart and lists, so dragging stays smooth.
 let skyFrame = 0;
-function updateSky() {
+function updateSky(parts = ['dome', 'clock', 'pick', 'up']) {
   cancelAnimationFrame(skyFrame);
   skyFrame = requestAnimationFrame(() => {
-    document.getElementById('sky-dome').innerHTML = skySvg();
-    document.getElementById('sky-clock').textContent = clock(skyState.t);
-    document.getElementById('sky-pick').innerHTML = pickHtml();
-    document.getElementById('sky-up').innerHTML = upTonightHtml();
+    const el = id => document.getElementById(id);
+    if (parts.includes('dome') && el('sky-dome')) el('sky-dome').innerHTML = skySvg();
+    if (parts.includes('clock') && el('sky-clock')) el('sky-clock').textContent = clock(skyState.t);
+    if (parts.includes('pick') && el('sky-pick')) el('sky-pick').innerHTML = skyState.full && !skyState.pick ? '' : pickHtml();
+    if (parts.includes('up') && el('sky-up')) el('sky-up').innerHTML = upTonightHtml();
   });
+}
+
+/* Full screen: pinch to zoom, drag to pan, double-tap to reset; a mouse wheel zooms on a desktop.
+   While a gesture runs only the view window moves; the chart redraws when it ends, so
+   star sizes and labels suit the new zoom. */
+const skyGesture = { pts: new Map(), start: null, moved: false, suppress: false, lastTap: 0, redraw: 0 };
+
+function setZoom(z) {
+  const s = Math.min(MAX_ZOOM, Math.max(1, z.s));
+  const lim = K * (1 - 1 / s) + 0.16 * K / s; // keep the dome in view
+  skyState.zoom = { s, x: Math.max(-lim, Math.min(lim, z.x)), y: Math.max(-lim, Math.min(lim, z.y)) };
+  const svg = document.querySelector('#sky-dome svg');
+  if (svg) {
+    svg.setAttribute('viewBox', viewBoxOf(skyState.zoom).map(v => v.toFixed(1)).join(' '));
+    svg.style.setProperty('--z', s);
+  }
+  clearTimeout(skyGesture.redraw);
+  skyGesture.redraw = setTimeout(() => updateSky(['dome']), 180);
+}
+
+function attachSkyGestures() {
+  const dome = document.getElementById('sky-dome');
+  if (!dome || !skyState.full) return;
+  const units = () => (2 * HALF) / skyState.zoom.s / dome.getBoundingClientRect().width; // chart units per screen pixel
+  const centre = () => { const r = dome.getBoundingClientRect(); return [r.left + r.width / 2, r.top + r.height / 2]; };
+  const snapshot = () => {
+    const pts = [...skyGesture.pts.values()];
+    const mid = pts.length === 2 ? [(pts[0].x + pts[1].x) / 2, (pts[0].y + pts[1].y) / 2] : [pts[0].x, pts[0].y];
+    const dist = pts.length === 2 ? Math.hypot(pts[0].x - pts[1].x, pts[0].y - pts[1].y) : 0;
+    return { zoom: { ...skyState.zoom }, mid, dist, u: units() };
+  };
+  dome.addEventListener('pointerdown', e => {
+    skyGesture.pts.set(e.pointerId, { x: e.clientX, y: e.clientY });
+    skyGesture.start = snapshot();
+    if (skyGesture.pts.size === 1) { skyGesture.moved = false; skyGesture.suppress = false; skyGesture.downAt = Date.now(); }
+  });
+  dome.addEventListener('pointermove', e => {
+    if (!skyGesture.pts.has(e.pointerId)) return;
+    skyGesture.pts.set(e.pointerId, { x: e.clientX, y: e.clientY });
+    const st = skyGesture.start;
+    const now = snapshot();
+    if (Math.hypot(now.mid[0] - st.mid[0], now.mid[1] - st.mid[1]) > 6 || (st.dist && Math.abs(now.dist - st.dist) > 6)) skyGesture.moved = true;
+    if (!skyGesture.moved) return;
+    const [cx, cy] = centre();
+    const s = st.dist && now.dist ? st.zoom.s * (now.dist / st.dist) : st.zoom.s;
+    // The chart point under the starting midpoint stays under the fingers.
+    const wx = st.zoom.x + (st.mid[0] - cx) * st.u, wy = st.zoom.y + (st.mid[1] - cy) * st.u;
+    const u = (st.u * st.zoom.s) / s;
+    setZoom({ s, x: wx - (now.mid[0] - cx) * u, y: wy - (now.mid[1] - cy) * u });
+  });
+  const end = e => {
+    if (!skyGesture.pts.delete(e.pointerId)) return;
+    if (skyGesture.pts.size) { skyGesture.start = snapshot(); return; }
+    if (skyGesture.moved) { skyGesture.suppress = true; return; }
+    // A quick second tap in the same place resets the zoom.
+    const now = Date.now();
+    if (now - skyGesture.lastTap < 320 && skyState.zoom.s > 1) { skyGesture.suppress = true; setZoom({ s: 1, x: 0, y: 0 }); }
+    skyGesture.lastTap = now;
+  };
+  dome.addEventListener('pointerup', end);
+  dome.addEventListener('pointercancel', end);
+  dome.addEventListener('wheel', e => {
+    e.preventDefault();
+    const [cx, cy] = centre();
+    const u = units();
+    const wx = skyState.zoom.x + (e.clientX - cx) * u, wy = skyState.zoom.y + (e.clientY - cy) * u;
+    const s = skyState.zoom.s * Math.exp(-e.deltaY * 0.0015);
+    const u2 = (u * skyState.zoom.s) / Math.min(MAX_ZOOM, Math.max(1, s));
+    setZoom({ s, x: wx - (e.clientX - cx) * u2, y: wy - (e.clientY - cy) * u2 });
+  }, { passive: false });
 }
 
 /* ---------- Which came first? ---------- */
@@ -1565,6 +1840,7 @@ function render() {
   if (view.name === 'journey' || view.name === 'journey-end') decorateTrip(view.name === 'journey-end');
   const shown = view.name === 'round' ? round.queue[round.i].id : view.name === 'peek' ? view.id : null;
   if (shown) highlightMap(shown);
+  if (view.name === 'sky') attachSkyGestures();
 }
 
 // Maps are shared SVGs; the card's country is lit by adding a class.
@@ -1839,6 +2115,10 @@ function renderSettings() {
       <div><h3>Curiosity notes</h3><p>Show the short note under each answer.</p></div>
       <button class="switch" role="switch" aria-checked="${store.settings.notes}" aria-label="Curiosity notes" data-action="notes"></button>
     </div>
+    <div class="setting row">
+      <div><h3>Red light</h3><p>Dim red on black everywhere, to keep your night vision while stargazing. Turn your screen brightness down too.</p></div>
+      <button class="switch" role="switch" aria-checked="${!!store.settings.night}" aria-label="Red light" data-action="night"></button>
+    </div>
     <div class="setting">
       <h3>Back up progress</h3>
       <p>The home screen app keeps its own storage, separate from Safari. Export a copy now and then.</p>
@@ -1894,6 +2174,8 @@ async function importProgress(file) {
 
 /* ---------- Events ---------- */
 $app.addEventListener('click', ev => {
+  // A drag or pinch on the full-screen sky is not a tap.
+  if (skyGesture.suppress && ev.target.closest('#sky-dome')) { skyGesture.suppress = false; return; }
   const el = ev.target.closest('[data-action]');
   if (!el) return;
   const id = el.dataset.deck;
@@ -1912,8 +2194,13 @@ $app.addEventListener('click', ev => {
     case 'sky-pick':
       skyState.pick = { kind: el.dataset.kind, id: el.dataset.id };
       document.getElementById('sky-pick').innerHTML = pickHtml();
-      document.getElementById('sky-pick').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      if (!skyState.full) document.getElementById('sky-pick').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
       break;
+    case 'sky-unpick': skyState.pick = null; updateSky(['pick']); break;
+    case 'sky-full': skyState.full = !skyState.full; render(); window.scrollTo(0, 0); break;
+    case 'sky-layer': store.settings.skyLayers[el.dataset.layer] = !layerOn(el.dataset.layer); saveStore(); render(); break;
+    case 'sky-night': case 'night':
+      store.settings.night = !store.settings.night; saveStore(); applyNight(); render(); break;
     case 'journey': startJourney(world.routes.find(r => r.id === el.dataset.route)); break;
     case 'journey-surprise': startJourney(surpriseRoute()); break;
     case 'trip-reveal': trip.revealed = true; render(); break;
@@ -1978,13 +2265,14 @@ const RELOAD_AFTER = 60 * 60 * 1000; // one hour
 let hiddenAt = 0;
 document.addEventListener('visibilitychange', () => {
   if (document.hidden) { hiddenAt = Date.now(); return; }
-  if (['round', 'peek', 'journey', 'duel'].includes(view.name)) return;
+  if (['round', 'peek', 'journey', 'duel', 'sky'].includes(view.name)) return;
   if (hiddenAt && Date.now() - hiddenAt > RELOAD_AFTER) location.reload();
   else if (view.name === 'home') render();
 });
 
 /* ---------- Start ---------- */
 async function init() {
+  applyNight();
   try {
     const ids = await (await fetch('decks/index.json')).json();
     const loaded = await Promise.all(ids.map(id =>
